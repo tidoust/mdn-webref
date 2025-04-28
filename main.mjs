@@ -56,13 +56,13 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 
   // ... and add scoped functions since MDN data treat them similarly to
   // non-scoped ones.
-  for (const property of data.properties ?? []) {
-    categorized.functions.push(...(property.values ?? [])
-      .filter(v => v.type === 'function'));
-  }
-  for (const val of data.values ?? []) {
-    categorized.functions.push(...(val.values ?? [])
-      .filter(v => v.type === 'function'));
+  for (const cat of ['atrules', 'properties', 'selectors', 'values']) {
+    for (const feature of data[cat] ?? []) {
+      categorized.functions.push(...(feature.values ?? [])
+        .filter(v => v.type === 'function'));
+      categorized.types.push(...(feature.values ?? [])
+        .filter(v => v.type === 'type'));
+    }
   }
 }
 
