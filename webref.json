@@ -4076,6 +4076,12 @@
       "type": "function"
     },
     {
+      "name": "type()",
+      "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
+      "type": "function",
+      "value": "type( <syntax> )"
+    },
+    {
       "name": "fade()",
       "value": "fade( [ <length-percentage> ] )",
       "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
@@ -31538,6 +31544,12 @@
       "type": "function"
     },
     {
+      "name": "type()",
+      "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
+      "type": "function",
+      "value": "type( <syntax> )"
+    },
+    {
       "name": "fade()",
       "value": "fade( [ <length-percentage> ] )",
       "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
@@ -33139,6 +33151,12 @@
       "value": "most-width | most-height | most-block-size | most-inline-size"
     },
     {
+      "name": "<try-tactic>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
+      "type": "type",
+      "value": "flip-block || flip-inline || flip-start"
+    },
+    {
       "name": "<single-animation-composition>",
       "value": "replace | add | accumulate",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-composition",
@@ -35368,6 +35386,19 @@
       "type": "type"
     },
     {
+      "name": "<opacity-value>",
+      "prose": "The opacity to be applied to the element. The resulting opacity is applied to the entire element, rather than a particular color. Opacity values outside the range [0,1] are not invalid, and are preserved in specified values, but are clamped to the range [0, 1] in computed values.",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value",
+      "type": "type",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "name": "<alpha-value>",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
+      "type": "type",
+      "value": "<number> | <percentage>"
+    },
+    {
       "name": "<supports-feature>",
       "href": "https://drafts.csswg.org/css-conditional-4/#typedef-supports-feature",
       "type": "type",
@@ -35534,6 +35565,54 @@
       "href": "https://drafts.csswg.org/css-content-3/#typedef-target",
       "type": "type",
       "value": "<target-counter()> | <target-counters()> | <target-text()>"
+    },
+    {
+      "name": "<content-replacement>",
+      "value": "<image>",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
+      "type": "type"
+    },
+    {
+      "name": "<content-list>",
+      "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
+      "type": "type",
+      "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+      "values": [
+        {
+          "name": "<string>",
+          "prose": "Represents an anonymous inline box filled with the specified text.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
+          "type": "value",
+          "value": "<string>"
+        },
+        {
+          "name": "attr()",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
+          "type": "value",
+          "value": "attr()"
+        },
+        {
+          "name": "<image>",
+          "prose": "Represents an anonymous inline replaced element filled with the specified <image>. If the <image> represents an invalid image, this value instead represents nothing. (No inline content is added to the element, as if this value were \"skipped\".)",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-list-image",
+          "type": "value",
+          "value": "<image>"
+        },
+        {
+          "name": "contents",
+          "prose": "The element’s descendants. Since this can only be used once per element (you can’t duplicate the children if, e.g., one is a plugin or form control), it is handled as follows:",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
+          "type": "value",
+          "value": "contents"
+        },
+        {
+          "name": "leader()",
+          "value": "leader( <leader-type> )",
+          "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
+          "type": "function"
+        }
+      ]
     },
     {
       "name": "<counter-style-name>",
@@ -36591,10 +36670,28 @@
       "value": "<string>"
     },
     {
+      "name": "<palette-identifier>",
+      "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
+      "type": "type"
+    },
+    {
+      "name": "<palette-mix()>",
+      "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
+      "type": "type"
+    },
+    {
       "name": "<type>",
       "href": "https://drafts.csswg.org/css-forms-1/#typedef-type",
       "type": "type",
       "value": "'<' [ number | string ] '>'"
+    },
+    {
+      "name": "<form-control-identifier>",
+      "href": "https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier",
+      "type": "type",
+      "value": "select"
     },
     {
       "name": "<line-color-list>",
@@ -36950,6 +37047,150 @@
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
           "type": "value",
           "value": "fr"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
         }
       ]
     },
@@ -37332,6 +37573,30 @@
       "value": "<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
     },
     {
+      "name": "<top>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
+      "type": "type"
+    },
+    {
+      "name": "<right>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
+      "type": "type"
+    },
+    {
+      "name": "<bottom>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
+      "type": "type"
+    },
+    {
+      "name": "<left>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
+      "type": "type"
+    },
+    {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
@@ -37459,6 +37724,102 @@
       "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     },
     {
+      "name": "<coordinate-pair>",
+      "value": "<length-percentage>{2}",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
+      "type": "type"
+    },
+    {
+      "name": "<command-end-point>",
+      "value": "[ to <position> | by <coordinate-pair> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
+      "type": "type",
+      "values": [
+        {
+          "name": "to",
+          "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-to",
+          "type": "value",
+          "value": "to"
+        },
+        {
+          "name": "by",
+          "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
+          "type": "value",
+          "value": "by"
+        }
+      ]
+    },
+    {
+      "name": "<move-command>",
+      "value": "move <command-end-point>",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
+      "type": "type"
+    },
+    {
+      "name": "<line-command>",
+      "value": "line <command-end-point>",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<horizontal-line-command>",
+      "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<vertical-line-command>",
+      "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<curve-command>",
+      "value": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
+      "type": "type"
+    },
+    {
+      "name": "<smooth-command>",
+      "value": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
+      "type": "type"
+    },
+    {
+      "name": "<control-point>",
+      "value": "[ <position> | <relative-control-point> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
+      "type": "type"
+    },
+    {
+      "name": "<relative-control-point>",
+      "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
+      "type": "type"
+    },
+    {
+      "name": "<arc-command>",
+      "value": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
+      "type": "type"
+    },
+    {
+      "name": "<arc-sweep>",
+      "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
+      "type": "type",
+      "value": "cw | ccw"
+    },
+    {
+      "name": "<arc-size>",
+      "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
+      "type": "type",
+      "value": "large | small"
+    },
+    {
       "name": "<basic-shape>",
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
@@ -37561,6 +37922,29 @@
       "name": "<generic-voice>",
       "value": "[<age>? <gender> <integer>?]",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-generic-voice",
+      "type": "type"
+    },
+    {
+      "name": "<decibel>",
+      "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
+      "type": "type"
+    },
+    {
+      "name": "<age>",
+      "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
+      "type": "type"
+    },
+    {
+      "name": "<gender>",
+      "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
+      "type": "type"
+    },
+    {
+      "name": "<semitones>",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones",
       "type": "type"
     },
     {
@@ -37878,6 +38262,24 @@
       "name": "<target-name>",
       "prose": "The <target-name> parameter indicates the target frame for the focus navigation. It is a <string> and it MUST NOT start with the underscore \"_\" character. Error handling: if it does start with an underscore, \"_parent\" navigates to the parent frame, \"_root\" is treated as root, and other values navigate to a frame by that name if it exists. If the specified target frame does not exist, the parameter will be treated as the keyword current, which means to simply use the frame that the element is in. The keyword root indicates that the user agent should target the full window.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-target-name",
+      "type": "type"
+    },
+    {
+      "name": "<url-set>",
+      "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
+      "type": "type"
+    },
+    {
+      "name": "<compat-auto>",
+      "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
+      "type": "type"
+    },
+    {
+      "name": "<compat-special>",
+      "value": "textfield | menulist-button",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
       "type": "type"
     },
     {
@@ -38383,6 +38785,24 @@
       "name": "<intrinsic-size-keyword>",
       "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "type": "type"
+    },
+    {
+      "name": "<crossorigin-modifier>",
+      "value": "crossorigin(anonymous | use-credentials)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+      "type": "type"
+    },
+    {
+      "name": "<integrity-modifier>",
+      "value": "integrity(<string>)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier",
+      "type": "type"
+    },
+    {
+      "name": "<referrerpolicy-modifier>",
+      "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
       "type": "type"
     },
     {
@@ -39288,6 +39708,12 @@
       "type": "type"
     },
     {
+      "name": "<url>",
+      "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
+      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
+      "type": "type"
+    },
+    {
       "name": "<source-size-list>",
       "href": "https://html.spec.whatwg.org/multipage/images.html#source-size-list",
       "type": "type",
@@ -39420,6 +39846,12 @@
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
     },
     {
+      "name": "<general-enclosed>",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+      "type": "type",
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+    },
+    {
       "name": "<mq-boolean>",
       "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean",
@@ -39538,6 +39970,12 @@
       "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-comparison",
       "type": "type",
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+    },
+    {
+      "name": "<general-enclosed>",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed",
+      "type": "type",
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
     },
     {
       "name": "<mq-boolean>",
@@ -40408,6 +40846,12 @@
       "value": "most-width | most-height | most-block-size | most-inline-size"
     },
     {
+      "name": "<try-tactic>",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
+      "type": "type",
+      "value": "flip-block || flip-inline || flip-start"
+    },
+    {
       "name": "<single-animation-composition>",
       "value": "replace | add | accumulate",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-composition",
@@ -42637,6 +43081,19 @@
       "type": "type"
     },
     {
+      "name": "<opacity-value>",
+      "prose": "The opacity to be applied to the element. The resulting opacity is applied to the entire element, rather than a particular color. Opacity values outside the range [0,1] are not invalid, and are preserved in specified values, but are clamped to the range [0, 1] in computed values.",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value",
+      "type": "type",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "name": "<alpha-value>",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
+      "type": "type",
+      "value": "<number> | <percentage>"
+    },
+    {
       "name": "<supports-feature>",
       "href": "https://drafts.csswg.org/css-conditional-4/#typedef-supports-feature",
       "type": "type",
@@ -42803,6 +43260,54 @@
       "href": "https://drafts.csswg.org/css-content-3/#typedef-target",
       "type": "type",
       "value": "<target-counter()> | <target-counters()> | <target-text()>"
+    },
+    {
+      "name": "<content-replacement>",
+      "value": "<image>",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
+      "type": "type"
+    },
+    {
+      "name": "<content-list>",
+      "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
+      "type": "type",
+      "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
+      "values": [
+        {
+          "name": "<string>",
+          "prose": "Represents an anonymous inline box filled with the specified text.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
+          "type": "value",
+          "value": "<string>"
+        },
+        {
+          "name": "attr()",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
+          "type": "value",
+          "value": "attr()"
+        },
+        {
+          "name": "<image>",
+          "prose": "Represents an anonymous inline replaced element filled with the specified <image>. If the <image> represents an invalid image, this value instead represents nothing. (No inline content is added to the element, as if this value were \"skipped\".)",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-list-image",
+          "type": "value",
+          "value": "<image>"
+        },
+        {
+          "name": "contents",
+          "prose": "The element’s descendants. Since this can only be used once per element (you can’t duplicate the children if, e.g., one is a plugin or form control), it is handled as follows:",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
+          "type": "value",
+          "value": "contents"
+        },
+        {
+          "name": "leader()",
+          "value": "leader( <leader-type> )",
+          "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
+          "type": "function"
+        }
+      ]
     },
     {
       "name": "<counter-style-name>",
@@ -43860,10 +44365,28 @@
       "value": "<string>"
     },
     {
+      "name": "<palette-identifier>",
+      "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
+      "type": "type"
+    },
+    {
+      "name": "<palette-mix()>",
+      "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
+      "type": "type"
+    },
+    {
       "name": "<type>",
       "href": "https://drafts.csswg.org/css-forms-1/#typedef-type",
       "type": "type",
       "value": "'<' [ number | string ] '>'"
+    },
+    {
+      "name": "<form-control-identifier>",
+      "href": "https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier",
+      "type": "type",
+      "value": "select"
     },
     {
       "name": "<line-color-list>",
@@ -44219,6 +44742,150 @@
           "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
           "type": "value",
           "value": "fr"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "name": "<grid-line>",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "type": "type",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
         }
       ]
     },
@@ -44601,6 +45268,30 @@
       "value": "<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
     },
     {
+      "name": "<top>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
+      "type": "type"
+    },
+    {
+      "name": "<right>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
+      "type": "type"
+    },
+    {
+      "name": "<bottom>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
+      "type": "type"
+    },
+    {
+      "name": "<left>",
+      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
+      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
+      "type": "type"
+    },
+    {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
@@ -44728,6 +45419,102 @@
       "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     },
     {
+      "name": "<coordinate-pair>",
+      "value": "<length-percentage>{2}",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
+      "type": "type"
+    },
+    {
+      "name": "<command-end-point>",
+      "value": "[ to <position> | by <coordinate-pair> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
+      "type": "type",
+      "values": [
+        {
+          "name": "to",
+          "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-to",
+          "type": "value",
+          "value": "to"
+        },
+        {
+          "name": "by",
+          "prose": "<command-end-point> = [ to <position> | by <coordinate-pair> ]",
+          "href": "https://drafts.csswg.org/css-shapes-2/#valdef-shape-by",
+          "type": "value",
+          "value": "by"
+        }
+      ]
+    },
+    {
+      "name": "<move-command>",
+      "value": "move <command-end-point>",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
+      "type": "type"
+    },
+    {
+      "name": "<line-command>",
+      "value": "line <command-end-point>",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<horizontal-line-command>",
+      "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<vertical-line-command>",
+      "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
+      "type": "type"
+    },
+    {
+      "name": "<curve-command>",
+      "value": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
+      "type": "type"
+    },
+    {
+      "name": "<smooth-command>",
+      "value": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
+      "type": "type"
+    },
+    {
+      "name": "<control-point>",
+      "value": "[ <position> | <relative-control-point> ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
+      "type": "type"
+    },
+    {
+      "name": "<relative-control-point>",
+      "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
+      "type": "type"
+    },
+    {
+      "name": "<arc-command>",
+      "value": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
+      "type": "type"
+    },
+    {
+      "name": "<arc-sweep>",
+      "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
+      "type": "type",
+      "value": "cw | ccw"
+    },
+    {
+      "name": "<arc-size>",
+      "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+      "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
+      "type": "type",
+      "value": "large | small"
+    },
+    {
       "name": "<basic-shape>",
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
@@ -44830,6 +45617,29 @@
       "name": "<generic-voice>",
       "value": "[<age>? <gender> <integer>?]",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-generic-voice",
+      "type": "type"
+    },
+    {
+      "name": "<decibel>",
+      "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
+      "type": "type"
+    },
+    {
+      "name": "<age>",
+      "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
+      "type": "type"
+    },
+    {
+      "name": "<gender>",
+      "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
+      "type": "type"
+    },
+    {
+      "name": "<semitones>",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones",
       "type": "type"
     },
     {
@@ -45147,6 +45957,24 @@
       "name": "<target-name>",
       "prose": "The <target-name> parameter indicates the target frame for the focus navigation. It is a <string> and it MUST NOT start with the underscore \"_\" character. Error handling: if it does start with an underscore, \"_parent\" navigates to the parent frame, \"_root\" is treated as root, and other values navigate to a frame by that name if it exists. If the specified target frame does not exist, the parameter will be treated as the keyword current, which means to simply use the frame that the element is in. The keyword root indicates that the user agent should target the full window.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-target-name",
+      "type": "type"
+    },
+    {
+      "name": "<url-set>",
+      "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
+      "type": "type"
+    },
+    {
+      "name": "<compat-auto>",
+      "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
+      "type": "type"
+    },
+    {
+      "name": "<compat-special>",
+      "value": "textfield | menulist-button",
+      "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
       "type": "type"
     },
     {
@@ -45652,6 +46480,24 @@
       "name": "<intrinsic-size-keyword>",
       "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "type": "type"
+    },
+    {
+      "name": "<crossorigin-modifier>",
+      "value": "crossorigin(anonymous | use-credentials)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+      "type": "type"
+    },
+    {
+      "name": "<integrity-modifier>",
+      "value": "integrity(<string>)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier",
+      "type": "type"
+    },
+    {
+      "name": "<referrerpolicy-modifier>",
+      "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
       "type": "type"
     },
     {
@@ -46557,6 +47403,12 @@
       "type": "type"
     },
     {
+      "name": "<url>",
+      "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
+      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
+      "type": "type"
+    },
+    {
       "name": "<source-size-list>",
       "href": "https://html.spec.whatwg.org/multipage/images.html#source-size-list",
       "type": "type",
@@ -46689,6 +47541,12 @@
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
     },
     {
+      "name": "<general-enclosed>",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+      "type": "type",
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
+    },
+    {
       "name": "<mq-boolean>",
       "prose": "The <mq-boolean> value type is an <integer> with the value 0 or 1. Any other integer value is invalid. Note that -0 is always equivalent to 0 in CSS, and so is also accepted as a valid <mq-boolean> value.",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean",
@@ -46807,6 +47665,12 @@
       "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-comparison",
       "type": "type",
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
+    },
+    {
+      "name": "<general-enclosed>",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed",
+      "type": "type",
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
     },
     {
       "name": "<mq-boolean>",
