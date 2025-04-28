@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@webref/css": "^6.20.8",
+    "mdn-data": "^2.21.0"
+  }
+}
