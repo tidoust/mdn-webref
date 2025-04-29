@@ -163,7 +163,10 @@ await writeFile('report.md', report.join('\n'), 'utf8');
  * A few helper functions to help with reporting
  ***********************************************************/
 function reportFeatures(features) {
-  return features.map(reportFeature).join('\n');
+  return features
+    .sort((f1, f2) => f1.name.localeCompare(f2.name))
+    .map(reportFeature)
+    .join('\n');
 }
 
 function reportFeature(feature) {
