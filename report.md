@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-04-29T09:22:04.185Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 ### Missing from webref
 
@@ -251,7 +251,7 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`contrast-color()`](https://drafts.csswg.org/css-color-5/#funcdef-contrast-color)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
-- [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2)
+- [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()`
 - [`dynamic-range-limit-mix()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-dynamic-range-limit-mix)
 - [`ictcp()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-ictcp)
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
@@ -262,23 +262,23 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`string()`](https://drafts.csswg.org/css-content-3/#funcdef-string)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`control-value()`](https://drafts.csswg.org/css-forms-1/#funcdef-control-value)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-width>`
 - [`running()`](https://drafts.csswg.org/css-gcpm-3/#funcdef-running)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<auto-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>`
 - [`stripes()`](https://drafts.csswg.org/css-images-4/#funcdef-stripes)
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
-- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type)
-- [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type)
-- [`fade()`](https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade)
-- [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block)
-- [`snap-inline()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline)
+- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
+- [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type) for `@function`
+- [`fade()`](https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade) for `text-overflow`
+- [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block) for `float`
+- [`snap-inline()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline) for `float`
 - [`shape()`](https://drafts.csswg.org/css-shapes-2/#funcdef-shape)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
 - [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress)
@@ -295,10 +295,10 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`random-item()`](https://drafts.csswg.org/css-values-5/#funcdef-random-item)
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index)
-- [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin)
-- [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity)
-- [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy)
-- [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type)
+- [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>`
+- [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
+- [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>`
+- [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type) for `attr()`
 - [`url()`](https://drafts.csswg.org/css-values-4/#funcdef-url)
 - [`src()`](https://drafts.csswg.org/css-values-4/#funcdef-src)
 - [`filter()`](https://drafts.fxtf.org/filter-effects-1/#funcdef-filter)
@@ -625,7 +625,7 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`contrast-color()`](https://drafts.csswg.org/css-color-5/#funcdef-contrast-color)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
-- [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2)
+- [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()`
 - [`dynamic-range-limit-mix()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-dynamic-range-limit-mix)
 - [`ictcp()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-ictcp)
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
@@ -636,23 +636,23 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`string()`](https://drafts.csswg.org/css-content-3/#funcdef-string)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`control-value()`](https://drafts.csswg.org/css-forms-1/#funcdef-control-value)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat)
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-width>`
 - [`running()`](https://drafts.csswg.org/css-gcpm-3/#funcdef-running)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat)
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<auto-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>`
 - [`stripes()`](https://drafts.csswg.org/css-images-4/#funcdef-stripes)
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
-- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type)
-- [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type)
-- [`fade()`](https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade)
-- [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block)
-- [`snap-inline()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline)
+- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
+- [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type) for `@function`
+- [`fade()`](https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade) for `text-overflow`
+- [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block) for `float`
+- [`snap-inline()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline) for `float`
 - [`shape()`](https://drafts.csswg.org/css-shapes-2/#funcdef-shape)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
 - [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress)
@@ -669,10 +669,10 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`random-item()`](https://drafts.csswg.org/css-values-5/#funcdef-random-item)
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index)
-- [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin)
-- [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity)
-- [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy)
-- [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type)
+- [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>`
+- [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
+- [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>`
+- [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type) for `attr()`
 - [`url()`](https://drafts.csswg.org/css-values-4/#funcdef-url)
 - [`src()`](https://drafts.csswg.org/css-values-4/#funcdef-src)
 - [`filter()`](https://drafts.fxtf.org/filter-effects-1/#funcdef-filter)
@@ -759,33 +759,33 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<image-1D>`](https://drafts.csswg.org/css-images-4/#typedef-image-1d)
 - [`<color-stripe>`](https://drafts.csswg.org/css-images-4/#typedef-color-stripe)
 - [`<link-param>`](https://drafts.csswg.org/css-link-params-1/#typedef-link-param)
-- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top)
-- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right)
-- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom)
-- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left)
+- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top) for `clip`
+- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right) for `clip`
+- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom) for `clip`
+- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left) for `clip`
 - [`<function-parameter>`](https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter)
 - [`<css-type>`](https://drafts.csswg.org/css-mixins-1/#typedef-css-type)
 - [`<dashed-function>`](https://drafts.csswg.org/css-mixins-1/#typedef-dashed-function)
 - [`<scroll-button-direction>`](https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction)
 - [`<shape-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command)
-- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair)
-- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point)
-- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command)
-- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command)
-- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command)
-- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command)
-- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command)
-- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command)
-- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point)
-- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point)
-- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command)
-- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep)
-- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size)
+- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair) for `shape()`
+- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point) for `shape()`
+- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command) for `shape()`
+- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command) for `shape()`
+- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command) for `shape()`
+- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command) for `shape()`
+- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command) for `shape()`
+- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
+- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point) for `shape()`
+- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point) for `shape()`
+- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command) for `shape()`
+- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep) for `shape()`
+- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size) for `shape()`
 - [`<generic-voice>`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
-- [`<decibel>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel)
-- [`<age>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age)
-- [`<gender>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender)
-- [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones)
+- [`<decibel>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel) for `voice-volume`
+- [`<age>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age) for `voice-family`
+- [`<gender>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender) for `voice-family`
+- [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones) for `voice-pitch`
 - [`<ident-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-ident-token)
 - [`<function-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-function-token)
 - [`<at-keyword-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
@@ -824,8 +824,8 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<spacing-trim>`](https://drafts.csswg.org/css-text-4/#typedef-spacing-trim)
 - [`<id>`](https://drafts.csswg.org/css-ui-4/#typedef-id)
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
-- [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set)
-- [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special)
+- [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set) for `cursor`
+- [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special) for `appearance`
 - [`<boolean-expr>`](https://drafts.csswg.org/css-values-5/#typedef-boolean-expr)
 - [`<syntax>`](https://drafts.csswg.org/css-values-5/#typedef-syntax)
 - [`<syntax-component>`](https://drafts.csswg.org/css-values-5/#typedef-syntax-component)
@@ -863,9 +863,9 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<random-value-sharing>`](https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing)
 - [`<random-item-args>`](https://drafts.csswg.org/css-values-5/#typedef-random-item-args)
 - [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
-- [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier)
-- [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier)
-- [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier)
+- [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier) for `<request-url-modifier>`
+- [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
+- [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier) for `<request-url-modifier>`
 - [`<ident>`](https://drafts.csswg.org/css-values-4/#typedef-ident)
 - [`<custom-ident>`](https://drafts.csswg.org/css-values-4/#identifier-value)
 - [`<dashed-ident>`](https://drafts.csswg.org/css-values-4/#typedef-dashed-ident)
@@ -899,7 +899,7 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
 - [`<svg-paint>`](https://drafts.fxtf.org/fill-stroke-3/#typedef-svg-paint)
 - [`<number-optional-number>`](https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number)
-- [`<url>`](https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url)
+- [`<url>`](https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url) for `filter`
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<source-size>`](https://html.spec.whatwg.org/multipage/images.html#source-size)
 - [`<source-size-value>`](https://html.spec.whatwg.org/multipage/images.html#source-size-value)
@@ -943,7 +943,7 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<anchor-side>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side)
 - [`<anchor-size>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size)
 - [`<try-size>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size)
-- [`<try-tactic>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic)
+- [`<try-tactic>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic) for `position-try-fallbacks`
 - [`<single-animation-composition>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-composition)
 - [`<single-animation-timeline>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-timeline)
 - [`<single-animation>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation)
@@ -1031,8 +1031,8 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<color-interpolation-method>`](https://drafts.csswg.org/css-color-4/#color-interpolation-method)
 - [`<deprecated-color>`](https://drafts.csswg.org/css-color-4/#typedef-deprecated-color)
 - [`<quirky-color>`](https://drafts.csswg.org/css-color-4/#typedef-quirky-color)
-- [`<opacity-value>`](https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value)
-- [`<alpha-value>`](https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value)
+- [`<opacity-value>`](https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value) for `opacity`
+- [`<alpha-value>`](https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value) for `<color>`
 - [`<supports-feature>`](https://drafts.csswg.org/css-conditional-4/#typedef-supports-feature)
 - [`<supports-selector-fn>`](https://drafts.csswg.org/css-conditional-4/#typedef-supports-selector-fn)
 - [`<supports-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature)
@@ -1056,8 +1056,8 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<quote>`](https://drafts.csswg.org/css-content-3/#typedef-quote)
 - [`<leader-type>`](https://drafts.csswg.org/css-content-3/#typedef-leader-type)
 - [`<target>`](https://drafts.csswg.org/css-content-3/#typedef-target)
-- [`<content-replacement>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement)
-- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list)
+- [`<content-replacement>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement) for `content`
+- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list) for `content`
 - [`<counter-style-name>`](https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style-name)
 - [`<symbol>`](https://drafts.csswg.org/css-counter-styles-3/#typedef-symbol)
 - [`<symbols-type>`](https://drafts.csswg.org/css-counter-styles-3/#typedef-symbols-type)
@@ -1099,10 +1099,10 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<east-asian-variant-values>`](https://drafts.csswg.org/css-fonts-4/#east-asian-variant-values)
 - [`<east-asian-width-values>`](https://drafts.csswg.org/css-fonts-4/#east-asian-width-values)
 - [`<opentype-tag>`](https://drafts.csswg.org/css-fonts-4/#typedef-opentype-tag)
-- [`<palette-identifier>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier)
-- [`<palette-mix()>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix)
+- [`<palette-identifier>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier) for `font-palette`
+- [`<palette-mix()>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix) for `font-palette`
 - [`<type>`](https://drafts.csswg.org/css-forms-1/#typedef-type)
-- [`<form-control-identifier>`](https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier)
+- [`<form-control-identifier>`](https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier) for `::picker()`
 - [`<line-color-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list)
 - [`<auto-line-color-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-color-list)
 - [`<line-color-or-repeat>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat)
@@ -1140,10 +1140,10 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<auto-repeat>`](https://drafts.csswg.org/css-grid-2/#typedef-auto-repeat)
 - [`<fixed-repeat>`](https://drafts.csswg.org/css-grid-2/#typedef-fixed-repeat)
 - [`<name-repeat>`](https://drafts.csswg.org/css-grid-2/#typedef-name-repeat)
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line)
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line)
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line)
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line)
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-start`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-end`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-end`
 - [`<image-set-option>`](https://drafts.csswg.org/css-images-4/#typedef-image-set-option)
 - [`<image-tags>`](https://drafts.csswg.org/css-images-4/#typedef-image-tags)
 - [`<image-src>`](https://drafts.csswg.org/css-images-4/#typedef-image-src)
@@ -1183,10 +1183,10 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<masking-mode>`](https://drafts.fxtf.org/css-masking-1/#typedef-masking-mode)
 - [`<compositing-operator>`](https://drafts.fxtf.org/css-masking-1/#typedef-compositing-operator)
 - [`<mask-layer>`](https://drafts.fxtf.org/css-masking-1/#typedef-mask-layer)
-- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top)
-- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right)
-- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom)
-- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left)
+- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top) for `clip`
+- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right) for `clip`
+- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom) for `clip`
+- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left) for `clip`
 - [`<function-parameter>`](https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter)
 - [`<css-type>`](https://drafts.csswg.org/css-mixins-1/#typedef-css-type)
 - [`<dashed-function>`](https://drafts.csswg.org/css-mixins-1/#typedef-dashed-function)
@@ -1196,26 +1196,26 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<page-selector>`](https://drafts.csswg.org/css-page-3/#typedef-page-selector)
 - [`<pseudo-page>`](https://drafts.csswg.org/css-page-3/#typedef-pseudo-page)
 - [`<shape-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command)
-- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair)
-- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point)
-- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command)
-- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command)
-- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command)
-- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command)
-- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command)
-- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command)
-- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point)
-- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point)
-- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command)
-- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep)
-- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size)
+- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair) for `shape()`
+- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point) for `shape()`
+- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command) for `shape()`
+- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command) for `shape()`
+- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command) for `shape()`
+- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command) for `shape()`
+- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command) for `shape()`
+- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
+- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point) for `shape()`
+- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point) for `shape()`
+- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command) for `shape()`
+- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep) for `shape()`
+- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size) for `shape()`
 - [`<basic-shape-rect>`](https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape-rect)
 - [`<shape-box>`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-box)
 - [`<generic-voice>`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
-- [`<decibel>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel)
-- [`<age>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age)
-- [`<gender>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender)
-- [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones)
+- [`<decibel>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel) for `voice-volume`
+- [`<age>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age) for `voice-family`
+- [`<gender>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender) for `voice-family`
+- [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones) for `voice-pitch`
 - [`<ident-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-ident-token)
 - [`<function-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-function-token)
 - [`<at-keyword-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
@@ -1268,9 +1268,9 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<outline-line-style>`](https://drafts.csswg.org/css-ui-4/#typedef-outline-line-style)
 - [`<id>`](https://drafts.csswg.org/css-ui-4/#typedef-id)
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
-- [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set)
-- [`<compat-auto>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto)
-- [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special)
+- [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set) for `cursor`
+- [`<compat-auto>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto) for `appearance`
+- [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special) for `appearance`
 - [`<boolean-expr>`](https://drafts.csswg.org/css-values-5/#typedef-boolean-expr)
 - [`<syntax>`](https://drafts.csswg.org/css-values-5/#typedef-syntax)
 - [`<syntax-component>`](https://drafts.csswg.org/css-values-5/#typedef-syntax-component)
@@ -1309,9 +1309,9 @@ Generated on **2025-04-28T19:18:01.927Z** using **v2.21.0** of MDN data and **v6
 - [`<random-item-args>`](https://drafts.csswg.org/css-values-5/#typedef-random-item-args)
 - [`<calc-size-basis>`](https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis)
 - [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
-- [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier)
-- [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier)
-- [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier)
+- [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier) for `<request-url-modifier>`
+- [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
+- [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier) for `<request-url-modifier>`
 - [`<url-modifier>`](https://drafts.csswg.org/css-values-4/#typedef-url-modifier)
 - [`<zero>`](https://drafts.csswg.org/css-values-4/#zero-value)
 - [`<rounding-strategy>`](https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy)

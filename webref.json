@@ -3167,6 +3167,7 @@
       "value": "color-layers([ <blend-mode>, ]? <color># )"
     },
     {
+      "for": "contrast-color()",
       "name": "wcag2()",
       "prose": "The wcag2 keyword and wcag2() functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
       "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2",
@@ -3698,36 +3699,42 @@
       "value": "control-value( <type>? )"
     },
     {
+      "for": "<repeat-line-color>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-color>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<repeat-line-style>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-style>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<repeat-line-width>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-width>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
@@ -3740,30 +3747,35 @@
       "value": "running( <custom-ident> )"
     },
     {
+      "for": "grid-template-columns",
       "name": "minmax()",
       "value": "minmax(min, max)",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax",
       "type": "function"
     },
     {
+      "for": "grid-template-columns",
       "name": "fit-content()",
       "value": "fit-content( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "type": "function"
     },
     {
+      "for": "grid-template-rows",
       "name": "minmax()",
       "value": "minmax(min, max)",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax",
       "type": "function"
     },
     {
+      "for": "grid-template-rows",
       "name": "fit-content()",
       "value": "fit-content( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "type": "function"
     },
     {
+      "for": "<track-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -3786,6 +3798,7 @@
       ]
     },
     {
+      "for": "<auto-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -3808,6 +3821,7 @@
       ]
     },
     {
+      "for": "<fixed-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -3958,6 +3972,7 @@
       "type": "function"
     },
     {
+      "for": "image-set()",
       "name": "type()",
       "value": "type( <string> )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set-type",
@@ -4070,30 +4085,35 @@
       ]
     },
     {
+      "for": "clip",
       "name": "rect()",
       "value": "rect( <top>, <right>, <bottom>, <left> )",
       "href": "https://drafts.fxtf.org/css-masking-1/#funcdef-clip-rect",
       "type": "function"
     },
     {
+      "for": "@function",
       "name": "type()",
       "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
       "type": "function",
       "value": "type( <syntax> )"
     },
     {
+      "for": "text-overflow",
       "name": "fade()",
       "value": "fade( [ <length-percentage> ] )",
       "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
       "type": "function"
     },
     {
+      "for": "float",
       "name": "snap-block()",
       "value": "snap-block( <length> , [ start | end | near ]? )",
       "href": "https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block",
       "type": "function"
     },
     {
+      "for": "float",
       "name": "snap-inline()",
       "value": "snap-inline( <length> , [ left | right | near ]? )",
       "href": "https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline",
@@ -4282,6 +4302,7 @@
       ]
     },
     {
+      "for": "<basic-shape>",
       "name": "inset()",
       "prose": "Defines an inset rectangle via insets from each edge of the reference box. If less than four <length-percentage> values are provided, the omitted values default in the same way as the margin shorthand: an omitted second or third value defaults to the first, and an omitted fourth value defaults to the second. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the corresponding edges of the reference box. A pair of insets in either dimension that add up to more than the used dimension (such as left and right insets of 75% apiece) use the CSS Backgrounds 3 § 4.5 Overlapping Curves rules to proportionally reduce the inset effect to 100%. For example, specifying inset(75% 0 50% 0) has the top+bottom edges summing to 125% of the reference box’s height. They’re proportionally reduced to sum to 100%, identical to specifying inset(60% 0 40% 0). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-inset",
@@ -4289,6 +4310,7 @@
       "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "xywh()",
       "prose": "Defines a rectangle via offsets from the top and left edge of the reference box, and a specified width and height. The four <length-percentage>s define, respectively, the inset from the left edge of the reference box, the inset from the top edge of the reference box, the width of the rectangle, and the height of the rectangle. The optional <'border-radius'> argument(s) define rounded corners for the inset rectangle using the border-radius shorthand syntax.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-xywh",
@@ -4296,6 +4318,7 @@
       "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "rect()",
       "prose": "Defines a rectangle via insets from the top and left edges of the reference box. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the top edge of the reference box (for the first and third values) or the left edge of the reference box (for the second and fourth values). An auto value makes the edge of the box coincide with the corresponding edge of the reference box: it’s equivalent to 0% as the first (top) or fourth (left) value, and equivalent to 100% as the second (right) or third (bottom) value. The second (right) and third (bottom) values are floored by the fourth (left) and second (top) values, respectively. For example, specifying rect(10px 0 0 20px) would place the bottom edge higher than the top edge, and the right edge further left than the left edge, so both are corrected to not cross over the other edge, identical to specifying rect(10px 20px 10px 20px). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.)",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect",
@@ -4303,6 +4326,7 @@
       "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "circle()",
       "prose": "The <radial-size> argument defines the circle’s radius. Rather than referring to the gradient box, values are resolved against the reference box. Two <length-percentage> values are invalid. The <position> argument defines the center of the circle. Unless otherwise specified, this defaults to center if omitted.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-circle",
@@ -4310,6 +4334,7 @@
       "value": "circle( <radial-size>? [ at <position> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "ellipse()",
       "prose": "The <radial-size> argument defines the horizontal and vertical radiuses of the ellipse. Rather than referring to the gradient box, values are resolved against the reference box. The <position> argument defines the center of the ellipse. Unless otherwise specified, this defaults to center if omitted.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-ellipse",
@@ -4317,6 +4342,7 @@
       "value": "ellipse( <radial-size>? [ at <position> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "polygon()",
       "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior. Defaults to nonzero if omitted. An optional <length> after a round keyword defines rounding for each vertex of the polygon. The length is the radius of a circle whose center lies on the bisector of the smaller angle of the vertex, and that is tangential to both sides of the vertex. Rounding polygon vertices that are both convex and concave. To avoid rounding more than half of any line segment, the rounding of each vertex must be clamped separately such that the radius is never more than the smaller of tan(angle/2) segment / 2 evaluated against both vertex line segments. This diagram shows the intent of the clamping formula. Each <length-percentage> pair specifies a vertex of the polygon, as a horizontal and vertical offset from the left and top edges of the reference box. The UA must close a polygon by connecting the last vertex with the first vertex of the list.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon",
@@ -4324,6 +4350,7 @@
       "value": "polygon( <'fill-rule'>? [ round <length> ]? , [<length-percentage> <length-percentage>]# )"
     },
     {
+      "for": "<basic-shape>",
       "name": "path()",
       "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior. Defaults to nonzero if omitted, unless the function is being used in a context such as SVG shapes where the fill-rule property is relevant. In that case an omitted value will use the computed value of the fill-rule property. The <string> represents an SVG Path data string. A path data string that does not conform to the to the grammar and parsing rules of SVG 1.1, or that does conform but defines an empty path, is invalid and causes the entire path() to be invalid. The initial position is defined by the first “move to” argument in the path string. For the initial direction follow SVG 1.1. The UA must close a path with an implicit closepath command (\"z\" or \"Z\") if it is not present in the string for properties that require a closed loop (such as shape-outside and clip-path).",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-path",
@@ -4331,72 +4358,84 @@
       "value": "path( <'fill-rule'>? , <string> )"
     },
     {
+      "for": "width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "min-width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "min-width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "min-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "min-height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "max-width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "max-width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "max-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "max-height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
@@ -4490,66 +4529,77 @@
       ]
     },
     {
+      "for": "transform",
       "name": "matrix()",
       "value": "matrix( <number>#{6} )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-matrix",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translate()",
       "value": "translate( <length-percentage> , <length-percentage>? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translate",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translateX()",
       "value": "translateX( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translateY()",
       "value": "translateY( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatey",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scale()",
       "value": "scale( <number> , <number>? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scale",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scaleX()",
       "value": "scaleX( <number> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scalex",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scaleY()",
       "value": "scaleY( <number> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scaley",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "rotate()",
       "value": "rotate( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skew()",
       "value": "skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skew",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skewX()",
       "value": "skewX( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skewx",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skewY()",
       "value": "skewY( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skewy",
@@ -4695,24 +4745,28 @@
       ]
     },
     {
+      "for": "<request-url-modifier>",
       "name": "crossorigin()",
       "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin",
       "type": "function"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "integrity()",
       "prose": "<integrity-modifier> = integrity(<string>)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity",
       "type": "function"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "referrerpolicy()",
       "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy",
       "type": "function"
     },
     {
+      "for": "attr()",
       "name": "type()",
       "value": "type( <syntax> )",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
@@ -4921,60 +4975,70 @@
       "value": "filter( [ <image> | <string> ], <filter-value-list> )"
     },
     {
+      "for": "filter",
       "name": "blur()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-blur",
       "type": "function",
       "value": "blur( <length>? )"
     },
     {
+      "for": "filter",
       "name": "brightness()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-brightness",
       "type": "function",
       "value": "brightness( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "contrast()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-contrast",
       "type": "function",
       "value": "contrast( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "drop-shadow()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-drop-shadow",
       "type": "function",
       "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
     },
     {
+      "for": "filter",
       "name": "grayscale()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-grayscale",
       "type": "function",
       "value": "grayscale( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "hue-rotate()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-hue-rotate",
       "type": "function",
       "value": "hue-rotate( [ <angle> | <zero> ]? )"
     },
     {
+      "for": "filter",
       "name": "invert()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-invert",
       "type": "function",
       "value": "invert( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "opacity()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-opacity",
       "type": "function",
       "value": "opacity( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "saturate()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-saturate",
       "type": "function",
       "value": "saturate( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "sepia()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-sepia",
       "type": "function",
@@ -30635,6 +30699,7 @@
       "value": "color-layers([ <blend-mode>, ]? <color># )"
     },
     {
+      "for": "contrast-color()",
       "name": "wcag2()",
       "prose": "The wcag2 keyword and wcag2() functional notations indicate use of the [WCAG21] luminance contrast algorithm. Their syntax is:",
       "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2",
@@ -31166,36 +31231,42 @@
       "value": "control-value( <type>? )"
     },
     {
+      "for": "<repeat-line-color>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-color>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<repeat-line-style>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-style>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<repeat-line-width>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
       "type": "function"
     },
     {
+      "for": "<auto-repeat-line-width>",
       "name": "repeat()",
       "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
@@ -31208,30 +31279,35 @@
       "value": "running( <custom-ident> )"
     },
     {
+      "for": "grid-template-columns",
       "name": "minmax()",
       "value": "minmax(min, max)",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax",
       "type": "function"
     },
     {
+      "for": "grid-template-columns",
       "name": "fit-content()",
       "value": "fit-content( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "type": "function"
     },
     {
+      "for": "grid-template-rows",
       "name": "minmax()",
       "value": "minmax(min, max)",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax",
       "type": "function"
     },
     {
+      "for": "grid-template-rows",
       "name": "fit-content()",
       "value": "fit-content( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
       "type": "function"
     },
     {
+      "for": "<track-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -31254,6 +31330,7 @@
       ]
     },
     {
+      "for": "<auto-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -31276,6 +31353,7 @@
       ]
     },
     {
+      "for": "<fixed-repeat>",
       "name": "repeat()",
       "prose": "The repeat() notation represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form.",
       "href": "https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat",
@@ -31426,6 +31504,7 @@
       "type": "function"
     },
     {
+      "for": "image-set()",
       "name": "type()",
       "value": "type( <string> )",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set-type",
@@ -31538,30 +31617,35 @@
       ]
     },
     {
+      "for": "clip",
       "name": "rect()",
       "value": "rect( <top>, <right>, <bottom>, <left> )",
       "href": "https://drafts.fxtf.org/css-masking-1/#funcdef-clip-rect",
       "type": "function"
     },
     {
+      "for": "@function",
       "name": "type()",
       "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
       "type": "function",
       "value": "type( <syntax> )"
     },
     {
+      "for": "text-overflow",
       "name": "fade()",
       "value": "fade( [ <length-percentage> ] )",
       "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
       "type": "function"
     },
     {
+      "for": "float",
       "name": "snap-block()",
       "value": "snap-block( <length> , [ start | end | near ]? )",
       "href": "https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block",
       "type": "function"
     },
     {
+      "for": "float",
       "name": "snap-inline()",
       "value": "snap-inline( <length> , [ left | right | near ]? )",
       "href": "https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-inline",
@@ -31750,6 +31834,7 @@
       ]
     },
     {
+      "for": "<basic-shape>",
       "name": "inset()",
       "prose": "Defines an inset rectangle via insets from each edge of the reference box. If less than four <length-percentage> values are provided, the omitted values default in the same way as the margin shorthand: an omitted second or third value defaults to the first, and an omitted fourth value defaults to the second. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the corresponding edges of the reference box. A pair of insets in either dimension that add up to more than the used dimension (such as left and right insets of 75% apiece) use the CSS Backgrounds 3 § 4.5 Overlapping Curves rules to proportionally reduce the inset effect to 100%. For example, specifying inset(75% 0 50% 0) has the top+bottom edges summing to 125% of the reference box’s height. They’re proportionally reduced to sum to 100%, identical to specifying inset(60% 0 40% 0). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-inset",
@@ -31757,6 +31842,7 @@
       "value": "inset( <length-percentage>{1,4} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "xywh()",
       "prose": "Defines a rectangle via offsets from the top and left edge of the reference box, and a specified width and height. The four <length-percentage>s define, respectively, the inset from the left edge of the reference box, the inset from the top edge of the reference box, the width of the rectangle, and the height of the rectangle. The optional <'border-radius'> argument(s) define rounded corners for the inset rectangle using the border-radius shorthand syntax.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-xywh",
@@ -31764,6 +31850,7 @@
       "value": "xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "rect()",
       "prose": "Defines a rectangle via insets from the top and left edges of the reference box. The four <length-percentage>s define the position of the top, right, bottom, and left edges of a rectangle, respectively, as insets from the top edge of the reference box (for the first and third values) or the left edge of the reference box (for the second and fourth values). An auto value makes the edge of the box coincide with the corresponding edge of the reference box: it’s equivalent to 0% as the first (top) or fourth (left) value, and equivalent to 100% as the second (right) or third (bottom) value. The second (right) and third (bottom) values are floored by the fourth (left) and second (top) values, respectively. For example, specifying rect(10px 0 0 20px) would place the bottom edge higher than the top edge, and the right edge further left than the left edge, so both are corrected to not cross over the other edge, identical to specifying rect(10px 20px 10px 20px). The optional <'border-radius'> argument(s) define rounded corners for the rectangle using the border-radius shorthand syntax.)",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-rect",
@@ -31771,6 +31858,7 @@
       "value": "rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "circle()",
       "prose": "The <radial-size> argument defines the circle’s radius. Rather than referring to the gradient box, values are resolved against the reference box. Two <length-percentage> values are invalid. The <position> argument defines the center of the circle. Unless otherwise specified, this defaults to center if omitted.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-circle",
@@ -31778,6 +31866,7 @@
       "value": "circle( <radial-size>? [ at <position> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "ellipse()",
       "prose": "The <radial-size> argument defines the horizontal and vertical radiuses of the ellipse. Rather than referring to the gradient box, values are resolved against the reference box. The <position> argument defines the center of the ellipse. Unless otherwise specified, this defaults to center if omitted.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-ellipse",
@@ -31785,6 +31874,7 @@
       "value": "ellipse( <radial-size>? [ at <position> ]? )"
     },
     {
+      "for": "<basic-shape>",
       "name": "polygon()",
       "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior. Defaults to nonzero if omitted. An optional <length> after a round keyword defines rounding for each vertex of the polygon. The length is the radius of a circle whose center lies on the bisector of the smaller angle of the vertex, and that is tangential to both sides of the vertex. Rounding polygon vertices that are both convex and concave. To avoid rounding more than half of any line segment, the rounding of each vertex must be clamped separately such that the radius is never more than the smaller of tan(angle/2) segment / 2 evaluated against both vertex line segments. This diagram shows the intent of the clamping formula. Each <length-percentage> pair specifies a vertex of the polygon, as a horizontal and vertical offset from the left and top edges of the reference box. The UA must close a polygon by connecting the last vertex with the first vertex of the list.",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon",
@@ -31792,6 +31882,7 @@
       "value": "polygon( <'fill-rule'>? [ round <length> ]? , [<length-percentage> <length-percentage>]# )"
     },
     {
+      "for": "<basic-shape>",
       "name": "path()",
       "prose": "The <'fill-rule'> specifies the filling rule used to determine the interior. Defaults to nonzero if omitted, unless the function is being used in a context such as SVG shapes where the fill-rule property is relevant. In that case an omitted value will use the computed value of the fill-rule property. The <string> represents an SVG Path data string. A path data string that does not conform to the to the grammar and parsing rules of SVG 1.1, or that does conform but defines an empty path, is invalid and causes the entire path() to be invalid. The initial position is defined by the first “move to” argument in the path string. For the initial direction follow SVG 1.1. The UA must close a path with an implicit closepath command (\"z\" or \"Z\") if it is not present in the string for properties that require a closed loop (such as shape-outside and clip-path).",
       "href": "https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-path",
@@ -31799,72 +31890,84 @@
       "value": "path( <'fill-rule'>? , <string> )"
     },
     {
+      "for": "width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "min-width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "min-width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "min-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "min-height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "max-width",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "max-width",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function"
     },
     {
+      "for": "max-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
       "type": "function"
     },
     {
+      "for": "max-height",
       "name": "calc-size()",
       "prose": "See <calc-size()>.",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
@@ -31958,66 +32061,77 @@
       ]
     },
     {
+      "for": "transform",
       "name": "matrix()",
       "value": "matrix( <number>#{6} )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-matrix",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translate()",
       "value": "translate( <length-percentage> , <length-percentage>? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translate",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translateX()",
       "value": "translateX( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "translateY()",
       "value": "translateY( <length-percentage> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatey",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scale()",
       "value": "scale( <number> , <number>? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scale",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scaleX()",
       "value": "scaleX( <number> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scalex",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "scaleY()",
       "value": "scaleY( <number> )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scaley",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "rotate()",
       "value": "rotate( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skew()",
       "value": "skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skew",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skewX()",
       "value": "skewX( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skewx",
       "type": "function"
     },
     {
+      "for": "transform",
       "name": "skewY()",
       "value": "skewY( [ <angle> | <zero> ] )",
       "href": "https://drafts.csswg.org/css-transforms-1/#funcdef-transform-skewy",
@@ -32163,24 +32277,28 @@
       ]
     },
     {
+      "for": "<request-url-modifier>",
       "name": "crossorigin()",
       "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin",
       "type": "function"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "integrity()",
       "prose": "<integrity-modifier> = integrity(<string>)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity",
       "type": "function"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "referrerpolicy()",
       "prose": "<referrerpolicy-modifier> = referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy",
       "type": "function"
     },
     {
+      "for": "attr()",
       "name": "type()",
       "value": "type( <syntax> )",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
@@ -32389,60 +32507,70 @@
       "value": "filter( [ <image> | <string> ], <filter-value-list> )"
     },
     {
+      "for": "filter",
       "name": "blur()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-blur",
       "type": "function",
       "value": "blur( <length>? )"
     },
     {
+      "for": "filter",
       "name": "brightness()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-brightness",
       "type": "function",
       "value": "brightness( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "contrast()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-contrast",
       "type": "function",
       "value": "contrast( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "drop-shadow()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-drop-shadow",
       "type": "function",
       "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
     },
     {
+      "for": "filter",
       "name": "grayscale()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-grayscale",
       "type": "function",
       "value": "grayscale( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "hue-rotate()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-hue-rotate",
       "type": "function",
       "value": "hue-rotate( [ <angle> | <zero> ]? )"
     },
     {
+      "for": "filter",
       "name": "invert()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-invert",
       "type": "function",
       "value": "invert( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "opacity()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-opacity",
       "type": "function",
       "value": "opacity( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "saturate()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-saturate",
       "type": "function",
       "value": "saturate( [ <number> | <percentage> ]? )"
     },
     {
+      "for": "filter",
       "name": "sepia()",
       "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-sepia",
       "type": "function",
@@ -33151,6 +33279,7 @@
       "value": "most-width | most-height | most-block-size | most-inline-size"
     },
     {
+      "for": "position-try-fallbacks",
       "name": "<try-tactic>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
       "type": "type",
@@ -35386,6 +35515,7 @@
       "type": "type"
     },
     {
+      "for": "opacity",
       "name": "<opacity-value>",
       "prose": "The opacity to be applied to the element. The resulting opacity is applied to the entire element, rather than a particular color. Opacity values outside the range [0,1] are not invalid, and are preserved in specified values, but are clamped to the range [0, 1] in computed values.",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value",
@@ -35393,6 +35523,7 @@
       "value": "<number> | <percentage>"
     },
     {
+      "for": "<color>",
       "name": "<alpha-value>",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
       "type": "type",
@@ -35567,12 +35698,14 @@
       "value": "<target-counter()> | <target-counters()> | <target-text()>"
     },
     {
+      "for": "content",
       "name": "<content-replacement>",
       "value": "<image>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
       "type": "type"
     },
     {
+      "for": "content",
       "name": "<content-list>",
       "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
@@ -36670,12 +36803,14 @@
       "value": "<string>"
     },
     {
+      "for": "font-palette",
       "name": "<palette-identifier>",
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
       "type": "type"
     },
     {
+      "for": "font-palette",
       "name": "<palette-mix()>",
       "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
@@ -36688,6 +36823,7 @@
       "value": "'<' [ number | string ] '>'"
     },
     {
+      "for": "::picker()",
       "name": "<form-control-identifier>",
       "href": "https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier",
       "type": "type",
@@ -37051,6 +37187,7 @@
       ]
     },
     {
+      "for": "grid-row-start",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -37087,6 +37224,7 @@
       ]
     },
     {
+      "for": "grid-column-start",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -37123,6 +37261,7 @@
       ]
     },
     {
+      "for": "grid-row-end",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -37159,6 +37298,7 @@
       ]
     },
     {
+      "for": "grid-column-end",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -37573,24 +37713,28 @@
       "value": "<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
     },
     {
+      "for": "clip",
       "name": "<top>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<right>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<bottom>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<left>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
@@ -37724,12 +37868,14 @@
       "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     },
     {
+      "for": "shape()",
       "name": "<coordinate-pair>",
       "value": "<length-percentage>{2}",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<command-end-point>",
       "value": "[ to <position> | by <coordinate-pair> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
@@ -37752,60 +37898,70 @@
       ]
     },
     {
+      "for": "shape()",
       "name": "<move-command>",
       "value": "move <command-end-point>",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<line-command>",
       "value": "line <command-end-point>",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<horizontal-line-command>",
       "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<vertical-line-command>",
       "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<curve-command>",
       "value": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<smooth-command>",
       "value": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<control-point>",
       "value": "[ <position> | <relative-control-point> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<relative-control-point>",
       "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<arc-command>",
       "value": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<arc-sweep>",
       "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
@@ -37813,6 +37969,7 @@
       "value": "cw | ccw"
     },
     {
+      "for": "shape()",
       "name": "<arc-size>",
       "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
@@ -37925,24 +38082,28 @@
       "type": "type"
     },
     {
+      "for": "voice-volume",
       "name": "<decibel>",
       "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
       "type": "type"
     },
     {
+      "for": "voice-family",
       "name": "<age>",
       "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
       "type": "type"
     },
     {
+      "for": "voice-family",
       "name": "<gender>",
       "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
       "type": "type"
     },
     {
+      "for": "voice-pitch",
       "name": "<semitones>",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones",
       "type": "type"
@@ -38265,18 +38426,21 @@
       "type": "type"
     },
     {
+      "for": "cursor",
       "name": "<url-set>",
       "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
       "type": "type"
     },
     {
+      "for": "appearance",
       "name": "<compat-auto>",
       "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
       "type": "type"
     },
     {
+      "for": "appearance",
       "name": "<compat-special>",
       "value": "textfield | menulist-button",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
@@ -38788,18 +38952,21 @@
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<crossorigin-modifier>",
       "value": "crossorigin(anonymous | use-credentials)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<integrity-modifier>",
       "value": "integrity(<string>)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier",
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<referrerpolicy-modifier>",
       "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
@@ -39708,6 +39875,7 @@
       "type": "type"
     },
     {
+      "for": "filter",
       "name": "<url>",
       "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
       "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
@@ -40846,6 +41014,7 @@
       "value": "most-width | most-height | most-block-size | most-inline-size"
     },
     {
+      "for": "position-try-fallbacks",
       "name": "<try-tactic>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
       "type": "type",
@@ -43081,6 +43250,7 @@
       "type": "type"
     },
     {
+      "for": "opacity",
       "name": "<opacity-value>",
       "prose": "The opacity to be applied to the element. The resulting opacity is applied to the entire element, rather than a particular color. Opacity values outside the range [0,1] are not invalid, and are preserved in specified values, but are clamped to the range [0, 1] in computed values.",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-opacity-opacity-value",
@@ -43088,6 +43258,7 @@
       "value": "<number> | <percentage>"
     },
     {
+      "for": "<color>",
       "name": "<alpha-value>",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
       "type": "type",
@@ -43262,12 +43433,14 @@
       "value": "<target-counter()> | <target-counters()> | <target-text()>"
     },
     {
+      "for": "content",
       "name": "<content-replacement>",
       "value": "<image>",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
       "type": "type"
     },
     {
+      "for": "content",
       "name": "<content-list>",
       "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
       "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
@@ -44365,12 +44538,14 @@
       "value": "<string>"
     },
     {
+      "for": "font-palette",
       "name": "<palette-identifier>",
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
       "type": "type"
     },
     {
+      "for": "font-palette",
       "name": "<palette-mix()>",
       "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.1 Percentage Normalization.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
@@ -44383,6 +44558,7 @@
       "value": "'<' [ number | string ] '>'"
     },
     {
+      "for": "::picker()",
       "name": "<form-control-identifier>",
       "href": "https://drafts.csswg.org/css-forms-1/#typedef-picker-form-control-identifier",
       "type": "type",
@@ -44746,6 +44922,7 @@
       ]
     },
     {
+      "for": "grid-row-start",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -44782,6 +44959,7 @@
       ]
     },
     {
+      "for": "grid-column-start",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -44818,6 +44996,7 @@
       ]
     },
     {
+      "for": "grid-row-end",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -44854,6 +45033,7 @@
       ]
     },
     {
+      "for": "grid-column-end",
       "name": "<grid-line>",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
       "type": "type",
@@ -45268,24 +45448,28 @@
       "value": "<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
     },
     {
+      "for": "clip",
       "name": "<top>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<right>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<bottom>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
       "type": "type"
     },
     {
+      "for": "clip",
       "name": "<left>",
       "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
       "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
@@ -45419,12 +45603,14 @@
       "value": "<move-command> | <line-command> | close | <horizontal-line-command> | <vertical-line-command> | <curve-command> | <smooth-command> | <arc-command>"
     },
     {
+      "for": "shape()",
       "name": "<coordinate-pair>",
       "value": "<length-percentage>{2}",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<command-end-point>",
       "value": "[ to <position> | by <coordinate-pair> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point",
@@ -45447,60 +45633,70 @@
       ]
     },
     {
+      "for": "shape()",
       "name": "<move-command>",
       "value": "move <command-end-point>",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<line-command>",
       "value": "line <command-end-point>",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<horizontal-line-command>",
       "value": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<vertical-line-command>",
       "value": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<curve-command>",
       "value": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<smooth-command>",
       "value": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<control-point>",
       "value": "[ <position> | <relative-control-point> ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<relative-control-point>",
       "value": "<coordinate-pair> [ from [ start | end | origin ] ]?",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<arc-command>",
       "value": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command",
       "type": "type"
     },
     {
+      "for": "shape()",
       "name": "<arc-sweep>",
       "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep",
@@ -45508,6 +45704,7 @@
       "value": "cw | ccw"
     },
     {
+      "for": "shape()",
       "name": "<arc-size>",
       "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
       "href": "https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size",
@@ -45620,24 +45817,28 @@
       "type": "type"
     },
     {
+      "for": "voice-volume",
       "name": "<decibel>",
       "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
       "type": "type"
     },
     {
+      "for": "voice-family",
       "name": "<age>",
       "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
       "type": "type"
     },
     {
+      "for": "voice-family",
       "name": "<gender>",
       "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
       "type": "type"
     },
     {
+      "for": "voice-pitch",
       "name": "<semitones>",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones",
       "type": "type"
@@ -45960,18 +46161,21 @@
       "type": "type"
     },
     {
+      "for": "cursor",
       "name": "<url-set>",
       "prose": "<url-set> is a limited version of image-set(), where the <image> sub-production is restricted to <url> only.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set",
       "type": "type"
     },
     {
+      "for": "appearance",
       "name": "<compat-auto>",
       "value": "searchfield | textarea | checkbox | radio | menulist | listbox | meter | progress-bar | button",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto",
       "type": "type"
     },
     {
+      "for": "appearance",
       "name": "<compat-special>",
       "value": "textfield | menulist-button",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special",
@@ -46483,18 +46687,21 @@
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<crossorigin-modifier>",
       "value": "crossorigin(anonymous | use-credentials)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<integrity-modifier>",
       "value": "integrity(<string>)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier",
       "type": "type"
     },
     {
+      "for": "<request-url-modifier>",
       "name": "<referrerpolicy-modifier>",
       "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
@@ -47403,6 +47610,7 @@
       "type": "type"
     },
     {
+      "for": "filter",
       "name": "<url>",
       "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
       "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",

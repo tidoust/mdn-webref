@@ -40,38 +40,39 @@ const parsedFiles = await webref.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
   // Same categorization in Webref and MDN data for at-rules, properties,
   // and selectors.
-  categorized.atRules.push(...(data.atrules ?? []));
-  categorized.properties.push(...(data.properties ?? []));
-  categorized.selectors.push(...(data.selectors ?? []));
+  categorized.atRules.push(...data.atrules);
+  categorized.properties.push(...data.properties);
+  categorized.selectors.push(...data.selectors);
 
-  // Then Webref data has a mix bax of values, some of them being root
-  // values, while others are scoped to some other construct, whereas MDN data
-  // separates things into functions, syntaxes, types, and units (and does not
-  // seem to have the notion of scoping.
-  // Definitions in CSS specs do (badly from time to time, but so be it)
-  // distinguish between functions and types. Let's use that information
-  let values = data.values ?? [];
-  categorized.functions.push(...values.filter(v => v.type === 'function'));
-  categorized.types.push(...values.filter(v => v.type === 'type'));
+  // Then MDN data categorizes CSS features into functions, syntaxes, types and
+  // units, without making a distinction between features that are scoped to
+  // another feature and those that are more general.
+  // Webref data stores "functions" and "types" definitions under a `values`
+  // key. The root `values` key contains unscoped definitions. Individual
+  // features may also have a `values` key with scoped definitions.
+  categorized.functions.push(...data.values.filter(v => v.type === 'function'));
+  categorized.types.push(...data.values.filter(v => v.type === 'type'));
 
-  // ... and add scoped functions since MDN data treat them similarly to
-  // non-scoped ones.
   for (const cat of ['atrules', 'properties', 'selectors', 'values']) {
-    for (const feature of data[cat] ?? []) {
-      categorized.functions.push(...(feature.values ?? [])
-        .filter(v => v.type === 'function'));
-      categorized.types.push(...(feature.values ?? [])
-        .filter(v => v.type === 'type'));
+    for (const feature of data[cat]) {
+      if (feature.values) {
+        const values = feature.values
+          .map(v => Object.assign({ for: feature.name }, v));
+        categorized.functions.push(
+          ...values.filter(v => v.type === 'function'));
+        categorized.types.push(
+          ...values.filter(v => v.type === 'type'));
+      }
     }
   }
 }
 
 // I'm not fully clear what syntaxes are supposed to be.
-// They seem to be the union of functions and types.
+// They seem to be the union of all functions and types.
 categorized.syntaxes.push(...categorized.functions);
 categorized.syntaxes.push(...categorized.types);
 
-// Units are not defined as such in CSS, but they are the possible values of a
+// Units are not defined as such in CSS. They are the possible values of a
 // restricted number of types in practice.
 for (const type of categorized.types) {
   if (unitTypes.includes(type.name)) {
@@ -101,7 +102,8 @@ for (const category of Object.keys(categorized)) {
     if (!mdn.css[category][featureName]) {
       missing.mdn[category].push({
         name: feature.name,
-        href: feature.href
+        href: feature.href,
+        for: feature.for
       });
     }
   }
@@ -165,11 +167,14 @@ function reportFeatures(features) {
 }
 
 function reportFeature(feature) {
-  const decoratedName = '`' + feature.name + '`';
+  let res = '`' + feature.name + '`';
   if (feature.href) {
-    return `- [${decoratedName}](${feature.href})`;
+    res = `[${res}](${feature.href})`;
   }
-  return '- ' + decoratedName;
+  if (feature.for) {
+    res += ' for `' + feature.for + '`';
+  }
+  return `- ${res}`;
 }
 
 function getCatName(category, nb) {
