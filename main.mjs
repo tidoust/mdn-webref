@@ -124,6 +124,65 @@ for (const category of Object.keys(categorized)) {
 
 
 /************************************************************
+ * Identify syntax mismatches for entries that are in common
+ *
+ * TODO: Keep only definitions in current spec for series
+ * TODO: For at-rules, merge similar entries, there should be
+ * one base one, and others that define additional descriptors
+ * TODO: For at-rules, compute syntax based on the list of
+ * descriptors
+ ***********************************************************/
+const categoriesWithSyntax = Object.keys(categorized)
+  .filter(category => category !== 'units');
+
+const nbInCommon = {};
+const mismatches = {};
+for (const category of categoriesWithSyntax) {
+  mismatches[category] = [];
+  nbInCommon[category] = 0;
+}
+
+for (const category of categoriesWithSyntax) {
+  for (const feature of categorized[category]) {
+    const featureName = feature.name.match(/^<(.+?)>$/) ?
+      feature.name.replace(/^<(.+?)>$/, '$1') :
+      feature.name;
+    const mdnFeature = mdn.css[category][featureName];
+    if (!mdnFeature) {
+      continue;
+    }
+    nbInCommon[category] += 1;
+
+    // TODO: in Webref, the syntax of the selector should probably be set to
+    // the selector's name if we cannot find a proper syntax
+    let webrefSyntax = feature.value;
+    if (!webrefSyntax && category === 'selectors') {
+      webrefSyntax = feature.name;
+    }
+
+    // Note: the syntax of types is stored under syntaxes in MDN data
+    let mdnSyntax = mdnFeature.syntax;
+    if (category === 'types') {
+      const syntaxEntry = mdn.css.syntaxes[featureName];
+      if (syntaxEntry) {
+        mdnSyntax = syntaxEntry.syntax;
+      }
+    }
+
+    if (!syntaxesMatch(webrefSyntax, mdnSyntax)) {
+      mismatches[category].push({
+        name: feature.name,
+        href: feature.href,
+        for: feature.for,
+        webref: feature.value,
+        mdn: mdnSyntax
+      });
+    }
+  }
+}
+
+
+/************************************************************
  * Save categorized Webref data
  ***********************************************************/
 await writeFile(
@@ -136,9 +195,10 @@ await writeFile(
 /************************************************************
  * Write gap report
  ***********************************************************/
+const generated = `Generated on **${new Date().toISOString()}** using **v${mdnPackage.version}** of MDN data and **v${webrefPackage.version}** of \`@webref/css\`.`;
 let report = ['# Gap analysis between MDN data and Webref'];
 report.push('');
-report.push(`Generated on **${new Date().toISOString()}** using **v${mdnPackage.version}** of MDN data and **v${webrefPackage.version}** of \`@webref/css\`.`);
+report.push(generated);
 report.push('');
 for (const source of ['webref', 'mdn']) {
   report.push(`### Missing from ${source}`);
@@ -157,6 +217,30 @@ ${reportFeatures(missing[source][category])}
 }
 
 await writeFile('report.md', report.join('\n'), 'utf8');
+
+
+/************************************************************
+ * Write syntax mismatches report
+ ***********************************************************/
+report = ['# Syntax mismatches between MDN data and Webref'];
+report.push('');
+report.push(generated);
+report.push('');
+for (const category of Object.keys(mismatches)) {
+  const nb = mismatches[category].length;
+  if (nb > 0) {
+    report.push(`
+<details>
+<summary>${nb} ${getCatName(category, 2)} mismatches (out of ${nbInCommon[category]} ${getCatName(category, 2)} in common)</summary>
+
+${reportMismatches(mismatches[category])}
+</details>
+`);
+  }
+}
+
+await writeFile('report-syntax.md', report.join('\n'), 'utf8');
+
 
 
 /************************************************************
@@ -195,4 +279,41 @@ function getCatName(category, nb) {
     return `syntax`;
   }
   return category.substring(0, category.length-1);
+}
+
+function reportMismatches(features) {
+  return features
+    .sort((f1, f2) => f1.name.localeCompare(f2.name))
+    .map(reportMismatch)
+    .join('\n');
+}
+
+function reportMismatch(feature) {
+  let res = reportFeature(feature);
+  res += '\n```\n';
+  for (const source of ['webref', 'mdn']) {
+    res += source + ': ';
+    if (source === 'mdn') {
+      res += '   ';
+    }
+    res += feature[source] ?? 'unknown syntax';
+    res += '\n';
+  }
+  res += '```';
+  return res;
+}
+
+function normalizeSyntax(syntax) {
+  return (syntax ?? '')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/\[ /g, '[')
+    .replace(/ \]/g, ']')
+    .replace(/\( /g, '(')
+    .replace(/ \)/g, ')')
+    .replace(/^\[\s*(.*?)\s*\]$/, '$1');
+}
+
+function syntaxesMatch(syntax1, syntax2) {
+  return normalizeSyntax(syntax1) === normalizeSyntax(syntax2);
 }
