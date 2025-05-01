@@ -1,10 +1,10 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-01T15:59:33.954Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-01T17:16:16.036Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>18 at-rules mismatches (out of 24 at-rules in common)</summary>
+<summary>12 at-rules mismatches (out of 18 at-rules in common)</summary>
 
 - [`@charset`](https://drafts.csswg.org/css-syntax-3/#at-ruledef-charset)
 ```
@@ -61,14 +61,6 @@ mdn:    @import [ <string> | <url> ]
         [ supports( [ <supports-condition> | <declaration> ] ) ]?
         <media-query-list>? ;
 ```
-- [`@import`](https://drafts.csswg.org/css2/#at-ruledef-import)
-```
-webref: unknown syntax
-mdn:    @import [ <string> | <url> ]
-        [ layer | layer(<layer-name>) ]?
-        [ supports( [ <supports-condition> | <declaration> ] ) ]?
-        <media-query-list>? ;
-```
 - [`@layer`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer)
 ```
 webref: @layer <layer-name>? { <rule-list> } | @layer <layer-name>#;
@@ -76,37 +68,9 @@ mdn:    @layer [ <layer-name># | <layer-name>?  {
   <stylesheet>
 } ]
 ```
-- `@media`
-```
-webref: unknown syntax
-mdn:    @media <media-query-list> {
-  <group-rule-body>
-}
-```
 - [`@media`](https://drafts.csswg.org/css-conditional-3/#at-ruledef-media)
 ```
 webref: @media <media-query-list> { <rule-list> }
-mdn:    @media <media-query-list> {
-  <group-rule-body>
-}
-```
-- `@media`
-```
-webref: unknown syntax
-mdn:    @media <media-query-list> {
-  <group-rule-body>
-}
-```
-- [`@media`](https://drafts.csswg.org/css2/#at-ruledef-media)
-```
-webref: unknown syntax
-mdn:    @media <media-query-list> {
-  <group-rule-body>
-}
-```
-- `@media`
-```
-webref: unknown syntax
 mdn:    @media <media-query-list> {
   <group-rule-body>
 }
@@ -119,13 +83,6 @@ mdn:    @namespace <namespace-prefix>? [ <string> | <url> ];
 - [`@page`](https://drafts.csswg.org/css-page-3/#at-ruledef-page)
 ```
 webref: @page <page-selector-list>? { <declaration-rule-list> }
-mdn:    @page <page-selector-list> {
-  <page-body>
-}
-```
-- [`@page`](https://drafts.csswg.org/css2/#at-ruledef-page)
-```
-webref: unknown syntax
 mdn:    @page <page-selector-list> {
   <page-body>
 }

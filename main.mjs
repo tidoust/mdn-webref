@@ -106,6 +106,7 @@ categorized.properties = Object.entries(propertyDfns)
     // first definition that does not look like an extension.
     let baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
       dfns.find(dfn => dfn.value) ||
+      dfns.find(dfn => !dfn.newValues && dfn.spec.currentSpec) ||
       dfns.find(dfn => !dfn.newValues);
     if (!baseDfn.value) {
       return baseDfn;
@@ -141,11 +142,14 @@ for (const category of categories) {
       if (dfns.length === 1) {
         return dfns[0];
       }
-      const currentDfns = dfns.filter(dfn => dfn.value && dfn.spec.currentSpec);
+      let currentDfns = dfns.filter(dfn => dfn.value && dfn.spec.currentSpec);
       if (currentDfns.length === 0) {
-        return dfns[0];
+        currentDfns = dfns.filter(dfn => dfn.spec.currentSpec);
       }
-      return currentDfns
+      if (currentDfns.length === 0) {
+        currentDfns = [dfns[0]];
+      }
+      return currentDfns;
     })
     .flat();
 }
