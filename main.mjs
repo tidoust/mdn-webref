@@ -1,4 +1,4 @@
-import webref from '@webref/css';
+import cssInWebref from '@webref/css';
 import mdn from 'mdn-data';
 import { writeFile } from 'node:fs/promises';
 import webrefPackage from '@webref/css/package.json' with { type: 'json' };
@@ -30,16 +30,21 @@ const categorized = {
   types: [],
   units: []
 };
+const categories = Object.keys(categorized);
+const categoriesWithSyntax = categories.filter(c => c !== 'units');
+const webrefCategories = ['atrules', 'properties', 'selectors', 'values'];
 
 
 /************************************************************
  * Categorize Webref data following the same structure as
  * MDN data
  ***********************************************************/
-const parsedFiles = await webref.listAll();
+const parsedFiles = await cssInWebref.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
   // Same categorization in Webref and MDN data for at-rules, properties,
   // and selectors.
+  decorateDataWithShortname(data, shortname);
+
   categorized.atRules.push(...data.atrules);
   categorized.properties.push(...data.properties);
   categorized.selectors.push(...data.selectors);
@@ -53,8 +58,8 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
   categorized.functions.push(...data.values.filter(v => v.type === 'function'));
   categorized.types.push(...data.values.filter(v => v.type === 'type'));
 
-  for (const cat of ['atrules', 'properties', 'selectors', 'values']) {
-    for (const feature of data[cat]) {
+  for (const category of webrefCategories) {
+    for (const feature of data[category]) {
       if (feature.values) {
         const values = feature.values
           .map(v => Object.assign({ for: feature.name }, v));
@@ -80,6 +85,71 @@ for (const type of categorized.types) {
   }
 }
 
+// Some specs extend properties defined in another spec
+// Let's merge syntax values in Webref so that we may compare with MDN
+const propertyDfns = {};
+for (const property of categorized.properties) {
+  if (!propertyDfns[property.name]) {
+    propertyDfns[property.name] = [];
+  }
+  propertyDfns[property.name].push(property);
+}
+
+categorized.properties = Object.entries(propertyDfns)
+  .map(([name, dfns]) => {
+    if (dfns.length === 1) {
+      return dfns[0];
+    }
+    // Best base definition is one that is defined with some syntax value in
+    // the "current" spec in a series. If there's none, we'll just take the
+    // first one that defines a value. If not, we'll surrender and use the
+    // first definition that does not look like an extension.
+    let baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
+      dfns.find(dfn => dfn.value) ||
+      dfns.find(dfn => !dfn.newValues);
+    if (!baseDfn.value) {
+      return baseDfn;
+    }
+    for (const dfn of dfns) {
+      if (dfn.newValues) {
+        baseDfn.value += ' | ' + dfn.newValues;
+      }
+    }
+    return baseDfn;
+  });
+
+// For all other types of features, if a feature appears more than once,
+// only keep definitions in "current" specs
+for (const category of categories) {
+  if (category === 'properties') {
+    continue;
+  }
+  const featureDfns = {};
+  for (const feature of categorized[category]) {
+    let featureName = feature.name;
+    if (feature.for) {
+      featureName += ' for ' + feature.for;
+    }
+    if (!featureDfns[featureName]) {
+      featureDfns[featureName] = [];
+    }
+    featureDfns[featureName].push(feature);
+  }
+
+  categorized[category] = Object.entries(featureDfns)
+    .map(([name, dfns]) => {
+      if (dfns.length === 1) {
+        return dfns[0];
+      }
+      const currentDfns = dfns.filter(dfn => dfn.value && dfn.spec.currentSpec);
+      if (currentDfns.length === 0) {
+        return dfns[0];
+      }
+      return currentDfns
+    })
+    .flat();
+}
+
 
 /************************************************************
  * Identify gaps
@@ -89,12 +159,12 @@ const missing = {
   mdn: {}
 };
 
-for (const category of Object.keys(categorized)) {
+for (const category of categories) {
   missing.webref[category] = [];
   missing.mdn[category] = [];
 }
 
-for (const category of Object.keys(categorized)) {
+for (const category of categories) {
   for (const feature of categorized[category]) {
     const featureName = feature.name.match(/^<(.+?)>$/) ?
       feature.name.replace(/^<(.+?)>$/, '$1') :
@@ -109,7 +179,7 @@ for (const category of Object.keys(categorized)) {
   }
 }
 
-for (const category of Object.keys(categorized)) {
+for (const category of categories) {
   for (const featureName of Object.keys(mdn.css[category])) {
     if (!categorized[category].find(feature =>
         feature.name === featureName ||
@@ -126,15 +196,11 @@ for (const category of Object.keys(categorized)) {
 /************************************************************
  * Identify syntax mismatches for entries that are in common
  *
- * TODO: Keep only definitions in current spec for series
  * TODO: For at-rules, merge similar entries, there should be
  * one base one, and others that define additional descriptors
  * TODO: For at-rules, compute syntax based on the list of
  * descriptors
  ***********************************************************/
-const categoriesWithSyntax = Object.keys(categorized)
-  .filter(category => category !== 'units');
-
 const nbInCommon = {};
 const mismatches = {};
 for (const category of categoriesWithSyntax) {
@@ -153,8 +219,8 @@ for (const category of categoriesWithSyntax) {
     }
     nbInCommon[category] += 1;
 
-    // TODO: in Webref, the syntax of the selector should probably be set to
-    // the selector's name if we cannot find a proper syntax
+    // TODO: in Webref, the syntax of the selector should be set to
+    // the selector's name in the absence of any other syntax
     let webrefSyntax = feature.value;
     if (!webrefSyntax && category === 'selectors') {
       webrefSyntax = feature.name;
@@ -169,13 +235,14 @@ for (const category of categoriesWithSyntax) {
       }
     }
 
-    if (!syntaxesMatch(webrefSyntax, mdnSyntax)) {
+    if (normalizeSyntax(webrefSyntax) !== normalizeSyntax(mdnSyntax)) {
       mismatches[category].push({
         name: feature.name,
         href: feature.href,
         for: feature.for,
         webref: feature.value,
-        mdn: mdnSyntax
+        mdn: mdnSyntax,
+        spec: feature.spec
       });
     }
   }
@@ -202,7 +269,7 @@ report.push(generated);
 report.push('');
 for (const source of ['webref', 'mdn']) {
   report.push(`### Missing from ${source}`);
-  for (const category of Object.keys(categorized)) {
+  for (const category of categories) {
     const nb = missing[source][category].length;
     if (nb > 0) {
       report.push(`
@@ -244,7 +311,7 @@ await writeFile('report-syntax.md', report.join('\n'), 'utf8');
 
 
 /************************************************************
- * A few helper functions to help with reporting
+ * A few helper functions
  ***********************************************************/
 function reportFeatures(features) {
   return features
@@ -303,6 +370,10 @@ function reportMismatch(feature) {
   return res;
 }
 
+/**
+ * Webref and MDN may format syntaxes differently, drop non significant
+ * changes
+ */
 function normalizeSyntax(syntax) {
   return (syntax ?? '')
     .trim()
@@ -314,6 +385,22 @@ function normalizeSyntax(syntax) {
     .replace(/^\[\s*(.*?)\s*\]$/, '$1');
 }
 
-function syntaxesMatch(syntax1, syntax2) {
-  return normalizeSyntax(syntax1) === normalizeSyntax(syntax2);
+/**
+ * Decorate all CSS features in the extract with the spec's shortname and
+ * a flag that signals whether the spec is the current one in the series
+ */
+function decorateDataWithShortname(data, shortname) {
+  const spec = {
+    shortname: shortname,
+    currentSpec: !shortname.match(/-\d+$/)
+  };
+
+  for (const category of webrefCategories) {
+    for (const feature of data[category]) {
+      feature.spec = spec;
+      for (const value of feature.values ?? []) {
+        value.spec = spec;
+      }
+    }
+  }
 }

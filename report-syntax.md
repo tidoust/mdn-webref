@@ -1,10 +1,10 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-01T13:45:09.262Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-01T15:59:33.954Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>20 at-rules mismatches (out of 26 at-rules in common)</summary>
+<summary>18 at-rules mismatches (out of 24 at-rules in common)</summary>
 
 - [`@charset`](https://drafts.csswg.org/css-syntax-3/#at-ruledef-charset)
 ```
@@ -25,25 +25,6 @@ mdn:    @counter-style <counter-style-name> {
   [ pad: <padding>; ] ||
   [ speak-as: <speak-as>; ] ||
   [ fallback: <counter-style-name>; ]
-}
-```
-- [`@font-face`](https://drafts.csswg.org/css-fonts-5/#at-font-face-rule)
-```
-webref: unknown syntax
-mdn:    @font-face {
-  [ font-family: <family-name>; ] ||
-  [ src: <src>; ] ||
-  [ unicode-range: <unicode-range>; ] ||
-  [ font-variant: <font-variant>; ] ||
-  [ font-feature-settings: <font-feature-settings>; ] ||
-  [ font-variation-settings: <font-variation-settings>; ] ||
-  [ font-stretch: <font-stretch>; ] ||
-  [ font-weight: <font-weight>; ] ||
-  [ font-style: <font-style>; ] ||
-  [ size-adjust: <size-adjust>; ] ||
-  [ ascent-override: <ascent-override>; ] ||
-  [ descent-override: <descent-override>; ] ||
-  [ line-gap-override: <line-gap-override>; ]
 }
 ```
 - [`@font-face`](https://drafts.csswg.org/css-fonts-4/#at-font-face-rule)
@@ -130,13 +111,6 @@ mdn:    @media <media-query-list> {
   <group-rule-body>
 }
 ```
-- `@media`
-```
-webref: unknown syntax
-mdn:    @media <media-query-list> {
-  <group-rule-body>
-}
-```
 - [`@namespace`](https://drafts.csswg.org/css-namespaces-3/#at-ruledef-namespace)
 ```
 webref: @namespace <namespace-prefix>? [ <string> | <url> ] ;
@@ -181,7 +155,7 @@ mdn:    @supports <supports-condition> {
 
 
 <details>
-<summary>30 functions mismatches (out of 130 functions in common)</summary>
+<summary>25 functions mismatches (out of 122 functions in common)</summary>
 
 - [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
 ```
@@ -258,21 +232,6 @@ mdn:    hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [ <hue> 
 webref: [ <legacy-hsla-syntax> | <modern-hsla-syntax> ]
 mdn:    hsla( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsla( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
 ```
-- [`hwb()`](https://drafts.csswg.org/css-color-5/#funcdef-hwb)
-```
-webref: hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    hwb( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
-```
-- [`lab()`](https://drafts.csswg.org/css-color-5/#funcdef-lab)
-```
-webref: lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-```
-- [`lch()`](https://drafts.csswg.org/css-color-5/#funcdef-lch)
-```
-webref: lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
-mdn:    lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
-```
 - [`minmax()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax) for `grid-template-columns`
 ```
 webref: minmax(min, max)
@@ -282,16 +241,6 @@ mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <
 ```
 webref: minmax(min, max)
 mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <length-percentage> | <flex> | min-content | max-content | auto ] )
-```
-- [`oklab()`](https://drafts.csswg.org/css-color-5/#funcdef-oklab)
-```
-webref: oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-```
-- [`oklch()`](https://drafts.csswg.org/css-color-5/#funcdef-oklch)
-```
-webref: oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
-mdn:    oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
 - [`polygon()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon) for `<basic-shape>`
 ```
@@ -337,7 +286,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>238 properties mismatches (out of 563 properties in common)</summary>
+<summary>200 properties mismatches (out of 500 properties in common)</summary>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
@@ -404,14 +353,14 @@ mdn:    <length>
 webref: unknown syntax
 mdn:    auto | text | none | all
 ```
-- `align-items`
+- [`align-items`](https://drafts.csswg.org/css-align-3/#propdef-align-items)
 ```
-webref: unknown syntax
+webref: normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ] | anchor-center
 mdn:    normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]
 ```
-- `align-self`
+- [`align-self`](https://drafts.csswg.org/css-align-3/#propdef-align-self)
 ```
-webref: unknown syntax
+webref: auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center
 mdn:    auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>
 ```
 - [`alignment-baseline`](https://drafts.csswg.org/css-inline-3/#propdef-alignment-baseline)
@@ -419,24 +368,14 @@ mdn:    auto | normal | stretch | <baseline-position> | <overflow-position>? <se
 webref: baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top
 mdn:    baseline | alphabetic | ideographic | middle | central | mathematical | text-before-edge | text-after-edge
 ```
-- [`animation-duration`](https://drafts.csswg.org/css-animations-2/#propdef-animation-duration)
-```
-webref: [ auto | <time [0s,∞]> ]#
-mdn:    <time>#
-```
 - [`animation-duration`](https://drafts.csswg.org/css-animations-1/#propdef-animation-duration)
 ```
 webref: <time [0s,∞]>#
 mdn:    <time>#
 ```
-- `appearance`
-```
-webref: unknown syntax
-mdn:    none | auto | textfield | menulist-button | <compat-auto>
-```
 - [`appearance`](https://drafts.csswg.org/css-ui-4/#propdef-appearance)
 ```
-webref: none | auto | base | <compat-auto> | <compat-special>
+webref: none | auto | base | <compat-auto> | <compat-special> | base
 mdn:    none | auto | textfield | menulist-button | <compat-auto>
 ```
 - [`background`](https://drafts.csswg.org/css-backgrounds-3/#propdef-background)
@@ -634,14 +573,9 @@ mdn:    <length-percentage>{1,2}
 webref: <length-percentage [0,∞]>{1,2}
 mdn:    <length-percentage>{1,2}
 ```
-- `bottom`
-```
-webref: unknown syntax
-mdn:    <length> | <percentage> | auto
-```
 - [`bottom`](https://drafts.csswg.org/css-position-3/#propdef-bottom)
 ```
-webref: auto | <length-percentage>
+webref: auto | <length-percentage> | <anchor()> | <anchor-size()>
 mdn:    <length> | <percentage> | auto
 ```
 - [`box-shadow`](https://drafts.csswg.org/css-borders-4/#propdef-box-shadow)
@@ -706,12 +640,7 @@ mdn:    none | all
 ```
 - [`column-width`](https://drafts.csswg.org/css-multicol-2/#propdef-column-width)
 ```
-webref: auto | <length [0,∞]>
-mdn:    <length> | auto
-```
-- `column-width`
-```
-webref: unknown syntax
+webref: auto | <length [0,∞]> | min-content | max-content | fit-content(<length-percentage>)
 mdn:    <length> | auto
 ```
 - [`columns`](https://drafts.csswg.org/css-multicol-2/#propdef-columns)
@@ -746,12 +675,7 @@ mdn:    auto? [ none | <length> ]
 ```
 - [`content`](https://drafts.csswg.org/css-content-3/#propdef-content)
 ```
-webref: normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> | <attr()> ]+ ]?
-mdn:    normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?
-```
-- `content`
-```
-webref: unknown syntax
+webref: normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> | <attr()> ]+ ]? | <element()>
 mdn:    normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?
 ```
 - [`cursor`](https://drafts.csswg.org/css-ui-4/#propdef-cursor)
@@ -774,9 +698,9 @@ mdn:    <length> | <percentage>
 webref: none | <string>
 mdn:    none | path(<string>)
 ```
-- `display`
+- [`display`](https://drafts.csswg.org/css-display-4/#propdef-display)
 ```
-webref: unknown syntax
+webref: [ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | <display-outside> || [ <display-inside> | math ]
 mdn:    [ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>
 ```
 - [`field-sizing`](https://drafts.csswg.org/css-forms-1/#propdef-field-sizing)
@@ -794,25 +718,15 @@ mdn:    <number>
 webref: <number [0,∞]>
 mdn:    <number>
 ```
-- `float`
-```
-webref: unknown syntax
-mdn:    left | right | none | inline-start | inline-end
-```
 - [`float`](https://drafts.csswg.org/css-page-floats-3/#propdef-float)
 ```
-webref: block-start | block-end | inline-start | inline-end | snap-block | <snap-block()> | snap-inline | <snap-inline()> | left | right | top | bottom | none
+webref: block-start | block-end | inline-start | inline-end | snap-block | <snap-block()> | snap-inline | <snap-inline()> | left | right | top | bottom | none | footnote
 mdn:    left | right | none | inline-start | inline-end
 ```
 - [`font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
 ```
 webref: [ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>
 mdn:    [ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar
-```
-- [`font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
-```
-webref: none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]
-mdn:    none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]
 ```
 - [`font-size-adjust`](https://drafts.csswg.org/css-fonts-4/#propdef-font-size-adjust)
 ```
@@ -859,19 +773,9 @@ mdn:    <'grid-row-gap'> <'grid-column-gap'>?
 webref: unknown syntax
 mdn:    <length-percentage>
 ```
-- `height`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `height`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
 - [`height`](https://drafts.csswg.org/css-sizing-3/#propdef-height)
 ```
-webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
+webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
 - [`image-orientation`](https://drafts.csswg.org/css-images-3/#propdef-image-orientation)
@@ -919,30 +823,20 @@ mdn:    <'top'>
 webref: <isolation-mode>
 mdn:    auto | isolate
 ```
-- `justify-items`
+- [`justify-items`](https://drafts.csswg.org/css-align-3/#propdef-justify-items)
 ```
-webref: unknown syntax
+webref: normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-center
 mdn:    normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]
 ```
-- `justify-self`
+- [`justify-self`](https://drafts.csswg.org/css-align-3/#propdef-justify-self)
 ```
-webref: unknown syntax
+webref: auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | anchor-center
 mdn:    auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]
-```
-- `left`
-```
-webref: unknown syntax
-mdn:    <length> | <percentage> | auto
 ```
 - [`left`](https://drafts.csswg.org/css-position-3/#propdef-left)
 ```
-webref: auto | <length-percentage>
+webref: auto | <length-percentage> | <anchor()> | <anchor-size()>
 mdn:    <length> | <percentage> | auto
-```
-- [`letter-spacing`](https://drafts.csswg.org/css-text-4/#propdef-letter-spacing)
-```
-webref: normal | <length-percentage>
-mdn:    normal | <length>
 ```
 - [`line-clamp`](https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp)
 ```
@@ -964,24 +858,24 @@ mdn:    <length>
 webref: <'list-style-position'> || <'list-style-image'> || <'list-style-type'>
 mdn:    <'list-style-type'> || <'list-style-position'> || <'list-style-image'>
 ```
-- `margin-bottom`
+- [`margin-bottom`](https://drafts.csswg.org/css-box-4/#propdef-margin-bottom)
 ```
-webref: unknown syntax
+webref: <length-percentage> | auto | <anchor-size()>
 mdn:    <length-percentage> | auto
 ```
-- `margin-left`
+- [`margin-left`](https://drafts.csswg.org/css-box-4/#propdef-margin-left)
 ```
-webref: unknown syntax
+webref: <length-percentage> | auto | <anchor-size()>
 mdn:    <length-percentage> | auto
 ```
-- `margin-right`
+- [`margin-right`](https://drafts.csswg.org/css-box-4/#propdef-margin-right)
 ```
-webref: unknown syntax
+webref: <length-percentage> | auto | <anchor-size()>
 mdn:    <length-percentage> | auto
 ```
-- `margin-top`
+- [`margin-top`](https://drafts.csswg.org/css-box-4/#propdef-margin-top)
 ```
-webref: unknown syntax
+webref: <length-percentage> | auto | <anchor-size()>
 mdn:    <length-percentage> | auto
 ```
 - [`margin-trim`](https://drafts.csswg.org/css-box-4/#propdef-margin-trim)
@@ -1014,19 +908,9 @@ mdn:    none | <url>
 webref: [ <number> | <percentage> ]{1,4} fill?
 mdn:    <number-percentage>{1,4} fill?
 ```
-- `max-height`
-```
-webref: unknown syntax
-mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `max-height`
-```
-webref: unknown syntax
-mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
 - [`max-height`](https://drafts.csswg.org/css-sizing-3/#propdef-max-height)
 ```
-webref: none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
+webref: none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
 - [`max-lines`](https://drafts.csswg.org/css-overflow-4/#propdef-max-lines)
@@ -1034,60 +918,25 @@ mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-con
 webref: none | <integer [1,∞]>
 mdn:    none | <integer>
 ```
-- `max-width`
-```
-webref: unknown syntax
-mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `max-width`
-```
-webref: unknown syntax
-mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
 - [`max-width`](https://drafts.csswg.org/css-sizing-3/#propdef-max-width)
 ```
-webref: none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
+webref: none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    none | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `min-height`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `min-height`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
 - [`min-height`](https://drafts.csswg.org/css-sizing-3/#propdef-min-height)
 ```
-webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `min-width`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `min-width`
-```
-webref: unknown syntax
+webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
 - [`min-width`](https://drafts.csswg.org/css-sizing-3/#propdef-min-width)
 ```
-webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
+webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
 - [`mix-blend-mode`](https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode)
 ```
 webref: <blend-mode> | plus-darker | plus-lighter
 mdn:    <blend-mode> | plus-lighter
-```
-- [`object-fit`](https://drafts.csswg.org/css-images-4/#propdef-object-fit)
-```
-webref: fill | none | [contain | cover] || scale-down
-mdn:    fill | contain | cover | none | scale-down
 ```
 - [`orphans`](https://drafts.csswg.org/css-break-4/#propdef-orphans)
 ```
@@ -1129,9 +978,9 @@ mdn:    none | <length>
 webref: auto | bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none
 mdn:    auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit
 ```
-- `position`
+- [`position`](https://drafts.csswg.org/css-position-3/#propdef-position)
 ```
-webref: unknown syntax
+webref: static | relative | absolute | sticky | fixed | <running()>
 mdn:    static | relative | absolute | sticky | fixed
 ```
 - [`quotes`](https://drafts.csswg.org/css-content-3/#propdef-quotes)
@@ -1144,14 +993,9 @@ mdn:    none | auto | [ <string> <string> ]+
 webref: <length-percentage>
 mdn:    <length> | <percentage>
 ```
-- `right`
-```
-webref: unknown syntax
-mdn:    <length> | <percentage> | auto
-```
 - [`right`](https://drafts.csswg.org/css-position-3/#propdef-right)
 ```
-webref: auto | <length-percentage>
+webref: auto | <length-percentage> | <anchor()> | <anchor-size()>
 mdn:    <length> | <percentage> | auto
 ```
 - [`row-gap`](https://drafts.csswg.org/css-align-3/#propdef-row-gap)
@@ -1264,30 +1108,15 @@ mdn:    miter | miter-clip | round | bevel | arcs
 webref: [<length-percentage> | <number>]#
 mdn:    <length-percentage> | <number>
 ```
-- [`tab-size`](https://drafts.csswg.org/css-text-4/#propdef-tab-size)
-```
-webref: <number [0,∞]> | <length [0,∞]>
-mdn:    <integer> | <length>
-```
 - [`tab-size`](https://drafts.csswg.org/css-text-3/#propdef-tab-size)
 ```
 webref: <number [0,∞]> | <length [0,∞]>
 mdn:    <integer> | <length>
 ```
-- [`text-align`](https://drafts.csswg.org/css-text-4/#propdef-text-align)
-```
-webref: start | end | left | right | center | <string> | justify | match-parent | justify-all
-mdn:    start | end | left | right | center | justify | match-parent
-```
 - [`text-align`](https://drafts.csswg.org/css-text-3/#propdef-text-align)
 ```
 webref: start | end | left | right | center | justify | match-parent | justify-all
 mdn:    start | end | left | right | center | justify | match-parent
-```
-- [`text-align-last`](https://drafts.csswg.org/css-text-4/#propdef-text-align-last)
-```
-webref: auto | start | end | left | right | center | justify | match-parent
-mdn:    auto | start | end | left | right | center | justify
 ```
 - [`text-align-last`](https://drafts.csswg.org/css-text-3/#propdef-text-align-last)
 ```
@@ -1298,11 +1127,6 @@ mdn:    auto | start | end | left | right | center | justify
 ```
 webref: none | all | [ digits <integer [2,4]>? ]
 mdn:    none | all | [ digits <integer>? ]
-```
-- [`text-decoration`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration)
-```
-webref: <'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>
-mdn:    <'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'> || <'text-decoration-thickness'>
 ```
 - [`text-decoration`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration)
 ```
@@ -1329,50 +1153,25 @@ mdn:    auto | all | none
 webref: auto | from-font | <length-percentage>
 mdn:    auto | from-font | <length> | <percentage> 
 ```
-- [`text-emphasis-position`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis-position)
-```
-webref: [ over | under ] && [ right | left ]?
-mdn:    auto | [ over | under ] && [ right | left ]?
-```
 - [`text-emphasis-position`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-position)
 ```
 webref: [ over | under ] && [ right | left ]?
 mdn:    auto | [ over | under ] && [ right | left ]?
-```
-- [`text-indent`](https://drafts.csswg.org/css-text-4/#propdef-text-indent)
-```
-webref: [ <length-percentage> ] && hanging? && each-line?
-mdn:    <length-percentage> && hanging? && each-line?
 ```
 - [`text-indent`](https://drafts.csswg.org/css-text-3/#propdef-text-indent)
 ```
 webref: [ <length-percentage> ] && hanging? && each-line?
 mdn:    <length-percentage> && hanging? && each-line?
 ```
-- [`text-justify`](https://drafts.csswg.org/css-text-4/#propdef-text-justify)
-```
-webref: [ auto | none | inter-word | inter-character | ruby ] || no-compress
-mdn:    auto | inter-character | inter-word | none
-```
 - [`text-justify`](https://drafts.csswg.org/css-text-3/#propdef-text-justify)
 ```
 webref: auto | none | inter-word | inter-character
 mdn:    auto | inter-character | inter-word | none
 ```
-- [`text-overflow`](https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow)
-```
-webref: [ clip | ellipsis | <string> | fade | <fade()> ]{1,2}
-mdn:    [ clip | ellipsis | <string> ]{1,2}
-```
 - [`text-overflow`](https://drafts.csswg.org/css-overflow-3/#propdef-text-overflow)
 ```
 webref: clip | ellipsis
 mdn:    [ clip | ellipsis | <string> ]{1,2}
-```
-- [`text-shadow`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow)
-```
-webref: none | <shadow>#
-mdn:    none | <shadow-t>#
 ```
 - [`text-shadow`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-shadow)
 ```
@@ -1399,11 +1198,6 @@ mdn:    none | [ capitalize | uppercase | lowercase ] || full-width || full-size
 webref: auto | <length-percentage>
 mdn:    auto | <length> | <percentage> 
 ```
-- [`text-underline-position`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-position)
-```
-webref: auto | [ from-font | under ] || [ left | right ]
-mdn:    auto | from-font | [ under || [ left | right ] ]
-```
 - [`text-underline-position`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-underline-position)
 ```
 webref: auto | [ under || [ left | right ] ]
@@ -1419,14 +1213,9 @@ mdn:    auto | balance | stable | pretty
 webref: none | all | <dashed-ident>#
 mdn:    none | <dashed-ident>#
 ```
-- `top`
-```
-webref: unknown syntax
-mdn:    <length> | <percentage> | auto
-```
 - [`top`](https://drafts.csswg.org/css-position-3/#propdef-top)
 ```
-webref: auto | <length-percentage>
+webref: auto | <length-percentage> | <anchor()> | <anchor-size()>
 mdn:    <length> | <percentage> | auto
 ```
 - [`transform-origin`](https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin)
@@ -1449,11 +1238,6 @@ mdn:    auto | text | none | all
 webref: [ first | last] || <'alignment-baseline'> || <'baseline-shift'>
 mdn:    baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
 ```
-- [`white-space`](https://drafts.csswg.org/css-text-4/#propdef-white-space)
-```
-webref: normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>
-mdn:    normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'>
-```
 - [`white-space`](https://drafts.csswg.org/css-text-3/#propdef-white-space)
 ```
 webref: normal | pre | nowrap | pre-wrap | break-spaces | pre-line
@@ -1469,40 +1253,15 @@ mdn:    collapse | preserve | preserve-breaks | preserve-spaces | break-spaces
 webref: <integer [1,∞]>
 mdn:    <integer>
 ```
-- `width`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- `width`
-```
-webref: unknown syntax
-mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
 - [`width`](https://drafts.csswg.org/css-sizing-3/#propdef-width)
 ```
-webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()>
+webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
-```
-- [`word-break`](https://drafts.csswg.org/css-text-4/#propdef-word-break)
-```
-webref: normal | break-all | keep-all | manual | auto-phrase | break-word
-mdn:    normal | break-all | keep-all | break-word | auto-phrase
 ```
 - [`word-break`](https://drafts.csswg.org/css-text-3/#propdef-word-break)
 ```
 webref: normal | keep-all | break-all | break-word
 mdn:    normal | break-all | keep-all | break-word | auto-phrase
-```
-- [`word-spacing`](https://drafts.csswg.org/css-text-4/#propdef-word-spacing)
-```
-webref: normal | <length-percentage>
-mdn:    normal | <length>
-```
-- [`word-wrap`](https://drafts.csswg.org/css-text-4/#propdef-word-wrap)
-```
-webref: normal | break-word | anywhere
-mdn:    normal | break-word
 ```
 - [`word-wrap`](https://drafts.csswg.org/css-text-3/#propdef-word-wrap)
 ```
@@ -1533,7 +1292,7 @@ mdn:    normal | reset | <number [0,∞]> || <percentage [0,∞]>
 
 
 <details>
-<summary>21 selectors mismatches (out of 107 selectors in common)</summary>
+<summary>21 selectors mismatches (out of 106 selectors in common)</summary>
 
 - [`::cue-region()`](https://w3c.github.io/webvtt/#selectordef-cue-region-selector)
 ```
@@ -1644,7 +1403,7 @@ mdn:    :where( <complex-selector-list> )
 
 
 <details>
-<summary>135 syntaxes mismatches (out of 417 syntaxes in common)</summary>
+<summary>115 syntaxes mismatches (out of 366 syntaxes in common)</summary>
 
 - [`<absolute-size>`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 ```
@@ -1675,11 +1434,6 @@ mdn:    <visual-box> | border-area | text
 ```
 webref: <image> | none
 mdn:    none | <image>
-```
-- [`<bg-position>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position)
-```
-webref: <position> | <position-three>
-mdn:    [ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]
 ```
 - [`<bg-size>`](https://drafts.csswg.org/css-backgrounds-3/#typedef-bg-size)
 ```
@@ -1715,11 +1469,6 @@ mdn:    <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | 
 ```
 webref: in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]
 mdn:    in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]
-```
-- [`<color>`](https://drafts.csswg.org/css-color-5/#typedef-color)
-```
-webref: <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
-mdn:    <color-base> | currentColor | <system-color> | <light-dark()> | <deprecated-system-color>
 ```
 - [`<color>`](https://drafts.csswg.org/css-color-4/#typedef-color)
 ```
@@ -1806,11 +1555,6 @@ mdn:    <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || 
 webref: <length-percentage [0,∞]>
 mdn:    <length-percentage>
 ```
-- [`<general-enclosed>`](https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed)
-```
-webref: [ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]
-mdn:    [ <function-token> <any-value> ) ] | ( <ident> <any-value> )
-```
 - [`<general-enclosed>`](https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed)
 ```
 webref: [ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]
@@ -1851,11 +1595,6 @@ mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <
 webref: [ <image> | <string> ] [ <resolution> || type(<string>) ]?
 mdn:    [ <image> | <string> ] [ <resolution> || type(<string>) ]
 ```
-- [`<image>`](https://drafts.csswg.org/css-images-4/#typedef-image)
-```
-webref: <url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>
-mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fade()> | <gradient>
-```
 - [`<image>`](https://drafts.csswg.org/css-images-3/#typedef-image)
 ```
 webref: <url> | <gradient>
@@ -1891,30 +1630,15 @@ mdn:    <color> <color-stop-length>?
 webref: [ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list>
 mdn:    [ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>
 ```
-- [`<media-and>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-and)
-```
-webref: and <media-in-parens>
-mdn:    <media-in-parens> [ and <media-in-parens> ]+
-```
 - [`<media-and>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-and)
 ```
 webref: and <media-in-parens>
 mdn:    <media-in-parens> [ and <media-in-parens> ]+
 ```
-- [`<media-condition-without-or>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition-without-or)
-```
-webref: <media-not> | <media-in-parens> <media-and>*
-mdn:    <media-not> | <media-and> | <media-in-parens>
-```
 - [`<media-condition-without-or>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition-without-or)
 ```
 webref: <media-not> | <media-in-parens> <media-and>*
 mdn:    <media-not> | <media-and> | <media-in-parens>
-```
-- [`<media-condition>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition)
-```
-webref: <media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]
-mdn:    <media-not> | <media-and> | <media-or> | <media-in-parens>
 ```
 - [`<media-condition>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition)
 ```
@@ -1931,33 +1655,15 @@ mdn:    ( [ <mf-plain> | <mf-boolean> | <mf-range> ] )
 webref: ( <media-condition> ) | ( <media-feature> ) | <general-enclosed>
 mdn:    ( <media-condition> ) | <media-feature> | <general-enclosed>
 ```
-- [`<media-or>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-or)
-```
-webref: or <media-in-parens>
-mdn:    <media-in-parens> [ or <media-in-parens> ]+
-```
 - [`<media-or>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-or)
 ```
 webref: or <media-in-parens>
 mdn:    <media-in-parens> [ or <media-in-parens> ]+
 ```
-- [`<media-query-list>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list)
-```
-webref: unknown syntax
-mdn:    <media-query>#
-```
 - [`<media-query-list>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
 ```
 webref: unknown syntax
 mdn:    <media-query>#
-```
-- [`<mf-range>`](https://drafts.csswg.org/mediaqueries-5/#typedef-mf-range)
-```
-webref: <mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>
-mdn:    <mf-name> [ '<' | '>' ]? '='? <mf-value>
-| <mf-value> [ '<' | '>' ]? '='? <mf-name>
-| <mf-value> '<' '='? <mf-name> '<' '='? <mf-value>
-| <mf-value> '>' '='? <mf-name> '>' '='? <mf-value>
 ```
 - [`<mf-range>`](https://drafts.csswg.org/mediaqueries-4/#typedef-mf-range)
 ```
@@ -2022,11 +1728,6 @@ mdn:    <dashed-ident>
 webref: unknown syntax
 mdn:    palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})
 ```
-- [`<position>`](https://drafts.csswg.org/css-values-5/#typedef-position)
-```
-webref: <position-one> | <position-two> | <position-four>
-mdn:    [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
-```
 - [`<position>`](https://drafts.csswg.org/css-values-4/#typedef-position)
 ```
 webref: [ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
@@ -2056,11 +1757,6 @@ mdn:    [ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-
 ```
 webref: unknown syntax
 mdn:    larger | smaller
-```
-- [`<repeat-style>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style)
-```
-webref: repeat-x | repeat-y | <repetition>{1,2}
-mdn:    repeat-x | repeat-y | [ repeat | space | round | no-repeat ]{1,2}
 ```
 - [`<scope-end>`](https://drafts.csswg.org/css-cascade-6/#typedef-scope-end)
 ```
@@ -2122,16 +1818,6 @@ mdn:    <media-query-list>
 webref: unknown syntax
 mdn:    <declaration>
 ```
-- [`<supports-feature>`](https://drafts.csswg.org/css-conditional-4/#typedef-supports-feature)
-```
-webref: <supports-selector-fn> | <supports-decl>
-mdn:    <supports-decl> | <supports-selector-fn>
-```
-- [`<supports-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature)
-```
-webref: <supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>
-mdn:    <supports-decl> | <supports-selector-fn>
-```
 - [`<supports-feature>`](https://drafts.csswg.org/css-conditional-3/#typedef-supports-feature)
 ```
 webref: <supports-decl>
@@ -2161,11 +1847,6 @@ mdn:    <length-percentage> | <flex> | min-content | max-content | auto
 ```
 webref: <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage [0,∞]> )
 mdn:    <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> )
-```
-- [`<transform-function>`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
-```
-webref: unknown syntax
-mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>
 ```
 - [`<transform-function>`](https://drafts.csswg.org/css-transforms-1/#typedef-transform-function)
 ```
@@ -2252,21 +1933,6 @@ mdn:    hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [ <hue> 
 webref: [ <legacy-hsla-syntax> | <modern-hsla-syntax> ]
 mdn:    hsla( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsla( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
 ```
-- [`hwb()`](https://drafts.csswg.org/css-color-5/#funcdef-hwb)
-```
-webref: hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    hwb( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
-```
-- [`lab()`](https://drafts.csswg.org/css-color-5/#funcdef-lab)
-```
-webref: lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-```
-- [`lch()`](https://drafts.csswg.org/css-color-5/#funcdef-lch)
-```
-webref: lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
-mdn:    lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
-```
 - [`minmax()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax) for `grid-template-columns`
 ```
 webref: minmax(min, max)
@@ -2276,16 +1942,6 @@ mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <
 ```
 webref: minmax(min, max)
 mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <length-percentage> | <flex> | min-content | max-content | auto ] )
-```
-- [`oklab()`](https://drafts.csswg.org/css-color-5/#funcdef-oklab)
-```
-webref: oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-mdn:    oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-```
-- [`oklch()`](https://drafts.csswg.org/css-color-5/#funcdef-oklch)
-```
-webref: oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
-mdn:    oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
 - [`polygon()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon) for `<basic-shape>`
 ```
@@ -2331,7 +1987,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>17 types mismatches (out of 44 types in common)</summary>
+<summary>13 types mismatches (out of 39 types in common)</summary>
 
 - [`<basic-shape>`](https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape)
 ```
@@ -2342,11 +1998,6 @@ mdn:    <inset()> | <xywh()> | <rect()> | <circle()> | <ellipse()> | <polygon()>
 ```
 webref: normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
 mdn:    normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
-```
-- [`<color>`](https://drafts.csswg.org/css-color-5/#typedef-color)
-```
-webref: <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
-mdn:    <color-base> | currentColor | <system-color> | <light-dark()> | <deprecated-system-color>
 ```
 - [`<color>`](https://drafts.csswg.org/css-color-4/#typedef-color)
 ```
@@ -2368,11 +2019,6 @@ mdn:    <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale(
 webref: <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>
 mdn:    <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()>
 ```
-- [`<image>`](https://drafts.csswg.org/css-images-4/#typedef-image)
-```
-webref: <url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>
-mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fade()> | <gradient>
-```
 - [`<image>`](https://drafts.csswg.org/css-images-3/#typedef-image)
 ```
 webref: <url> | <gradient>
@@ -2382,11 +2028,6 @@ mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fad
 ```
 webref: unknown syntax
 mdn:    <number-token>
-```
-- [`<position>`](https://drafts.csswg.org/css-values-5/#typedef-position)
-```
-webref: <position-one> | <position-two> | <position-four>
-mdn:    [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
 ```
 - [`<position>`](https://drafts.csswg.org/css-values-4/#typedef-position)
 ```
@@ -2402,11 +2043,6 @@ mdn:    rect(<top>, <right>, <bottom>, <left>)
 ```
 webref: [ text | ideographic | ideographic-ink ] | [ text | ideographic | ideographic-ink | cap | ex ] [ text | ideographic | ideographic-ink | alphabetic ]
 mdn:    [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?
-```
-- [`<transform-function>`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
-```
-webref: unknown syntax
-mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>
 ```
 - [`<transform-function>`](https://drafts.csswg.org/css-transforms-1/#typedef-transform-function)
 ```
