@@ -1147,7 +1147,7 @@
           "initial": "n/a"
         }
       ],
-      "value": "@color-profile [<dashed-ident> | device-cmyk] { <declaration-list> }",
+      "value": "@color-profile [<dashed-ident> | device-cmyk] {\n  [ src: [ <url> ]; ] ||\n  [ rendering-intent: [ relative-colorimetric | absolute-colorimetric | perceptual | saturation ]; ] ||\n  [ components: [ <ident># ]; ]\n}",
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
@@ -1659,7 +1659,7 @@
           ]
         }
       ],
-      "value": "@counter-style <counter-style-name> { <declaration-list> }",
+      "value": "@counter-style <counter-style-name> {\n  [ system: [ cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ] ]; ] ||\n  [ negative: [ <symbol> <symbol>? ]; ] ||\n  [ prefix: [ <symbol> ]; ] ||\n  [ suffix: [ <symbol> ]; ] ||\n  [ range: [ [ [ <integer> | infinite ]{2} ]# | auto ]; ] ||\n  [ pad: [ <integer [0,∞]> && <symbol> ]; ] ||\n  [ fallback: [ <counter-style-name> ]; ] ||\n  [ symbols: [ <symbol>+ ]; ] ||\n  [ additive-symbols: [ [ <integer [0,∞]> && <symbol> ]# ]; ] ||\n  [ speak-as: [ auto | bullets | numbers | words | spell-out | <counter-style-name> ]; ]\n}",
       "spec": {
         "shortname": "css-counter-styles",
         "currentSpec": true
@@ -1894,7 +1894,7 @@
           "initial": "normal"
         }
       ],
-      "value": "@font-face { <declaration-list> }",
+      "value": "@font-face {\n  [ font-family: [ <family-name> ]; ] ||\n  [ src: [ <font-src-list> ]; ] ||\n  [ font-style: [ auto | normal | italic | left | right | oblique [ <angle [-90deg,90deg]>{1,2} ]? ]; ] ||\n  [ font-weight: [ auto | <font-weight-absolute>{1,2} ]; ] ||\n  [ font-width: [ auto | <'font-width'>{1,2} ]; ] ||\n  [ unicode-range: [ <unicode-range-token># ]; ] ||\n  [ font-feature-settings: [ normal | <feature-tag-value># ]; ] ||\n  [ font-variation-settings: [ normal | [ <string> <number>]# ]; ] ||\n  [ font-named-instance: [ auto | <string> ]; ] ||\n  [ font-display: [ auto | block | swap | fallback | optional ]; ] ||\n  [ font-language-override: [ normal | <string> ]; ] ||\n  [ ascent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ descent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ line-gap-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ font-size: [ auto | [<number>]{1,2} ]; ] ||\n  [ size-adjust: [ <percentage [0,∞]> ]; ] ||\n  [ ascent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ descent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ line-gap-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ superscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||\n  [ subscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||\n  [ superscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ subscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ]\n}",
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
@@ -2016,7 +2016,7 @@
           "initial": "N/A"
         }
       ],
-      "value": "@font-palette-values <dashed-ident> { <declaration-list> }",
+      "value": "@font-palette-values <dashed-ident> {\n  [ font-family: [ <family-name># ]; ] ||\n  [ base-palette: [ light | dark | <integer [0,∞]> ]; ] ||\n  [ override-colors: [ [ <integer [0,∞]> <color> ]# ]; ]\n}",
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
@@ -2509,7 +2509,7 @@
           "initial": "the guaranteed-invalid value (but see prose)"
         }
       ],
-      "value": "@property <custom-property-name> { <declaration-list> }",
+      "value": "@property <custom-property-name> {\n  [ syntax: [ <string> ]; ] ||\n  [ inherits: [ true | false ]; ] ||\n  [ initial-value: [ <declaration-value>? ]; ]\n}",
       "spec": {
         "shortname": "css-properties-values-api",
         "currentSpec": true
@@ -2570,7 +2570,7 @@
           "initial": "none"
         }
       ],
-      "value": "@view-transition { <declaration-list> }",
+      "value": "@view-transition {\n  [ navigation: [ auto | none ]; ] ||\n  [ types: [ none | <custom-ident>+ ]; ]\n}",
       "spec": {
         "shortname": "css-view-transitions-2",
         "currentSpec": false

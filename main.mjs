@@ -140,6 +140,29 @@ categorized.atRules = Object.entries(atrulesDfns)
       }
     }
     return baseDfn;
+  })
+  .map(atrule => {
+    // If the syntax of an at-rule is generic, a more practical syntax can be
+    // assembled by going through the list of descriptors.
+    // TODO: drop enclosing grouping constructs when there's no ambiguity
+    // TODO: if the logic is sound, do it directly in raw Webref data
+    if (atrule.value?.match(/{ <declaration-(rule-)?list> }/) &&
+        atrule.descriptors.length > 0) {
+      const syntax = atrule.descriptors
+        .map(desc => {
+          if (desc.name.startsWith('@')) {
+            return `[ ${desc.value} ]`;
+          }
+          else {
+            return `[ ${desc.name}: [ ${desc.value} ]; ]`;
+          }
+        })
+        .join(' ||\n  ');
+      atrule.value = atrule.value.replace(
+        /{ <declaration-list> }/,
+        '{\n  ' + syntax + '\n}');
+    }
+    return atrule;
   });
 
 // For all other types of features, if a feature appears more than once,
@@ -222,9 +245,6 @@ for (const category of categories) {
 
 /************************************************************
  * Identify syntax mismatches for entries that are in common
- *
- * TODO: For at-rules, compute syntax based on the list of
- * descriptors
  ***********************************************************/
 const nbInCommon = {};
 const mismatches = {};

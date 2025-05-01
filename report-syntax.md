@@ -1,10 +1,10 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-01T17:16:16.036Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-01T18:03:05.684Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>12 at-rules mismatches (out of 18 at-rules in common)</summary>
+<summary>15 at-rules mismatches (out of 18 at-rules in common)</summary>
 
 - [`@charset`](https://drafts.csswg.org/css-syntax-3/#at-ruledef-charset)
 ```
@@ -13,7 +13,18 @@ mdn:    @charset "<charset>";
 ```
 - [`@counter-style`](https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style)
 ```
-webref: @counter-style <counter-style-name> { <declaration-list> }
+webref: @counter-style <counter-style-name> {
+  [ system: [ cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ] ]; ] ||
+  [ negative: [ <symbol> <symbol>? ]; ] ||
+  [ prefix: [ <symbol> ]; ] ||
+  [ suffix: [ <symbol> ]; ] ||
+  [ range: [ [ [ <integer> | infinite ]{2} ]# | auto ]; ] ||
+  [ pad: [ <integer [0,∞]> && <symbol> ]; ] ||
+  [ fallback: [ <counter-style-name> ]; ] ||
+  [ symbols: [ <symbol>+ ]; ] ||
+  [ additive-symbols: [ [ <integer [0,∞]> && <symbol> ]# ]; ] ||
+  [ speak-as: [ auto | bullets | numbers | words | spell-out | <counter-style-name> ]; ]
+}
 mdn:    @counter-style <counter-style-name> {
   [ system: <counter-system>; ] ||
   [ symbols: <counter-symbols>; ] ||
@@ -29,7 +40,31 @@ mdn:    @counter-style <counter-style-name> {
 ```
 - [`@font-face`](https://drafts.csswg.org/css-fonts-4/#at-font-face-rule)
 ```
-webref: @font-face { <declaration-list> }
+webref: @font-face {
+  [ font-family: [ <family-name> ]; ] ||
+  [ src: [ <font-src-list> ]; ] ||
+  [ font-style: [ auto | normal | italic | left | right | oblique [ <angle [-90deg,90deg]>{1,2} ]? ]; ] ||
+  [ font-weight: [ auto | <font-weight-absolute>{1,2} ]; ] ||
+  [ font-width: [ auto | <'font-width'>{1,2} ]; ] ||
+  [ unicode-range: [ <unicode-range-token># ]; ] ||
+  [ font-feature-settings: [ normal | <feature-tag-value># ]; ] ||
+  [ font-variation-settings: [ normal | [ <string> <number>]# ]; ] ||
+  [ font-named-instance: [ auto | <string> ]; ] ||
+  [ font-display: [ auto | block | swap | fallback | optional ]; ] ||
+  [ font-language-override: [ normal | <string> ]; ] ||
+  [ ascent-override: [ normal | <percentage [0,∞]> ]; ] ||
+  [ descent-override: [ normal | <percentage [0,∞]> ]; ] ||
+  [ line-gap-override: [ normal | <percentage [0,∞]> ]; ] ||
+  [ font-size: [ auto | [<number>]{1,2} ]; ] ||
+  [ size-adjust: [ <percentage [0,∞]> ]; ] ||
+  [ ascent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||
+  [ descent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||
+  [ line-gap-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||
+  [ superscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||
+  [ subscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||
+  [ superscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ] ||
+  [ subscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ]
+}
 mdn:    @font-face {
   [ font-family: <family-name>; ] ||
   [ src: <src>; ] ||
@@ -51,6 +86,17 @@ mdn:    @font-face {
 webref: @font-feature-values <family-name># { <declaration-rule-list> }
 mdn:    @font-feature-values <family-name># {
   <feature-value-block-list>
+}
+```
+- [`@font-palette-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values)
+```
+webref: @font-palette-values <dashed-ident> {
+  [ font-family: [ <family-name># ]; ] ||
+  [ base-palette: [ light | dark | <integer [0,∞]> ]; ] ||
+  [ override-colors: [ [ <integer [0,∞]> <color> ]# ]; ]
+}
+mdn:    @font-palette-values <dashed-ident> {
+  <declaration-list>
 }
 ```
 - [`@import`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-import)
@@ -87,6 +133,17 @@ mdn:    @page <page-selector-list> {
   <page-body>
 }
 ```
+- [`@property`](https://drafts.css-houdini.org/css-properties-values-api-1/#at-ruledef-property)
+```
+webref: @property <custom-property-name> {
+  [ syntax: [ <string> ]; ] ||
+  [ inherits: [ true | false ]; ] ||
+  [ initial-value: [ <declaration-value>? ]; ]
+}
+mdn:    @property <custom-property-name> {
+  <declaration-list>
+}
+```
 - [`@scope`](https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope)
 ```
 webref: @scope [(<scope-start>)]? [to (<scope-end>)]? { <block-contents> }
@@ -106,6 +163,16 @@ mdn:    @starting-style {
 webref: @supports <supports-condition> { <rule-list> }
 mdn:    @supports <supports-condition> {
   <group-rule-body>
+}
+```
+- [`@view-transition`](https://drafts.csswg.org/css-view-transitions-2/#at-view-transition-rule)
+```
+webref: @view-transition {
+  [ navigation: [ auto | none ]; ] ||
+  [ types: [ none | <custom-ident>+ ]; ]
+}
+mdn:    @view-transition {
+  <declaration-list>
 }
 ```
 </details>
