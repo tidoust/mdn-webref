@@ -94,7 +94,6 @@ for (const property of categorized.properties) {
   }
   propertyDfns[property.name].push(property);
 }
-
 categorized.properties = Object.entries(propertyDfns)
   .map(([name, dfns]) => {
     if (dfns.length === 1) {
@@ -104,7 +103,7 @@ categorized.properties = Object.entries(propertyDfns)
     // the "current" spec in a series. If there's none, we'll just take the
     // first one that defines a value. If not, we'll surrender and use the
     // first definition that does not look like an extension.
-    let baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
+    const baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
       dfns.find(dfn => dfn.value) ||
       dfns.find(dfn => !dfn.newValues && dfn.spec.currentSpec) ||
       dfns.find(dfn => !dfn.newValues);
@@ -119,10 +118,34 @@ categorized.properties = Object.entries(propertyDfns)
     return baseDfn;
   });
 
+// Similarly, at-rules descriptors are sometimes defined in multiple specs
+const atrulesDfns = {};
+for (const feature of categorized.atRules) {
+  if (!atrulesDfns[feature.name]) {
+    atrulesDfns[feature.name] = [];
+  }
+  atrulesDfns[feature.name].push(feature);
+}
+categorized.atRules = Object.entries(atrulesDfns)
+  .map(([name, dfns]) => {
+    if (dfns.length === 1) {
+      return dfns[0];
+    }
+    const baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
+      dfns.find(dfn => dfn.spec.currentSpec) ||
+      dfns[0];
+    for (const dfn of dfns) {
+      if (dfn !== baseDfn && dfn.descriptors.length > 0) {
+        baseDfn.descriptors.push(...dfn.descriptors);
+      }
+    }
+    return baseDfn;
+  });
+
 // For all other types of features, if a feature appears more than once,
 // only keep definitions in "current" specs
 for (const category of categories) {
-  if (category === 'properties') {
+  if (category === 'properties' || category === 'atRules') {
     continue;
   }
   const featureDfns = {};
@@ -200,8 +223,6 @@ for (const category of categories) {
 /************************************************************
  * Identify syntax mismatches for entries that are in common
  *
- * TODO: For at-rules, merge similar entries, there should be
- * one base one, and others that define additional descriptors
  * TODO: For at-rules, compute syntax based on the list of
  * descriptors
  ***********************************************************/
