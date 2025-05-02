@@ -227,8 +227,8 @@ for (const category of categories) {
 
   // All duplicates should have been treated somehow and merged into the
   // base definition, which we can just use. One more thing though: specs do
-  // not expand on the syntax of at-rules, let's compute a more specific
-  // syntax from the list of descriptors when possible.
+  // not usually expand on the syntax of at-rules, let's compute a more
+  // specific syntax from the list of descriptors when possible.
   categorized[category] = Object.entries(featureDfns)
     .map(([name, features]) => features[0])
     .map(feature => {
@@ -252,6 +252,40 @@ for (const category of categories) {
       }
       return feature;
     });
+
+  // Due to the way CSS specs are written, we may end up with scoped functions
+  // and types that are scoped to some other construct, while an unscoped dfn
+  // also exists. When the syntax is the same (or when the scoped dfn does not
+  // have any known syntax), we can drop the scoped dfn in favor of the
+  // unscoped one. When the syntax differs, that probably signals an error.
+  // TODO: Detect and filter out such constructs in Webref
+  categorized[category] = categorized[category].filter(feature => {
+    if (feature.for) {
+      const unscoped = categorized[category].find(f =>
+        f.name === feature.name && !f.for);
+      if (unscoped) {
+        const fvalue = feature.value ?? 'no known syntax';
+        const uvalue = unscoped.value ?? 'no known syntax';
+        if (feature.value !== unscoped.value) {
+          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. Syntaxes differ:
+    scoped:   ${fvalue}
+    unscoped: ${uvalue}`);
+        }
+        else if (feature.value) {
+          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. Same syntax:
+  ${fvalue}`);
+        }
+        else {
+          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. No known syntax`);
+        }
+
+        // Only keep the scoped feature if it has a known syntax that
+        // differs from the unscoped feature
+        return feature.value && feature.value !== unscoped.value;
+      }
+    }
+    return true;
+  }) 
 }
 
 

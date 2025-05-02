@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-02T15:19:53.287Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 ### Missing from webref
 
@@ -615,7 +615,7 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 
 
 <details>
-<summary>290 syntaxes missing from mdn</summary>
+<summary>285 syntaxes missing from mdn</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
@@ -649,7 +649,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<boolean-expr>`](https://drafts.csswg.org/css-values-5/#typedef-boolean-expr)
 - [`<border-style>`](https://drafts.csswg.org/css2/#value-def-border-style)
 - [`<border-width>`](https://drafts.csswg.org/css2/#value-def-border-width)
-- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom) for `clip`
 - [`<bottom>`](https://drafts.csswg.org/css2/#value-def-bottom)
 - [`<box>`](https://drafts.csswg.org/css-box-4/#typedef-box)
 - [`<calc-keyword>`](https://drafts.csswg.org/css-values-4/#typedef-calc-keyword)
@@ -738,7 +737,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
 - [`<isolation-mode>`](https://drafts.fxtf.org/compositing-2/#isolated-propid)
 - [`<layout-box>`](https://drafts.csswg.org/css-box-4/#typedef-layout-box)
-- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left) for `clip`
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
 - [`<legacy-device-cmyk-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax)
 - [`<legacy-hsl-syntax>`](https://drafts.csswg.org/css-color-4/#typedef-legacy-hsl-syntax)
@@ -803,7 +801,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<repetition>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-repetition)
 - [`<request-url-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier)
 - [`<resolution>`](https://drafts.csswg.org/css-values-4/#resolution-value)
-- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right) for `clip`
 - [`<right>`](https://drafts.csswg.org/css2/#value-def-right)
 - [`<rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-rule-list)
 - [`<scroll-button-direction>`](https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction)
@@ -837,7 +834,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
 - [`<time>`](https://drafts.csswg.org/css-values-4/#time-value)
 - [`<toggle()>`](https://drafts.csswg.org/css-values-5/#typedef-toggle)
-- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top) for `clip`
 - [`<top>`](https://drafts.csswg.org/css2/#value-def-top)
 - [`<transform-mix()>`](https://drafts.csswg.org/css-values-5/#typedef-transform-mix)
 - [`<type>`](https://drafts.csswg.org/css-forms-1/#typedef-type)
@@ -847,7 +843,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set) for `cursor`
 - [`<url-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-url-token)
 - [`<url>`](https://drafts.csswg.org/css-values-4/#url-value)
-- [`<url>`](https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url) for `filter`
 - [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command) for `shape()`
 - [`<wcag2>`](https://drafts.csswg.org/css-color-6/#typedef-wcag2)
 - [`<whitespace-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token)
@@ -911,7 +906,7 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 
 
 <details>
-<summary>440 types missing from mdn</summary>
+<summary>436 types missing from mdn</summary>
 
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
 - [`<)-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren)
@@ -967,7 +962,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<boolean-expr>`](https://drafts.csswg.org/css-values-5/#typedef-boolean-expr)
 - [`<border-style>`](https://drafts.csswg.org/css2/#value-def-border-style)
 - [`<border-width>`](https://drafts.csswg.org/css2/#value-def-border-width)
-- [`<bottom>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom) for `clip`
 - [`<bottom>`](https://drafts.csswg.org/css2/#value-def-bottom)
 - [`<box>`](https://drafts.csswg.org/css-box-4/#typedef-box)
 - [`<calc-keyword>`](https://drafts.csswg.org/css-values-4/#typedef-calc-keyword)
@@ -1126,7 +1120,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<layer-name>`](https://drafts.csswg.org/css-cascade-5/#typedef-layer-name)
 - [`<layout-box>`](https://drafts.csswg.org/css-box-4/#typedef-layout-box)
 - [`<leader-type>`](https://drafts.csswg.org/css-content-3/#typedef-leader-type)
-- [`<left>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-left) for `clip`
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
 - [`<legacy-device-cmyk-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax)
 - [`<legacy-hsl-syntax>`](https://drafts.csswg.org/css-color-4/#typedef-legacy-hsl-syntax)
@@ -1254,7 +1247,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<repetition>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-repetition)
 - [`<request-url-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier)
 - [`<reversed-counter-name>`](https://drafts.csswg.org/css-lists-3/#typedef-reversed-counter-name)
-- [`<right>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-right) for `clip`
 - [`<right>`](https://drafts.csswg.org/css2/#value-def-right)
 - [`<rounding-strategy>`](https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy)
 - [`<rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-rule-list)
@@ -1326,7 +1318,6 @@ Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6
 - [`<target>`](https://drafts.csswg.org/css-content-3/#typedef-target)
 - [`<timeline-range-name>`](https://drafts.csswg.org/scroll-animations-1/#typedef-timeline-range-name)
 - [`<toggle()>`](https://drafts.csswg.org/css-values-5/#typedef-toggle)
-- [`<top>`](https://drafts.fxtf.org/css-masking-1/#typedef-clip-top) for `clip`
 - [`<top>`](https://drafts.csswg.org/css2/#value-def-top)
 - [`<track-breadth>`](https://drafts.csswg.org/css-grid-2/#typedef-track-breadth)
 - [`<track-list>`](https://drafts.csswg.org/css-grid-2/#typedef-track-list)

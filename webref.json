@@ -3411,32 +3411,10 @@
       }
     },
     {
-      "for": "width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -3455,32 +3433,10 @@
       }
     },
     {
-      "for": "min-width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "min-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "min-height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -3499,32 +3455,10 @@
       }
     },
     {
-      "for": "max-width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "max-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "max-height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -21404,32 +21338,10 @@
       }
     },
     {
-      "for": "width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -21448,32 +21360,10 @@
       }
     },
     {
-      "for": "min-width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "min-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "min-height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -21492,32 +21382,10 @@
       }
     },
     {
-      "for": "max-width",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
       "for": "max-height",
       "name": "fit-content()",
       "value": "fit-content(<length-percentage [0,∞]>)",
       "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "type": "function",
-      "spec": {
-        "shortname": "css-sizing",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "max-height",
-      "name": "calc-size()",
-      "prose": "See <calc-size()>.",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size",
       "type": "function",
       "spec": {
         "shortname": "css-sizing",
@@ -24774,50 +24642,6 @@
       }
     },
     {
-      "for": "clip",
-      "name": "<top>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<right>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<bottom>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<left>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
@@ -26601,17 +26425,6 @@
       "name": "<number-optional-number>",
       "value": "<number> <number>?",
       "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number",
-      "type": "type",
-      "spec": {
-        "shortname": "filter-effects",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "filter",
-      "name": "<url>",
-      "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
       "type": "type",
       "spec": {
         "shortname": "filter-effects",
@@ -29613,50 +29426,6 @@
       }
     },
     {
-      "for": "clip",
-      "name": "<top>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-top",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<right>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-right",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<bottom>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-bottom",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "clip",
-      "name": "<left>",
-      "prose": "<top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box).",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-left",
-      "type": "type",
-      "spec": {
-        "shortname": "css-masking",
-        "currentSpec": true
-      }
-    },
-    {
       "name": "<function-parameter>",
       "href": "https://drafts.csswg.org/css-mixins-1/#typedef-function-parameter",
       "type": "type",
@@ -31440,17 +31209,6 @@
       "name": "<number-optional-number>",
       "value": "<number> <number>?",
       "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number",
-      "type": "type",
-      "spec": {
-        "shortname": "filter-effects",
-        "currentSpec": true
-      }
-    },
-    {
-      "for": "filter",
-      "name": "<url>",
-      "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
       "type": "type",
       "spec": {
         "shortname": "filter-effects",

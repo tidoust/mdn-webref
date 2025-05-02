@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-02T15:19:53.287Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -193,42 +193,12 @@ mdn:    @view-transition {
 
 
 <details>
-<summary>29 functions mismatches (out of 122 functions in common)</summary>
+<summary>23 functions mismatches (out of 116 functions in common)</summary>
 
 - [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
 ```
 webref: attr( <attr-name> <attr-type>? , <declaration-value>?)
 mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `min-width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `min-height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `max-width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `max-height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
 ```
 - [`clamp()`](https://drafts.csswg.org/css-values-4/#funcdef-clamp)
 ```
@@ -1461,7 +1431,7 @@ mdn:    :where( <complex-selector-list> )
 
 
 <details>
-<summary>109 syntaxes mismatches (out of 366 syntaxes in common)</summary>
+<summary>103 syntaxes mismatches (out of 360 syntaxes in common)</summary>
 
 - [`<absolute-size>`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 ```
@@ -1871,36 +1841,6 @@ mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()>
 webref: attr( <attr-name> <attr-type>? , <declaration-value>?)
 mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
 ```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `min-width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `min-height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `max-width`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
-- [`calc-size()`](https://drafts.csswg.org/css-sizing-3/#funcdef-width-calc-size) for `max-height`
-```
-webref: unknown syntax
-mdn:    calc-size( <calc-size-basis>, <calc-sum> )
-```
 - [`clamp()`](https://drafts.csswg.org/css-values-4/#funcdef-clamp)
 ```
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
@@ -2015,7 +1955,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>12 types mismatches (out of 39 types in common)</summary>
+<summary>12 types mismatches (out of 38 types in common)</summary>
 
 - [`<basic-shape>`](https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape)
 ```
