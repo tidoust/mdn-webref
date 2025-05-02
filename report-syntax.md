@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-01T18:03:05.684Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-02T13:11:15.198Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -83,7 +83,16 @@ mdn:    @font-face {
 ```
 - [`@font-feature-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values)
 ```
-webref: @font-feature-values <family-name># { <declaration-rule-list> }
+webref: @font-feature-values <family-name># {
+  [ font-display: [ auto | block | swap | fallback | optional ]; ] ||
+  [ @stylistic { <declaration-list> } ] ||
+  [ @historical-forms { <declaration-list> } ] ||
+  [ @styleset { <declaration-list> } ] ||
+  [ @character-variant { <declaration-list> } ] ||
+  [ @swash { <declaration-list> } ] ||
+  [ @ornaments { <declaration-list> } ] ||
+  [ @annotation { <declaration-list> } ]
+}
 mdn:    @font-feature-values <family-name># {
   <feature-value-block-list>
 }
@@ -128,7 +137,12 @@ mdn:    @namespace <namespace-prefix>? [ <string> | <url> ];
 ```
 - [`@page`](https://drafts.csswg.org/css-page-3/#at-ruledef-page)
 ```
-webref: @page <page-selector-list>? { <declaration-rule-list> }
+webref: @page <page-selector-list>? {
+  [ size: [ <length [0,∞]>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ] ]; ] ||
+  [ page-orientation: [ upright | rotate-left | rotate-right ]; ] ||
+  [ marks: [ none | [ crop || cross ] ]; ] ||
+  [ bleed: [ auto | <length> ]; ]
+}
 mdn:    @page <page-selector-list> {
   <page-body>
 }
@@ -179,7 +193,7 @@ mdn:    @view-transition {
 
 
 <details>
-<summary>25 functions mismatches (out of 122 functions in common)</summary>
+<summary>29 functions mismatches (out of 122 functions in common)</summary>
 
 - [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
 ```
@@ -221,11 +235,6 @@ mdn:    calc-size( <calc-size-basis>, <calc-sum> )
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
 mdn:    clamp( <calc-sum>#{3} )
 ```
-- [`color()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-color)
-```
-webref: unknown syntax
-mdn:    color( [ from <color> ]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )
-```
 - [`cross-fade()`](https://drafts.csswg.org/css-images-4/#funcdef-cross-fade)
 ```
 webref: cross-fade( <cf-image># )
@@ -256,6 +265,21 @@ mdn:    hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [ <hue> 
 webref: [ <legacy-hsla-syntax> | <modern-hsla-syntax> ]
 mdn:    hsla( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsla( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
 ```
+- [`hwb()`](https://drafts.csswg.org/css-color-5/#funcdef-hwb)
+```
+webref: hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    hwb( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
+```
+- [`lab()`](https://drafts.csswg.org/css-color-5/#funcdef-lab)
+```
+webref: lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+```
+- [`lch()`](https://drafts.csswg.org/css-color-5/#funcdef-lch)
+```
+webref: lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
+mdn:    lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
+```
 - [`minmax()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax) for `grid-template-columns`
 ```
 webref: minmax(min, max)
@@ -265,6 +289,16 @@ mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <
 ```
 webref: minmax(min, max)
 mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <length-percentage> | <flex> | min-content | max-content | auto ] )
+```
+- [`oklab()`](https://drafts.csswg.org/css-color-5/#funcdef-oklab)
+```
+webref: oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+```
+- [`oklch()`](https://drafts.csswg.org/css-color-5/#funcdef-oklch)
+```
+webref: oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
+mdn:    oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
 - [`polygon()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon) for `<basic-shape>`
 ```
@@ -392,9 +426,9 @@ mdn:    auto | normal | stretch | <baseline-position> | <overflow-position>? <se
 webref: baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top
 mdn:    baseline | alphabetic | ideographic | middle | central | mathematical | text-before-edge | text-after-edge
 ```
-- [`animation-duration`](https://drafts.csswg.org/css-animations-1/#propdef-animation-duration)
+- [`animation-duration`](https://drafts.csswg.org/css-animations-2/#propdef-animation-duration)
 ```
-webref: <time [0s,∞]>#
+webref: [ auto | <time [0s,∞]> ]#
 mdn:    <time>#
 ```
 - [`appearance`](https://drafts.csswg.org/css-ui-4/#propdef-appearance)
@@ -411,11 +445,6 @@ mdn:    [ <bg-layer> , ]* <final-bg-layer>
 ```
 webref: <mix-blend-mode>#
 mdn:    <blend-mode>#
-```
-- [`background-clip`](https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip)
-```
-webref: <visual-box>#
-mdn:    <bg-clip>#
 ```
 - [`baseline-shift`](https://drafts.csswg.org/css-inline-3/#propdef-baseline-shift)
 ```
@@ -752,9 +781,9 @@ mdn:    left | right | none | inline-start | inline-end
 webref: [ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>
 mdn:    [ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar
 ```
-- [`font-size-adjust`](https://drafts.csswg.org/css-fonts-4/#propdef-font-size-adjust)
+- [`font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
 ```
-webref: none | <number [0,∞]>
+webref: none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]
 mdn:    none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number> ]
 ```
 - [`font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
@@ -862,6 +891,11 @@ mdn:    auto | normal | stretch | <baseline-position> | <overflow-position>? [ <
 webref: auto | <length-percentage> | <anchor()> | <anchor-size()>
 mdn:    <length> | <percentage> | auto
 ```
+- [`letter-spacing`](https://drafts.csswg.org/css-text-4/#propdef-letter-spacing)
+```
+webref: normal | <length-percentage>
+mdn:    normal | <length>
+```
 - [`line-clamp`](https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp)
 ```
 webref: none | <integer [1,∞]> || <'block-ellipsis'>
@@ -961,6 +995,11 @@ mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-con
 ```
 webref: <blend-mode> | plus-darker | plus-lighter
 mdn:    <blend-mode> | plus-lighter
+```
+- [`object-fit`](https://drafts.csswg.org/css-images-4/#propdef-object-fit)
+```
+webref: fill | none | [contain | cover] || scale-down
+mdn:    fill | contain | cover | none | scale-down
 ```
 - [`orphans`](https://drafts.csswg.org/css-break-4/#propdef-orphans)
 ```
@@ -1132,17 +1171,17 @@ mdn:    miter | miter-clip | round | bevel | arcs
 webref: [<length-percentage> | <number>]#
 mdn:    <length-percentage> | <number>
 ```
-- [`tab-size`](https://drafts.csswg.org/css-text-3/#propdef-tab-size)
+- [`tab-size`](https://drafts.csswg.org/css-text-4/#propdef-tab-size)
 ```
 webref: <number [0,∞]> | <length [0,∞]>
 mdn:    <integer> | <length>
 ```
-- [`text-align`](https://drafts.csswg.org/css-text-3/#propdef-text-align)
+- [`text-align`](https://drafts.csswg.org/css-text-4/#propdef-text-align)
 ```
-webref: start | end | left | right | center | justify | match-parent | justify-all
+webref: start | end | left | right | center | <string> | justify | match-parent | justify-all
 mdn:    start | end | left | right | center | justify | match-parent
 ```
-- [`text-align-last`](https://drafts.csswg.org/css-text-3/#propdef-text-align-last)
+- [`text-align-last`](https://drafts.csswg.org/css-text-4/#propdef-text-align-last)
 ```
 webref: auto | start | end | left | right | center | justify | match-parent
 mdn:    auto | start | end | left | right | center | justify
@@ -1152,15 +1191,10 @@ mdn:    auto | start | end | left | right | center | justify
 webref: none | all | [ digits <integer [2,4]>? ]
 mdn:    none | all | [ digits <integer>? ]
 ```
-- [`text-decoration`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration)
+- [`text-decoration`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration)
 ```
-webref: <'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>
+webref: <'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>
 mdn:    <'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'> || <'text-decoration-thickness'>
-```
-- [`text-decoration-line`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-line)
-```
-webref: none | [ underline || overline || line-through || blink ]
-mdn:    none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error
 ```
 - [`text-decoration-skip`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-skip)
 ```
@@ -1177,29 +1211,29 @@ mdn:    auto | all | none
 webref: auto | from-font | <length-percentage>
 mdn:    auto | from-font | <length> | <percentage> 
 ```
-- [`text-emphasis-position`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-position)
+- [`text-emphasis-position`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis-position)
 ```
 webref: [ over | under ] && [ right | left ]?
 mdn:    auto | [ over | under ] && [ right | left ]?
 ```
-- [`text-indent`](https://drafts.csswg.org/css-text-3/#propdef-text-indent)
+- [`text-indent`](https://drafts.csswg.org/css-text-4/#propdef-text-indent)
 ```
 webref: [ <length-percentage> ] && hanging? && each-line?
 mdn:    <length-percentage> && hanging? && each-line?
 ```
-- [`text-justify`](https://drafts.csswg.org/css-text-3/#propdef-text-justify)
+- [`text-justify`](https://drafts.csswg.org/css-text-4/#propdef-text-justify)
 ```
-webref: auto | none | inter-word | inter-character
+webref: [ auto | none | inter-word | inter-character | ruby ] || no-compress
 mdn:    auto | inter-character | inter-word | none
 ```
-- [`text-overflow`](https://drafts.csswg.org/css-overflow-3/#propdef-text-overflow)
+- [`text-overflow`](https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow)
 ```
-webref: clip | ellipsis
+webref: [ clip | ellipsis | <string> | fade | <fade()> ]{1,2}
 mdn:    [ clip | ellipsis | <string> ]{1,2}
 ```
-- [`text-shadow`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-shadow)
+- [`text-shadow`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow)
 ```
-webref: none | [ <color>? && <length>{2,3} ]#
+webref: none | <shadow>#
 mdn:    none | <shadow-t>#
 ```
 - [`text-size-adjust`](https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust)
@@ -1212,19 +1246,14 @@ mdn:    none | auto | <percentage>
 webref: <spacing-trim> | auto
 mdn:    space-all | normal | space-first | trim-start
 ```
-- [`text-transform`](https://drafts.csswg.org/css-text-3/#propdef-text-transform)
-```
-webref: none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana
-mdn:    none | [ capitalize | uppercase | lowercase ] || full-width || full-size-kana | math-auto
-```
 - [`text-underline-offset`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-offset)
 ```
 webref: auto | <length-percentage>
 mdn:    auto | <length> | <percentage> 
 ```
-- [`text-underline-position`](https://drafts.csswg.org/css-text-decor-3/#propdef-text-underline-position)
+- [`text-underline-position`](https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-position)
 ```
-webref: auto | [ under || [ left | right ] ]
+webref: auto | [ from-font | under ] || [ left | right ]
 mdn:    auto | from-font | [ under || [ left | right ] ]
 ```
 - [`text-wrap-style`](https://drafts.csswg.org/css-text-4/#propdef-text-wrap-style)
@@ -1262,9 +1291,9 @@ mdn:    auto | text | none | all
 webref: [ first | last] || <'alignment-baseline'> || <'baseline-shift'>
 mdn:    baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
 ```
-- [`white-space`](https://drafts.csswg.org/css-text-3/#propdef-white-space)
+- [`white-space`](https://drafts.csswg.org/css-text-4/#propdef-white-space)
 ```
-webref: normal | pre | nowrap | pre-wrap | break-spaces | pre-line
+webref: normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>
 mdn:    normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'>
 ```
 - [`white-space-collapse`](https://drafts.csswg.org/css-text-4/#propdef-white-space-collapse)
@@ -1282,12 +1311,17 @@ mdn:    <integer>
 webref: auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
 mdn:    auto | <length-percentage [0,∞]> | min-content | max-content | fit-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 ```
-- [`word-break`](https://drafts.csswg.org/css-text-3/#propdef-word-break)
+- [`word-break`](https://drafts.csswg.org/css-text-4/#propdef-word-break)
 ```
-webref: normal | keep-all | break-all | break-word
+webref: normal | break-all | keep-all | manual | auto-phrase | break-word
 mdn:    normal | break-all | keep-all | break-word | auto-phrase
 ```
-- [`word-wrap`](https://drafts.csswg.org/css-text-3/#propdef-word-wrap)
+- [`word-spacing`](https://drafts.csswg.org/css-text-4/#propdef-word-spacing)
+```
+webref: normal | <length-percentage>
+mdn:    normal | <length>
+```
+- [`word-wrap`](https://drafts.csswg.org/css-text-4/#propdef-word-wrap)
 ```
 webref: normal | break-word | anywhere
 mdn:    normal | break-word
@@ -1427,7 +1461,7 @@ mdn:    :where( <complex-selector-list> )
 
 
 <details>
-<summary>115 syntaxes mismatches (out of 366 syntaxes in common)</summary>
+<summary>109 syntaxes mismatches (out of 366 syntaxes in common)</summary>
 
 - [`<absolute-size>`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 ```
@@ -1459,6 +1493,11 @@ mdn:    <visual-box> | border-area | text
 webref: <image> | none
 mdn:    none | <image>
 ```
+- [`<bg-position>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position)
+```
+webref: <position> | <position-three>
+mdn:    [ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]
+```
 - [`<bg-size>`](https://drafts.csswg.org/css-backgrounds-3/#typedef-bg-size)
 ```
 webref: [ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain
@@ -1479,30 +1518,15 @@ mdn:    <calc-value> [ '*' <calc-value> | '/' <number> ]*
 webref: <number> | <dimension> | <percentage> | <calc-keyword> | ( <calc-sum> )
 mdn:    <number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )
 ```
-- [`<color-base>`](https://drafts.csswg.org/css-color-4/#typedef-color-base)
-```
-webref: <hex-color> | <color-function> | <named-color> | transparent
-mdn:    <hex-color> | <color-function> | <named-color> | <color-mix()> | transparent
-```
 - [`<color-function>`](https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function)
 ```
 webref: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
 mdn:    <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
 ```
-- [`<color-interpolation-method>`](https://drafts.csswg.org/css-color-4/#color-interpolation-method)
+- [`<color>`](https://drafts.csswg.org/css-color-5/#typedef-color)
 ```
-webref: in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]
-mdn:    in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]
-```
-- [`<color>`](https://drafts.csswg.org/css-color-4/#typedef-color)
-```
-webref: <color-base> | currentColor | <system-color>
+webref: <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
 mdn:    <color-base> | currentColor | <system-color> | <light-dark()> | <deprecated-system-color>
-```
-- [`<colorspace-params>`](https://drafts.csswg.org/css-color-4/#typedef-colorspace-params)
-```
-webref: [ <predefined-rgb-params> | <xyz-params>]
-mdn:    [<custom-params> | <predefined-rgb-params> | <xyz-params>]
 ```
 - [`<combinator>`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
 ```
@@ -1579,7 +1603,7 @@ mdn:    <'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || 
 webref: <length-percentage [0,∞]>
 mdn:    <length-percentage>
 ```
-- [`<general-enclosed>`](https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed)
+- [`<general-enclosed>`](https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed)
 ```
 webref: [ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]
 mdn:    [ <function-token> <any-value> ) ] | ( <ident> <any-value> )
@@ -1588,11 +1612,6 @@ mdn:    [ <function-token> <any-value> ) ] | ( <ident> <any-value> )
 ```
 webref: <generic-script-specific>| <generic-complete> | <generic-incomplete>
 mdn:    <generic-complete> | <generic-incomplete> | emoji | fangsong
-```
-- [`<gradient>`](https://drafts.csswg.org/css-images-3/#typedef-gradient)
-```
-webref: <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>
-mdn:    <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()>
 ```
 - [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
 ```
@@ -1619,9 +1638,9 @@ mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <
 webref: [ <image> | <string> ] [ <resolution> || type(<string>) ]?
 mdn:    [ <image> | <string> ] [ <resolution> || type(<string>) ]
 ```
-- [`<image>`](https://drafts.csswg.org/css-images-3/#typedef-image)
+- [`<image>`](https://drafts.csswg.org/css-images-4/#typedef-image)
 ```
-webref: <url> | <gradient>
+webref: <url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>
 mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fade()> | <gradient>
 ```
 - [`<inflexible-breadth>`](https://drafts.csswg.org/css-grid-2/#typedef-inflexible-breadth)
@@ -1644,52 +1663,32 @@ mdn:    from | to | <percentage [0,100]> | <timeline-range-name> <percentage>
 webref: <length [0,∞]> | thin | medium | thick
 mdn:    <length> | thin | medium | thick
 ```
-- [`<linear-color-stop>`](https://drafts.csswg.org/css-images-3/#typedef-linear-color-stop)
-```
-webref: <color> <length-percentage>?
-mdn:    <color> <color-stop-length>?
-```
-- [`<linear-gradient-syntax>`](https://drafts.csswg.org/css-images-3/#typedef-linear-gradient-syntax)
-```
-webref: [ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list>
-mdn:    [ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>
-```
-- [`<media-and>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-and)
+- [`<media-and>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-and)
 ```
 webref: and <media-in-parens>
 mdn:    <media-in-parens> [ and <media-in-parens> ]+
 ```
-- [`<media-condition-without-or>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition-without-or)
+- [`<media-condition-without-or>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition-without-or)
 ```
 webref: <media-not> | <media-in-parens> <media-and>*
 mdn:    <media-not> | <media-and> | <media-in-parens>
 ```
-- [`<media-condition>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition)
+- [`<media-condition>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition)
 ```
 webref: <media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]
 mdn:    <media-not> | <media-and> | <media-or> | <media-in-parens>
 ```
-- [`<media-feature>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-feature)
-```
-webref: [ <mf-plain> | <mf-boolean> | <mf-range> ]
-mdn:    ( [ <mf-plain> | <mf-boolean> | <mf-range> ] )
-```
-- [`<media-in-parens>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-in-parens)
-```
-webref: ( <media-condition> ) | ( <media-feature> ) | <general-enclosed>
-mdn:    ( <media-condition> ) | <media-feature> | <general-enclosed>
-```
-- [`<media-or>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-or)
+- [`<media-or>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-or)
 ```
 webref: or <media-in-parens>
 mdn:    <media-in-parens> [ or <media-in-parens> ]+
 ```
-- [`<media-query-list>`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
+- [`<media-query-list>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list)
 ```
 webref: unknown syntax
 mdn:    <media-query>#
 ```
-- [`<mf-range>`](https://drafts.csswg.org/mediaqueries-4/#typedef-mf-range)
+- [`<mf-range>`](https://drafts.csswg.org/mediaqueries-5/#typedef-mf-range)
 ```
 webref: <mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>
 mdn:    <mf-name> [ '<' | '>' ]? '='? <mf-value>
@@ -1752,9 +1751,9 @@ mdn:    <dashed-ident>
 webref: unknown syntax
 mdn:    palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})
 ```
-- [`<position>`](https://drafts.csswg.org/css-values-4/#typedef-position)
+- [`<position>`](https://drafts.csswg.org/css-values-5/#typedef-position)
 ```
-webref: [ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
+webref: <position-one> | <position-two> | <position-four>
 mdn:    [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
 ```
 - [`<predefined-rgb>`](https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb)
@@ -1772,15 +1771,15 @@ mdn:    ':' <ident-token> | ':' <function-token> <any-value> ')'
 webref: : <pseudo-class-selector> | <legacy-pseudo-element-selector>
 mdn:    ':' <pseudo-class-selector>
 ```
-- [`<radial-gradient-syntax>`](https://drafts.csswg.org/css-images-3/#typedef-radial-gradient-syntax)
-```
-webref: [ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>
-mdn:    [ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <color-stop-list>
-```
 - [`<relative-size>`](https://drafts.csswg.org/css2/#value-def-relative-size)
 ```
 webref: unknown syntax
 mdn:    larger | smaller
+```
+- [`<repeat-style>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style)
+```
+webref: repeat-x | repeat-y | <repetition>{1,2}
+mdn:    repeat-x | repeat-y | [ repeat | space | round | no-repeat ]{1,2}
 ```
 - [`<scope-end>`](https://drafts.csswg.org/css-cascade-6/#typedef-scope-end)
 ```
@@ -1822,16 +1821,6 @@ mdn:    <number-token>
 webref: infinite | <number [0,∞]>
 mdn:    infinite | <number>
 ```
-- [`<single-animation>`](https://drafts.csswg.org/css-animations-1/#typedef-single-animation)
-```
-webref: <time [0s,∞]> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]
-mdn:    <'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>
-```
-- [`<single-transition>`](https://drafts.csswg.org/css-transitions-1/#single-transition)
-```
-webref: [ none | <single-transition-property> ] || <time> || <easing-function> || <time>
-mdn:    [ none | <single-transition-property> ] || <time> || <easing-function> || <time> || <transition-behavior-value>
-```
 - [`<size-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-size-feature)
 ```
 webref: unknown syntax
@@ -1842,9 +1831,9 @@ mdn:    <media-query-list>
 webref: unknown syntax
 mdn:    <declaration>
 ```
-- [`<supports-feature>`](https://drafts.csswg.org/css-conditional-3/#typedef-supports-feature)
+- [`<supports-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature)
 ```
-webref: <supports-decl>
+webref: <supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>
 mdn:    <supports-decl> | <supports-selector-fn>
 ```
 - [`<system-color>`](https://drafts.csswg.org/css-color-4/#typedef-system-color)
@@ -1872,15 +1861,10 @@ mdn:    <length-percentage> | <flex> | min-content | max-content | auto
 webref: <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage [0,∞]> )
 mdn:    <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> )
 ```
-- [`<transform-function>`](https://drafts.csswg.org/css-transforms-1/#typedef-transform-function)
+- [`<transform-function>`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
 ```
 webref: unknown syntax
 mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>
-```
-- [`<xyz-params>`](https://drafts.csswg.org/css-color-4/#typedef-xyz-params)
-```
-webref: <xyz-space> [ <number> | <percentage> | none ]{3}
-mdn:    <xyz> [ <number> | <percentage> | none ]{3}
 ```
 - [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
 ```
@@ -1922,11 +1906,6 @@ mdn:    calc-size( <calc-size-basis>, <calc-sum> )
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
 mdn:    clamp( <calc-sum>#{3} )
 ```
-- [`color()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-color)
-```
-webref: unknown syntax
-mdn:    color( [ from <color> ]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )
-```
 - [`cross-fade()`](https://drafts.csswg.org/css-images-4/#funcdef-cross-fade)
 ```
 webref: cross-fade( <cf-image># )
@@ -1957,6 +1936,21 @@ mdn:    hsl( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsl( [ <hue> 
 webref: [ <legacy-hsla-syntax> | <modern-hsla-syntax> ]
 mdn:    hsla( <hue>, <percentage>, <percentage>, <alpha-value>? ) | hsla( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
 ```
+- [`hwb()`](https://drafts.csswg.org/css-color-5/#funcdef-hwb)
+```
+webref: hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    hwb( [ <hue> | none ] [ <percentage> | <number> | none ] [ <percentage> | <number> | none ] [ / [ <alpha-value> | none ] ]? )
+```
+- [`lab()`](https://drafts.csswg.org/css-color-5/#funcdef-lab)
+```
+webref: lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+```
+- [`lch()`](https://drafts.csswg.org/css-color-5/#funcdef-lch)
+```
+webref: lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
+mdn:    lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
+```
 - [`minmax()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax) for `grid-template-columns`
 ```
 webref: minmax(min, max)
@@ -1966,6 +1960,16 @@ mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <
 ```
 webref: minmax(min, max)
 mdn:    minmax( [ <length-percentage> | min-content | max-content | auto ] , [ <length-percentage> | <flex> | min-content | max-content | auto ] )
+```
+- [`oklab()`](https://drafts.csswg.org/css-color-5/#funcdef-oklab)
+```
+webref: oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+mdn:    oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
+```
+- [`oklch()`](https://drafts.csswg.org/css-color-5/#funcdef-oklch)
+```
+webref: oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
+mdn:    oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
 - [`polygon()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-polygon) for `<basic-shape>`
 ```
@@ -2011,7 +2015,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>13 types mismatches (out of 39 types in common)</summary>
+<summary>12 types mismatches (out of 39 types in common)</summary>
 
 - [`<basic-shape>`](https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape)
 ```
@@ -2023,9 +2027,9 @@ mdn:    <inset()> | <xywh()> | <rect()> | <circle()> | <ellipse()> | <polygon()>
 webref: normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
 mdn:    normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
 ```
-- [`<color>`](https://drafts.csswg.org/css-color-4/#typedef-color)
+- [`<color>`](https://drafts.csswg.org/css-color-5/#typedef-color)
 ```
-webref: <color-base> | currentColor | <system-color>
+webref: <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
 mdn:    <color-base> | currentColor | <system-color> | <light-dark()> | <deprecated-system-color>
 ```
 - [`<display-legacy>`](https://drafts.csswg.org/css-display-4/#typedef-display-legacy)
@@ -2038,14 +2042,9 @@ mdn:    inline-block | inline-list-item | inline-table | inline-flex | inline-gr
 webref: <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>
 mdn:    <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <saturate()> | <sepia()>
 ```
-- [`<gradient>`](https://drafts.csswg.org/css-images-3/#typedef-gradient)
+- [`<image>`](https://drafts.csswg.org/css-images-4/#typedef-image)
 ```
-webref: <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>
-mdn:    <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()>
-```
-- [`<image>`](https://drafts.csswg.org/css-images-3/#typedef-image)
-```
-webref: <url> | <gradient>
+webref: <url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>
 mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fade()> | <gradient>
 ```
 - [`<integer>`](https://drafts.csswg.org/css-values-4/#integer-value)
@@ -2053,9 +2052,9 @@ mdn:    <url> | <image()> | <image-set()> | <element()> | <paint()> | <cross-fad
 webref: unknown syntax
 mdn:    <number-token>
 ```
-- [`<position>`](https://drafts.csswg.org/css-values-4/#typedef-position)
+- [`<position>`](https://drafts.csswg.org/css-values-5/#typedef-position)
 ```
-webref: [ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
+webref: <position-one> | <position-two> | <position-four>
 mdn:    [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
 ```
 - [`<shape>`](https://drafts.csswg.org/css2/#value-def-shape)
@@ -2068,7 +2067,7 @@ mdn:    rect(<top>, <right>, <bottom>, <left>)
 webref: [ text | ideographic | ideographic-ink ] | [ text | ideographic | ideographic-ink | cap | ex ] [ text | ideographic | ideographic-ink | alphabetic ]
 mdn:    [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]?
 ```
-- [`<transform-function>`](https://drafts.csswg.org/css-transforms-1/#typedef-transform-function)
+- [`<transform-function>`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
 ```
 webref: unknown syntax
 mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>

@@ -41,17 +41,19 @@ const webrefCategories = ['atrules', 'properties', 'selectors', 'values'];
  ***********************************************************/
 const parsedFiles = await cssInWebref.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
+  // We're going to merge features across specs,
+  // save the link back to individual specs
+  decorateFeaturesWithSpec(data, shortname);
+
   // Same categorization in Webref and MDN data for at-rules, properties,
   // and selectors.
-  decorateDataWithShortname(data, shortname);
-
   categorized.atRules.push(...data.atrules);
   categorized.properties.push(...data.properties);
   categorized.selectors.push(...data.selectors);
 
-  // Then MDN data categorizes CSS features into functions, syntaxes, types and
-  // units, without making a distinction between features that are scoped to
-  // another feature and those that are more general.
+  // Then MDN data categorizes CSS features into functions, types and units,
+  // without making a distinction between features that are scoped to another
+  // feature and those that are more general.
   // Webref data stores "functions" and "types" definitions under a `values`
   // key. The root `values` key contains unscoped definitions. Individual
   // features may also have a `values` key with scoped definitions.
@@ -85,94 +87,57 @@ for (const type of categorized.types) {
   }
 }
 
-// Some specs extend properties defined in another spec
-// Let's merge syntax values in Webref so that we may compare with MDN
-const propertyDfns = {};
-for (const property of categorized.properties) {
-  if (!propertyDfns[property.name]) {
-    propertyDfns[property.name] = [];
-  }
-  propertyDfns[property.name].push(property);
-}
-categorized.properties = Object.entries(propertyDfns)
-  .map(([name, dfns]) => {
-    if (dfns.length === 1) {
-      return dfns[0];
-    }
-    // Best base definition is one that is defined with some syntax value in
-    // the "current" spec in a series. If there's none, we'll just take the
-    // first one that defines a value. If not, we'll surrender and use the
-    // first definition that does not look like an extension.
-    const baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
-      dfns.find(dfn => dfn.value) ||
-      dfns.find(dfn => !dfn.newValues && dfn.spec.currentSpec) ||
-      dfns.find(dfn => !dfn.newValues);
-    if (!baseDfn.value) {
-      return baseDfn;
-    }
-    for (const dfn of dfns) {
-      if (dfn.newValues) {
-        baseDfn.value += ' | ' + dfn.newValues;
-      }
-    }
-    return baseDfn;
-  });
 
-// Similarly, at-rules descriptors are sometimes defined in multiple specs
-const atrulesDfns = {};
-for (const feature of categorized.atRules) {
-  if (!atrulesDfns[feature.name]) {
-    atrulesDfns[feature.name] = [];
-  }
-  atrulesDfns[feature.name].push(feature);
-}
-categorized.atRules = Object.entries(atrulesDfns)
-  .map(([name, dfns]) => {
-    if (dfns.length === 1) {
-      return dfns[0];
-    }
-    const baseDfn = dfns.find(dfn => dfn.value && dfn.spec.currentSpec) ||
-      dfns.find(dfn => dfn.spec.currentSpec) ||
-      dfns[0];
-    for (const dfn of dfns) {
-      if (dfn !== baseDfn && dfn.descriptors.length > 0) {
-        baseDfn.descriptors.push(...dfn.descriptors);
-      }
-    }
-    return baseDfn;
-  })
-  .map(atrule => {
-    // If the syntax of an at-rule is generic, a more practical syntax can be
-    // assembled by going through the list of descriptors.
-    // TODO: drop enclosing grouping constructs when there's no ambiguity
-    // TODO: if the logic is sound, do it directly in raw Webref data
-    if (atrule.value?.match(/{ <declaration-(rule-)?list> }/) &&
-        atrule.descriptors.length > 0) {
-      const syntax = atrule.descriptors
-        .map(desc => {
-          if (desc.name.startsWith('@')) {
-            return `[ ${desc.value} ]`;
-          }
-          else {
-            return `[ ${desc.name}: [ ${desc.value} ]; ]`;
-          }
-        })
-        .join(' ||\n  ');
-      atrule.value = atrule.value.replace(
-        /{ <declaration-list> }/,
-        '{\n  ' + syntax + '\n}');
-    }
-    return atrule;
-  });
-
-// For all other types of features, if a feature appears more than once,
-// only keep definitions in "current" specs
+/************************************************************
+ * Consolidate categorized data to avoid duplicate features.
+ *
+ * MDN data only has one definition for each feature but
+ * Webref may have multiple definitions of a given feature.
+ * This happens when:
+ * - A feature is defined in one level of a spec series, and
+ * re-defined in a subsequent level.
+ * - A property is defined in one spec, and extended in other
+ * specs, including possibly in later levels in the series.
+ * This is recorded in Webref through the `newValues` key.
+ * (Note Webref guarantees that there is a base definition)
+ * - An at-rule is defined in one spec, additional
+ * descriptors are defined in other specs, including possibly
+ * in later levels in the series.
+ * - A feature is defined in specs in different series. This
+ * can only happen if all these specs, save one at most, are
+ * delta specs, and that is because Webref guarantees
+ * essentially ignore delta specs for now.
+ *
+ * Note: additional duplicates also exist in Webref if one
+ * only looks at a feature's name, because a feature may be
+ * defined for multiple other constructs. Disambiguation here
+ * is a matter of taking the scope into account (the `for`
+ * key).
+ *
+ * Which definition to use when a feature is defined in, or
+ * across, multiple levels in a series essentially depends on
+ * how the information is going to be used.
+ * A conservative approach would use the definition in the
+ * current level and dismiss later levels as forward-looking.
+ * An on-the-edge perspective would use definitions in the
+ * latest level.
+ * To get a view more anchored on browser support, one would
+ * likely mix both approaches depending on the underlying
+ * feature.
+ *
+ * The code below implements the on-the-edge perspective.
+ ***********************************************************/
 for (const category of categories) {
-  if (category === 'properties' || category === 'atRules') {
-    continue;
-  }
+  // Create an index of feature definitions
   const featureDfns = {};
   for (const feature of categorized[category]) {
+    // ... and since we're looping through features, let's get rid
+    // of the inner values definitions, which we no longer need
+    // (interesting ones were copied to the root level)
+    if (feature.values) {
+      delete feature.values;
+    }
+
     let featureName = feature.name;
     if (feature.for) {
       featureName += ' for ' + feature.for;
@@ -183,21 +148,110 @@ for (const category of categories) {
     featureDfns[featureName].push(feature);
   }
 
+  // Detect and get rid of duplicate definitions in unrelated specs.
+  // As of 2025-02-05, the only such duplicates are a few types in css-color-5
+  // and css-color-hdr. Use the definitions in css-color-hdr which lives more
+  // on the edge.
+  // TODO: add this to data curation in Webref and improve guarantee
+  for (const [name, dfns] of Object.entries(featureDfns)) {
+    let actualDfns = dfns.filter(dfn => dfn.value);
+    if (actualDfns.length === 0) {
+      actualDfns = dfns.filter(dfn => !dfn.newValues);
+    }
+    const seriesShortname = actualDfns[0].spec.shortname
+      .replace(/-\d+$/, '');
+    const otherDfns = actualDfns
+      .filter(dfn => dfn.spec.shortname.replace(/-\d+$/, '') !== seriesShortname)
+      .map(dfn => dfn.spec.shortname);
+    if (otherDfns.length > 0) {
+      console.warn(` - ${name} defined in ${actualDfns[0].spec.shortname} and ${otherDfns.join(', ')}`);
+      if (seriesShortname === 'css-color' ||
+          seriesShortname === 'css-color-hdr') {
+        featureDfns[name] = dfns.filter(dfn =>
+          dfn.spec.shortname === 'css-color-hdr');
+      }
+      else {
+        throw new Error('Duplicate features found in unrelated specs');
+      }
+    }
+  }
+
+  // Identify the base definition for each feature, using the definition in
+  // the latest possible level. Move that base definition to the beginning
+  // of the array and get rid of other base definitions.
+  // (Note: we got rid of duplicates in unrelated specs already)
+  for (const [name, dfns] of Object.entries(featureDfns)) {
+    let actualDfns = dfns.filter(dfn => dfn.value);
+    if (actualDfns.length === 0) {
+      actualDfns = dfns.filter(dfn => !dfn.newValues);
+    }
+    const best = actualDfns.reduce((dfn1, dfn2) => {
+      if (dfn1.spec.currentSpec) {
+        return dfn2;
+      }
+      else if (dfn2.spec.currentSpec) {
+        return dfn1;
+      }
+      else {
+        const level1 = dfn1.spec.shortname.match(/-(\d+)$/)[1];
+        const level2 = dfn2.spec.shortname.match(/-(\d+)$/)[1];
+        if (level1 < level2) {
+          return dfn2;
+        }
+        else {
+          return dfn1;
+        }
+      }
+    });
+    featureDfns[name] = [best].concat(
+      dfns.filter(dfn => !actualDfns.includes(dfn))
+    );
+  }
+
+  // Apply extensions for properties and at-rules
+  // (no extension mechanism for other categories)
+  for (const [name, dfns] of Object.entries(featureDfns)) {
+    const baseDfn = dfns[0];
+    for (const dfn of dfns) {
+      if (dfn === baseDfn) {
+        continue;
+      }
+      if (baseDfn.value && dfn.newValues) {
+        baseDfn.value += ' | ' + dfn.newValues;
+      }
+      if (baseDfn.descriptors && dfn.descriptors?.length > 0) {
+        baseDfn.descriptors.push(...dfn.descriptors);
+      }
+    }
+  }
+
+  // All duplicates should have been treated somehow and merged into the
+  // base definition, which we can just use. One more thing though: specs do
+  // not expand on the syntax of at-rules, let's compute a more specific
+  // syntax from the list of descriptors when possible.
   categorized[category] = Object.entries(featureDfns)
-    .map(([name, dfns]) => {
-      if (dfns.length === 1) {
-        return dfns[0];
+    .map(([name, features]) => features[0])
+    .map(feature => {
+      if (feature.descriptors?.length > 0 &&
+          feature.value?.match(/{ <declaration-(rule-)?list> }/)) {
+        // TODO: drop enclosing grouping constructs when there's no ambiguity
+        // TODO: if the logic is sound, do it directly in raw Webref data
+        const syntax = feature.descriptors
+          .map(desc => {
+            if (desc.name.startsWith('@')) {
+              return `[ ${desc.value} ]`;
+            }
+            else {
+              return `[ ${desc.name}: [ ${desc.value} ]; ]`;
+            }
+          })
+          .join(' ||\n  ');
+        feature.value = feature.value.replace(
+          /{ <declaration-(rule-)?list> }/,
+          '{\n  ' + syntax + '\n}');
       }
-      let currentDfns = dfns.filter(dfn => dfn.value && dfn.spec.currentSpec);
-      if (currentDfns.length === 0) {
-        currentDfns = dfns.filter(dfn => dfn.spec.currentSpec);
-      }
-      if (currentDfns.length === 0) {
-        currentDfns = [dfns[0]];
-      }
-      return currentDfns;
-    })
-    .flat();
+      return feature;
+    });
 }
 
 
@@ -434,7 +488,7 @@ function normalizeSyntax(syntax) {
  * Decorate all CSS features in the extract with the spec's shortname and
  * a flag that signals whether the spec is the current one in the series
  */
-function decorateDataWithShortname(data, shortname) {
+function decorateFeaturesWithSpec(data, shortname) {
   const spec = {
     shortname: shortname,
     currentSpec: !shortname.match(/-\d+$/)
