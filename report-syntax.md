@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-02T15:19:53.287Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-03T08:02:29.273Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -314,11 +314,11 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>200 properties mismatches (out of 500 properties in common)</summary>
+<summary>196 properties mismatches (out of 500 properties in common)</summary>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
-webref: unknown syntax
+webref: none | auto | base | <compat-auto> | <compat-special> | base
 mdn:    none | button | button-bevel | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield | -apple-pay-button
 ```
 - [`-webkit-line-clamp`](https://drafts.csswg.org/css-overflow-4/#propdef--webkit-line-clamp)
@@ -328,43 +328,23 @@ mdn:    none | <integer>
 ```
 - [`-webkit-mask`](https://compat.spec.whatwg.org/#propdef--webkit-mask)
 ```
-webref: unknown syntax
+webref: <mask-layer>#
 mdn:    [ <mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || [ <visual-box> | border | padding | content | text ] || [ <visual-box> | border | padding | content ] ]#
 ```
 - [`-webkit-mask-clip`](https://compat.spec.whatwg.org/#propdef--webkit-mask-clip)
 ```
-webref: unknown syntax
+webref: [ <coord-box> | no-clip ]#
 mdn:    [ <coord-box> | no-clip | border | padding | content | text ]#
 ```
 - [`-webkit-mask-composite`](https://compat.spec.whatwg.org/#propdef--webkit-mask-composite)
 ```
-webref: unknown syntax
+webref: <compositing-operator>#
 mdn:    <composite-style>#
-```
-- [`-webkit-mask-image`](https://compat.spec.whatwg.org/#propdef--webkit-mask-image)
-```
-webref: unknown syntax
-mdn:    <mask-reference>#
 ```
 - [`-webkit-mask-origin`](https://compat.spec.whatwg.org/#propdef--webkit-mask-origin)
 ```
-webref: unknown syntax
+webref: <coord-box>#
 mdn:    [ <coord-box> | border | padding | content ]#
-```
-- [`-webkit-mask-position`](https://compat.spec.whatwg.org/#propdef--webkit-mask-position)
-```
-webref: unknown syntax
-mdn:    <position>#
-```
-- [`-webkit-mask-repeat`](https://compat.spec.whatwg.org/#propdef--webkit-mask-repeat)
-```
-webref: unknown syntax
-mdn:    <repeat-style>#
-```
-- [`-webkit-mask-size`](https://compat.spec.whatwg.org/#propdef--webkit-mask-size)
-```
-webref: unknown syntax
-mdn:    <bg-size>#
 ```
 - [`-webkit-text-stroke`](https://compat.spec.whatwg.org/#propdef--webkit-text-stroke)
 ```
@@ -758,7 +738,7 @@ mdn:    none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ f
 ```
 - [`font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
 ```
-webref: unknown syntax
+webref: normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded
 mdn:    <font-stretch-absolute>
 ```
 - [`font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
@@ -783,17 +763,17 @@ mdn:    normal | [ <string> <number> ]#
 ```
 - [`grid-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-column-gap)
 ```
-webref: unknown syntax
+webref: normal | <length-percentage [0,∞]>
 mdn:    <length-percentage>
 ```
 - [`grid-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-gap)
 ```
-webref: unknown syntax
+webref: <'row-gap'> <'column-gap'>?
 mdn:    <'grid-row-gap'> <'grid-column-gap'>?
 ```
 - [`grid-row-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-row-gap)
 ```
-webref: unknown syntax
+webref: normal | <length-percentage [0,∞]>
 mdn:    <length-percentage>
 ```
 - [`height`](https://drafts.csswg.org/css-sizing-3/#propdef-height)

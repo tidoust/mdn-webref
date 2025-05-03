@@ -285,7 +285,20 @@ for (const category of categories) {
       }
     }
     return true;
-  }) 
+  });
+
+  // Various CSS properties are "legacy aliases of" an other property. Use the
+  // syntax of the other property for these.
+  for (const feature of categorized[category]) {
+    if (feature.legacyAliasOf && !feature.value) {
+      const target = categorized[category].find(f =>
+        f.name === feature.legacyAliasOf && !f.for);
+      if (!target) {
+        throw new Error(`${feature.name} is a legacy alias of unknown ${f.legacyAliasOf}`);
+      }
+      feature.value = target.value;
+    }
+  }
 }
 
 

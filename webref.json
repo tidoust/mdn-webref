@@ -4455,7 +4455,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ] | anchor-center"
     },
     {
       "name": "-webkit-align-content",
@@ -4469,7 +4470,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>"
     },
     {
       "name": "-webkit-align-self",
@@ -4483,7 +4485,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center"
     },
     {
       "name": "-webkit-animation-name",
@@ -4497,7 +4500,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ none | <keyframes-name> ]#"
     },
     {
       "name": "-webkit-animation-duration",
@@ -4511,7 +4515,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ auto | <time [0s,∞]> ]#"
     },
     {
       "name": "-webkit-animation-timing-function",
@@ -4525,7 +4530,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<easing-function>#"
     },
     {
       "name": "-webkit-animation-iteration-count",
@@ -4539,7 +4545,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-animation-iteration-count>#"
     },
     {
       "name": "-webkit-animation-direction",
@@ -4553,7 +4560,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-animation-direction>#"
     },
     {
       "name": "-webkit-animation-play-state",
@@ -4567,7 +4575,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-animation-play-state>#"
     },
     {
       "name": "-webkit-animation-delay",
@@ -4581,7 +4590,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<time>#"
     },
     {
       "name": "-webkit-animation-fill-mode",
@@ -4595,7 +4605,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-animation-fill-mode>#"
     },
     {
       "name": "-webkit-animation",
@@ -4609,7 +4620,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-animation>#"
     },
     {
       "name": "-webkit-backface-visibility",
@@ -4623,7 +4635,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "visible | hidden"
     },
     {
       "name": "-webkit-background-clip",
@@ -4637,7 +4650,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<bg-clip>#"
     },
     {
       "name": "-webkit-background-origin",
@@ -4651,7 +4665,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<visual-box>#"
     },
     {
       "name": "-webkit-background-size",
@@ -4665,7 +4680,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<bg-size>#"
     },
     {
       "name": "-webkit-border-bottom-left-radius",
@@ -4679,7 +4695,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<length-percentage [0,∞]>{1,2}"
     },
     {
       "name": "-webkit-border-bottom-right-radius",
@@ -4693,7 +4710,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<length-percentage [0,∞]>{1,2}"
     },
     {
       "name": "-webkit-border-top-left-radius",
@@ -4707,7 +4725,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<length-percentage [0,∞]>{1,2}"
     },
     {
       "name": "-webkit-border-top-right-radius",
@@ -4721,7 +4740,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<length-percentage [0,∞]>{1,2}"
     },
     {
       "name": "-webkit-border-radius",
@@ -4735,7 +4755,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?"
     },
     {
       "name": "-webkit-box-shadow",
@@ -4749,7 +4770,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<spread-shadow>#"
     },
     {
       "name": "-webkit-box-sizing",
@@ -4763,7 +4785,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "content-box | border-box"
     },
     {
       "name": "-webkit-flex",
@@ -4777,7 +4800,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]"
     },
     {
       "name": "-webkit-flex-basis",
@@ -4791,7 +4815,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "content | <'width'>"
     },
     {
       "name": "-webkit-flex-direction",
@@ -4805,7 +4830,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "row | row-reverse | column | column-reverse"
     },
     {
       "name": "-webkit-flex-flow",
@@ -4819,7 +4845,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<'flex-direction'> || <'flex-wrap'>"
     },
     {
       "name": "-webkit-flex-grow",
@@ -4833,7 +4860,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<number [0,∞]>"
     },
     {
       "name": "-webkit-flex-shrink",
@@ -4847,7 +4875,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<number [0,∞]>"
     },
     {
       "name": "-webkit-flex-wrap",
@@ -4861,7 +4890,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "nowrap | wrap | wrap-reverse"
     },
     {
       "name": "-webkit-filter",
@@ -4875,7 +4905,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | <filter-value-list>"
     },
     {
       "name": "-webkit-justify-content",
@@ -4889,7 +4920,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]"
     },
     {
       "name": "-webkit-mask",
@@ -4903,7 +4935,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<mask-layer>#"
     },
     {
       "name": "-webkit-mask-box-image",
@@ -4917,7 +4950,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>"
     },
     {
       "name": "-webkit-mask-box-image-outset",
@@ -4931,7 +4965,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ <length> | <number> ]{1,4}"
     },
     {
       "name": "-webkit-mask-box-image-repeat",
@@ -4945,7 +4980,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ stretch | repeat | round | space ]{1,2}"
     },
     {
       "name": "-webkit-mask-box-image-slice",
@@ -4959,7 +4995,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ <number> | <percentage> ]{1,4} fill?"
     },
     {
       "name": "-webkit-mask-box-image-source",
@@ -4973,7 +5010,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | <image>"
     },
     {
       "name": "-webkit-mask-box-image-width",
@@ -4987,7 +5025,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ <length-percentage> | <number> | auto ]{1,4}"
     },
     {
       "name": "-webkit-mask-clip",
@@ -5001,7 +5040,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ <coord-box> | no-clip ]#"
     },
     {
       "name": "-webkit-mask-composite",
@@ -5015,7 +5055,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<compositing-operator>#"
     },
     {
       "name": "-webkit-mask-image",
@@ -5029,7 +5070,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<mask-reference>#"
     },
     {
       "name": "-webkit-mask-origin",
@@ -5043,7 +5085,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<coord-box>#"
     },
     {
       "name": "-webkit-mask-position",
@@ -5057,7 +5100,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<position>#"
     },
     {
       "name": "-webkit-mask-repeat",
@@ -5071,7 +5115,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<repeat-style>#"
     },
     {
       "name": "-webkit-mask-size",
@@ -5085,7 +5130,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<bg-size>#"
     },
     {
       "name": "-webkit-order",
@@ -5099,7 +5145,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<integer>"
     },
     {
       "name": "-webkit-perspective",
@@ -5113,7 +5160,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | <length [0,∞]>"
     },
     {
       "name": "-webkit-perspective-origin",
@@ -5127,7 +5175,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<position>"
     },
     {
       "name": "-webkit-transform-origin",
@@ -5141,7 +5190,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [ [ center | left | right ] && [ center | top | bottom ] ] <length>?"
     },
     {
       "name": "-webkit-transform-style",
@@ -5155,7 +5205,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "flat | preserve-3d"
     },
     {
       "name": "-webkit-transform",
@@ -5169,7 +5220,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | <transform-list>"
     },
     {
       "name": "-webkit-transition-delay",
@@ -5183,7 +5235,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<time>#"
     },
     {
       "name": "-webkit-transition-duration",
@@ -5197,7 +5250,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<time [0s,∞]>#"
     },
     {
       "name": "-webkit-transition-property",
@@ -5211,7 +5265,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "none | <single-transition-property>#"
     },
     {
       "name": "-webkit-transition-timing-function",
@@ -5225,7 +5280,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<easing-function>#"
     },
     {
       "name": "-webkit-transition",
@@ -5239,7 +5295,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "<single-transition>#"
     },
     {
       "name": "-webkit-text-size-adjust",
@@ -5253,7 +5310,8 @@
       "spec": {
         "shortname": "compat",
         "currentSpec": true
-      }
+      },
+      "value": "auto | none | <percentage [0,∞]>"
     },
     {
       "name": "-webkit-box-align",
@@ -5632,7 +5690,8 @@
       "spec": {
         "shortname": "css-align",
         "currentSpec": true
-      }
+      },
+      "value": "normal | <length-percentage [0,∞]>"
     },
     {
       "name": "grid-column-gap",
@@ -5645,7 +5704,8 @@
       "spec": {
         "shortname": "css-align",
         "currentSpec": true
-      }
+      },
+      "value": "normal | <length-percentage [0,∞]>"
     },
     {
       "name": "grid-gap",
@@ -5658,7 +5718,8 @@
       "spec": {
         "shortname": "css-align",
         "currentSpec": true
-      }
+      },
+      "value": "<'row-gap'> <'column-gap'>?"
     },
     {
       "name": "anchor-name",
@@ -10313,7 +10374,8 @@
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
-      }
+      },
+      "value": "normal | <percentage [0,∞]> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded"
     },
     {
       "name": "appearance",
@@ -17199,7 +17261,8 @@
       "spec": {
         "shortname": "css-ui",
         "currentSpec": true
-      }
+      },
+      "value": "none | auto | base | <compat-auto> | <compat-special> | base"
     },
     {
       "name": "-webkit-user-select",
