@@ -19206,7 +19206,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::picker-icon"
     },
     {
       "name": "::file-selector-button",
@@ -19215,7 +19216,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::file-selector-button"
     },
     {
       "name": "::checkmark",
@@ -19224,7 +19226,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::checkmark"
     },
     {
       "name": "::slider-thumb",
@@ -19233,7 +19236,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::slider-thumb"
     },
     {
       "name": "::slider-track",
@@ -19242,7 +19246,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::slider-track"
     },
     {
       "name": "::slider-fill",
@@ -19251,7 +19256,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::slider-fill"
     },
     {
       "name": "::placeholder",
@@ -19260,7 +19266,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::placeholder"
     },
     {
       "name": "::field-text",
@@ -19269,7 +19276,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::field-text"
     },
     {
       "name": "::clear-icon",
@@ -19278,7 +19286,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::clear-icon"
     },
     {
       "name": "::step-control",
@@ -19287,7 +19296,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::step-control"
     },
     {
       "name": "::step-up",
@@ -19296,7 +19306,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::step-up"
     },
     {
       "name": "::step-down",
@@ -19305,7 +19316,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::step-down"
     },
     {
       "name": "::field-component",
@@ -19314,7 +19326,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::field-component"
     },
     {
       "name": "::field-separator",
@@ -19323,7 +19336,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::field-separator"
     },
     {
       "name": "::color-swatch",
@@ -19332,7 +19346,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": "::color-swatch"
     },
     {
       "name": ":low-value",
@@ -19341,7 +19356,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": ":low-value"
     },
     {
       "name": ":high-value",
@@ -19350,7 +19366,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": ":high-value"
     },
     {
       "name": ":optimal-value",
@@ -19359,7 +19376,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "value": ":optimal-value"
     },
     {
       "name": ":nth-of-page()",
@@ -19377,7 +19395,8 @@
       "spec": {
         "shortname": "css-gcpm-4",
         "currentSpec": false
-      }
+      },
+      "value": ":first-of-page"
     },
     {
       "name": ":last-of-page",
@@ -19386,7 +19405,8 @@
       "spec": {
         "shortname": "css-gcpm-4",
         "currentSpec": false
-      }
+      },
+      "value": ":last-of-page"
     },
     {
       "name": ":start-of-page",
@@ -19395,7 +19415,8 @@
       "spec": {
         "shortname": "css-gcpm-4",
         "currentSpec": false
-      }
+      },
+      "value": ":start-of-page"
     },
     {
       "name": ":nth()",
@@ -19413,7 +19434,8 @@
       "spec": {
         "shortname": "css-multicol",
         "currentSpec": true
-      }
+      },
+      "value": "::column"
     },
     {
       "name": "&",
@@ -19422,7 +19444,8 @@
       "spec": {
         "shortname": "css-nesting",
         "currentSpec": true
-      }
+      },
+      "value": "&"
     },
     {
       "name": "::scroll-marker-group",
@@ -19431,7 +19454,8 @@
       "spec": {
         "shortname": "css-overflow-5",
         "currentSpec": false
-      }
+      },
+      "value": "::scroll-marker-group"
     },
     {
       "name": "::scroll-marker",
@@ -19440,7 +19464,8 @@
       "spec": {
         "shortname": "css-overflow-5",
         "currentSpec": false
-      }
+      },
+      "value": "::scroll-marker"
     },
     {
       "name": ":target-current",
@@ -19449,7 +19474,8 @@
       "spec": {
         "shortname": "css-overflow-5",
         "currentSpec": false
-      }
+      },
+      "value": ":target-current"
     },
     {
       "name": "::scroll-button()",
@@ -19476,7 +19502,8 @@
       "spec": {
         "shortname": "css-position-4",
         "currentSpec": false
-      }
+      },
+      "value": "::backdrop"
     },
     {
       "name": "::first-line",
@@ -19485,7 +19512,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::first-line"
     },
     {
       "name": "::first-letter",
@@ -19494,7 +19522,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::first-letter"
     },
     {
       "name": "::selection",
@@ -19503,7 +19532,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::selection"
     },
     {
       "name": "::search-text",
@@ -19512,7 +19542,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::search-text"
     },
     {
       "name": "::target-text",
@@ -19521,7 +19552,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::target-text"
     },
     {
       "name": "::spelling-error",
@@ -19530,7 +19562,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::spelling-error"
     },
     {
       "name": "::grammar-error",
@@ -19539,7 +19572,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::grammar-error"
     },
     {
       "name": "::highlight()",
@@ -19557,7 +19591,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::before"
     },
     {
       "name": "::after",
@@ -19566,7 +19601,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::after"
     },
     {
       "name": "::marker",
@@ -19575,7 +19611,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::marker"
     },
     {
       "name": "::details-content",
@@ -19584,7 +19621,8 @@
       "spec": {
         "shortname": "css-pseudo",
         "currentSpec": true
-      }
+      },
+      "value": "::details-content"
     },
     {
       "name": ":host",
@@ -19593,7 +19631,8 @@
       "spec": {
         "shortname": "css-scoping",
         "currentSpec": true
-      }
+      },
+      "value": ":host"
     },
     {
       "name": ":host()",
@@ -19629,7 +19668,8 @@
       "spec": {
         "shortname": "css-scoping",
         "currentSpec": true
-      }
+      },
+      "value": ":has-slotted"
     },
     {
       "name": ":snapped",
@@ -19638,7 +19678,8 @@
       "spec": {
         "shortname": "css-scroll-snap-2",
         "currentSpec": false
-      }
+      },
+      "value": ":snapped"
     },
     {
       "name": ":snapped-x",
@@ -19647,7 +19688,8 @@
       "spec": {
         "shortname": "css-scroll-snap-2",
         "currentSpec": false
-      }
+      },
+      "value": ":snapped-x"
     },
     {
       "name": ":snapped-y",
@@ -19656,7 +19698,8 @@
       "spec": {
         "shortname": "css-scroll-snap-2",
         "currentSpec": false
-      }
+      },
+      "value": ":snapped-y"
     },
     {
       "name": ":snapped-inline",
@@ -19665,7 +19708,8 @@
       "spec": {
         "shortname": "css-scroll-snap-2",
         "currentSpec": false
-      }
+      },
+      "value": ":snapped-inline"
     },
     {
       "name": ":snapped-block",
@@ -19674,7 +19718,8 @@
       "spec": {
         "shortname": "css-scroll-snap-2",
         "currentSpec": false
-      }
+      },
+      "value": ":snapped-block"
     },
     {
       "name": "::part()",
@@ -19693,7 +19738,8 @@
       "spec": {
         "shortname": "css-view-transitions-2",
         "currentSpec": false
-      }
+      },
+      "value": ":active-view-transition"
     },
     {
       "name": ":active-view-transition-type()",
@@ -19711,7 +19757,8 @@
       "spec": {
         "shortname": "css-view-transitions",
         "currentSpec": true
-      }
+      },
+      "value": "::view-transition"
     },
     {
       "name": "::view-transition-group()",
@@ -19755,7 +19802,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":lang"
     },
     {
       "name": ":first-line",
@@ -19763,7 +19811,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":first-line"
     },
     {
       "name": ":first-letter",
@@ -19771,7 +19820,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":first-letter"
     },
     {
       "name": ":before",
@@ -19779,7 +19829,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":before"
     },
     {
       "name": ":after",
@@ -19787,7 +19838,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":after"
     },
     {
       "name": ":left",
@@ -19796,7 +19848,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":left"
     },
     {
       "name": ":right",
@@ -19805,7 +19858,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":right"
     },
     {
       "name": ":first",
@@ -19814,7 +19868,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "value": ":first"
     },
     {
       "name": ":local-link",
@@ -19823,7 +19878,8 @@
       "spec": {
         "shortname": "selectors-5",
         "currentSpec": false
-      }
+      },
+      "value": ":local-link"
     },
     {
       "name": ":state()",
@@ -19886,7 +19942,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":defined"
     },
     {
       "name": ":dir()",
@@ -19913,7 +19970,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":any-link"
     },
     {
       "name": ":link",
@@ -19922,7 +19980,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":link"
     },
     {
       "name": ":visited",
@@ -19931,7 +19990,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":visited"
     },
     {
       "name": ":target",
@@ -19940,7 +20000,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":target"
     },
     {
       "name": ":target-within",
@@ -19949,7 +20010,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":target-within"
     },
     {
       "name": ":scope",
@@ -19958,7 +20020,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":scope"
     },
     {
       "name": ":hover",
@@ -19967,7 +20030,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":hover"
     },
     {
       "name": ":active",
@@ -19976,7 +20040,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":active"
     },
     {
       "name": ":focus",
@@ -19985,7 +20050,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":focus"
     },
     {
       "name": ":focus-visible",
@@ -19994,7 +20060,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":focus-visible"
     },
     {
       "name": ":focus-within",
@@ -20003,7 +20070,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":focus-within"
     },
     {
       "name": ":current",
@@ -20012,7 +20080,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":current"
     },
     {
       "name": ":current()",
@@ -20030,7 +20099,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":past"
     },
     {
       "name": ":future",
@@ -20039,7 +20109,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":future"
     },
     {
       "name": ":playing",
@@ -20048,7 +20119,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":playing"
     },
     {
       "name": ":paused",
@@ -20057,7 +20129,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":paused"
     },
     {
       "name": ":seeking",
@@ -20066,7 +20139,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":seeking"
     },
     {
       "name": ":buffering",
@@ -20075,7 +20149,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":buffering"
     },
     {
       "name": ":stalled",
@@ -20084,7 +20159,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":stalled"
     },
     {
       "name": ":muted",
@@ -20093,7 +20169,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":muted"
     },
     {
       "name": ":volume-locked",
@@ -20102,7 +20179,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":volume-locked"
     },
     {
       "name": ":open",
@@ -20111,7 +20189,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":open"
     },
     {
       "name": ":popover-open",
@@ -20120,7 +20199,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":popover-open"
     },
     {
       "name": ":modal",
@@ -20129,7 +20209,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":modal"
     },
     {
       "name": ":fullscreen",
@@ -20138,7 +20219,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":fullscreen"
     },
     {
       "name": ":picture-in-picture",
@@ -20147,7 +20229,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":picture-in-picture"
     },
     {
       "name": ":enabled",
@@ -20156,7 +20239,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":enabled"
     },
     {
       "name": ":disabled",
@@ -20165,7 +20249,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":disabled"
     },
     {
       "name": ":read-write",
@@ -20174,7 +20259,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":read-write"
     },
     {
       "name": ":read-only",
@@ -20183,7 +20269,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":read-only"
     },
     {
       "name": ":placeholder-shown",
@@ -20192,7 +20279,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":placeholder-shown"
     },
     {
       "name": ":autofill",
@@ -20201,7 +20289,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":autofill"
     },
     {
       "name": ":default",
@@ -20210,7 +20299,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":default"
     },
     {
       "name": ":checked",
@@ -20219,7 +20309,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":checked"
     },
     {
       "name": ":indeterminate",
@@ -20228,7 +20319,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":indeterminate"
     },
     {
       "name": ":blank",
@@ -20237,7 +20329,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":blank"
     },
     {
       "name": ":valid",
@@ -20246,7 +20339,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":valid"
     },
     {
       "name": ":invalid",
@@ -20255,7 +20349,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":invalid"
     },
     {
       "name": ":in-range",
@@ -20264,7 +20359,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":in-range"
     },
     {
       "name": ":out-of-range",
@@ -20273,7 +20369,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":out-of-range"
     },
     {
       "name": ":required",
@@ -20282,7 +20379,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":required"
     },
     {
       "name": ":optional",
@@ -20291,7 +20389,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":optional"
     },
     {
       "name": ":user-invalid",
@@ -20300,7 +20399,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":user-invalid"
     },
     {
       "name": ":user-valid",
@@ -20309,7 +20409,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":user-valid"
     },
     {
       "name": ":root",
@@ -20318,7 +20419,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":root"
     },
     {
       "name": ":empty",
@@ -20327,7 +20429,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":empty"
     },
     {
       "name": ":nth-child()",
@@ -20354,7 +20457,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":first-child"
     },
     {
       "name": ":last-child",
@@ -20363,7 +20467,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":last-child"
     },
     {
       "name": ":only-child",
@@ -20372,7 +20477,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":only-child"
     },
     {
       "name": ":nth-of-type()",
@@ -20399,7 +20505,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":first-of-type"
     },
     {
       "name": ":last-of-type",
@@ -20408,7 +20515,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":last-of-type"
     },
     {
       "name": ":only-of-type",
@@ -20417,7 +20525,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ":only-of-type"
     },
     {
       "name": ">",
@@ -20426,7 +20535,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": ">"
     },
     {
       "name": "+",
@@ -20435,7 +20545,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": "+"
     },
     {
       "name": "~",
@@ -20444,7 +20555,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": "~"
     },
     {
       "name": "||",
@@ -20453,7 +20565,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "value": "||"
     },
     {
       "name": ":nth-col()",
@@ -20480,7 +20593,8 @@
       "spec": {
         "shortname": "webvtt",
         "currentSpec": true
-      }
+      },
+      "value": "::cue"
     },
     {
       "name": "::cue()",
@@ -20498,7 +20612,8 @@
       "spec": {
         "shortname": "webvtt",
         "currentSpec": true
-      }
+      },
+      "value": "::cue-region"
     },
     {
       "name": "::cue-region()",
@@ -20516,7 +20631,8 @@
       "spec": {
         "shortname": "webxr-dom-overlays",
         "currentSpec": true
-      }
+      },
+      "value": ":xr-overlay"
     }
   ],
   "syntaxes": [

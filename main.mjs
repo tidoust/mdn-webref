@@ -226,9 +226,8 @@ for (const category of categories) {
   }
 
   // All duplicates should have been treated somehow and merged into the
-  // base definition, which we can just use. One more thing though: specs do
-  // not usually expand on the syntax of at-rules, let's compute a more
-  // specific syntax from the list of descriptors when possible.
+  // base definition, which we can just use. We'll also generate a few
+  // additional syntaxes when possible for at-rules and selectors.
   categorized[category] = Object.entries(featureDfns)
     .map(([name, features]) => features[0])
     .map(feature => {
@@ -249,6 +248,11 @@ for (const category of categories) {
         feature.value = feature.value.replace(
           /{ <declaration-(rule-)?list> }/,
           '{\n  ' + syntax + '\n}');
+      }
+      else if (category === 'selectors' && !feature.value &&
+          !feature.name.match(/\(/)) {
+        // TODO: consider doing that in Webref directly
+        feature.value = feature.name;
       }
       return feature;
     });
@@ -287,7 +291,7 @@ for (const category of categories) {
     return true;
   });
 
-  // Various CSS properties are "legacy aliases of" an other property. Use the
+  // Various CSS properties are "legacy aliases of" another property. Use the
   // syntax of the other property for these.
   for (const feature of categorized[category]) {
     if (feature.legacyAliasOf && !feature.value) {
@@ -365,13 +369,6 @@ for (const category of categoriesWithSyntax) {
     }
     nbInCommon[category] += 1;
 
-    // TODO: in Webref, the syntax of the selector should be set to
-    // the selector's name in the absence of any other syntax
-    let webrefSyntax = feature.value;
-    if (!webrefSyntax && category === 'selectors') {
-      webrefSyntax = feature.name;
-    }
-
     // Note: the syntax of types is stored under syntaxes in MDN data
     let mdnSyntax = mdnFeature.syntax;
     if (category === 'types') {
@@ -381,7 +378,7 @@ for (const category of categoriesWithSyntax) {
       }
     }
 
-    if (normalizeSyntax(webrefSyntax) !== normalizeSyntax(mdnSyntax)) {
+    if (normalizeSyntax(feature.value) !== normalizeSyntax(mdnSyntax)) {
       mismatches[category].push({
         name: feature.name,
         href: feature.href,
@@ -391,6 +388,28 @@ for (const category of categoriesWithSyntax) {
         spec: feature.spec
       });
     }
+  }
+}
+
+
+/************************************************************
+ * Compute the list of constructs without syntax
+ *
+ * Some of them are due to CSS specs "hiding" the syntax in
+ * prose. Others are due to CSS specs not describing a more
+ * formal syntax. Ideally, specs would be updated to empty
+ * that list. In the meantime, that's where we're going to
+ * have to prioritize work.
+ ***********************************************************/
+const noSyntax = {};
+for (const category of categoriesWithSyntax) {
+  if (category === 'syntaxes') {
+    // Syntaxes are just functions + types, no need to report them as such
+    continue;
+  }
+  noSyntax[category] = categorized[category].filter(feature => !feature.value);
+  if (noSyntax[category].length === 0) {
+    delete noSyntax[category];
   }
 }
 
@@ -454,6 +473,28 @@ ${reportMismatches(mismatches[category])}
 
 await writeFile('report-syntax.md', report.join('\n'), 'utf8');
 
+
+/************************************************************
+ * Write no syntax report
+ ***********************************************************/
+report = ['# Features without syntax in Webref'];
+report.push('');
+report.push(generated);
+report.push('');
+for (const category of Object.keys(noSyntax)) {
+  const nb = noSyntax[category].length;
+  if (nb > 0) {
+    report.push(`
+<details>
+<summary>${nb} ${getCatName(category, 2)} without syntax (out of ${categorized[category].length})</summary>
+
+${reportFeatures(noSyntax[category])}
+</details>
+`);
+  }
+}
+
+await writeFile('report-nosyntax.md', report.join('\n'), 'utf8');
 
 
 /************************************************************
