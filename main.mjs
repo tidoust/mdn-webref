@@ -393,6 +393,27 @@ for (const category of categoriesWithSyntax) {
 
 
 /************************************************************
+ * Compute the list of dangling constructs
+ *
+ * Dangling constructs are types or functions that don't
+ * seem to be referenced by any other construct. That
+ * suggests that some other syntax is missing.
+ ***********************************************************/
+const dangling = {};
+for (const category of ['functions', 'types']) {
+  dangling[category] = categorized[category].filter(feature =>
+    !categoriesWithSyntax.find(cat =>
+      categorized[cat].find(f => f.value && f.value.indexOf(feature.name) !== -1)));
+  for (const feature of dangling[category]) {
+    feature.dangling = true;
+  }
+  if (dangling[category].length === 0) {
+    delete dangling[category];
+  }
+}
+
+
+/************************************************************
  * Compute the list of constructs without syntax
  *
  * Some of them are due to CSS specs "hiding" the syntax in
@@ -441,7 +462,7 @@ for (const source of ['webref', 'mdn']) {
 <details>
 <summary>${nb} ${getCatName(category, nb)} missing from ${source}</summary>
 
-${reportFeatures(missing[source][category])}
+${reportFeatures(missing[source][category], true)}
 </details>
 `);
     }
@@ -477,9 +498,10 @@ await writeFile('report-syntax.md', report.join('\n'), 'utf8');
 /************************************************************
  * Write no syntax report
  ***********************************************************/
+const generatedWebref = `Generated on **${new Date().toISOString()}** using **v${webrefPackage.version}** of \`@webref/css\`.`;
 report = ['# Features without syntax in Webref'];
 report.push('');
-report.push(generated);
+report.push(generatedWebref);
 report.push('');
 for (const category of Object.keys(noSyntax)) {
   const nb = noSyntax[category].length;
@@ -488,7 +510,7 @@ for (const category of Object.keys(noSyntax)) {
 <details>
 <summary>${nb} ${getCatName(category, 2)} without syntax (out of ${categorized[category].length})</summary>
 
-${reportFeatures(noSyntax[category])}
+${reportFeatures(noSyntax[category], true)}
 </details>
 `);
   }
@@ -498,22 +520,48 @@ await writeFile('report-nosyntax.md', report.join('\n'), 'utf8');
 
 
 /************************************************************
+ * Write dangling constructs report
+ ***********************************************************/
+report = ['# Dangling features in Webref'];
+report.push('');
+report.push(generatedWebref);
+report.push('');
+for (const category of Object.keys(dangling)) {
+  const nb = dangling[category].length;
+  if (nb > 0) {
+    report.push(`
+<details>
+<summary>${nb} dangling ${getCatName(category, 2)} (out of ${categorized[category].length})</summary>
+
+${reportFeatures(dangling[category])}
+</details>
+`);
+  }
+}
+
+await writeFile('report-dangling.md', report.join('\n'), 'utf8');
+
+
+/************************************************************
  * A few helper functions
  ***********************************************************/
-function reportFeatures(features) {
+function reportFeatures(features, reportDangling) {
   return features
     .sort((f1, f2) => f1.name.localeCompare(f2.name))
-    .map(reportFeature)
+    .map(feature => reportFeature(feature, reportDangling))
     .join('\n');
 }
 
-function reportFeature(feature) {
+function reportFeature(feature, reportDangling) {
   let res = '`' + feature.name + '`';
   if (feature.href) {
     res = `[${res}](${feature.href})`;
   }
   if (feature.for) {
     res += ' for `' + feature.for + '`';
+  }
+  if (reportDangling && feature.dangling) {
+    res += ' (dangling)';
   }
   return `- ${res}`;
 }

@@ -2560,7 +2560,8 @@
       "spec": {
         "shortname": "css-borders",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "color-mix()",
@@ -2672,7 +2673,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "contrast-color()",
@@ -2683,7 +2685,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "dynamic-range-limit-mix()",
@@ -2733,7 +2736,8 @@
       "spec": {
         "shortname": "css-color-hdr",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rgb()",
@@ -2783,7 +2787,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "supports()",
@@ -2793,7 +2798,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "leader()",
@@ -2903,7 +2909,8 @@
       "spec": {
         "shortname": "css-env",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "palette-mix()",
@@ -2925,7 +2932,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-color>",
@@ -2936,7 +2944,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-color>",
@@ -2947,7 +2956,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-style>",
@@ -2958,7 +2968,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-style>",
@@ -2969,7 +2980,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-width>",
@@ -2980,7 +2992,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-width>",
@@ -2991,7 +3004,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "running()",
@@ -3012,7 +3026,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-columns",
@@ -3023,7 +3038,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-rows",
@@ -3034,7 +3050,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-rows",
@@ -3045,7 +3062,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<track-repeat>",
@@ -3056,7 +3074,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat>",
@@ -3067,7 +3086,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<fixed-repeat>",
@@ -3078,7 +3098,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "image-set()",
@@ -3183,7 +3204,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "image-set()",
@@ -3303,7 +3325,8 @@
       "spec": {
         "shortname": "css-paint-api",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "shape()",
@@ -3313,7 +3336,8 @@
       "spec": {
         "shortname": "css-shapes-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -3361,7 +3385,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -3373,7 +3398,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -3385,7 +3411,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -3397,7 +3424,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "width",
@@ -3408,7 +3436,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "height",
@@ -3419,7 +3448,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "min-width",
@@ -3430,7 +3460,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "min-height",
@@ -3441,7 +3472,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "max-width",
@@ -3452,7 +3484,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "max-height",
@@ -3463,7 +3496,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scale()",
@@ -3483,7 +3517,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scaleY()",
@@ -3493,7 +3528,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "matrix3d()",
@@ -3503,7 +3539,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "translate3d()",
@@ -3513,7 +3550,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "translateZ()",
@@ -3523,7 +3561,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scale3d()",
@@ -3533,7 +3572,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scaleZ()",
@@ -3543,7 +3583,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotate3d()",
@@ -3553,7 +3594,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateX()",
@@ -3563,7 +3605,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateY()",
@@ -3573,7 +3616,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateZ()",
@@ -3583,7 +3627,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "perspective()",
@@ -3593,7 +3638,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3604,7 +3650,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3615,7 +3662,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3626,7 +3674,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3637,7 +3686,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3659,7 +3709,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3670,7 +3721,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3692,7 +3744,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3703,7 +3756,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -3714,7 +3768,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "progress()",
@@ -3724,7 +3779,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "media-progress()",
@@ -3734,7 +3790,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "container-progress()",
@@ -3744,7 +3801,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "calc-mix()",
@@ -3754,7 +3812,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "transform-mix()",
@@ -3764,7 +3823,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "mix()",
@@ -3784,7 +3844,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "if()",
@@ -3794,7 +3855,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "toggle()",
@@ -3804,7 +3866,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "inherit()",
@@ -3814,7 +3877,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "attr()",
@@ -3836,7 +3900,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "random()",
@@ -3847,7 +3912,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "random-item()",
@@ -3858,7 +3924,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sibling-count()",
@@ -3868,7 +3935,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sibling-index()",
@@ -3878,7 +3946,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "calc-size()",
@@ -3899,7 +3968,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<request-url-modifier>",
@@ -3910,7 +3980,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<request-url-modifier>",
@@ -3921,7 +3992,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "attr()",
@@ -3965,7 +4037,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "min()",
@@ -3976,7 +4049,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "max()",
@@ -3987,7 +4061,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "clamp()",
@@ -3998,7 +4073,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "round()",
@@ -4008,7 +4084,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "mod()",
@@ -4018,7 +4095,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rem()",
@@ -4028,7 +4106,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sin()",
@@ -4038,7 +4117,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "cos()",
@@ -4048,7 +4128,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "tan()",
@@ -4058,7 +4139,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "asin()",
@@ -4068,7 +4150,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "acos()",
@@ -4078,7 +4161,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "atan()",
@@ -4088,7 +4172,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "atan2()",
@@ -4098,7 +4183,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "pow()",
@@ -4108,7 +4194,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sqrt()",
@@ -4118,7 +4205,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "hypot()",
@@ -4128,7 +4216,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "log()",
@@ -4138,7 +4227,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "exp()",
@@ -4148,7 +4238,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "abs()",
@@ -4158,7 +4249,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sign()",
@@ -4168,7 +4260,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "var()",
@@ -4178,7 +4271,8 @@
       "spec": {
         "shortname": "css-variables",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "filter()",
@@ -4188,7 +4282,8 @@
       "spec": {
         "shortname": "filter-effects",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "filter",
@@ -20666,7 +20761,8 @@
       "spec": {
         "shortname": "css-borders",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "color-mix()",
@@ -20778,7 +20874,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "contrast-color()",
@@ -20789,7 +20886,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "dynamic-range-limit-mix()",
@@ -20839,7 +20937,8 @@
       "spec": {
         "shortname": "css-color-hdr",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rgb()",
@@ -20889,7 +20988,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "supports()",
@@ -20899,7 +20999,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "leader()",
@@ -21009,7 +21110,8 @@
       "spec": {
         "shortname": "css-env",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "palette-mix()",
@@ -21031,7 +21133,8 @@
       "spec": {
         "shortname": "css-forms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-color>",
@@ -21042,7 +21145,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-color>",
@@ -21053,7 +21157,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-style>",
@@ -21064,7 +21169,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-style>",
@@ -21075,7 +21181,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<repeat-line-width>",
@@ -21086,7 +21193,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat-line-width>",
@@ -21097,7 +21205,8 @@
       "spec": {
         "shortname": "css-gaps",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "running()",
@@ -21118,7 +21227,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-columns",
@@ -21129,7 +21239,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-rows",
@@ -21140,7 +21251,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "grid-template-rows",
@@ -21151,7 +21263,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<track-repeat>",
@@ -21162,7 +21275,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<auto-repeat>",
@@ -21173,7 +21287,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<fixed-repeat>",
@@ -21184,7 +21299,8 @@
       "spec": {
         "shortname": "css-grid",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "image-set()",
@@ -21289,7 +21405,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "image-set()",
@@ -21409,7 +21526,8 @@
       "spec": {
         "shortname": "css-paint-api",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "shape()",
@@ -21419,7 +21537,8 @@
       "spec": {
         "shortname": "css-shapes-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -21467,7 +21586,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -21479,7 +21599,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -21491,7 +21612,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<basic-shape>",
@@ -21503,7 +21625,8 @@
       "spec": {
         "shortname": "css-shapes",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "width",
@@ -21514,7 +21637,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "height",
@@ -21525,7 +21649,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "min-width",
@@ -21536,7 +21661,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "min-height",
@@ -21547,7 +21673,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "max-width",
@@ -21558,7 +21685,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "max-height",
@@ -21569,7 +21697,8 @@
       "spec": {
         "shortname": "css-sizing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scale()",
@@ -21589,7 +21718,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scaleY()",
@@ -21599,7 +21729,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "matrix3d()",
@@ -21609,7 +21740,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "translate3d()",
@@ -21619,7 +21751,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "translateZ()",
@@ -21629,7 +21762,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scale3d()",
@@ -21639,7 +21773,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "scaleZ()",
@@ -21649,7 +21784,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotate3d()",
@@ -21659,7 +21795,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateX()",
@@ -21669,7 +21806,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateY()",
@@ -21679,7 +21817,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rotateZ()",
@@ -21689,7 +21828,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "perspective()",
@@ -21699,7 +21839,8 @@
       "spec": {
         "shortname": "css-transforms-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21710,7 +21851,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21721,7 +21863,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21732,7 +21875,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21743,7 +21887,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21765,7 +21910,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21776,7 +21922,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21798,7 +21945,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21809,7 +21957,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "transform",
@@ -21820,7 +21969,8 @@
       "spec": {
         "shortname": "css-transforms",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "progress()",
@@ -21830,7 +21980,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "media-progress()",
@@ -21840,7 +21991,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "container-progress()",
@@ -21850,7 +22002,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "calc-mix()",
@@ -21860,7 +22013,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "transform-mix()",
@@ -21870,7 +22024,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "mix()",
@@ -21890,7 +22045,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "if()",
@@ -21900,7 +22056,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "toggle()",
@@ -21910,7 +22067,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "inherit()",
@@ -21920,7 +22078,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "attr()",
@@ -21942,7 +22101,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "random()",
@@ -21953,7 +22113,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "random-item()",
@@ -21964,7 +22125,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sibling-count()",
@@ -21974,7 +22136,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sibling-index()",
@@ -21984,7 +22147,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "calc-size()",
@@ -22005,7 +22169,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<request-url-modifier>",
@@ -22016,7 +22181,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "<request-url-modifier>",
@@ -22027,7 +22193,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "attr()",
@@ -22071,7 +22238,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "min()",
@@ -22082,7 +22250,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "max()",
@@ -22093,7 +22262,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "clamp()",
@@ -22104,7 +22274,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "round()",
@@ -22114,7 +22285,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "mod()",
@@ -22124,7 +22296,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "rem()",
@@ -22134,7 +22307,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sin()",
@@ -22144,7 +22318,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "cos()",
@@ -22154,7 +22329,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "tan()",
@@ -22164,7 +22340,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "asin()",
@@ -22174,7 +22351,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "acos()",
@@ -22184,7 +22362,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "atan()",
@@ -22194,7 +22373,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "atan2()",
@@ -22204,7 +22384,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "pow()",
@@ -22214,7 +22395,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sqrt()",
@@ -22224,7 +22406,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "hypot()",
@@ -22234,7 +22417,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "log()",
@@ -22244,7 +22428,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "exp()",
@@ -22254,7 +22439,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "abs()",
@@ -22264,7 +22450,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "sign()",
@@ -22274,7 +22461,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "var()",
@@ -22284,7 +22472,8 @@
       "spec": {
         "shortname": "css-variables",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "filter()",
@@ -22294,7 +22483,8 @@
       "spec": {
         "shortname": "filter-effects",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "filter",
@@ -22466,7 +22656,8 @@
       "spec": {
         "shortname": "compositing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<self-position>",
@@ -22647,7 +22838,8 @@
       "spec": {
         "shortname": "css-animations",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<keyframe-selector>",
@@ -22858,7 +23050,8 @@
       "spec": {
         "shortname": "css-box",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<visual-box>",
@@ -22878,7 +23071,8 @@
       "spec": {
         "shortname": "css-box",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<paint-box>",
@@ -23109,7 +23303,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<rectangular-color-space>",
@@ -23270,7 +23465,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<deprecated-color>",
@@ -23280,7 +23476,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<quirky-color>",
@@ -23290,7 +23487,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "opacity",
@@ -23878,7 +24076,8 @@
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<common-lig-values>",
@@ -24645,7 +24844,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<image-1D>",
@@ -24848,7 +25048,8 @@
       "spec": {
         "shortname": "css-mixins",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<namespace-prefix>",
@@ -25167,7 +25368,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<hash-token>",
@@ -25197,7 +25399,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<url-token>",
@@ -25217,7 +25420,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<delim-token>",
@@ -25227,7 +25431,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<number-token>",
@@ -25237,7 +25442,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<percentage-token>",
@@ -25257,7 +25463,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<unicode-range-token>",
@@ -25277,7 +25484,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<CDO-token>",
@@ -25287,7 +25495,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<CDC-token>",
@@ -25297,7 +25506,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<colon-token>",
@@ -25307,7 +25517,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<semicolon-token>",
@@ -25317,7 +25528,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<comma-token>",
@@ -25327,7 +25539,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<[-token>",
@@ -25337,7 +25550,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<]-token>",
@@ -25347,7 +25561,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<(-token>",
@@ -25357,7 +25572,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<)-token>",
@@ -25367,7 +25583,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<{-token>",
@@ -25377,7 +25594,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<}-token>",
@@ -25387,7 +25605,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<eof-token>",
@@ -25397,7 +25616,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<an+b>",
@@ -25407,7 +25627,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<n-dimension>",
@@ -25510,7 +25731,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<declaration-rule-list>",
@@ -25520,7 +25742,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<rule-list>",
@@ -25693,7 +25916,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<syntax>",
@@ -25774,7 +25998,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position>",
@@ -25825,7 +26050,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<media-progress()>",
@@ -25835,7 +26061,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<container-progress()>",
@@ -25845,7 +26072,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<progress>",
@@ -25866,7 +26094,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<transform-mix()>",
@@ -25876,7 +26105,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<mix()>",
@@ -25886,7 +26116,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<first-valid()>",
@@ -25896,7 +26127,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if()>",
@@ -25906,7 +26138,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if-branch>",
@@ -25946,7 +26179,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if-args-branch>",
@@ -25966,7 +26200,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<inherit()>",
@@ -25976,7 +26211,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<inherit-args>",
@@ -25986,7 +26222,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<attr-name>",
@@ -26016,7 +26253,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<attr-unit>",
@@ -26056,7 +26294,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<calc-size-basis>",
@@ -26239,7 +26478,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<angle-percentage>",
@@ -26259,7 +26499,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<ratio>",
@@ -26381,7 +26622,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<custom-property-name>",
@@ -26401,7 +26643,8 @@
       "spec": {
         "shortname": "css-view-transitions-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<pt-class-selector>",
@@ -26440,7 +26683,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<uri>",
@@ -26460,7 +26704,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<padding-width>",
@@ -26470,7 +26715,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<border-width>",
@@ -26480,7 +26726,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<border-style>",
@@ -26490,7 +26737,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<shape>",
@@ -26500,7 +26748,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<top>",
@@ -26608,7 +26857,8 @@
       "spec": {
         "shortname": "filter-effects",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<source-size-list>",
@@ -26618,7 +26868,8 @@
       "spec": {
         "shortname": "html",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<source-size>",
@@ -26658,7 +26909,8 @@
       "spec": {
         "shortname": "mediaqueries-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<media-type>",
@@ -26848,7 +27100,8 @@
       "spec": {
         "shortname": "mediaqueries",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<offset-path>",
@@ -26928,7 +27181,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<compound-selector-list>",
@@ -26938,7 +27192,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<simple-selector-list>",
@@ -26948,7 +27203,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<relative-selector-list>",
@@ -26958,7 +27214,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<relative-real-selector-list>",
@@ -26968,7 +27225,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<complex-selector>",
@@ -27188,7 +27446,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<points>",
@@ -27198,7 +27457,8 @@
       "spec": {
         "shortname": "SVG",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<dasharray>",
@@ -27208,7 +27468,8 @@
       "spec": {
         "shortname": "SVG",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<marker-ref>",
@@ -27250,7 +27511,8 @@
       "spec": {
         "shortname": "compositing",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<self-position>",
@@ -27431,7 +27693,8 @@
       "spec": {
         "shortname": "css-animations",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<keyframe-selector>",
@@ -27642,7 +27905,8 @@
       "spec": {
         "shortname": "css-box",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<visual-box>",
@@ -27662,7 +27926,8 @@
       "spec": {
         "shortname": "css-box",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<paint-box>",
@@ -27893,7 +28158,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<rectangular-color-space>",
@@ -28054,7 +28320,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<deprecated-color>",
@@ -28064,7 +28331,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<quirky-color>",
@@ -28074,7 +28342,8 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "for": "opacity",
@@ -28662,7 +28931,8 @@
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<common-lig-values>",
@@ -29429,7 +29699,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<image-1D>",
@@ -29632,7 +29903,8 @@
       "spec": {
         "shortname": "css-mixins",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<namespace-prefix>",
@@ -29951,7 +30223,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<hash-token>",
@@ -29981,7 +30254,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<url-token>",
@@ -30001,7 +30275,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<delim-token>",
@@ -30011,7 +30286,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<number-token>",
@@ -30021,7 +30297,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<percentage-token>",
@@ -30041,7 +30318,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<unicode-range-token>",
@@ -30061,7 +30339,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<CDO-token>",
@@ -30071,7 +30350,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<CDC-token>",
@@ -30081,7 +30361,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<colon-token>",
@@ -30091,7 +30372,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<semicolon-token>",
@@ -30101,7 +30383,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<comma-token>",
@@ -30111,7 +30394,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<[-token>",
@@ -30121,7 +30405,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<]-token>",
@@ -30131,7 +30416,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<(-token>",
@@ -30141,7 +30427,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<)-token>",
@@ -30151,7 +30438,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<{-token>",
@@ -30161,7 +30449,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<}-token>",
@@ -30171,7 +30460,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<eof-token>",
@@ -30181,7 +30471,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<an+b>",
@@ -30191,7 +30482,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<n-dimension>",
@@ -30294,7 +30586,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<declaration-rule-list>",
@@ -30304,7 +30597,8 @@
       "spec": {
         "shortname": "css-syntax",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<rule-list>",
@@ -30477,7 +30771,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<syntax>",
@@ -30558,7 +30853,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position>",
@@ -30609,7 +30905,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<media-progress()>",
@@ -30619,7 +30916,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<container-progress()>",
@@ -30629,7 +30927,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<progress>",
@@ -30650,7 +30949,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<transform-mix()>",
@@ -30660,7 +30960,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<mix()>",
@@ -30670,7 +30971,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<first-valid()>",
@@ -30680,7 +30982,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if()>",
@@ -30690,7 +30993,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if-branch>",
@@ -30730,7 +31034,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<if-args-branch>",
@@ -30750,7 +31055,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<inherit()>",
@@ -30760,7 +31066,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<inherit-args>",
@@ -30770,7 +31077,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<attr-name>",
@@ -30800,7 +31108,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<attr-unit>",
@@ -30840,7 +31149,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<calc-size-basis>",
@@ -31023,7 +31333,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<angle-percentage>",
@@ -31043,7 +31354,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<ratio>",
@@ -31165,7 +31477,8 @@
       "spec": {
         "shortname": "css-values",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<custom-property-name>",
@@ -31185,7 +31498,8 @@
       "spec": {
         "shortname": "css-view-transitions-2",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<pt-class-selector>",
@@ -31224,7 +31538,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<uri>",
@@ -31244,7 +31559,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<padding-width>",
@@ -31254,7 +31570,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<border-width>",
@@ -31264,7 +31581,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<border-style>",
@@ -31274,7 +31592,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<shape>",
@@ -31284,7 +31603,8 @@
       "spec": {
         "shortname": "CSS",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<top>",
@@ -31392,7 +31712,8 @@
       "spec": {
         "shortname": "filter-effects",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<source-size-list>",
@@ -31402,7 +31723,8 @@
       "spec": {
         "shortname": "html",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<source-size>",
@@ -31442,7 +31764,8 @@
       "spec": {
         "shortname": "mediaqueries-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<media-type>",
@@ -31632,7 +31955,8 @@
       "spec": {
         "shortname": "mediaqueries",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<offset-path>",
@@ -31712,7 +32036,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<compound-selector-list>",
@@ -31722,7 +32047,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<simple-selector-list>",
@@ -31732,7 +32058,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<relative-selector-list>",
@@ -31742,7 +32069,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<relative-real-selector-list>",
@@ -31752,7 +32080,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<complex-selector>",
@@ -31972,7 +32301,8 @@
       "spec": {
         "shortname": "selectors",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<points>",
@@ -31982,7 +32312,8 @@
       "spec": {
         "shortname": "SVG",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<dasharray>",
@@ -31992,7 +32323,8 @@
       "spec": {
         "shortname": "SVG",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<marker-ref>",
