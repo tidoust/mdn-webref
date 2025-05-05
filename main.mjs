@@ -490,6 +490,9 @@ for (const category of ['properties', 'types']) {
         categorized.functions.find(f => f.name === name && !f.for) ||
         categorized[category].find(f => f.name === '<' + name + '>' && !f.for)
     };
+    if (feature.webref?.href) {
+      feature.href = feature.webref.href;
+    }
     if (!feature.webref?.value) {
       patches[category].missing.push(feature);
     }
