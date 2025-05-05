@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-05T08:51:54.494Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-05T09:22:08.768Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -143,7 +143,7 @@ auto | <svg-length>
 
 
 <details>
-<summary>57 property patches with a different syntax in Webref</summary>
+<summary>43 property patches with a different syntax in Webref</summary>
 
 - `-webkit-appearance`
 ```
@@ -165,7 +165,6 @@ csstree: [ <url> | <gradient> | none ] [ <length-percentage>{4} <-webkit-mask-bo
 webref:  baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top
 csstree: auto | baseline | before-edge | text-before-edge | middle | central | after-edge | text-after-edge | ideographic | alphabetic | hanging | mathematical
 ```
-- `background-clip`
 - `baseline-shift`
 ```
 webref:  <length-percentage> | sub | super | top | center | bottom
@@ -176,7 +175,6 @@ csstree: baseline | sub | super | <svg-length>
 webref:  normal | [ [ size | inline-size ] || scroll-state ]
 csstree: normal || [ size | inline-size ]
 ```
-- `cue`
 - `cue-after`
 ```
 webref:  <uri> <decibel>? | none
@@ -202,7 +200,6 @@ csstree: | <-non-standard-display>
 webref:  auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top
 csstree: auto | use-script | no-change | reset-size | ideographic | alphabetic | hanging | mathematical | central | middle | text-after-edge | text-before-edge
 ```
-- `fill`
 - `fill-opacity`
 ```
 webref:  <'opacity'>
@@ -233,7 +230,6 @@ csstree: | stretch | <-non-standard-size>
 webref:  auto | smooth | high-quality | pixelated | crisp-edges
 csstree: | optimizeSpeed | optimizeQuality | <-non-standard-image-rendering>
 ```
-- `letter-spacing`
 - `max-height`
 ```
 webref:  none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
@@ -259,7 +255,6 @@ csstree: | stretch | <-non-standard-size>
 webref:  <'overflow-block'>{1,2}
 csstree: | <-non-standard-overflow>
 ```
-- `pause`
 - `pause-after`
 ```
 webref:  <time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong
@@ -275,7 +270,6 @@ csstree: <time> | none | x-weak | weak | medium | strong | x-strong
 webref:  static | relative | absolute | sticky | fixed | <running()>
 csstree: | -webkit-sticky
 ```
-- `rest`
 - `rest-after`
 ```
 webref:  <time [0s,∞]> | none | x-weak | weak | medium | strong | x-strong
@@ -291,10 +285,6 @@ csstree: <time> | none | x-weak | weak | medium | strong | x-strong
 webref:  [ <'scroll-timeline-name'> <'scroll-timeline-axis'>? ]#
 csstree: [ <'scroll-timeline-name'> || <'scroll-timeline-axis'> ]#
 ```
-- `scroll-timeline-name`
-- `speak`
-- `speak-as`
-- `stroke`
 - `stroke-dasharray`
 ```
 webref:  none | [<length-percentage> | <number>]+#
@@ -320,13 +310,11 @@ csstree: <number-one-or-greater>
 webref:  [<length-percentage> | <number>]#
 csstree: <svg-length>
 ```
-- `text-wrap`
 - `unicode-bidi`
 ```
 webref:  normal | embed | isolate | bidi-override | isolate-override | plaintext
 csstree: | -moz-isolate | -moz-isolate-override | -moz-plaintext | -webkit-isolate | -webkit-isolate-override | -webkit-plaintext
 ```
-- `voice-balance`
 - `voice-duration`
 ```
 webref:  auto | <time [0s,∞]>
@@ -352,13 +340,11 @@ csstree: <frequency> && absolute | [ [ x-low | low | medium | high | x-high ] ||
 webref:  [normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>
 csstree: [ normal | x-slow | slow | medium | fast | x-fast ] || <percentage>
 ```
-- `voice-stress`
 - `voice-volume`
 ```
 webref:  silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]
 csstree: silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]
 ```
-- `white-space-trim`
 - `width`
 ```
 webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
@@ -374,6 +360,26 @@ csstree: normal | break-all | keep-all | break-word | auto-phrase
 webref:  horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr
 csstree: | <svg-writing-mode>
 ```
+</details>
+
+
+<details>
+<summary>14 property patches already in Webref</summary>
+
+- `background-clip`
+- `cue`
+- `fill`
+- `letter-spacing`
+- `pause`
+- `rest`
+- `scroll-timeline-name`
+- `speak`
+- `speak-as`
+- `stroke`
+- `text-wrap`
+- `voice-balance`
+- `voice-stress`
+- `white-space-trim`
 </details>
 
 
@@ -633,11 +639,8 @@ xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-rad
 
 
 <details>
-<summary>64 type patches with a different syntax in Webref</summary>
+<summary>29 type patches with a different syntax in Webref</summary>
 
-- `anchor-name`
-- `anchor-side`
-- `anchor-size`
 - `anchor-size()`
 ```
 webref:  anchor-size( [ <anchor-name> || <anchor-size> ]? , <length-percentage>? )
@@ -658,25 +661,21 @@ csstree: <wq-name>
 webref:  <visual-box> | border-area| text
 csstree: <box> | border | text
 ```
-- `cmyk-component`
 - `color`
 ```
 webref:  <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
 csstree: <color-base> | currentColor | <system-color> | <device-cmyk()>  | <light-dark()> | <-non-standard-color>
 ```
-- `color-base`
 - `color-function`
 ```
 webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
 csstree: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
 ```
-- `color-interpolation-method`
 - `color-mix()`
 ```
 webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
 csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
 ```
-- `color-space`
 - `color()`
 ```
 webref:  color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )
@@ -687,18 +686,11 @@ csstree: color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )
 webref:  [<custom-params> | <predefined-rgb-params> | <xyz-params>]
 csstree: [ <predefined-rgb-params> | <xyz-params>]
 ```
-- `combinator`
-- `complex-real-selector`
-- `complex-real-selector-list`
-- `complex-selector`
-- `complex-selector-unit`
-- `compound-selector`
 - `container-condition`
 ```
 webref:  [ <container-name>? <container-query>? ]!
 csstree: not <query-in-parens> | <query-in-parens> [ [ and <query-in-parens> ]* | [ or <query-in-parens> ]* ]
 ```
-- `container-name`
 - `content-list`
 ```
 webref:  [ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+
@@ -709,23 +701,16 @@ csstree: [ <string> | contents | <image> | <counter> | <quote> | <target> | <lea
 webref:  <paint-box> | view-box
 csstree: content-box | padding-box | border-box | fill-box | stroke-box | view-box
 ```
-- `custom-color-space`
-- `device-cmyk()`
 - `element()`
 ```
 webref:  element( <id-selector> )
 csstree: element( <custom-ident> , [ first | start | last | first-except ]? ) | element( <id-selector> )
 ```
-- `font-variant-css2`
-- `font-width-css3`
-- `general-enclosed`
-- `generic-complete`
 - `generic-family`
 ```
 webref:  <generic-script-specific>| <generic-complete> | <generic-incomplete>
 csstree: <generic-script-specific>| <generic-complete> | <generic-incomplete> | <-non-standard-generic-family>
 ```
-- `generic-incomplete`
 - `generic-script-specific`
 ```
 webref:  generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)
@@ -741,14 +726,11 @@ csstree: [ <age>? <gender> <integer>? ]
 webref:  [ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]
 csstree: | <-legacy-gradient>
 ```
-- `legacy-device-cmyk-syntax`
 - `legacy-pseudo-element-selector`
 ```
 webref:  : [before | after | first-line | first-letter]
 csstree:  ':' [before | after | first-line | first-letter]
 ```
-- `modern-device-cmyk-syntax`
-- `offset-path`
 - `oklab()`
 ```
 webref:  oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
@@ -764,13 +746,11 @@ csstree: oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | no
 webref:  none | <image> | <svg-paint>
 csstree: none | <color> | <url> [ none | <color> ]? | context-fill | context-stroke
 ```
-- `position-area`
 - `predefined-rgb`
 ```
 webref:  srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
 csstree: srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020
 ```
-- `predefined-rgb-params`
 - `pseudo-compound-selector`
 ```
 webref:  <pseudo-element-selector> <pseudo-class-selector>*
@@ -786,12 +766,6 @@ csstree: ':' <pseudo-class-selector> | <legacy-pseudo-element-selector>
 webref:  ( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | scroll-state( <scroll-state-query> ) | <general-enclosed>
 csstree: ( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>
 ```
-- `relative-real-selector`
-- `relative-real-selector-list`
-- `selector-list`
-- `simple-selector`
-- `simple-selector-list`
-- `single-animation-composition`
 - `style-in-parens`
 ```
 webref:  ( <style-query> ) | ( <style-feature> ) | <general-enclosed>
@@ -802,8 +776,6 @@ csstree: ( <style-condition> ) | ( <style-feature> ) | <general-enclosed>
 webref:  not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ] | <style-feature>
 csstree: <style-condition> | <style-feature>
 ```
-- `system-family-name`
-- `try-size`
 - `url`
 ```
 webref:  <url()> | <src()>
@@ -814,5 +786,45 @@ csstree: url( <string> <url-modifier>* ) | <url-token>
 webref:  <xyz> [ <number> | <percentage> | none ]{3}
 csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 ```
+</details>
+
+
+<details>
+<summary>35 type patches already in Webref</summary>
+
+- `anchor-name`
+- `anchor-side`
+- `anchor-size`
+- `cmyk-component`
+- `color-base`
+- `color-interpolation-method`
+- `color-space`
+- `combinator`
+- `complex-real-selector`
+- `complex-real-selector-list`
+- `complex-selector`
+- `complex-selector-unit`
+- `compound-selector`
+- `container-name`
+- `custom-color-space`
+- `device-cmyk()`
+- `font-variant-css2`
+- `font-width-css3`
+- `general-enclosed`
+- `generic-complete`
+- `generic-incomplete`
+- `legacy-device-cmyk-syntax`
+- `modern-device-cmyk-syntax`
+- `offset-path`
+- `position-area`
+- `predefined-rgb-params`
+- `relative-real-selector`
+- `relative-real-selector-list`
+- `selector-list`
+- `simple-selector`
+- `simple-selector-list`
+- `single-animation-composition`
+- `system-family-name`
+- `try-size`
 - `xyz-space`
 </details>
