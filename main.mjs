@@ -1,12 +1,44 @@
+/************************************************************
+ * The script compares CSS data in Webref, MDN data, and
+ * CSSTree patches, and creates reports out of the comparison
+ * to identify gaps and mismatches.
+ *
+ * The script:
+ * 1. Merges Webref data to get a structure that matches that
+ * in MDN data.
+ * 2. Removes duplicates from the resulting data
+ * 3. Completes the syntax of a few constructs where possible
+ * 4. Looks for gaps in Webref compared to MDN data and in
+ * MDN data compared to Webref
+ * 5. Looks for syntax mismatches between MDN data and Webref
+ * 6. Compiles the list of constructs in Webref that are
+ * "dangling" (not referenced by any other construct)
+ * 7. Compiles the list of constructs in Webref that do not
+ * have any known syntax
+ * 8. Compares the list of patches in CSSTree with the syntax
+ * known in Webref and report on syntaxes that are missing in
+ * Webref, syntaxes that are different in Webref, and patches
+ * that could probably be dropped because Webref has the
+ * right syntax already.
+ *
+ * To run the script:
+ *   node main.mjs
+ *
+ * This will create/update the webref.json file, which is the
+ * resulting structure of steps 1 to 3 above, and a few
+ * report files in Markdown.
+ ***********************************************************/
+
 import cssInWebref from '@webref/css';
 import mdn from 'mdn-data';
 import { writeFile } from 'node:fs/promises';
 import webrefPackage from '@webref/css/package.json' with { type: 'json' };
 import mdnPackage from 'mdn-data/package.json' with { type: 'json' };
+import csstreePatches from './node_modules/css-tree/data/patch.json' with { type: 'json' };
 
 /**
  * MDN data wants to list CSS units. They are not defined as such in CSS specs
- * but can be easily computed by looking at the list of values that are defined
+ * but can easily be computed by looking at the list of values that are defined
  * for the restricted set of CSS types defined here.
  */
 const unitTypes = [
@@ -37,7 +69,7 @@ const webrefCategories = ['atrules', 'properties', 'selectors', 'values'];
 
 /************************************************************
  * Categorize Webref data following the same structure as
- * MDN data
+ * MDN data.
  ***********************************************************/
 const parsedFiles = await cssInWebref.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
@@ -132,8 +164,8 @@ for (const category of categories) {
   const featureDfns = {};
   for (const feature of categorized[category]) {
     // ... and since we're looping through features, let's get rid
-    // of the inner values definitions, which we no longer need
-    // (interesting ones were copied to the root level)
+    // of inner value definitions, which we no longer need
+    // (interesting ones were already copied to the root level)
     if (feature.values) {
       delete feature.values;
     }
@@ -226,8 +258,9 @@ for (const category of categories) {
   }
 
   // All duplicates should have been treated somehow and merged into the
-  // base definition, which we can just use. We'll also generate a few
-  // additional syntaxes when possible for at-rules and selectors.
+  // base definition. Use the base definition and get rid of the rest!
+  // We will also generate a few additional syntaxes when possible for
+  // at-rules and selectors.
   categorized[category] = Object.entries(featureDfns)
     .map(([name, features]) => features[0])
     .map(feature => {
@@ -249,7 +282,8 @@ for (const category of categories) {
           /{ <declaration-(rule-)?list> }/,
           '{\n  ' + syntax + '\n}');
       }
-      else if (category === 'selectors' && !feature.value &&
+      else if (category === 'selectors' &&
+          !feature.value &&
           !feature.name.match(/\(/)) {
         // TODO: consider doing that in Webref directly
         feature.value = feature.name;
@@ -307,7 +341,7 @@ for (const category of categories) {
 
 
 /************************************************************
- * Identify gaps
+ * Identify gaps between Webref and MDN data
  ***********************************************************/
 const missing = {
   webref: {},
@@ -315,12 +349,10 @@ const missing = {
 };
 
 for (const category of categories) {
-  missing.webref[category] = [];
+  // Look at gaps in MDN data
   missing.mdn[category] = [];
-}
-
-for (const category of categories) {
   for (const feature of categorized[category]) {
+    // Note: Webref keeps the enclosing `<>` for types, MDN data does not
     const featureName = feature.name.match(/^<(.+?)>$/) ?
       feature.name.replace(/^<(.+?)>$/, '$1') :
       feature.name;
@@ -332,9 +364,9 @@ for (const category of categories) {
       });
     }
   }
-}
 
-for (const category of categories) {
+  // Look at gaps in Webref
+  missing.webref[category] = [];
   for (const featureName of Object.keys(mdn.css[category])) {
     if (!categorized[category].find(feature =>
         feature.name === featureName ||
@@ -349,16 +381,19 @@ for (const category of categories) {
 
 
 /************************************************************
- * Identify syntax mismatches for entries that are in common
+ * Identify syntax mismatches for entries that are common to
+ * Webref and MDN data.
+ *
+ * Note: comparison ignores most non-significant whitespaces
+ * and outer grouping constructs. It does not (yet) account
+ * for other non-significant differences such as the order of
+ * alternatives.
  ***********************************************************/
 const nbInCommon = {};
 const mismatches = {};
 for (const category of categoriesWithSyntax) {
-  mismatches[category] = [];
   nbInCommon[category] = 0;
-}
-
-for (const category of categoriesWithSyntax) {
+  mismatches[category] = [];
   for (const feature of categorized[category]) {
     const featureName = feature.name.match(/^<(.+?)>$/) ?
       feature.name.replace(/^<(.+?)>$/, '$1') :
@@ -369,7 +404,7 @@ for (const category of categoriesWithSyntax) {
     }
     nbInCommon[category] += 1;
 
-    // Note: the syntax of types is stored under syntaxes in MDN data
+    // Note: the syntax of types is stored under `syntaxes` in MDN data
     let mdnSyntax = mdnFeature.syntax;
     if (category === 'types') {
       const syntaxEntry = mdn.css.syntaxes[featureName];
@@ -393,7 +428,7 @@ for (const category of categoriesWithSyntax) {
 
 
 /************************************************************
- * Compute the list of dangling constructs
+ * Compute the list of dangling constructs in Webref
  *
  * Dangling constructs are types or functions that don't
  * seem to be referenced by any other construct. That
@@ -401,26 +436,25 @@ for (const category of categoriesWithSyntax) {
  ***********************************************************/
 const dangling = {};
 for (const category of ['functions', 'types']) {
-  dangling[category] = categorized[category].filter(feature =>
+  const features = categorized[category].filter(feature =>
     !categoriesWithSyntax.find(cat =>
       categorized[cat].find(f => f.value && f.value.indexOf(feature.name) !== -1)));
-  for (const feature of dangling[category]) {
-    feature.dangling = true;
-  }
-  if (dangling[category].length === 0) {
-    delete dangling[category];
+  if (features.length > 0) {
+    for (const feature of features) {
+      feature.dangling = true;
+    }
+    dangling[category] = features;
   }
 }
 
 
 /************************************************************
- * Compute the list of constructs without syntax
+ * Compute the list of constructs without syntax in Webref.
  *
  * Some of them are due to CSS specs "hiding" the syntax in
  * prose. Others are due to CSS specs not describing a more
- * formal syntax. Ideally, specs would be updated to empty
- * that list. In the meantime, that's where we're going to
- * have to prioritize work.
+ * formal syntax. In an ideal world, specs would be updated
+ * and that list would be empty.
  ***********************************************************/
 const noSyntax = {};
 for (const category of categoriesWithSyntax) {
@@ -428,21 +462,51 @@ for (const category of categoriesWithSyntax) {
     // Syntaxes are just functions + types, no need to report them as such
     continue;
   }
-  noSyntax[category] = categorized[category].filter(feature => !feature.value);
-  if (noSyntax[category].length === 0) {
-    delete noSyntax[category];
+  const features = categorized[category].filter(feature => !feature.value);
+  if (features.length > 0) {
+    noSyntax[category] = features;
   }
 }
 
 
 /************************************************************
- * Save categorized Webref data
+ * Compare CSSTree syntax patches with Webref data.
+ *
+ * Patches apply to at-rules (not sure how for now),
+ * properties and types (functions + actual types)
  ***********************************************************/
-await writeFile(
-  'webref.json',
-  JSON.stringify(categorized, null, 2),
-  'utf8'
-);
+const patches = {};
+for (const category of ['properties', 'types']) {
+  patches[category] = {
+    missing: [],
+    mismatches: [],
+    moot: []
+  };
+  for (const [name, patch] of Object.entries(csstreePatches[category])) {
+    const feature = {
+      name, patch,
+      webref:
+        categorized[category].find(f => f.name === name && !f.for) ||
+        categorized.functions.find(f => f.name === name && !f.for) ||
+        categorized[category].find(f => f.name === '<' + name + '>' && !f.for)
+    };
+    if (!feature.webref?.value) {
+      patches[category].missing.push(feature);
+    }
+    else if (feature.value !== patch.syntax) {
+      patches[category].mismatches.push(feature);
+    }
+    else {
+      patches[category].moot.push(feature);
+    }
+  }
+}
+
+
+/************************************************************
+ * Save sanitized and categorized Webref data
+ ***********************************************************/
+await writeFile('webref.json', JSON.stringify(categorized, null, 2), 'utf8');
 
 
 /************************************************************
@@ -468,8 +532,7 @@ ${reportFeatures(missing[source][category], true)}
     }
   }
 }
-
-await writeFile('report.md', report.join('\n'), 'utf8');
+await writeFile('report-gaps.md', report.join('\n'), 'utf8');
 
 
 /************************************************************
@@ -491,7 +554,6 @@ ${reportMismatches(mismatches[category])}
 `);
   }
 }
-
 await writeFile('report-syntax.md', report.join('\n'), 'utf8');
 
 
@@ -515,7 +577,6 @@ ${reportFeatures(noSyntax[category], true)}
 `);
   }
 }
-
 await writeFile('report-nosyntax.md', report.join('\n'), 'utf8');
 
 
@@ -538,8 +599,45 @@ ${reportFeatures(dangling[category])}
 `);
   }
 }
-
 await writeFile('report-dangling.md', report.join('\n'), 'utf8');
+
+
+/************************************************************
+ * Write CSSTree patches report
+ ***********************************************************/
+report = ['# CSSTree patches and Webref'];
+report.push('');
+report.push(generated);
+report.push('');
+for (const category of Object.keys(patches)) {
+  const total =
+    patches[category].missing.length +
+    patches[category].mismatches.length +
+    patches[category].moot.length;
+  for (const type of ['missing', 'mismatches', 'moot']) {
+    const nb = patches[category][type].length;
+    let label = '';
+    if (type === 'missing') {
+      label = 'missing from Webref';
+    }
+    else if (type === 'mismatches') {
+      label = 'with a different syntax in Webref';
+    }
+    else {
+      label = 'already in Webref';
+    }
+    if (nb > 0) {
+      report.push(`
+<details>
+<summary>${nb} ${getCatName(category, 1)} patches ${label}</summary>
+
+${reportPatches(patches[category][type])}
+</details>
+`);
+    }
+  }
+}
+await writeFile('report-patches.md', report.join('\n'), 'utf8');
 
 
 /************************************************************
@@ -602,6 +700,36 @@ function reportMismatch(feature) {
     res += '\n';
   }
   res += '```';
+  return res;
+}
+
+function reportPatches(features) {
+  return features
+    .sort((f1, f2) => f1.name.localeCompare(f2.name))
+    .map(reportPatch)
+    .join('\n');
+}
+
+function reportPatch(feature) {
+  let res = reportFeature(feature);
+  if (feature.webref) {
+    if (feature.webref.value !== feature.patch.syntax) {
+      res += '\n```\n';
+      res += 'webref:  ';
+      res += feature.webref.value;
+      res += '\n';
+      res += 'csstree: ';
+      res += feature.patch.syntax;
+      res += '\n';
+      res += '```';
+    }
+  }
+  else {
+    res += '\n```\n';
+    res += feature.patch.syntax;
+    res += '\n';
+    res += '```';
+  }
   return res;
 }
 

@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-03T12:53:21.259Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-05T08:51:54.494Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
