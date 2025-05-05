@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-05T09:26:55.909Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-05T09:50:18.793Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -375,10 +375,6 @@ csstree: | <svg-writing-mode>
 - [`voice-balance`](https://drafts.csswg.org/css-speech-1/#propdef-voice-balance)
 - [`voice-stress`](https://drafts.csswg.org/css-speech-1/#propdef-voice-stress)
 - [`voice-volume`](https://drafts.csswg.org/css-speech-1/#propdef-voice-volume)
-```
-webref:  silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]
-csstree: silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]
-```
 - [`white-space-trim`](https://drafts.csswg.org/css-text-4/#propdef-white-space-trim)
 </details>
 
@@ -784,10 +780,6 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - [`color-base`](https://drafts.csswg.org/css-color-5/#typedef-color-base)
 - [`color-interpolation-method`](https://drafts.csswg.org/css-color-5/#color-interpolation-method)
 - [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
-```
-webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
-csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
-```
 - [`color-space`](https://drafts.csswg.org/css-color-5/#typedef-color-space)
 - [`combinator`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
 - [`complex-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector)
@@ -804,20 +796,12 @@ csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,1
 - [`generic-complete`](https://drafts.csswg.org/css-fonts-4/#typedef-generic-complete)
 - [`generic-incomplete`](https://drafts.csswg.org/css-fonts-4/#typedef-generic-incomplete)
 - [`generic-voice`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
-```
-webref:  [<age>? <gender> <integer>?]
-csstree: [ <age>? <gender> <integer>? ]
-```
 - [`legacy-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax)
 - [`modern-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-modern-device-cmyk-syntax)
 - [`offset-path`](https://drafts.fxtf.org/motion-1/#typedef-offset-path)
 - [`position-area`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
 - [`predefined-rgb-params`](https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params)
 - [`pseudo-compound-selector`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-compound-selector)
-```
-webref:  <pseudo-element-selector> <pseudo-class-selector>*
-csstree:  <pseudo-element-selector> <pseudo-class-selector>*
-```
 - [`relative-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector)
 - [`relative-real-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector-list)
 - [`selector-list`](https://drafts.csswg.org/selectors-4/#typedef-selector-list)

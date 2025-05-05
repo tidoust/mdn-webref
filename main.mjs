@@ -716,7 +716,7 @@ function reportPatches(features) {
 function reportPatch(feature) {
   let res = reportFeature(feature);
   if (feature.webref) {
-    if (feature.webref.value !== feature.patch.syntax) {
+    if (normalizeSyntax(feature.webref.value) !== normalizeSyntax(feature.patch.syntax)) {
       res += '\n```\n';
       res += 'webref:  ';
       res += feature.webref.value;
