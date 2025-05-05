@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-05-05T09:22:08.768Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-05T09:24:14.543Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 ### Missing from webref
 

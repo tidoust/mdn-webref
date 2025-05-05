@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-05T09:22:08.768Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-05T09:24:14.543Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
 
 
 <details>
@@ -143,7 +143,7 @@ auto | <svg-length>
 
 
 <details>
-<summary>43 property patches with a different syntax in Webref</summary>
+<summary>42 property patches with a different syntax in Webref</summary>
 
 - `-webkit-appearance`
 ```
@@ -340,11 +340,6 @@ csstree: <frequency> && absolute | [ [ x-low | low | medium | high | x-high ] ||
 webref:  [normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>
 csstree: [ normal | x-slow | slow | medium | fast | x-fast ] || <percentage>
 ```
-- `voice-volume`
-```
-webref:  silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]
-csstree: silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]
-```
 - `width`
 ```
 webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
@@ -364,7 +359,7 @@ csstree: | <svg-writing-mode>
 
 
 <details>
-<summary>14 property patches already in Webref</summary>
+<summary>15 property patches already in Webref</summary>
 
 - `background-clip`
 - `cue`
@@ -379,6 +374,11 @@ csstree: | <svg-writing-mode>
 - `text-wrap`
 - `voice-balance`
 - `voice-stress`
+- `voice-volume`
+```
+webref:  silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]
+csstree: silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]
+```
 - `white-space-trim`
 </details>
 
@@ -639,7 +639,7 @@ xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-rad
 
 
 <details>
-<summary>29 type patches with a different syntax in Webref</summary>
+<summary>26 type patches with a different syntax in Webref</summary>
 
 - `anchor-size()`
 ```
@@ -670,11 +670,6 @@ csstree: <color-base> | currentColor | <system-color> | <device-cmyk()>  | <ligh
 ```
 webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
 csstree: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
-```
-- `color-mix()`
-```
-webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
-csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
 ```
 - `color()`
 ```
@@ -716,11 +711,6 @@ csstree: <generic-script-specific>| <generic-complete> | <generic-incomplete> | 
 webref:  generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)
 csstree: generic(kai) | generic(fangsong) | generic(nastaliq)
 ```
-- `generic-voice`
-```
-webref:  [<age>? <gender> <integer>?]
-csstree: [ <age>? <gender> <integer>? ]
-```
 - `gradient`
 ```
 webref:  [ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]
@@ -750,11 +740,6 @@ csstree: none | <color> | <url> [ none | <color> ]? | context-fill | context-str
 ```
 webref:  srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
 csstree: srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020
-```
-- `pseudo-compound-selector`
-```
-webref:  <pseudo-element-selector> <pseudo-class-selector>*
-csstree:  <pseudo-element-selector> <pseudo-class-selector>*
 ```
 - `pseudo-element-selector`
 ```
@@ -790,7 +775,7 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 
 
 <details>
-<summary>35 type patches already in Webref</summary>
+<summary>38 type patches already in Webref</summary>
 
 - `anchor-name`
 - `anchor-side`
@@ -798,6 +783,11 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - `cmyk-component`
 - `color-base`
 - `color-interpolation-method`
+- `color-mix()`
+```
+webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
+csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
+```
 - `color-space`
 - `combinator`
 - `complex-real-selector`
@@ -813,11 +803,21 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - `general-enclosed`
 - `generic-complete`
 - `generic-incomplete`
+- `generic-voice`
+```
+webref:  [<age>? <gender> <integer>?]
+csstree: [ <age>? <gender> <integer>? ]
+```
 - `legacy-device-cmyk-syntax`
 - `modern-device-cmyk-syntax`
 - `offset-path`
 - `position-area`
 - `predefined-rgb-params`
+- `pseudo-compound-selector`
+```
+webref:  <pseudo-element-selector> <pseudo-class-selector>*
+csstree:  <pseudo-element-selector> <pseudo-class-selector>*
+```
 - `relative-real-selector`
 - `relative-real-selector-list`
 - `selector-list`

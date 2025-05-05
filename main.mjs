@@ -493,7 +493,7 @@ for (const category of ['properties', 'types']) {
     if (!feature.webref?.value) {
       patches[category].missing.push(feature);
     }
-    else if (feature.webref.value !== patch.syntax) {
+    else if (normalizeSyntax(feature.webref.value) !== normalizeSyntax(patch.syntax)) {
       patches[category].mismatches.push(feature);
     }
     else {
