@@ -224,19 +224,19 @@ for (const category of categories) {
     }
     const best = actualDfns.reduce((dfn1, dfn2) => {
       if (dfn1.spec.currentSpec) {
-        return dfn2;
+        return dfn1;
       }
       else if (dfn2.spec.currentSpec) {
-        return dfn1;
+        return dfn2;
       }
       else {
         const level1 = dfn1.spec.shortname.match(/-(\d+)$/)[1];
         const level2 = dfn2.spec.shortname.match(/-(\d+)$/)[1];
         if (level1 < level2) {
-          return dfn2;
+          return dfn1;
         }
         else {
-          return dfn1;
+          return dfn2;
         }
       }
     });
@@ -251,6 +251,9 @@ for (const category of categories) {
     const baseDfn = dfns[0];
     for (const dfn of dfns) {
       if (dfn === baseDfn) {
+        continue;
+      }
+      if (!dfn.spec.currentSpec) {
         continue;
       }
       if (baseDfn.value && dfn.newValues) {

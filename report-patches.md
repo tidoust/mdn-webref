@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
+Generated on **2025-05-15T06:46:07.939Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
 
 
 <details>
@@ -143,7 +143,7 @@ auto | <svg-length>
 
 
 <details>
-<summary>42 property patches with a different syntax in Webref</summary>
+<summary>44 property patches with a different syntax in Webref</summary>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
@@ -152,7 +152,7 @@ csstree: none | button | button-bevel | caps-lock-indicator | caret | checkbox |
 ```
 - [`-webkit-background-clip`](https://compat.spec.whatwg.org/#propdef--webkit-background-clip)
 ```
-webref:  <bg-clip>#
+webref:  <visual-box>#
 csstree: [ <box> | border | padding | content | text ]#
 ```
 - [`-webkit-mask-box-image`](https://compat.spec.whatwg.org/#propdef--webkit-mask-box-image)
@@ -164,6 +164,11 @@ csstree: [ <url> | <gradient> | none ] [ <length-percentage>{4} <-webkit-mask-bo
 ```
 webref:  baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top
 csstree: auto | baseline | before-edge | text-before-edge | middle | central | after-edge | text-after-edge | ideographic | alphabetic | hanging | mathematical
+```
+- [`background-clip`](https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip)
+```
+webref:  <visual-box>#
+csstree: <bg-clip>#
 ```
 - [`baseline-shift`](https://drafts.csswg.org/css-inline-3/#propdef-baseline-shift)
 ```
@@ -222,7 +227,7 @@ csstree: <angle>
 ```
 - [`height`](https://drafts.csswg.org/css-sizing-3/#propdef-height)
 ```
-webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
 - [`image-rendering`](https://drafts.csswg.org/css-images-3/#propdef-image-rendering)
@@ -230,24 +235,29 @@ csstree: | stretch | <-non-standard-size>
 webref:  auto | smooth | high-quality | pixelated | crisp-edges
 csstree: | optimizeSpeed | optimizeQuality | <-non-standard-image-rendering>
 ```
+- [`letter-spacing`](https://drafts.csswg.org/css-text-3/#propdef-letter-spacing)
+```
+webref:  normal | <length>
+csstree: normal | <length-percentage>
+```
 - [`max-height`](https://drafts.csswg.org/css-sizing-3/#propdef-max-height)
 ```
-webref:  none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
 - [`max-width`](https://drafts.csswg.org/css-sizing-3/#propdef-max-width)
 ```
-webref:  none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
 - [`min-height`](https://drafts.csswg.org/css-sizing-3/#propdef-min-height)
 ```
-webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
 - [`min-width`](https://drafts.csswg.org/css-sizing-3/#propdef-min-width)
 ```
-webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
 - [`overflow`](https://drafts.csswg.org/css-overflow-3/#propdef-overflow)
@@ -342,12 +352,12 @@ csstree: [ normal | x-slow | slow | medium | fast | x-fast ] || <percentage>
 ```
 - [`width`](https://drafts.csswg.org/css-sizing-3/#propdef-width)
 ```
-webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain
+webref:  auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>
 csstree: | stretch | <-non-standard-size>
 ```
-- [`word-break`](https://drafts.csswg.org/css-text-4/#propdef-word-break)
+- [`word-break`](https://drafts.csswg.org/css-text-3/#propdef-word-break)
 ```
-webref:  normal | break-all | keep-all | manual | auto-phrase | break-word
+webref:  normal | keep-all | break-all | break-word
 csstree: normal | break-all | keep-all | break-word | auto-phrase
 ```
 - [`writing-mode`](https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode)
@@ -359,12 +369,10 @@ csstree: | <svg-writing-mode>
 
 
 <details>
-<summary>15 property patches already in Webref</summary>
+<summary>13 property patches already in Webref</summary>
 
-- [`background-clip`](https://drafts.csswg.org/css-backgrounds-4/#propdef-background-clip)
 - [`cue`](https://drafts.csswg.org/css-speech-1/#propdef-cue)
 - [`fill`](https://svgwg.org/svg2-draft/painting.html#FillProperty)
-- [`letter-spacing`](https://drafts.csswg.org/css-text-4/#propdef-letter-spacing)
 - [`pause`](https://drafts.csswg.org/css-speech-1/#propdef-pause)
 - [`rest`](https://drafts.csswg.org/css-speech-1/#propdef-rest)
 - [`scroll-timeline-name`](https://drafts.csswg.org/scroll-animations-1/#propdef-scroll-timeline-name)
@@ -635,7 +643,7 @@ xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-rad
 
 
 <details>
-<summary>26 type patches with a different syntax in Webref</summary>
+<summary>25 type patches with a different syntax in Webref</summary>
 
 - [`anchor-size()`](https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size)
 ```
@@ -657,25 +665,35 @@ csstree: <wq-name>
 webref:  <visual-box> | border-area| text
 csstree: <box> | border | text
 ```
-- [`color`](https://drafts.csswg.org/css-color-5/#typedef-color)
+- [`color`](https://drafts.csswg.org/css-color-4/#typedef-color)
 ```
-webref:  <color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>
+webref:  <color-base> | currentColor | <system-color>
 csstree: <color-base> | currentColor | <system-color> | <device-cmyk()>  | <light-dark()> | <-non-standard-color>
+```
+- [`color-base`](https://drafts.csswg.org/css-color-4/#typedef-color-base)
+```
+webref:  <hex-color> | <color-function> | <named-color> | transparent
+csstree: <hex-color> | <color-function> | <named-color> | <color-mix()> | transparent
 ```
 - [`color-function`](https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function)
 ```
 webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
 csstree: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
 ```
+- [`color-interpolation-method`](https://drafts.csswg.org/css-color-4/#color-interpolation-method)
+```
+webref:  in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]
+csstree: in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]
+```
+- [`color-space`](https://drafts.csswg.org/css-color-4/#typedef-color-space)
+```
+webref:  <rectangular-color-space> | <polar-color-space>
+csstree: <rectangular-color-space> | <polar-color-space> | <custom-color-space>
+```
 - [`color()`](https://drafts.csswg.org/css-color-5/#funcdef-color)
 ```
 webref:  color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )
 csstree: color( <colorspace-params> [ / [ <alpha-value> | none ] ]? )
-```
-- [`colorspace-params`](https://drafts.csswg.org/css-color-5/#typedef-colorspace-params)
-```
-webref:  [<custom-params> | <predefined-rgb-params> | <xyz-params>]
-csstree: [ <predefined-rgb-params> | <xyz-params>]
 ```
 - [`container-condition`](https://drafts.csswg.org/css-conditional-5/#typedef-container-condition)
 ```
@@ -707,25 +725,15 @@ csstree: <generic-script-specific>| <generic-complete> | <generic-incomplete> | 
 webref:  generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)
 csstree: generic(kai) | generic(fangsong) | generic(nastaliq)
 ```
-- [`gradient`](https://drafts.csswg.org/css-images-4/#typedef-gradient)
+- [`gradient`](https://drafts.csswg.org/css-images-3/#typedef-gradient)
 ```
-webref:  [ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]
+webref:  <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>
 csstree: | <-legacy-gradient>
 ```
 - [`legacy-pseudo-element-selector`](https://drafts.csswg.org/selectors-4/#typedef-legacy-pseudo-element-selector)
 ```
 webref:  : [before | after | first-line | first-letter]
 csstree:  ':' [before | after | first-line | first-letter]
-```
-- [`oklab()`](https://drafts.csswg.org/css-color-5/#funcdef-oklab)
-```
-webref:  oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-csstree: oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )
-```
-- [`oklch()`](https://drafts.csswg.org/css-color-5/#funcdef-oklch)
-```
-webref:  oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
-csstree: oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
 - [`paint`](https://drafts.fxtf.org/fill-stroke-3/#typedef-paint)
 ```
@@ -762,25 +770,18 @@ csstree: <style-condition> | <style-feature>
 webref:  <url()> | <src()>
 csstree: url( <string> <url-modifier>* ) | <url-token>
 ```
-- [`xyz-params`](https://drafts.csswg.org/css-color-5/#typedef-xyz-params)
-```
-webref:  <xyz> [ <number> | <percentage> | none ]{3}
-csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
-```
 </details>
 
 
 <details>
-<summary>38 type patches already in Webref</summary>
+<summary>39 type patches already in Webref</summary>
 
 - [`anchor-name`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name)
 - [`anchor-side`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side)
 - [`anchor-size`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size)
 - [`cmyk-component`](https://drafts.csswg.org/css-color-5/#typedef-cmyk-component)
-- [`color-base`](https://drafts.csswg.org/css-color-5/#typedef-color-base)
-- [`color-interpolation-method`](https://drafts.csswg.org/css-color-5/#color-interpolation-method)
 - [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
-- [`color-space`](https://drafts.csswg.org/css-color-5/#typedef-color-space)
+- [`colorspace-params`](https://drafts.csswg.org/css-color-4/#typedef-colorspace-params)
 - [`combinator`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
 - [`complex-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector)
 - [`complex-real-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector-list)
@@ -792,15 +793,17 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - [`device-cmyk()`](https://drafts.csswg.org/css-color-5/#funcdef-device-cmyk)
 - [`font-variant-css2`](https://drafts.csswg.org/css-fonts-4/#font-variant-css21-values)
 - [`font-width-css3`](https://drafts.csswg.org/css-fonts-4/#font-width-css3-values)
-- [`general-enclosed`](https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed)
+- [`general-enclosed`](https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed)
 - [`generic-complete`](https://drafts.csswg.org/css-fonts-4/#typedef-generic-complete)
 - [`generic-incomplete`](https://drafts.csswg.org/css-fonts-4/#typedef-generic-incomplete)
 - [`generic-voice`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
 - [`legacy-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax)
 - [`modern-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-modern-device-cmyk-syntax)
 - [`offset-path`](https://drafts.fxtf.org/motion-1/#typedef-offset-path)
+- [`oklab()`](https://drafts.csswg.org/css-color-4/#funcdef-oklab)
+- [`oklch()`](https://drafts.csswg.org/css-color-4/#funcdef-oklch)
 - [`position-area`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
-- [`predefined-rgb-params`](https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params)
+- [`predefined-rgb-params`](https://drafts.csswg.org/css-color-4/#typedef-predefined-rgb-params)
 - [`pseudo-compound-selector`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-compound-selector)
 - [`relative-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector)
 - [`relative-real-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector-list)
@@ -810,5 +813,6 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - [`single-animation-composition`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-composition)
 - [`system-family-name`](https://drafts.csswg.org/css-fonts-4/#system-family-name-value)
 - [`try-size`](https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size)
+- [`xyz-params`](https://drafts.csswg.org/css-color-4/#typedef-xyz-params)
 - [`xyz-space`](https://drafts.csswg.org/css-color-4/#typedef-xyz-space)
 </details>

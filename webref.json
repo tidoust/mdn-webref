@@ -37,265 +37,6 @@
         },
         {
           "name": "width",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-width",
-          "for": "@media",
-          "value": "<length>",
-          "type": "range"
-        },
-        {
-          "name": "height",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-height",
-          "for": "@media",
-          "value": "<length>",
-          "type": "range"
-        },
-        {
-          "name": "aspect-ratio",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-aspect-ratio",
-          "for": "@media",
-          "value": "<ratio>",
-          "type": "range"
-        },
-        {
-          "name": "orientation",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-orientation",
-          "for": "@media",
-          "value": "portrait | landscape",
-          "type": "discrete"
-        },
-        {
-          "name": "overflow-block",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-block",
-          "for": "@media",
-          "value": "none | scroll | paged",
-          "type": "discrete"
-        },
-        {
-          "name": "overflow-inline",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-inline",
-          "for": "@media",
-          "value": "none | scroll",
-          "type": "discrete"
-        },
-        {
-          "name": "horizontal-viewport-segments",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-horizontal-viewport-segments",
-          "for": "@media",
-          "value": "<integer>",
-          "type": "range"
-        },
-        {
-          "name": "vertical-viewport-segments",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-vertical-viewport-segments",
-          "for": "@media",
-          "value": "<integer>",
-          "type": "range"
-        },
-        {
-          "name": "display-mode",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-display-mode",
-          "for": "@media",
-          "value": "fullscreen | standalone | minimal-ui | browser | picture-in-picture",
-          "type": "discrete"
-        },
-        {
-          "name": "resolution",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-resolution",
-          "for": "@media",
-          "value": "<resolution> | infinite",
-          "type": "range"
-        },
-        {
-          "name": "scan",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scan",
-          "for": "@media",
-          "value": "interlace | progressive",
-          "type": "discrete"
-        },
-        {
-          "name": "grid",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-grid",
-          "for": "@media",
-          "value": "<mq-boolean>",
-          "type": "discrete"
-        },
-        {
-          "name": "update",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-update",
-          "for": "@media",
-          "value": "none | slow | fast",
-          "type": "discrete"
-        },
-        {
-          "name": "environment-blending",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-environment-blending",
-          "for": "@media",
-          "value": "opaque | additive | subtractive",
-          "type": "discrete"
-        },
-        {
-          "name": "color",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color",
-          "for": "@media",
-          "value": "<integer>",
-          "type": "range"
-        },
-        {
-          "name": "color-index",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-index",
-          "for": "@media",
-          "value": "<integer>",
-          "type": "range"
-        },
-        {
-          "name": "monochrome",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-monochrome",
-          "for": "@media",
-          "value": "<integer>",
-          "type": "range"
-        },
-        {
-          "name": "color-gamut",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-gamut",
-          "for": "@media",
-          "value": "srgb | p3 | rec2020",
-          "type": "discrete"
-        },
-        {
-          "name": "dynamic-range",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-dynamic-range",
-          "for": "@media",
-          "value": "standard | high",
-          "type": "discrete"
-        },
-        {
-          "name": "inverted-colors",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-inverted-colors",
-          "for": "@media",
-          "value": "none | inverted",
-          "type": "discrete"
-        },
-        {
-          "name": "pointer",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-pointer",
-          "for": "@media",
-          "value": "none | coarse | fine",
-          "type": "discrete"
-        },
-        {
-          "name": "hover",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-hover",
-          "for": "@media",
-          "value": "none | hover",
-          "type": "discrete"
-        },
-        {
-          "name": "any-pointer",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-any-pointer",
-          "for": "@media",
-          "value": "none | coarse | fine",
-          "type": "discrete"
-        },
-        {
-          "name": "any-hover",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-any-hover",
-          "for": "@media",
-          "value": "none | hover",
-          "type": "discrete"
-        },
-        {
-          "name": "nav-controls",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-nav-controls",
-          "for": "@media",
-          "value": "none | back",
-          "type": "discrete"
-        },
-        {
-          "name": "video-color-gamut",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-video-color-gamut",
-          "for": "@media",
-          "value": "srgb | p3 | rec2020",
-          "type": "discrete"
-        },
-        {
-          "name": "video-dynamic-range",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-video-dynamic-range",
-          "for": "@media",
-          "value": "standard | high",
-          "type": "discrete"
-        },
-        {
-          "name": "scripting",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scripting",
-          "for": "@media",
-          "value": "none | initial-only | enabled",
-          "type": "discrete"
-        },
-        {
-          "name": "prefers-reduced-motion",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion",
-          "for": "@media",
-          "value": "no-preference | reduce",
-          "type": "discrete"
-        },
-        {
-          "name": "prefers-reduced-transparency",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-transparency",
-          "for": "@media",
-          "value": "no-preference | reduce",
-          "type": "discrete"
-        },
-        {
-          "name": "prefers-contrast",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast",
-          "for": "@media",
-          "value": "no-preference | less | more | custom",
-          "type": "discrete"
-        },
-        {
-          "name": "forced-colors",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors",
-          "for": "@media",
-          "value": "none | active",
-          "type": "discrete"
-        },
-        {
-          "name": "prefers-color-scheme",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme",
-          "for": "@media",
-          "value": "light | dark",
-          "type": "discrete"
-        },
-        {
-          "name": "prefers-reduced-data",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-data",
-          "for": "@media",
-          "value": "no-preference | reduce",
-          "type": "discrete"
-        },
-        {
-          "name": "device-width",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-width",
-          "for": "@media",
-          "value": "<length>",
-          "type": "range"
-        },
-        {
-          "name": "device-height",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-height",
-          "for": "@media",
-          "value": "<length>",
-          "type": "range"
-        },
-        {
-          "name": "device-aspect-ratio",
-          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-aspect-ratio",
-          "for": "@media",
-          "value": "<ratio>",
-          "type": "range"
-        },
-        {
-          "name": "width",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-width",
           "for": "@media",
           "value": "<length>",
@@ -837,72 +578,9 @@
           "for": "@font-face",
           "value": "normal | <percentage [0,∞]>",
           "initial": "normal"
-        },
-        {
-          "name": "font-size",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size",
-          "for": "@font-face",
-          "value": "auto | [<number>]{1,2}",
-          "initial": "auto"
-        },
-        {
-          "name": "size-adjust",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-size-adjust",
-          "for": "@font-face",
-          "value": "<percentage [0,∞]>",
-          "initial": "100%"
-        },
-        {
-          "name": "ascent-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-ascent-override",
-          "for": "@font-face",
-          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "descent-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-descent-override",
-          "for": "@font-face",
-          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "line-gap-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-line-gap-override",
-          "for": "@font-face",
-          "value": "[ normal | <percentage [0,∞]> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "superscript-position-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-superscript-position-override",
-          "for": "@font-face",
-          "value": "[ normal | from-font | <percentage> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "subscript-position-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-subscript-position-override",
-          "for": "@font-face",
-          "value": "[ normal | from-font | <percentage> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "superscript-size-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-superscript-size-override",
-          "for": "@font-face",
-          "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
-          "initial": "normal"
-        },
-        {
-          "name": "subscript-size-override",
-          "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-subscript-size-override",
-          "for": "@font-face",
-          "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
-          "initial": "normal"
         }
       ],
-      "value": "@font-face {\n  [ font-family: [ <family-name> ]; ] ||\n  [ src: [ <font-src-list> ]; ] ||\n  [ font-style: [ auto | normal | italic | left | right | oblique [ <angle [-90deg,90deg]>{1,2} ]? ]; ] ||\n  [ font-weight: [ auto | <font-weight-absolute>{1,2} ]; ] ||\n  [ font-width: [ auto | <'font-width'>{1,2} ]; ] ||\n  [ unicode-range: [ <unicode-range-token># ]; ] ||\n  [ font-feature-settings: [ normal | <feature-tag-value># ]; ] ||\n  [ font-variation-settings: [ normal | [ <string> <number>]# ]; ] ||\n  [ font-named-instance: [ auto | <string> ]; ] ||\n  [ font-display: [ auto | block | swap | fallback | optional ]; ] ||\n  [ font-language-override: [ normal | <string> ]; ] ||\n  [ ascent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ descent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ line-gap-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ font-size: [ auto | [<number>]{1,2} ]; ] ||\n  [ size-adjust: [ <percentage [0,∞]> ]; ] ||\n  [ ascent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ descent-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ line-gap-override: [ [ normal | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ superscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||\n  [ subscript-position-override: [ [ normal | from-font | <percentage> ]{1,2} ]; ] ||\n  [ superscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ] ||\n  [ subscript-size-override: [ [ normal | from-font | <percentage [0,∞]> ]{1,2} ]; ]\n}",
+      "value": "@font-face {\n  [ font-family: [ <family-name> ]; ] ||\n  [ src: [ <font-src-list> ]; ] ||\n  [ font-style: [ auto | normal | italic | left | right | oblique [ <angle [-90deg,90deg]>{1,2} ]? ]; ] ||\n  [ font-weight: [ auto | <font-weight-absolute>{1,2} ]; ] ||\n  [ font-width: [ auto | <'font-width'>{1,2} ]; ] ||\n  [ unicode-range: [ <unicode-range-token># ]; ] ||\n  [ font-feature-settings: [ normal | <feature-tag-value># ]; ] ||\n  [ font-variation-settings: [ normal | [ <string> <number>]# ]; ] ||\n  [ font-named-instance: [ auto | <string> ]; ] ||\n  [ font-display: [ auto | block | swap | fallback | optional ]; ] ||\n  [ font-language-override: [ normal | <string> ]; ] ||\n  [ ascent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ descent-override: [ normal | <percentage [0,∞]> ]; ] ||\n  [ line-gap-override: [ normal | <percentage [0,∞]> ]; ]\n}",
       "spec": {
         "shortname": "css-fonts",
         "currentSpec": true
@@ -1371,56 +1049,57 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "hwb()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-hwb",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-hwb",
       "type": "function",
-      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hwb( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "lab()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-lab",
       "type": "function",
-      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "oklab()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklab",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-oklab",
       "type": "function",
-      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "lch()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lch",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-lch",
       "type": "function",
-      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "oklch()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklch",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-oklch",
       "type": "function",
-      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -1441,7 +1120,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "light-dark()",
@@ -1451,18 +1131,19 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "contrast-color()",
-      "prose": "The contrast-color() functional notation identifies a sufficiently contrasting color against a specified background or foreground color without requiring manual computation.",
-      "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-contrast-color",
       "type": "function",
-      "value": "contrast-color( [ [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>? ] | [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>, <color># ] ] )",
+      "value": "contrast-color( <color> )",
       "spec": {
-        "shortname": "css-color-6",
+        "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "color-layers()",
@@ -1910,7 +1591,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "image()",
@@ -1920,7 +1602,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "cross-fade()",
@@ -1930,7 +1613,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "element()",
@@ -1950,28 +1634,29 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "repeating-linear-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-linear-gradient",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-linear-gradient",
       "type": "function",
       "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "repeating-radial-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-radial-gradient",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-radial-gradient",
       "type": "function",
       "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -1983,7 +1668,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "stripes()",
@@ -2093,7 +1779,8 @@
       "spec": {
         "shortname": "css-overflow-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "float",
@@ -3421,7 +3108,7 @@
         "shortname": "compat",
         "currentSpec": true
       },
-      "value": "[ auto | <time [0s,∞]> ]#"
+      "value": "<time [0s,∞]>#"
     },
     {
       "name": "-webkit-animation-timing-function",
@@ -3556,7 +3243,7 @@
         "shortname": "compat",
         "currentSpec": true
       },
-      "value": "<bg-clip>#"
+      "value": "<visual-box>#"
     },
     {
       "name": "-webkit-background-origin",
@@ -4809,7 +4496,7 @@
     {
       "name": "width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-width",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -4829,7 +4516,7 @@
     {
       "name": "height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-height",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "auto",
       "appliesTo": "all elements except non-replaced inlines",
       "inherited": "no",
@@ -4849,7 +4536,7 @@
     {
       "name": "min-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -4870,7 +4557,7 @@
     {
       "name": "min-height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-height",
-      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "auto | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "auto",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -4891,7 +4578,7 @@
     {
       "name": "max-width",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
-      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -4912,7 +4599,7 @@
     {
       "name": "max-height",
       "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-height",
-      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()> | stretch | fit-content | contain",
+      "value": "none | <length-percentage [0,∞]> | min-content | max-content | fit-content(<length-percentage [0,∞]>) | <calc-size()> | <anchor-size()>",
       "initial": "none",
       "appliesTo": "all elements that accept width or height",
       "inherited": "no",
@@ -5076,13 +4763,13 @@
     },
     {
       "name": "animation-duration",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-duration",
-      "value": "[ auto | <time [0s,∞]> ]#",
-      "initial": "auto",
+      "href": "https://drafts.csswg.org/css-animations-1/#propdef-animation-duration",
+      "value": "<time [0s,∞]>#",
+      "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "list, each item either a time or the keyword auto",
+      "computedValue": "list, each item a duration",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -5090,8 +4777,8 @@
         "animationDuration"
       ],
       "spec": {
-        "shortname": "css-animations-2",
-        "currentSpec": false
+        "shortname": "css-animations",
+        "currentSpec": true
       }
     },
     {
@@ -5559,7 +5246,7 @@
     },
     {
       "name": "background-repeat",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#propdef-background-repeat",
       "value": "<repeat-style>#",
       "initial": "repeat",
       "appliesTo": "all elements",
@@ -5573,19 +5260,19 @@
         "backgroundRepeat"
       ],
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
       "name": "background-position",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position",
       "value": "<bg-position>#",
       "initial": "0% 0%",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to size of background positioning area minus size of background image; see text",
-      "computedValue": "a list, each item a pair of offsets (horizontal and vertical) from the top left origin, each offset given as a computed <length-percentage> value",
+      "computedValue": "list, each item a pair of offsets (horizontal and vertical) from the top left origin each given as a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
       "styleDeclaration": [
@@ -5593,8 +5280,8 @@
         "backgroundPosition"
       ],
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
@@ -5683,13 +5370,13 @@
     },
     {
       "name": "background-clip",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#propdef-background-clip",
-      "value": "<bg-clip>#",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#propdef-background-clip",
+      "value": "<visual-box>#",
       "initial": "border-box",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
+      "percentages": "N/A",
+      "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list",
       "styleDeclaration": [
@@ -5697,8 +5384,8 @@
         "backgroundClip"
       ],
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
@@ -8749,22 +8436,22 @@
     },
     {
       "name": "font-size-adjust",
-      "href": "https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust",
-      "value": "none | [ ex-height | cap-height | ch-width | ic-width | ic-height ]? [ from-font | <number [0,∞]> ]",
+      "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-size-adjust",
+      "value": "none | <number [0,∞]>",
       "initial": "none",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/A",
-      "computedValue": "the keyword none, or a pair of a metric keyword and a <number>",
+      "computedValue": "a number or the keyword none",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete if the keywords differ, otherwise by computed value type",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "font-size-adjust",
         "fontSizeAdjust"
       ],
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
@@ -10279,13 +9966,13 @@
     },
     {
       "name": "object-fit",
-      "href": "https://drafts.csswg.org/css-images-4/#propdef-object-fit",
-      "value": "fill | none | [contain | cover] || scale-down",
+      "href": "https://drafts.csswg.org/css-images-3/#propdef-object-fit",
+      "value": "fill | contain | cover | none | scale-down",
       "initial": "fill",
       "appliesTo": "replaced elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified keyword(s)",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
@@ -10293,8 +9980,8 @@
         "objectFit"
       ],
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -12078,22 +11765,22 @@
     },
     {
       "name": "overflow-clip-margin",
-      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-overflow-clip-margin",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-clip-margin",
       "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
       "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
+      "percentages": "n/a",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
       "canonicalOrder": "per grammar",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
       "styleDeclaration": [
         "overflow-clip-margin",
         "overflowClipMargin"
       ],
       "spec": {
-        "shortname": "css-overflow-4",
-        "currentSpec": false
+        "shortname": "css-overflow",
+        "currentSpec": true
       }
     },
     {
@@ -12138,22 +11825,22 @@
     },
     {
       "name": "text-overflow",
-      "href": "https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow",
-      "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
+      "href": "https://drafts.csswg.org/css-overflow-3/#propdef-text-overflow",
+      "value": "clip | ellipsis",
       "initial": "clip",
       "appliesTo": "block containers",
       "inherited": "no",
-      "percentages": "refer to the width of the line box",
-      "computedValue": "as specified, with lengths made absolute",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "discrete",
       "styleDeclaration": [
         "text-overflow",
         "textOverflow"
       ],
       "spec": {
-        "shortname": "css-overflow-4",
-        "currentSpec": false
+        "shortname": "css-overflow",
+        "currentSpec": true
       }
     },
     {
@@ -12220,7 +11907,7 @@
     {
       "name": "continue",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-continue",
-      "value": "auto | discard | -webkit-discard | overflow | paginate | fragments",
+      "value": "auto | discard | -webkit-discard",
       "initial": "auto",
       "appliesTo": "block containers and multicol containers",
       "inherited": "no",
@@ -14407,8 +14094,8 @@
     },
     {
       "name": "text-transform",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-transform",
-      "value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana | math-auto",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-transform",
+      "value": "none | [capitalize | uppercase | lowercase ] || full-width || full-size-kana",
       "initial": "none",
       "appliesTo": "text",
       "inherited": "yes",
@@ -14421,8 +14108,8 @@
         "textTransform"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -14447,11 +14134,11 @@
     },
     {
       "name": "white-space",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-white-space",
-      "value": "normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-white-space",
+      "value": "normal | pre | nowrap | pre-wrap | break-spaces | pre-line",
       "initial": "normal",
       "appliesTo": "text",
-      "inherited": "see individual properties",
+      "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "n/a",
@@ -14461,8 +14148,8 @@
         "whiteSpace"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -14507,7 +14194,7 @@
     },
     {
       "name": "tab-size",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-tab-size",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-tab-size",
       "value": "<number [0,∞]> | <length [0,∞]>",
       "initial": "8",
       "appliesTo": "text",
@@ -14521,8 +14208,8 @@
         "tabSize"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -14647,8 +14334,8 @@
     },
     {
       "name": "word-break",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-break",
-      "value": "normal | break-all | keep-all | manual | auto-phrase | break-word",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-break",
+      "value": "normal | keep-all | break-all | break-word",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
@@ -14661,13 +14348,13 @@
         "wordBreak"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "line-break",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-line-break",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-line-break",
       "value": "auto | loose | normal | strict | anywhere",
       "initial": "auto",
       "appliesTo": "text",
@@ -14681,13 +14368,13 @@
         "lineBreak"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "hyphens",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-hyphens",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-hyphens",
       "value": "none | manual | auto",
       "initial": "manual",
       "appliesTo": "text",
@@ -14700,8 +14387,8 @@
         "hyphens"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -14806,7 +14493,7 @@
     },
     {
       "name": "overflow-wrap",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-overflow-wrap",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-overflow-wrap",
       "value": "normal | break-word | anywhere",
       "initial": "normal",
       "appliesTo": "text",
@@ -14820,13 +14507,13 @@
         "overflowWrap"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "word-wrap",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-wrap",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-wrap",
       "value": "normal | break-word | anywhere",
       "initial": "normal",
       "appliesTo": "text",
@@ -14840,14 +14527,14 @@
         "wordWrap"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "text-align",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-align",
-      "value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align",
+      "value": "start | end | left | right | center | justify | match-parent | justify-all",
       "initial": "start",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -14860,14 +14547,14 @@
         "textAlign"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "text-align-all",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-align-all",
-      "value": "start | end | left | right | center | <string> | justify | match-parent",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align-all",
+      "value": "start | end | left | right | center | justify | match-parent",
       "initial": "start",
       "appliesTo": "block containers",
       "inherited": "yes",
@@ -14880,13 +14567,13 @@
         "textAlignAll"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "text-align-last",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-align-last",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-align-last",
       "value": "auto | start | end | left | right | center | justify | match-parent",
       "initial": "auto",
       "appliesTo": "block containers",
@@ -14900,14 +14587,14 @@
         "textAlignLast"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "text-justify",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-justify",
-      "value": "[ auto | none | inter-word | inter-character | ruby ] || no-compress",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-justify",
+      "value": "auto | none | inter-word | inter-character",
       "initial": "auto",
       "appliesTo": "text",
       "inherited": "yes",
@@ -14920,8 +14607,8 @@
         "textJustify"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -14946,13 +14633,13 @@
     },
     {
       "name": "word-spacing",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-word-spacing",
-      "value": "normal | <length-percentage>",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-word-spacing",
+      "value": "normal | <length>",
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
-      "computedValue": "an absolute length and/or a percentage",
+      "percentages": "N/A",
+      "computedValue": "an absolute length",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
       "styleDeclaration": [
@@ -14960,19 +14647,19 @@
         "wordSpacing"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "letter-spacing",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-letter-spacing",
-      "value": "normal | <length-percentage>",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-letter-spacing",
+      "value": "normal | <length>",
       "initial": "normal",
       "appliesTo": "inline boxes and text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
-      "computedValue": "an absolute length and/or a percentage",
+      "percentages": "n/a",
+      "computedValue": "an absolute length",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
       "styleDeclaration": [
@@ -14980,8 +14667,8 @@
         "letterSpacing"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
@@ -15066,7 +14753,7 @@
     },
     {
       "name": "text-indent",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-indent",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-text-indent",
       "value": "[ <length-percentage> ] && hanging? && each-line?",
       "initial": "0",
       "appliesTo": "block containers",
@@ -15080,13 +14767,13 @@
         "textIndent"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "hanging-punctuation",
-      "href": "https://drafts.csswg.org/css-text-4/#propdef-hanging-punctuation",
+      "href": "https://drafts.csswg.org/css-text-3/#propdef-hanging-punctuation",
       "value": "none | [ first || [ force-end | allow-end ] || last ]",
       "initial": "none",
       "appliesTo": "text",
@@ -15100,14 +14787,14 @@
         "hangingPunctuation"
       ],
       "spec": {
-        "shortname": "css-text-4",
-        "currentSpec": false
+        "shortname": "css-text",
+        "currentSpec": true
       }
     },
     {
       "name": "text-decoration-line",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-line",
-      "value": "none | [ underline || overline || line-through || blink ] | spelling-error | grammar-error",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-line",
+      "value": "none | [ underline || overline || line-through || blink ]",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no (but see prose, above)",
@@ -15120,13 +14807,13 @@
         "textDecorationLine"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-decoration-style",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-style",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-style",
       "value": "solid | double | dotted | dashed | wavy",
       "initial": "solid",
       "appliesTo": "all elements",
@@ -15140,13 +14827,13 @@
         "textDecorationStyle"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-decoration-color",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-color",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-color",
       "value": "<color>",
       "initial": "currentcolor",
       "appliesTo": "all elements",
@@ -15160,8 +14847,8 @@
         "textDecorationColor"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
@@ -15186,8 +14873,8 @@
     },
     {
       "name": "text-decoration",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration",
-      "value": "<'text-decoration-line'> || <'text-decoration-thickness'> || <'text-decoration-style'> || <'text-decoration-color'>",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration",
+      "value": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -15200,14 +14887,14 @@
         "textDecoration"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-underline-position",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-position",
-      "value": "auto | [ from-font | under ] || [ left | right ]",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-underline-position",
+      "value": "auto | [ under || [ left | right ] ]",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -15220,8 +14907,8 @@
         "textUnderlinePosition"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
@@ -15366,7 +15053,7 @@
     },
     {
       "name": "text-emphasis-style",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis-style",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-style",
       "value": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
       "initial": "none",
       "appliesTo": "text",
@@ -15380,13 +15067,13 @@
         "textEmphasisStyle"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-emphasis-color",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis-color",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-color",
       "value": "<color>",
       "initial": "currentcolor",
       "appliesTo": "text",
@@ -15400,13 +15087,13 @@
         "textEmphasisColor"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-emphasis",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis",
       "value": "<'text-emphasis-style'> || <'text-emphasis-color'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
@@ -15420,13 +15107,13 @@
         "textEmphasis"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
       "name": "text-emphasis-position",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-emphasis-position",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-position",
       "value": "[ over | under ] && [ right | left ]?",
       "initial": "over right",
       "appliesTo": "text",
@@ -15440,8 +15127,8 @@
         "textEmphasisPosition"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
@@ -15466,13 +15153,13 @@
     },
     {
       "name": "text-shadow",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-shadow",
-      "value": "none | <shadow>#",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-shadow",
+      "value": "none | [ <color>? && <length>{2,3} ]#",
       "initial": "none",
       "appliesTo": "text",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "either the keyword none or a list, each item consisting of four absolute lengths plus a computed color and optionally also an inset keyword",
+      "computedValue": "either the keyword none or a list, each item consisting of three absolute lengths plus a computed color",
       "canonicalOrder": "per grammar",
       "animationType": "as shadow list",
       "styleDeclaration": [
@@ -15480,8 +15167,8 @@
         "textShadow"
       ],
       "spec": {
-        "shortname": "css-text-decor-4",
-        "currentSpec": false
+        "shortname": "css-text-decor",
+        "currentSpec": true
       }
     },
     {
@@ -18778,11 +18465,11 @@
     },
     {
       "name": ":local-link",
-      "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site and to differentiate site-internal versus site-external links.",
-      "href": "https://drafts.csswg.org/selectors-5/#local-link-pseudo",
+      "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site. It represents an element that is the source anchor of a hyperlink whose target’s absolute URL matches the element’s own document URL. If the hyperlink’s target includes a fragment URL, then the fragment URL of the current URL must also match; if it does not, then the fragment URL portion of the current URL is not taken into account in the comparison.",
+      "href": "https://drafts.csswg.org/selectors-4/#local-link-pseudo",
       "spec": {
-        "shortname": "selectors-5",
-        "currentSpec": false
+        "shortname": "selectors",
+        "currentSpec": true
       },
       "value": ":local-link"
     },
@@ -19582,56 +19269,57 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "hwb()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-hwb",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-hwb",
       "type": "function",
-      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hwb( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "lab()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lab",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-lab",
       "type": "function",
-      "value": "lab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "oklab()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklab",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-oklab",
       "type": "function",
-      "value": "oklab([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "oklab( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "lch()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-lch",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-lch",
       "type": "function",
-      "value": "lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "oklch()",
-      "href": "https://drafts.csswg.org/css-color-5/#funcdef-oklch",
+      "href": "https://drafts.csswg.org/css-color-4/#funcdef-oklch",
       "type": "function",
-      "value": "oklch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -19652,7 +19340,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "light-dark()",
@@ -19662,18 +19351,19 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "contrast-color()",
-      "prose": "The contrast-color() functional notation identifies a sufficiently contrasting color against a specified background or foreground color without requiring manual computation.",
-      "href": "https://drafts.csswg.org/css-color-6/#funcdef-contrast-color",
+      "href": "https://drafts.csswg.org/css-color-5/#funcdef-contrast-color",
       "type": "function",
-      "value": "contrast-color( [ [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>? ] | [ <color> && [ tbd-fg | tbd-bg ] && <target-contrast>, <color># ] ] )",
+      "value": "contrast-color( <color> )",
       "spec": {
-        "shortname": "css-color-6",
+        "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "color-layers()",
@@ -20121,7 +19811,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "image()",
@@ -20131,7 +19822,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "cross-fade()",
@@ -20141,7 +19833,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "element()",
@@ -20161,28 +19854,29 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "repeating-linear-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-linear-gradient",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-linear-gradient",
       "type": "function",
       "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "repeating-radial-gradient()",
-      "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-repeating-radial-gradient",
+      "prose": "In addition to linear-gradient() and radial-gradient(), this specification defines repeating-linear-gradient() and repeating-radial-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
+      "href": "https://drafts.csswg.org/css-images-3/#funcdef-repeating-radial-gradient",
       "type": "function",
       "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -20194,7 +19888,8 @@
       "spec": {
         "shortname": "css-images-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "stripes()",
@@ -20304,7 +19999,8 @@
       "spec": {
         "shortname": "css-overflow-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "for": "float",
@@ -21612,12 +21308,12 @@
     },
     {
       "name": "<single-animation>",
-      "value": "<'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation",
+      "value": "<time [0s,∞]> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation",
       "type": "type",
       "spec": {
-        "shortname": "css-animations-2",
-        "currentSpec": false
+        "shortname": "css-animations",
+        "currentSpec": true
       }
     },
     {
@@ -21723,23 +21419,22 @@
     },
     {
       "name": "<repeat-style>",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#typedef-repeat-style",
       "type": "type",
-      "value": "repeat-x | repeat-y | <repetition>{1,2}",
+      "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}",
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
       "name": "<bg-position>",
-      "prose": "Its value is given as a comma-separated list of <bg-position> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#typedef-bg-position",
       "type": "type",
-      "value": "<position> | <position-three>",
+      "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]",
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
@@ -21750,7 +21445,8 @@
       "spec": {
         "shortname": "css-backgrounds-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<bg-clip>",
@@ -21760,7 +21456,8 @@
       "spec": {
         "shortname": "css-backgrounds-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<bg-image>",
@@ -21840,7 +21537,8 @@
       "spec": {
         "shortname": "css-backgrounds",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<corner-shape-value>",
@@ -21957,22 +21655,22 @@
     {
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color",
       "type": "type",
-      "value": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>",
+      "value": "<color-base> | currentColor | <system-color>",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-base>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color-base",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-base",
       "type": "type",
-      "value": "<hex-color> | <color-function> | <named-color> | <color-mix()> | transparent",
+      "value": "<hex-color> | <color-function> | <named-color> | transparent",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -21987,52 +21685,52 @@
     },
     {
       "name": "<modern-rgb-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgb-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-rgb-syntax",
       "type": "type",
-      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-rgba-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgba-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-rgba-syntax",
       "type": "type",
-      "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-hsl-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsl-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-hsl-syntax",
       "type": "type",
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hsl( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-hsla-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsla-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-hsla-syntax",
       "type": "type",
-      "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hsla( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<colorspace-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-colorspace-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-colorspace-params",
       "type": "type",
-      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]",
+      "value": "[ <predefined-rgb-params> | <xyz-params>]",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -22043,16 +21741,17 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<predefined-rgb-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-predefined-rgb-params",
       "type": "type",
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -22067,12 +21766,12 @@
     },
     {
       "name": "<xyz-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-xyz-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-xyz-params",
       "type": "type",
-      "value": "<xyz> [ <number> | <percentage> | none ]{3}",
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -22083,7 +21782,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<legacy-device-cmyk-syntax>",
@@ -22117,33 +21817,33 @@
     },
     {
       "name": "<color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-space",
       "type": "type",
-      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space>",
+      "value": "<rectangular-color-space> | <polar-color-space>",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       },
       "dangling": true
     },
     {
       "name": "<rectangular-color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-rectangular-color-space",
       "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<polar-color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-polar-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-polar-color-space",
       "type": "type",
       "value": "hsl | hwb | lch | oklch",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -22154,26 +21854,27 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<hue-interpolation-method>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-hue-interpolation-method",
       "type": "type",
       "value": "[ shorter | longer | increasing | decreasing ] hue",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-interpolation-method>",
-      "href": "https://drafts.csswg.org/css-color-5/#color-interpolation-method",
+      "href": "https://drafts.csswg.org/css-color-4/#color-interpolation-method",
       "type": "type",
-      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -22185,7 +21886,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<wcag2>",
@@ -22285,8 +21987,7 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      },
-      "dangling": true
+      }
     },
     {
       "name": "<deprecated-color>",
@@ -22335,12 +22036,12 @@
     },
     {
       "name": "<supports-feature>",
-      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
+      "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-feature",
       "type": "type",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>",
+      "value": "<supports-decl>",
       "spec": {
-        "shortname": "css-conditional-5",
-        "currentSpec": false
+        "shortname": "css-conditional",
+        "currentSpec": true
       }
     },
     {
@@ -22351,7 +22052,8 @@
       "spec": {
         "shortname": "css-conditional-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<supports-font-tech-fn>",
@@ -22361,7 +22063,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<supports-font-format-fn>",
@@ -22371,7 +22074,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<container-condition>",
@@ -22748,42 +22452,42 @@
     },
     {
       "name": "<font-format>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-format-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-format-values",
       "type": "type",
       "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<font-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-values",
       "type": "type",
       "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<font-features-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-features-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-values",
       "type": "type",
       "value": "[features-opentype | features-aat | features-graphite]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-font-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#color-font-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-values",
       "type": "type",
       "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
@@ -23478,12 +23182,12 @@
     },
     {
       "name": "<image>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-image",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-image",
       "type": "type",
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>",
+      "value": "<url> | <gradient>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -23528,42 +23232,42 @@
     },
     {
       "name": "<gradient>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-gradient",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-gradient",
       "type": "type",
-      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]",
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-gradient-syntax>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-gradient-syntax",
       "type": "type",
-      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>",
+      "value": "[ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<side-or-corner>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-side-or-corner",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-side-or-corner",
       "type": "type",
       "value": "[left | right] || [top | bottom]",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<radial-gradient-syntax>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-radial-gradient-syntax",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-gradient-syntax",
       "type": "type",
-      "value": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>",
+      "value": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -23578,32 +23282,32 @@
     },
     {
       "name": "<color-stop-list>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-color-stop-list",
       "type": "type",
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#?",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-color-stop>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-stop",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-stop",
       "type": "type",
-      "value": "<color> <color-stop-length>?",
+      "value": "<color> <length-percentage>?",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-color-hint>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-hint",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-hint",
       "type": "type",
       "value": "<length-percentage>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -24617,12 +24321,12 @@
     },
     {
       "name": "<transform-function>",
-      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. Wherever <angle> is used in this specification, a <number> that is equal to zero is also allowed, which is treated the same as an angle of zero degrees. A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box. A percentage in a scale function is equivalent to a number, and serializes as a number in specified values. For example, scale3d(50%, 100%, 150%) serializes as scale3d(0.5, 1, 1.5).",
-      "href": "https://drafts.csswg.org/css-transforms-2/#typedef-transform-function",
+      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. In the following functions, a <zero> behaves the same as 0deg (\"unitless 0\" angles are preserved for legacy compat). A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box.",
+      "href": "https://drafts.csswg.org/css-transforms-1/#typedef-transform-function",
       "type": "type",
       "spec": {
-        "shortname": "css-transforms-2",
-        "currentSpec": false
+        "shortname": "css-transforms",
+        "currentSpec": true
       }
     },
     {
@@ -24647,12 +24351,12 @@
     },
     {
       "name": "<single-transition>",
-      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time> || <transition-behavior-value>",
-      "href": "https://drafts.csswg.org/css-transitions-2/#single-transition",
+      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>",
+      "href": "https://drafts.csswg.org/css-transitions-1/#single-transition",
       "type": "type",
       "spec": {
-        "shortname": "css-transitions-2",
-        "currentSpec": false
+        "shortname": "css-transitions",
+        "currentSpec": true
       }
     },
     {
@@ -24823,13 +24527,13 @@
     },
     {
       "name": "<position>",
-      "prose": "The <position> value specifies the position of an alignment subject (e.g. a background image) inside an alignment container (e.g. its background positioning area) as a pair of offsets between the specified edges (defaulting to the left and top). Its syntax is:",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-position",
+      "prose": "The <position> value specifies the position of a object area (e.g. background image) inside a positioning area (e.g. background positioning area). It is computed and interpreted as specified for background-position. [CSS3-BACKGROUND]",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-position",
       "type": "type",
-      "value": "<position-one> | <position-two> | <position-four>",
+      "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
       "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
+        "shortname": "css-values",
+        "currentSpec": true
       }
     },
     {
@@ -24840,7 +24544,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position-two>",
@@ -24850,7 +24555,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position-four>",
@@ -24860,7 +24566,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<progress>",
@@ -25615,202 +25322,202 @@
     {
       "name": "<media-query-list>",
       "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced.",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list",
       "type": "type",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-query>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-query",
       "type": "type",
       "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       },
       "dangling": true
     },
     {
       "name": "<media-type>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-type",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-type",
       "type": "type",
       "value": "<ident>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-condition>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition",
       "type": "type",
       "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-condition-without-or>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition-without-or",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition-without-or",
       "type": "type",
       "value": "<media-not> | <media-in-parens> <media-and>*",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-not>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-not",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-not",
       "type": "type",
       "value": "not <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-and>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-and",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-and",
       "type": "type",
       "value": "and <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-or>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-or",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-or",
       "type": "type",
       "value": "or <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-in-parens>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-in-parens",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-in-parens",
       "type": "type",
-      "value": "( <media-condition> ) | <media-feature> | <general-enclosed>",
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-feature>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-feature",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-feature",
       "type": "type",
-      "value": "( [ <mf-plain> | <mf-boolean> | <mf-range> ] )",
+      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-plain>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-plain",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-plain",
       "type": "type",
       "value": "<mf-name> : <mf-value>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-boolean>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-boolean",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-boolean",
       "type": "type",
       "value": "<mf-name>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-range>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-range",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-range",
       "type": "type",
       "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-name>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-name",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-name",
       "type": "type",
       "value": "<ident>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-value>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-value",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-value",
       "type": "type",
       "value": "<number> | <dimension> | <ident> | <ratio>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-lt>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-lt",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-lt",
       "type": "type",
       "value": "'<' '='?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-gt>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-gt",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-gt",
       "type": "type",
       "value": "'>' '='?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-eq>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-eq",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-eq",
       "type": "type",
       "value": "'='",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-comparison>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-comparison",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-comparison",
       "type": "type",
       "value": "<mf-lt> | <mf-gt> | <mf-eq>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<general-enclosed>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed",
       "type": "type",
       "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
@@ -26368,12 +26075,12 @@
     },
     {
       "name": "<single-animation>",
-      "value": "<'animation-duration'> || <easing-function> || <'animation-delay'> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation",
+      "value": "<time [0s,∞]> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]",
+      "href": "https://drafts.csswg.org/css-animations-1/#typedef-single-animation",
       "type": "type",
       "spec": {
-        "shortname": "css-animations-2",
-        "currentSpec": false
+        "shortname": "css-animations",
+        "currentSpec": true
       }
     },
     {
@@ -26479,23 +26186,22 @@
     },
     {
       "name": "<repeat-style>",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#typedef-repeat-style",
       "type": "type",
-      "value": "repeat-x | repeat-y | <repetition>{1,2}",
+      "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}",
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
       "name": "<bg-position>",
-      "prose": "Its value is given as a comma-separated list of <bg-position> values, which are interpreted as <position> values with the resized background image as the alignment subject and the background positioning area as the alignment container.",
-      "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#typedef-bg-position",
       "type": "type",
-      "value": "<position> | <position-three>",
+      "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ] ]",
       "spec": {
-        "shortname": "css-backgrounds-4",
-        "currentSpec": false
+        "shortname": "css-backgrounds",
+        "currentSpec": true
       }
     },
     {
@@ -26506,7 +26212,8 @@
       "spec": {
         "shortname": "css-backgrounds-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<bg-clip>",
@@ -26516,7 +26223,8 @@
       "spec": {
         "shortname": "css-backgrounds-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<bg-image>",
@@ -26596,7 +26304,8 @@
       "spec": {
         "shortname": "css-backgrounds",
         "currentSpec": true
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<corner-shape-value>",
@@ -26713,22 +26422,22 @@
     {
       "name": "<color>",
       "prose": "Colors in CSS are represented by the <color> type:",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color",
       "type": "type",
-      "value": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>",
+      "value": "<color-base> | currentColor | <system-color>",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-base>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color-base",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-base",
       "type": "type",
-      "value": "<hex-color> | <color-function> | <named-color> | <color-mix()> | transparent",
+      "value": "<hex-color> | <color-function> | <named-color> | transparent",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26743,52 +26452,52 @@
     },
     {
       "name": "<modern-rgb-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgb-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-rgb-syntax",
       "type": "type",
-      "value": "rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "value": "rgb( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-rgba-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-rgba-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-rgba-syntax",
       "type": "type",
-      "value": "rgba( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
+      "value": "rgba( [ <number> | <percentage> | none]{3} [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-hsl-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsl-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-hsl-syntax",
       "type": "type",
-      "value": "hsl([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hsl( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<modern-hsla-syntax>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-modern-hsla-syntax",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-modern-hsla-syntax",
       "type": "type",
-      "value": "hsla([from <color>]? [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "value": "hsla( [<hue> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<colorspace-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-colorspace-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-colorspace-params",
       "type": "type",
-      "value": "[<custom-params> | <predefined-rgb-params> | <xyz-params>]",
+      "value": "[ <predefined-rgb-params> | <xyz-params>]",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26799,16 +26508,17 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<predefined-rgb-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-predefined-rgb-params",
       "type": "type",
       "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26823,12 +26533,12 @@
     },
     {
       "name": "<xyz-params>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-xyz-params",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-xyz-params",
       "type": "type",
-      "value": "<xyz> [ <number> | <percentage> | none ]{3}",
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26839,7 +26549,8 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<legacy-device-cmyk-syntax>",
@@ -26873,33 +26584,33 @@
     },
     {
       "name": "<color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-color-space",
       "type": "type",
-      "value": "<rectangular-color-space> | <polar-color-space> | <custom-color-space>",
+      "value": "<rectangular-color-space> | <polar-color-space>",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       },
       "dangling": true
     },
     {
       "name": "<rectangular-color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-rectangular-color-space",
       "type": "type",
       "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<polar-color-space>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-polar-color-space",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-polar-color-space",
       "type": "type",
       "value": "hsl | hwb | lch | oklch",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26910,26 +26621,27 @@
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<hue-interpolation-method>",
-      "href": "https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method",
+      "href": "https://drafts.csswg.org/css-color-4/#typedef-hue-interpolation-method",
       "type": "type",
       "value": "[ shorter | longer | increasing | decreasing ] hue",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-interpolation-method>",
-      "href": "https://drafts.csswg.org/css-color-5/#color-interpolation-method",
+      "href": "https://drafts.csswg.org/css-color-4/#color-interpolation-method",
       "type": "type",
-      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? | <custom-color-space> ]",
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]",
       "spec": {
-        "shortname": "css-color-5",
-        "currentSpec": false
+        "shortname": "css-color",
+        "currentSpec": true
       }
     },
     {
@@ -26941,7 +26653,8 @@
       "spec": {
         "shortname": "css-color-6",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<wcag2>",
@@ -27041,8 +26754,7 @@
       "spec": {
         "shortname": "css-color",
         "currentSpec": true
-      },
-      "dangling": true
+      }
     },
     {
       "name": "<deprecated-color>",
@@ -27091,12 +26803,12 @@
     },
     {
       "name": "<supports-feature>",
-      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
+      "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-feature",
       "type": "type",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>",
+      "value": "<supports-decl>",
       "spec": {
-        "shortname": "css-conditional-5",
-        "currentSpec": false
+        "shortname": "css-conditional",
+        "currentSpec": true
       }
     },
     {
@@ -27107,7 +26819,8 @@
       "spec": {
         "shortname": "css-conditional-4",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<supports-font-tech-fn>",
@@ -27117,7 +26830,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<supports-font-format-fn>",
@@ -27127,7 +26841,8 @@
       "spec": {
         "shortname": "css-conditional-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<container-condition>",
@@ -27504,42 +27219,42 @@
     },
     {
       "name": "<font-format>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-format-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-format-values",
       "type": "type",
       "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<font-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-values",
       "type": "type",
       "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<font-features-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#font-features-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-values",
       "type": "type",
       "value": "[features-opentype | features-aat | features-graphite]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
       "name": "<color-font-tech>",
-      "href": "https://drafts.csswg.org/css-fonts-5/#color-font-tech-values",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-values",
       "type": "type",
       "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]",
       "spec": {
-        "shortname": "css-fonts-5",
-        "currentSpec": false
+        "shortname": "css-fonts",
+        "currentSpec": true
       }
     },
     {
@@ -28234,12 +27949,12 @@
     },
     {
       "name": "<image>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-image",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-image",
       "type": "type",
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>",
+      "value": "<url> | <gradient>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -28284,42 +27999,42 @@
     },
     {
       "name": "<gradient>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-gradient",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-gradient",
       "type": "type",
-      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]",
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-gradient-syntax>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-gradient-syntax",
       "type": "type",
-      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>",
+      "value": "[ <angle> | <zero> | to <side-or-corner> ]? , <color-stop-list>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<side-or-corner>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-side-or-corner",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-side-or-corner",
       "type": "type",
       "value": "[left | right] || [top | bottom]",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<radial-gradient-syntax>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-radial-gradient-syntax",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-radial-gradient-syntax",
       "type": "type",
-      "value": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>",
+      "value": "[ <radial-shape> || <radial-size> ]? [ at <position> ]? , <color-stop-list>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -28334,32 +28049,32 @@
     },
     {
       "name": "<color-stop-list>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-color-stop-list",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-color-stop-list",
       "type": "type",
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#?",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-color-stop>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-stop",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-stop",
       "type": "type",
-      "value": "<color> <color-stop-length>?",
+      "value": "<color> <length-percentage>?",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
       "name": "<linear-color-hint>",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-color-hint",
+      "href": "https://drafts.csswg.org/css-images-3/#typedef-linear-color-hint",
       "type": "type",
       "value": "<length-percentage>",
       "spec": {
-        "shortname": "css-images-4",
-        "currentSpec": false
+        "shortname": "css-images",
+        "currentSpec": true
       }
     },
     {
@@ -29373,12 +29088,12 @@
     },
     {
       "name": "<transform-function>",
-      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. Wherever <angle> is used in this specification, a <number> that is equal to zero is also allowed, which is treated the same as an angle of zero degrees. A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box. A percentage in a scale function is equivalent to a number, and serializes as a number in specified values. For example, scale3d(50%, 100%, 150%) serializes as scale3d(0.5, 1, 1.5).",
-      "href": "https://drafts.csswg.org/css-transforms-2/#typedef-transform-function",
+      "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. In the following functions, a <zero> behaves the same as 0deg (\"unitless 0\" angles are preserved for legacy compat). A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box.",
+      "href": "https://drafts.csswg.org/css-transforms-1/#typedef-transform-function",
       "type": "type",
       "spec": {
-        "shortname": "css-transforms-2",
-        "currentSpec": false
+        "shortname": "css-transforms",
+        "currentSpec": true
       }
     },
     {
@@ -29403,12 +29118,12 @@
     },
     {
       "name": "<single-transition>",
-      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time> || <transition-behavior-value>",
-      "href": "https://drafts.csswg.org/css-transitions-2/#single-transition",
+      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>",
+      "href": "https://drafts.csswg.org/css-transitions-1/#single-transition",
       "type": "type",
       "spec": {
-        "shortname": "css-transitions-2",
-        "currentSpec": false
+        "shortname": "css-transitions",
+        "currentSpec": true
       }
     },
     {
@@ -29579,13 +29294,13 @@
     },
     {
       "name": "<position>",
-      "prose": "The <position> value specifies the position of an alignment subject (e.g. a background image) inside an alignment container (e.g. its background positioning area) as a pair of offsets between the specified edges (defaulting to the left and top). Its syntax is:",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-position",
+      "prose": "The <position> value specifies the position of a object area (e.g. background image) inside a positioning area (e.g. background positioning area). It is computed and interpreted as specified for background-position. [CSS3-BACKGROUND]",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-position",
       "type": "type",
-      "value": "<position-one> | <position-two> | <position-four>",
+      "value": "[ [ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right ] && [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]",
       "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
+        "shortname": "css-values",
+        "currentSpec": true
       }
     },
     {
@@ -29596,7 +29311,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position-two>",
@@ -29606,7 +29322,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<position-four>",
@@ -29616,7 +29333,8 @@
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
-      }
+      },
+      "dangling": true
     },
     {
       "name": "<progress>",
@@ -30371,202 +30089,202 @@
     {
       "name": "<media-query-list>",
       "prose": "To parse a <media-query-list> production, parse a comma-separated list of component values, then parse each entry in the returned list as a <media-query>. Its value is the list of <media-query>s so produced.",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list",
       "type": "type",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-query>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-query",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-query",
       "type": "type",
       "value": "<media-condition> | [ not | only ]? <media-type> [ and <media-condition-without-or> ]?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       },
       "dangling": true
     },
     {
       "name": "<media-type>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-type",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-type",
       "type": "type",
       "value": "<ident>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-condition>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition",
       "type": "type",
       "value": "<media-not> | <media-in-parens> [ <media-and>* | <media-or>* ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-condition-without-or>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition-without-or",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-condition-without-or",
       "type": "type",
       "value": "<media-not> | <media-in-parens> <media-and>*",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-not>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-not",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-not",
       "type": "type",
       "value": "not <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-and>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-and",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-and",
       "type": "type",
       "value": "and <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-or>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-or",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-or",
       "type": "type",
       "value": "or <media-in-parens>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-in-parens>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-in-parens",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-in-parens",
       "type": "type",
-      "value": "( <media-condition> ) | <media-feature> | <general-enclosed>",
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<media-feature>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-feature",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-media-feature",
       "type": "type",
-      "value": "( [ <mf-plain> | <mf-boolean> | <mf-range> ] )",
+      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-plain>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-plain",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-plain",
       "type": "type",
       "value": "<mf-name> : <mf-value>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-boolean>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-boolean",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-boolean",
       "type": "type",
       "value": "<mf-name>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-range>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-range",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-range",
       "type": "type",
       "value": "<mf-name> <mf-comparison> <mf-value> | <mf-value> <mf-comparison> <mf-name> | <mf-value> <mf-lt> <mf-name> <mf-lt> <mf-value> | <mf-value> <mf-gt> <mf-name> <mf-gt> <mf-value>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-name>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-name",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-name",
       "type": "type",
       "value": "<ident>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-value>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-value",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-value",
       "type": "type",
       "value": "<number> | <dimension> | <ident> | <ratio>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-lt>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-lt",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-lt",
       "type": "type",
       "value": "'<' '='?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-gt>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-gt",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-gt",
       "type": "type",
       "value": "'>' '='?",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-eq>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-eq",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-eq",
       "type": "type",
       "value": "'='",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<mf-comparison>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-mf-comparison",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mf-comparison",
       "type": "type",
       "value": "<mf-lt> | <mf-gt> | <mf-eq>",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
       "name": "<general-enclosed>",
-      "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed",
+      "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-general-enclosed",
       "type": "type",
       "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]",
       "spec": {
-        "shortname": "mediaqueries-5",
-        "currentSpec": false
+        "shortname": "mediaqueries",
+        "currentSpec": true
       }
     },
     {
