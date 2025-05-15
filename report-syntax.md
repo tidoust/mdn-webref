@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-05T09:24:14.543Z** using **v2.21.0** of MDN data and **v6.20.9** of `@webref/css`.
+Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
 
 
 <details>
@@ -314,7 +314,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>196 properties mismatches (out of 500 properties in common)</summary>
+<summary>197 properties mismatches (out of 500 properties in common)</summary>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
@@ -1240,6 +1240,11 @@ mdn:    auto | text | none | all
 ```
 webref: [ first | last] || <'alignment-baseline'> || <'baseline-shift'>
 mdn:    baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
+```
+- [`visibility`](https://drafts.csswg.org/css-display-4/#propdef-visibility)
+```
+webref: visible | hidden | force-hidden | collapse
+mdn:    visible | hidden | collapse
 ```
 - [`white-space`](https://drafts.csswg.org/css-text-4/#propdef-white-space)
 ```

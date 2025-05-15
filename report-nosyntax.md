@@ -1,6 +1,6 @@
 # Features without syntax in Webref
 
-Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
+Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 
 
 <details>
@@ -13,19 +13,11 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>26 functions without syntax (out of 171)</summary>
+<summary>16 functions without syntax (out of 171)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set) (dangling)
-- [`calc-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-mix) (dangling)
-- [`container-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-container-progress) (dangling)
 - [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>` (dangling)
-- [`first-valid()`](https://drafts.csswg.org/css-values-5/#funcdef-first-valid) (dangling)
-- [`if()`](https://drafts.csswg.org/css-values-5/#funcdef-if) (dangling)
-- [`inherit()`](https://drafts.csswg.org/css-values-5/#funcdef-inherit) (dangling)
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>` (dangling)
-- [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress) (dangling)
-- [`mix()`](https://drafts.csswg.org/css-values-5/#funcdef-mix)
-- [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress) (dangling)
 - [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>` (dangling)
@@ -38,8 +30,6 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>` (dangling)
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count) (dangling)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index) (dangling)
-- [`toggle()`](https://drafts.csswg.org/css-values-5/#funcdef-toggle) (dangling)
-- [`transform-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-transform-mix) (dangling)
 - [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()` (dangling)
 </details>
 
@@ -82,7 +72,7 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>107 types without syntax (out of 474)</summary>
+<summary>107 types without syntax (out of 465)</summary>
 
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren) (dangling)
 - [`<)-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren) (dangling)

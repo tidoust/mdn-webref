@@ -1,6 +1,6 @@
 # Dangling features in Webref
 
-Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
+Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 
 
 <details>
@@ -105,7 +105,7 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 
 
 <details>
-<summary>71 dangling types (out of 474)</summary>
+<summary>62 dangling types (out of 465)</summary>
 
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
 - [`<)-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren)
@@ -123,7 +123,6 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 - [`<border-style>`](https://drafts.csswg.org/css2/#value-def-border-style)
 - [`<border-width>`](https://drafts.csswg.org/css2/#value-def-border-width)
 - [`<box>`](https://drafts.csswg.org/css-box-4/#typedef-box)
-- [`<calc-mix()>`](https://drafts.csswg.org/css-values-5/#typedef-calc-mix)
 - [`<CDC-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-cdc-token)
 - [`<CDO-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-cdo-token)
 - [`<colon-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-colon-token)
@@ -133,7 +132,6 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 - [`<complex-real-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector-list)
 - [`<composite-mode>`](https://drafts.fxtf.org/compositing-2/#compositemode)
 - [`<compound-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-compound-selector-list)
-- [`<container-progress()>`](https://drafts.csswg.org/css-values-5/#typedef-container-progress)
 - [`<dasharray>`](https://svgwg.org/svg2-draft/painting.html#DataTypeDasharray)
 - [`<dashed-function>`](https://drafts.csswg.org/css-mixins-1/#typedef-dashed-function)
 - [`<declaration-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-rule-list)
@@ -141,27 +139,21 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 - [`<deprecated-color>`](https://drafts.csswg.org/css-color-4/#typedef-deprecated-color)
 - [`<dimension-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token)
 - [`<eof-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-eof-token)
-- [`<first-valid()>`](https://drafts.csswg.org/css-values-5/#typedef-first-valid)
 - [`<font-src>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-src)
 - [`<forgiving-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list)
 - [`<frequency-percentage>`](https://drafts.csswg.org/css-values-4/#typedef-frequency-percentage)
 - [`<identifier>`](https://drafts.csswg.org/css2/#value-def-identifier)
 - [`<if-args>`](https://drafts.csswg.org/css-values-5/#typedef-if-args)
-- [`<if()>`](https://drafts.csswg.org/css-values-5/#typedef-if)
 - [`<inherit-args>`](https://drafts.csswg.org/css-values-5/#typedef-inherit-args)
-- [`<inherit()>`](https://drafts.csswg.org/css-values-5/#typedef-inherit)
 - [`<keyframe-block>`](https://drafts.csswg.org/css-animations-1/#typedef-keyframe-block)
 - [`<layout-box>`](https://drafts.csswg.org/css-box-4/#typedef-layout-box)
 - [`<margin-width>`](https://drafts.csswg.org/css2/#value-def-margin-width)
-- [`<media-progress()>`](https://drafts.csswg.org/css-values-5/#typedef-media-progress)
 - [`<media-query>`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query)
-- [`<mix()>`](https://drafts.csswg.org/css-values-5/#typedef-mix)
 - [`<mq-boolean>`](https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean)
 - [`<number-optional-number>`](https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number)
 - [`<number-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-number-token)
 - [`<padding-width>`](https://drafts.csswg.org/css2/#value-def-padding-width)
 - [`<points>`](https://svgwg.org/svg2-draft/shapes.html#DataTypePoints)
-- [`<progress()>`](https://drafts.csswg.org/css-values-5/#typedef-progress-fn)
 - [`<pt-name-and-class-selector>`](https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-name-and-class-selector)
 - [`<quirky-color>`](https://drafts.csswg.org/css-color-4/#typedef-quirky-color)
 - [`<quirky-length>`](https://drafts.csswg.org/css-values-4/#typedef-quirky-length)
@@ -174,8 +166,7 @@ Generated on **2025-05-05T09:24:14.562Z** using **v6.20.9** of `@webref/css`.
 - [`<simple-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-simple-selector-list)
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<time-percentage>`](https://drafts.csswg.org/css-values-4/#typedef-time-percentage)
-- [`<toggle()>`](https://drafts.csswg.org/css-values-5/#typedef-toggle)
-- [`<transform-mix()>`](https://drafts.csswg.org/css-values-5/#typedef-transform-mix)
+- [`<var-args>`](https://drafts.csswg.org/css-variables-2/#typedef-var-args)
 - [`<whitespace-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token)
 - [`<xyz-space>`](https://drafts.csswg.org/css-color-4/#typedef-xyz-space)
 </details>
