@@ -33,23 +33,7 @@
           "href": "https://drafts.csswg.org/css-round-display-1/#descdef-media-shape",
           "for": "@media",
           "value": "rect | round",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "rect",
-              "prose": "The shape is an axis aligned rectangle or square, or a similar shape such as rounded rectangle for which the traditional designs are appropriate.",
-              "href": "https://drafts.csswg.org/css-round-display-1/#valdef-media-shape-rect",
-              "type": "value",
-              "value": "rect"
-            },
-            {
-              "name": "round",
-              "prose": "The shape is rounded or a similar shape to the circle such as an oval, an ellipse for which distinctively rounded designs are appropriate.",
-              "href": "https://drafts.csswg.org/css-round-display-1/#valdef-media-shape-round",
-              "type": "value",
-              "value": "round"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "width",
@@ -77,76 +61,21 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-orientation",
           "for": "@media",
           "value": "portrait | landscape",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "portrait",
-              "prose": "The orientation media feature is portrait when the value of the height media feature is greater than or equal to the value of the width media feature.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-orientation-portrait",
-              "type": "value",
-              "value": "portrait"
-            },
-            {
-              "name": "landscape",
-              "prose": "Otherwise orientation is landscape.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-orientation-landscape",
-              "type": "value",
-              "value": "landscape"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "overflow-block",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-block",
           "for": "@media",
           "value": "none | scroll | paged",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "There is no affordance for overflow in the block axis; any overflowing content is simply not displayed. Examples: billboards",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-overflow-block-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "scroll",
-              "prose": "Overflowing content in the block axis is exposed by allowing users to scroll to it. Examples: computer screens",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-overflow-block-scroll",
-              "type": "value",
-              "value": "scroll"
-            },
-            {
-              "name": "paged",
-              "prose": "Content is broken up into discrete pages; content that overflows one page in the block axis is displayed on the following page. Examples: printers, ebook readers",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-overflow-block-paged",
-              "type": "value",
-              "value": "paged"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "overflow-inline",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-overflow-inline",
           "for": "@media",
           "value": "none | scroll",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "There is no affordance for overflow in the inline axis; any overflowing content is simply not displayed.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-overflow-inline-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "scroll",
-              "prose": "Overflowing content in the inline axis is exposed by allowing users to scroll to it.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-overflow-inline-scroll",
-              "type": "value",
-              "value": "scroll"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "horizontal-viewport-segments",
@@ -167,83 +96,21 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-display-mode",
           "for": "@media",
           "value": "fullscreen | standalone | minimal-ui | browser | picture-in-picture",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "fullscreen",
-              "prose": "The browsing context is displayed with browser UI elements hidden and takes up the entirety of the available display area. The fullscreen context may have been caused by the fullscreen display mode in the application manifest, by the requestFullscreen() method of the Fullscreen API, or through some other means (such as the user manually activating fullscreen mode using the user agent’s built-in controls). Corresponds to the fullscreen display mode.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-fullscreen",
-              "type": "value",
-              "value": "fullscreen"
-            },
-            {
-              "name": "standalone",
-              "prose": "The standalone display mode is in use. Only applicable in an application context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-standalone",
-              "type": "value",
-              "value": "standalone"
-            },
-            {
-              "name": "minimal-ui",
-              "prose": "The minimal-ui display mode is in use. Only applicable in an application context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-minimal-ui",
-              "type": "value",
-              "value": "minimal-ui"
-            },
-            {
-              "name": "browser",
-              "prose": "The browsing context is displayed using the platform-specific convention for opening hyperlinks in the user agent (e.g., in a browser tab or web browser window with controls such as an address bar). This should be used for non-application contexts where no other display mode is appropriate. Corresponds to the browser display mode.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-browser",
-              "type": "value",
-              "value": "browser"
-            },
-            {
-              "name": "picture-in-picture",
-              "prose": "This mode allows users to continue consuming media while they interact with other sites or applications on their device. The browsing context is displayed in a floating and always-on-top window. A user agent may include other platform specific UI elements, such as \"back-to-tab\" and \"site information\" buttons or whatever is customary on the platform and user agent.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
-              "type": "value",
-              "value": "picture-in-picture"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "resolution",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-resolution",
           "for": "@media",
           "value": "<resolution> | infinite",
-          "type": "range",
-          "values": [
-            {
-              "name": "infinite",
-              "prose": "For output mediums that have no physical constraints on resolution (such as outputting to vector graphics), this feature must match the infinite value. For the purpose of evaluating this media feature in the range context, infinite must be treated as larger than any possible <resolution>. (That is, a query like (resolution > 1000dpi) will be true for an infinite media.)",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-resolution-infinite",
-              "type": "value",
-              "value": "infinite"
-            }
-          ]
+          "type": "range"
         },
         {
           "name": "scan",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scan",
           "for": "@media",
           "value": "interlace | progressive",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "interlace",
-              "prose": "CRT and some types of plasma TV screens used “interlaced” rendering, where video frames alternated between specifying only the “even” lines on the screen and only the “odd” lines, exploiting various automatic mental image-correction abilities to produce smooth motion. This allowed them to simulate a higher FPS broadcast at half the bandwidth cost. When displaying on interlaced screens, authors should avoid very fast movement across the screen to avoid “combing”, and should ensure that details on the screen are wider than 1px to avoid “twitter”.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scan-interlace",
-              "type": "value",
-              "value": "interlace"
-            },
-            {
-              "name": "progressive",
-              "prose": "A screen using “progressive” rendering displays each screen fully, and needs no special treatment. Most modern screens, and all computer screens, use progressive rendering.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scan-progressive",
-              "type": "value",
-              "value": "progressive"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "grid",
@@ -257,60 +124,14 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-update",
           "for": "@media",
           "value": "none | slow | fast",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Once it has been rendered, the layout can no longer be updated. Example: documents printed on paper.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-update-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "slow",
-              "prose": "The layout may change dynamically according to the usual rules of CSS, but the output device is not able to render or display changes quickly enough for them to be perceived as a smooth animation. Example: E-ink screens or severely under-powered devices.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-update-slow",
-              "type": "value",
-              "value": "slow"
-            },
-            {
-              "name": "fast",
-              "prose": "The layout may change dynamically according to the usual rules of CSS, and the output device is not unusually constrained in speed, so regularly-updating things like CSS Animations can be used. Example: computer screens.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-update-fast",
-              "type": "value",
-              "value": "fast"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "environment-blending",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-environment-blending",
           "for": "@media",
           "value": "opaque | additive | subtractive",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "opaque",
-              "prose": "The document is rendered on an opaque medium, such as a traditional monitor or paper. Black is dark and white is 100% light.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-opaque",
-              "type": "value",
-              "value": "opaque"
-            },
-            {
-              "name": "additive",
-              "prose": "The display blends the colors of the canvas with the real world using additive mixing. Black is fully transparent and white is 100% light. For example: a head-up display in a car.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-additive",
-              "type": "value",
-              "value": "additive"
-            },
-            {
-              "name": "subtractive",
-              "prose": "The display blends the colors of the canvas with the real world using subtractive mixing. White is fully transparent and dark colors have the most contrast. For example: an LCD display embedded in a bathroom mirror.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-subtractive",
-              "type": "value",
-              "value": "subtractive"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "color",
@@ -338,129 +159,35 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-color-gamut",
           "for": "@media",
           "value": "srgb | p3 | rec2020",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "srgb",
-              "prose": "The UA and output device can support approximately the sRGB gamut or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-color-gamut-srgb",
-              "type": "value",
-              "value": "srgb"
-            },
-            {
-              "name": "p3",
-              "prose": "The UA and output device can support approximately the gamut specified by the Display P3 [Display-P3] Color Space or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-color-gamut-p3",
-              "type": "value",
-              "value": "p3"
-            },
-            {
-              "name": "rec2020",
-              "prose": "The UA and output device can support approximately the gamut specified by the ITU-R Recommendation BT.2020 Color Space or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-color-gamut-rec2020",
-              "type": "value",
-              "value": "rec2020"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "dynamic-range",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-dynamic-range",
           "for": "@media",
           "value": "standard | high",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "high",
-              "prose": "The user agent and the output device fulfill all of the following criteria: they support a high peak brightness they support a high contrast ratio the color depth is greater than 24 bit or 8 bit per color component of RGB",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-dynamic-range-high",
-              "type": "value",
-              "value": "high"
-            },
-            {
-              "name": "standard",
-              "prose": "This value matches on any visual device, and not on devices lacking visual capabilities.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-dynamic-range-standard",
-              "type": "value",
-              "value": "standard"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "inverted-colors",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-inverted-colors",
           "for": "@media",
           "value": "none | inverted",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Colors are displayed normally.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-inverted-colors-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "inverted",
-              "prose": "All pixels within the displayed area have been inverted. This value must not match if the user agent has done some kind of content aware inversion such as one that preserves the images.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-inverted-colors-inverted",
-              "type": "value",
-              "value": "inverted"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "pointer",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-pointer",
           "for": "@media",
           "value": "none | coarse | fine",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The primary input mechanism of the device does not include a pointing device.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-pointer-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "coarse",
-              "prose": "The primary input mechanism of the device includes a pointing device of limited accuracy. Examples include touchscreens and motion-detection sensors (like the Kinect peripheral for the Xbox.)",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-pointer-coarse",
-              "type": "value",
-              "value": "coarse"
-            },
-            {
-              "name": "fine",
-              "prose": "The primary input mechanism of the device includes an accurate pointing device. Examples include mice, touchpads, and drawing styluses.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-pointer-fine",
-              "type": "value",
-              "value": "fine"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "hover",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-hover",
           "for": "@media",
           "value": "none | hover",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Indicates that the primary pointing device can’t hover, or that there is no pointing device. Examples include touchscreens and screens that use a basic drawing stylus. Pointing devices that can hover, but for which doing so is inconvenient and not part of the normal way they are used, also match this value. For example, a touchscreen where a long press is treated as hovering would match hover: none.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-hover-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "hover",
-              "prose": "Indicates that the primary pointing device can easily hover over parts of the page. Examples include mice and devices that physically point at the screen, like the Nintendo Wii controller.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-hover-hover",
-              "type": "value",
-              "value": "hover"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "any-pointer",
@@ -481,23 +208,7 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-nav-controls",
           "for": "@media",
           "value": "none | back",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The user agent does not have any obviously discoverable navigation controls, and in particular none that cause the user agent to move back one page in the joint session history.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-nav-controls-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "back",
-              "prose": "The user agent provides navigation controls, including at least an obviously discoverable control causing the user agent to move back one page in the joint session history (typically, a “back” button).",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-nav-controls-back",
-              "type": "value",
-              "value": "back"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "video-color-gamut",
@@ -518,182 +229,49 @@
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scripting",
           "for": "@media",
           "value": "none | initial-only | enabled",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "enabled",
-              "prose": "Indicates that the user agent supports scripting of the page, and that scripting in the current document is enabled for the lifetime of the document.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-enabled",
-              "type": "value",
-              "value": "enabled"
-            },
-            {
-              "name": "initial-only",
-              "prose": "Indicates that the user agent supports scripting of the page, and that scripting in the current document is enabled during the initial page load, but is not supported afterwards. Examples are printed pages, or pre-rendering network proxies that render a page on a server and send a nearly-static version of the page to the user. Should there be an explicit minimum threshold to meet before a UA is allowed to claim initial-only? Having one would mean authors would know what they can depend on, and could tailor their scripts accordingly. On the other hand, pinpointing that threshold is difficult: if it is set too low, the scripting facilities that authors can depend on may be to constrained to be practical, even though actual UAs may potentially all support significantly more. But trying to set it higher may cause us to exclude UAs that do support scripting at loading time, but restrict it in some cases based on complex heuristics. For instance, conservative definitions likely include at least running all inline scripts and firing the DOMContentLoaded event. But it does not seem useful for authors to constrain themselves to this if most (or maybe all) initial-only UAs also load external scripts (including async and defer) and fire the load event. On the other hand, requiring external scripts to be loaded and the load event to be fired could exclude UAs like Opera mini, which typically do run them, but may decide not to based on timeouts and other heuristics. [Issue #503]",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-initial-only",
-              "type": "value",
-              "value": "initial-only"
-            },
-            {
-              "name": "none",
-              "prose": "Indicates that the user agent will not run scripts for this document; either it doesn’t support a scripting language, or the support isn’t active for the current document.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-none",
-              "type": "value",
-              "value": "none"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "prefers-reduced-motion",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "no-preference",
-              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-motion-no-preference",
-              "type": "value",
-              "value": "no-preference"
-            },
-            {
-              "name": "reduce",
-              "prose": "Indicates that user has notified the system that they prefer an interface that removes or replaces the types of motion-based animation that either trigger discomfort for those with vestibular motion sensitivity, or distraction for those with attention deficits.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-motion-reduce",
-              "type": "value",
-              "value": "reduce"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "prefers-reduced-transparency",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-transparency",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "no-preference",
-              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-no-preference",
-              "type": "value",
-              "value": "no-preference"
-            },
-            {
-              "name": "reduce",
-              "prose": "Indicates that user has notified the system that they prefer an interface that minimizes the amount of transparent or translucent layer effects.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-reduce",
-              "type": "value",
-              "value": "reduce"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "prefers-contrast",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast",
           "for": "@media",
           "value": "no-preference | less | more | custom",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "no-preference",
-              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-no-preference",
-              "type": "value",
-              "value": "no-preference"
-            },
-            {
-              "name": "less",
-              "prose": "Indicates that user has notified the system that they prefer an interface that has a lower level of contrast.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-less",
-              "type": "value",
-              "value": "less"
-            },
-            {
-              "name": "more",
-              "prose": "Indicates that user has notified the system that they prefer an interface that has a higher level of contrast.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-more",
-              "type": "value",
-              "value": "more"
-            },
-            {
-              "name": "custom",
-              "prose": "Indicates that the user has indicated wanting a specific set of colors to be used, but the contrast implied by these particular colors is such that neither more nor less match. A user calling for cyan text over a rust background is not—​at least in terms of luminosity—​expressing a need for particularly high or low contrast, but this is not a lack of a preference either.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-custom",
-              "type": "value",
-              "value": "custom"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "forced-colors",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors",
           "for": "@media",
           "value": "none | active",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "active",
-              "prose": "Indicates that forced colors mode is active: the user agent enforces a user-chosen limited color palette on the page, The UA will provide the color palette to authors through the CSS system color keywords. See CSS Color Adjustment 1 § 3 Forced Color Palettes for details. This does not necessarily indicate a preference for more contrast. The colors have been forcibly adjusted to match the preference of the user, but that preference can be for less or more contrast, or some other arrangement that is neither particularly low or high contrast. In addition to forced-colors: active, the user agent must also match one of prefers-contrast: more or prefers-contrast: less if it can determine that the forced color palette chosen by the user has a particularly high or low contrast, and must make prefers-contrast: custom match otherwise. Similarly, if the forced color palette chosen by the user fits within one of the color schemes described by prefers-color-scheme, the corresponding value must also match.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-forced-colors-active",
-              "type": "value",
-              "value": "active"
-            },
-            {
-              "name": "none",
-              "prose": "Forced colors mode is not active.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-forced-colors-none",
-              "type": "value",
-              "value": "none"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "prefers-color-scheme",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme",
           "for": "@media",
           "value": "light | dark",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "light",
-              "prose": "Indicates that user has expressed the preference for a page that has a light theme (dark text on light background), or has not expressed an active preference (and thus should receive the \"web default\" of a light theme).",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-light",
-              "type": "value",
-              "value": "light"
-            },
-            {
-              "name": "dark",
-              "prose": "Indicates that user has expressed the preference for a page that has a dark theme (light text on dark background).",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-dark",
-              "type": "value",
-              "value": "dark"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "prefers-reduced-data",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-data",
           "for": "@media",
           "value": "no-preference | reduce",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "no-preference",
-              "prose": "Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-data-no-preference",
-              "type": "value",
-              "value": "no-preference"
-            },
-            {
-              "name": "reduce",
-              "prose": "Indicates that user has expressed the preference for lightweight alternate content.",
-              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-data-reduce",
-              "type": "value",
-              "value": "reduce"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "device-width",
@@ -742,62 +320,21 @@
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation",
           "for": "@media",
           "value": "portrait | landscape",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "portrait",
-              "prose": "The orientation media feature is portrait when the value of the height media feature is greater than or equal to the value of the width media feature.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait",
-              "type": "value",
-              "value": "portrait"
-            },
-            {
-              "name": "landscape",
-              "prose": "Otherwise orientation is landscape.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape",
-              "type": "value",
-              "value": "landscape"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "resolution",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution",
           "for": "@media",
           "value": "<resolution> | infinite",
-          "type": "range",
-          "values": [
-            {
-              "name": "infinite",
-              "prose": "For output mediums that have no physical constraints on resolution (such as outputting to vector graphics), this feature must match the infinite value. For the purpose of evaluating this media feature in the range context, infinite must be treated as larger than any possible <resolution>. (That is, a query like (resolution > 1000dpi) will be true for an infinite media.)",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-resolution-infinite",
-              "type": "value",
-              "value": "infinite"
-            }
-          ]
+          "type": "range"
         },
         {
           "name": "scan",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan",
           "for": "@media",
           "value": "interlace | progressive",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "interlace",
-              "prose": "CRT and some types of plasma TV screens used “interlaced” rendering, where video frames alternated between specifying only the “even” lines on the screen and only the “odd” lines, exploiting various automatic mental image-correction abilities to produce smooth motion. This allowed them to simulate a higher FPS broadcast at half the bandwidth cost. When displaying on interlaced screens, authors should avoid very fast movement across the screen to avoid “combing”, and should ensure that details on the screen are wider than 1px to avoid “twitter”.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace",
-              "type": "value",
-              "value": "interlace"
-            },
-            {
-              "name": "progressive",
-              "prose": "A screen using “progressive” rendering displays each screen fully, and needs no special treatment. Most modern screens, and all computer screens, use progressive rendering.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive",
-              "type": "value",
-              "value": "progressive"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "grid",
@@ -811,83 +348,21 @@
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-update",
           "for": "@media",
           "value": "none | slow | fast",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Once it has been rendered, the layout can no longer be updated. Example: documents printed on paper.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-update-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "slow",
-              "prose": "The layout may change dynamically according to the usual rules of CSS, but the output device is not able to render or display changes quickly enough for them to be perceived as a smooth animation. Example: E-ink screens or severely under-powered devices.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-update-slow",
-              "type": "value",
-              "value": "slow"
-            },
-            {
-              "name": "fast",
-              "prose": "The layout may change dynamically according to the usual rules of CSS, and the output device is not unusually constrained in speed, so regularly-updating things like CSS Animations can be used. Example: computer screens.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-update-fast",
-              "type": "value",
-              "value": "fast"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "overflow-block",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-overflow-block",
           "for": "@media",
           "value": "none | scroll | paged",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "There is no affordance for overflow in the block axis; any overflowing content is simply not displayed. Examples: billboards",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-overflow-block-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "scroll",
-              "prose": "Overflowing content in the block axis is exposed by allowing users to scroll to it. Examples: computer screens",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-overflow-block-scroll",
-              "type": "value",
-              "value": "scroll"
-            },
-            {
-              "name": "paged",
-              "prose": "Content is broken up into discrete pages; content that overflows one page in the block axis is displayed on the following page. Examples: printers, ebook readers",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-overflow-block-paged",
-              "type": "value",
-              "value": "paged"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "overflow-inline",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-overflow-inline",
           "for": "@media",
           "value": "none | scroll",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "There is no affordance for overflow in the inline axis; any overflowing content is simply not displayed.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-overflow-inline-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "scroll",
-              "prose": "Overflowing content in the inline axis is exposed by allowing users to scroll to it.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-overflow-inline-scroll",
-              "type": "value",
-              "value": "scroll"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "color",
@@ -915,83 +390,21 @@
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-gamut",
           "for": "@media",
           "value": "srgb | p3 | rec2020",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "srgb",
-              "prose": "The UA and output device can support approximately the sRGB gamut or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-color-gamut-srgb",
-              "type": "value",
-              "value": "srgb"
-            },
-            {
-              "name": "p3",
-              "prose": "The UA and output device can support approximately the gamut specified by the Display P3 [Display-P3] Color Space or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-color-gamut-p3",
-              "type": "value",
-              "value": "p3"
-            },
-            {
-              "name": "rec2020",
-              "prose": "The UA and output device can support approximately the gamut specified by the ITU-R Recommendation BT.2020 Color Space or more.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-color-gamut-rec2020",
-              "type": "value",
-              "value": "rec2020"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "pointer",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-pointer",
           "for": "@media",
           "value": "none | coarse | fine",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The primary input mechanism of the device does not include a pointing device.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-pointer-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "coarse",
-              "prose": "The primary input mechanism of the device includes a pointing device of limited accuracy. Examples include touchscreens and motion-detection sensors (like the Kinect peripheral for the Xbox.)",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-pointer-coarse",
-              "type": "value",
-              "value": "coarse"
-            },
-            {
-              "name": "fine",
-              "prose": "The primary input mechanism of the device includes an accurate pointing device. Examples include mice, touchpads, and drawing styluses.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-pointer-fine",
-              "type": "value",
-              "value": "fine"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "hover",
           "href": "https://drafts.csswg.org/mediaqueries-4/#descdef-media-hover",
           "for": "@media",
           "value": "none | hover",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Indicates that the primary pointing device can’t hover, or that there is no pointing device. Examples include touchscreens and screens that use a basic drawing stylus. Pointing devices that can hover, but for which doing so is inconvenient and not part of the normal way they are used, also match this value. For example, a touchscreen where a long press is treated as hovering would match hover: none.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-hover-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "hover",
-              "prose": "Indicates that the primary pointing device can easily hover over parts of the page. Examples include mice and devices that physically point at the screen, like the Nintendo Wii controller.",
-              "href": "https://drafts.csswg.org/mediaqueries-4/#valdef-media-hover-hover",
-              "type": "value",
-              "value": "hover"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "any-pointer",
@@ -1107,37 +520,7 @@
           "href": "https://drafts.csswg.org/css-color-5/#descdef-color-profile-rendering-intent",
           "for": "@color-profile",
           "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
-          "initial": "relative-colorimetric",
-          "values": [
-            {
-              "name": "relative-colorimetric",
-              "prose": "Media-relative colorimetric is required to leave source colors that fall inside the destination medium gamut unchanged relative to the respective media white points. Source colors that are out of the destination medium gamut are mapped to colors on the gamut boundary using a variety of different methods. The media-relative colorimetric rendering intent is often used with black point compensation, where the source medium black point is mapped to the destination medium black point as well. This method must map the source white point to the destination white point. If black point compensation is in use, the source black point must also be mapped to the destination black point. Adaptation algorithms should be used to adjust for the change in white point. Relative relationships of colors inside both source and destination gamuts should be preserved. Relative relationships of colors outside the destination gamut may be changed.",
-              "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-relative-colorimetric",
-              "type": "value",
-              "value": "relative-colorimetric"
-            },
-            {
-              "name": "absolute-colorimetric",
-              "prose": "ICC-absolute colorimetric is required to leave source colors that fall inside the destination medium gamut unchanged relative to the adopted white (a perfect reflecting diffuser). Source colors that are out of the destination medium gamut are mapped to colors on the gamut boundary using a variety of different methods. This method produces the most accurate color matching of in-gamut colors, but will result in highlight clipping if the destination medium white point is lower than the source medium white point. For this reason it is recommended for use only in applications that need exact color matching and where highlight clipping is not a concern. This method MUST disable white point matching and black point matching when converting colors. In general, this option is not recommended except for testing purposes.",
-              "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-absolute-colorimetric",
-              "type": "value",
-              "value": "absolute-colorimetric"
-            },
-            {
-              "name": "perceptual",
-              "prose": "This method is often the preferred choice for images, especially when there are substantial differences between the source and destination (such as a screen display image reproduced on a reflection print). It takes the colors of the source image and re-optimizes the appearance for the destination medium using proprietary methods. This re-optimization may result in colors within both the source and destination gamuts being changed, although perceptual transforms are supposed to maintain the basic artistic intent of the original in the reproduction. They will not attempt to correct errors in the source image. This method should maintain relative color values among the pixels as they are mapped to the target device gamut. This method may change pixel values that were originally within the target device gamut, in order to avoid hue shifts and discontinuities and to preserve as much as possible the overall appearance of the scene.",
-              "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-perceptual",
-              "type": "value",
-              "value": "perceptual"
-            },
-            {
-              "name": "saturation",
-              "prose": "This option was created to preserve the relative saturation (chroma) of the original, and to keep solid colors pure. However, it experienced interoperability problems like the perceptual intent, and as solid color preservation is not amenable to a reference medium solution using v4 profiles does not solve the problem. Use of this rendering intent is not recommended unless the specific source and destination profiles to be used have been checked to ensure the combination produces the desired result. This option should preserve the relative saturation (chroma) values of the original pixels. Out of gamut colors should be converted to colors that have the same saturation but fall just inside the gamut.",
-              "href": "https://drafts.csswg.org/css-color-5/#valdef-color-profile-rendering-intent-saturation",
-              "type": "value",
-              "value": "saturation"
-            }
-          ]
+          "initial": "relative-colorimetric"
         },
         {
           "name": "components",
@@ -1220,246 +603,28 @@
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-orientation",
           "for": "@container",
           "value": "portrait | landscape",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "portrait",
-              "prose": "The orientation container feature is portrait when the value of the height container feature is greater than or equal to the value of the width container feature.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-orientation-portrait",
-              "type": "value",
-              "value": "portrait"
-            },
-            {
-              "name": "landscape",
-              "prose": "Otherwise orientation is landscape.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-orientation-landscape",
-              "type": "value",
-              "value": "landscape"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "stuck",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-stuck",
           "for": "@container",
           "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The sticky container is not shifted in any direction.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "top",
-              "prose": "The sticky container is shifted to stay inside the top edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-top",
-              "type": "value",
-              "value": "top"
-            },
-            {
-              "name": "right",
-              "prose": "The sticky container is shifted to stay inside the right edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-right",
-              "type": "value",
-              "value": "right"
-            },
-            {
-              "name": "bottom",
-              "prose": "The sticky container is shifted to stay inside the bottom edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-bottom",
-              "type": "value",
-              "value": "bottom"
-            },
-            {
-              "name": "left",
-              "prose": "The sticky container is shifted to stay inside the left edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-left",
-              "type": "value",
-              "value": "left"
-            },
-            {
-              "name": "block-start",
-              "prose": "The sticky container is shifted to stay inside the block-start edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-block-start",
-              "type": "value",
-              "value": "block-start"
-            },
-            {
-              "name": "inline-start",
-              "prose": "The sticky container is shifted to stay inside the inline-start edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-inline-start",
-              "type": "value",
-              "value": "inline-start"
-            },
-            {
-              "name": "block-end",
-              "prose": "The sticky container is shifted to stay inside the block-end edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-block-end",
-              "type": "value",
-              "value": "block-end"
-            },
-            {
-              "name": "inline-end",
-              "prose": "The sticky container is shifted to stay inside the inline-end edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-stuck-inline-end",
-              "type": "value",
-              "value": "inline-end"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "snapped",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-snapped",
           "for": "@container",
           "value": "none | x | y | block | inline | both",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The query container is not a snap target.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "x",
-              "prose": "snapped container feature matches x if the query container is a horizontal snap target for its scroll container.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-x",
-              "type": "value",
-              "value": "x"
-            },
-            {
-              "name": "y",
-              "prose": "snapped container feature matches y if the query container is a vertical snap target for its scroll container.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-y",
-              "type": "value",
-              "value": "y"
-            },
-            {
-              "name": "block",
-              "prose": "snapped container feature matches block if the query container is a snap target for its scroll container. in the block direction of the snap container.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-block",
-              "type": "value",
-              "value": "block"
-            },
-            {
-              "name": "inline",
-              "prose": "snapped container feature matches inline if the query container is a snap target for its scroll container in the inline direction of the snap container.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-inline",
-              "type": "value",
-              "value": "inline"
-            },
-            {
-              "name": "both",
-              "prose": "snapped container feature matches both if the query container is a snap target for its scroll container in both directions of the snap container.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-snapped-both",
-              "type": "value",
-              "value": "both"
-            }
-          ]
+          "type": "discrete"
         },
         {
           "name": "scrollable",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrollable",
           "for": "@container",
           "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline",
-          "type": "discrete",
-          "values": [
-            {
-              "name": "none",
-              "prose": "The scroll container does not have scrollable overflow in any direction.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "top",
-              "prose": "The scroll container has scrollable overflow past the top edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-top",
-              "type": "value",
-              "value": "top"
-            },
-            {
-              "name": "right",
-              "prose": "The scroll container has scrollable overflow past the right edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-right",
-              "type": "value",
-              "value": "right"
-            },
-            {
-              "name": "bottom",
-              "prose": "The scroll container has scrollable overflow past the bottom edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-bottom",
-              "type": "value",
-              "value": "bottom"
-            },
-            {
-              "name": "left",
-              "prose": "The scroll container has scrollable overflow past the left edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-left",
-              "type": "value",
-              "value": "left"
-            },
-            {
-              "name": "block-start",
-              "prose": "The scroll container has scrollable overflow past the block-start edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-block-start",
-              "type": "value",
-              "value": "block-start"
-            },
-            {
-              "name": "inline-start",
-              "prose": "The scroll container has scrollable overflow past the inline-start edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-inline-start",
-              "type": "value",
-              "value": "inline-start"
-            },
-            {
-              "name": "block-end",
-              "prose": "The scroll container has scrollable overflow past the block-end edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-block-end",
-              "type": "value",
-              "value": "block-end"
-            },
-            {
-              "name": "inline-end",
-              "prose": "The scroll container has scrollable overflow past the inline-end edge.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-inline-end",
-              "type": "value",
-              "value": "inline-end"
-            },
-            {
-              "name": "x",
-              "prose": "The scroll container has horizontally scrollable overflow.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-x",
-              "type": "value",
-              "value": "x"
-            },
-            {
-              "name": "y",
-              "prose": "The scroll container has vertically scrollable overflow.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-y",
-              "type": "value",
-              "value": "y"
-            },
-            {
-              "name": "block",
-              "prose": "The scroll container has scrollable overflow in its block direction.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-block",
-              "type": "value",
-              "value": "block"
-            },
-            {
-              "name": "inline",
-              "prose": "The scroll container has scrollable overflow in its inline direction.",
-              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrollable-inline",
-              "type": "value",
-              "value": "inline"
-            }
-          ]
+          "type": "discrete"
         }
       ],
       "value": "@container <container-condition># { <block-contents> }",
@@ -1489,58 +654,7 @@
           "href": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-system",
           "for": "@counter-style",
           "value": "cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]",
-          "initial": "symbolic",
-          "values": [
-            {
-              "name": "cyclic",
-              "prose": "The cyclic counter system cycles repeatedly through its provided symbols, looping back to the beginning when it reaches the end of the list. It can be used for simple bullets (just provide a single counter symbol), or for cycling through multiple symbols. The first counter symbol is used as the representation of the value 1, the second counter symbol (if it exists) is used as the representation of the value 2, etc.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-cyclic",
-              "type": "value",
-              "value": "cyclic"
-            },
-            {
-              "name": "fixed",
-              "prose": "The fixed counter system runs through its list of counter symbols once, then falls back. It is useful for representing counter styles that only have a finite number of representations. For example, Unicode defines several limited-length runs of special characters meant for lists, such as circled digits.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-fixed",
-              "type": "value",
-              "value": "fixed"
-            },
-            {
-              "name": "symbolic",
-              "prose": "The symbolic counter system cycles repeatedly through its provided symbols, doubling, tripling, etc. the symbols on each successive pass through the list. For example, if the original symbols were \"*\" and \"†\", then on the second pass they would instead be \"**\" and \"††\", while on the third they would be \"***\"and \"†††\", etc. It can be used for footnote-style markers, and is also sometimes used for alphabetic-style lists for a slightly different presentation than what the alphabetic system presents.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-system-symbolic",
-              "type": "value",
-              "value": "symbolic"
-            },
-            {
-              "name": "alphabetic",
-              "prose": "The alphabetic counter system interprets the list of counter symbols as digits to an alphabetic numbering system, similar to the default lower-alpha counter style, which wraps from \"a\", \"b\", \"c\", to \"aa\", \"ab\", \"ac\". Alphabetic numbering systems do not contain a digit representing 0; so the first value when a new digit is added is composed solely of the first digit. Alphabetic numbering systems are commonly used for lists, and also appear in many spreadsheet programs to number columns. The first counter symbol in the list is interpreted as the digit 1, the second as the digit 2, and so on.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-alphabetic",
-              "type": "value",
-              "value": "alphabetic"
-            },
-            {
-              "name": "numeric",
-              "prose": "The numeric counter system interprets the list of counter symbols as digits to a \"place-value\" numbering system, similar to the default decimal counter style. The first counter symbol in the list is interpreted as the digit 0, the second as the digit 1, and so on.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-numeric",
-              "type": "value",
-              "value": "numeric"
-            },
-            {
-              "name": "additive",
-              "prose": "The additive counter system is used to represent \"sign-value\" numbering systems, which, rather than reusing digits in different positions to change their value, define additional digits with much larger values, so that the value of the number can be obtained by adding all the digits together. This is used in Roman numerals and other numbering systems around the world.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-additive",
-              "type": "value",
-              "value": "additive"
-            },
-            {
-              "name": "extends",
-              "prose": "The extends system allows an author to use the algorithm of another counter style, but alter other aspects, such as the negative sign or the suffix. If a counter style uses the extends system, any unspecified descriptors must be taken from the extended counter style specified, rather than taking their initial values.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-system-extends",
-              "type": "value",
-              "value": "extends"
-            }
-          ]
+          "initial": "symbolic"
         },
         {
           "name": "negative",
@@ -1568,16 +682,7 @@
           "href": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-range",
           "for": "@counter-style",
           "value": "[ [ <integer> | infinite ]{2} ]# | auto",
-          "initial": "auto",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "The range depends on the counter system: For cyclic, numeric, and fixed systems, the range is negative infinity to positive infinity. For alphabetic and symbolic systems, the range is 1 to positive infinity. For additive systems, the range is 0 to positive infinity. For extends systems, the range is whatever auto would produce for the extended system; if extending a complex predefined style (§ 7 Complex Predefined Counter Styles), the range is the style’s defined range.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-range-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
+          "initial": "auto"
         },
         {
           "name": "pad",
@@ -1612,51 +717,7 @@
           "href": "https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-speak-as",
           "for": "@counter-style",
           "value": "auto | bullets | numbers | words | spell-out | <counter-style-name>",
-          "initial": "auto",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "If the counter style’s system is alphabetic, this value has the same effect as spell-out. If the system is cyclic, this value has the same effect as bullets. If the system is extends, this value has the same effect as auto would have for the extended style. Otherwise, this value has the same effect as numbers.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "bullets",
-              "prose": "The UA speaks a UA-defined phrase or audio cue that represents an unordered list item being read out.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-bullets",
-              "type": "value",
-              "value": "bullets"
-            },
-            {
-              "name": "numbers",
-              "prose": "The counter’s numeric value is spoken as a number in the content language.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-numbers",
-              "type": "value",
-              "value": "numbers"
-            },
-            {
-              "name": "words",
-              "prose": "Generate a counter representation for the value as normal, then speak it as normal text in the content language. If the counter representation contains images, instead handle the value as for numbers.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-words",
-              "type": "value",
-              "value": "words"
-            },
-            {
-              "name": "spell-out",
-              "prose": "Generate a counter representation for the value as normal, then spell it out letter-by-letter in the content language. If the UA does not know how to pronounce the symbols (or the counter representation contains images), it must instead handle the value as for numbers. For example, lower-greek in English would be read out as \"alpha\", \"beta\", \"gamma\", etc. Conversely, upper-latin in French would be read out as (in phonetic notation) /a/, /be/, /se/, etc.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-spell-out",
-              "type": "value",
-              "value": "spell-out"
-            },
-            {
-              "name": "<counter-style-name>",
-              "prose": "The counter’s value is instead spoken out in the specified style (similar to the behavior of the fallback descriptor when generating representations for a counter value). If the specified style does not exist, this value is treated as auto. If a loop is detected when following speak-as references, this value is treated as auto for the counter styles participating in the loop.",
-              "href": "https://drafts.csswg.org/css-counter-styles-3/#valdef-counter-style-speak-as-counter-style-name",
-              "type": "value",
-              "value": "<counter-style-name>"
-            }
-          ]
+          "initial": "auto"
         }
       ],
       "value": "@counter-style <counter-style-name> {\n  [ system: [ cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ] ]; ] ||\n  [ negative: [ <symbol> <symbol>? ]; ] ||\n  [ prefix: [ <symbol> ]; ] ||\n  [ suffix: [ <symbol> ]; ] ||\n  [ range: [ [ [ <integer> | infinite ]{2} ]# | auto ]; ] ||\n  [ pad: [ <integer [0,∞]> && <symbol> ]; ] ||\n  [ fallback: [ <counter-style-name> ]; ] ||\n  [ symbols: [ <symbol>+ ]; ] ||\n  [ additive-symbols: [ [ <integer [0,∞]> && <symbol> ]# ]; ] ||\n  [ speak-as: [ auto | bullets | numbers | words | spell-out | <counter-style-name> ]; ]\n}",
@@ -1747,44 +808,7 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-display",
           "for": "@font-face",
           "value": "auto | block | swap | fallback | optional",
-          "initial": "auto",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "The font display policy is user-agent-defined.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-face-font-display-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "block",
-              "prose": "Gives the font face a short block period (3s is recommended in most cases) and an infinite swap period. This value must only be used when rendering text in a particular font is required for the page to be usable. It must only be used for small pieces of text. For example, badly designed \"icon fonts\" might associate a \"⎙\" (printer) icon with an unrelated character like \"P\", so if the text is displayed with a fallback font instead there will be confusing letters scattered around the page rather than the desired icon. In this case, temporary blank spots are better than using a fallback font. (However, the fallback font is used eventually, as having confusing letters scattered around the page is better than having links and such never show up at all.) A better solution is described in the Accessibility Considerations section.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-face-font-display-block",
-              "type": "value",
-              "value": "block"
-            },
-            {
-              "name": "swap",
-              "prose": "Gives the font face an extremely small block period (100ms or less is recommended in most cases) and an infinite swap period. This value should only be used when rendering text in a particular font is very important for the page, but rendering in any font will still get a correct message across. It should only be used for small pieces of text. For example, if a website has a custom font for rendering their logo, rendering that logo correctly is fairly important for branding purposes, but displaying the logo in any font will at least get the point across without confusion.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-face-font-display-swap",
-              "type": "value",
-              "value": "swap"
-            },
-            {
-              "name": "fallback",
-              "prose": "Gives the font face an extremely small block period (100ms or less is recommended in most cases) and a short swap period (3s is recommended in most cases). This value should be used for body text, or any other text where the use of the chosen font is useful and desired, but it’s acceptable for the user to see the text in a fallback font. This value is appropriate to use for large pieces of text. For example, in large pieces of body text, it’s most important just to get the text rendered quickly, so the user can begin to read as quickly as possible. Further, once the user has started reading, they shouldn’t be disturbed by the text suddenly \"shifting\" as a new font is swapped in, as that’s distracting and annoying to re-find where one was in the text.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-face-font-display-fallback",
-              "type": "value",
-              "value": "fallback"
-            },
-            {
-              "name": "optional",
-              "prose": "If the font can be loaded \"immediately\" (such that it’s available to be used for the \"first paint\" of the text), the font is used. Otherwise, the font is treated as if its block period and swap period both expired before it finished loading. If the font is not used due to this, the user agent may choose to abort the font download, or download it with a very low priority. If the user agent believes it would be useful for the user, it may avoid even starting the font download, and proceed immediately to using a fallback font. An optional font must never cause the layout of the page to \"jump\" as it loads in. A user agent may choose to slightly delay rendering an element using an optional font to give it time to load from a possibly-slow local cache, but once the text has been painted to the screen with a fallback font instead, it must not be rendered with the optional font for the rest of the page’s lifetime. This value should be used for body text, or any other text where the chosen font is purely a decorative \"nice-to-have\". It should be used anytime it is more important that the web page render quickly on first visit, than it is that the user wait a longer time to see everything perfect immediately. For example, body text is perfectly readable in one of the browser default fonts, though a downloadable font face might be more attractive and mesh with the site’s aesthetics better. First time visitors to a site generally care far more about the site being quickly usable than they do about the finer points of its display, and optional provides a good behavior for them. If they return later, the desired font faces might have finished downloading, giving them the \"intended\" experience without slowing down either their first or subsequent visits. Users on very slow connections might not ever receive the \"intended\" experience, but optional ensures they can actually use the site, rather than quitting and going elsewhere because the site takes too long to load.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-face-font-display-optional",
-              "type": "value",
-              "value": "optional"
-            }
-          ]
+          "initial": "auto"
         },
         {
           "name": "font-language-override",
@@ -1819,23 +843,7 @@
           "href": "https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size",
           "for": "@font-face",
           "value": "auto | [<number>]{1,2}",
-          "initial": "auto",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "The font matches any font size",
-              "href": "https://drafts.csswg.org/css-fonts-5/#valdef-font-face-font-size-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "<number>",
-              "prose": "If a single <number> is given the font matches that specific font size, only. If two <number>s are given, they specify a range of font sizes which will match.",
-              "href": "https://drafts.csswg.org/css-fonts-5/#valdef-font-face-font-size-number",
-              "type": "value",
-              "value": "<number>"
-            }
-          ]
+          "initial": "auto"
         },
         {
           "name": "size-adjust",
@@ -1984,29 +992,7 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-base-palette",
           "for": "@font-palette-values",
           "value": "light | dark | <integer [0,∞]>",
-          "initial": "N/A",
-          "values": [
-            {
-              "name": "light",
-              "prose": "Some color font formats include metadata marking certain palettes as applicable on a light (close to white) background. This keyword identifies the first available palette in the font file marked this way. If the font file format does not account for this metadata, or no palette in the font is marked this way, this value behaves as 0.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-base-palette-light",
-              "type": "value",
-              "value": "light"
-            },
-            {
-              "name": "dark",
-              "prose": "Some color font formats include metadata marking certain palettes as applicable on a dark (close to black) background. This keyword identifies the first available palette in the font file marked this way. If the font file format does not account for this metadata, or no palette in the font is marked this way, this value behaves as 0.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-base-palette-dark",
-              "type": "value",
-              "value": "dark"
-            },
-            {
-              "name": "<integer>",
-              "prose": "Identifies a (zero-based) numerical palette index within the font.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#typedef-base-palette-integer",
-              "type": "type"
-            }
-          ]
+          "initial": "N/A"
         },
         {
           "name": "override-colors",
@@ -2062,115 +1048,7 @@
           "for": "@page",
           "value": "<length [0,∞]>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
           "initial": "auto",
-          "computedValue": "specified value, with <length>s made absolute.",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "The page box will be set to a size and orientation chosen by the UA. In the usual case, the page box size and orientation is chosen to match the target media sheet.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "landscape",
-              "prose": "Specifies that the page’s content be printed in landscape orientation. The longer sides of the page box are horizontal. If a <page-size> is not specified, the size of the page sheet is chosen by the UA.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-landscape",
-              "type": "value",
-              "value": "landscape"
-            },
-            {
-              "name": "portrait",
-              "prose": "Specifies that the page’s content be printed in portrait orientation. The shorter sides of the page box are horizontal. If a <page-size> is not specified, the size of the page sheet is chosen by the UA.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-portrait",
-              "type": "value",
-              "value": "portrait"
-            },
-            {
-              "name": "<length [0,∞]>",
-              "prose": "The page box will be set to the given absolute dimension(s). If only one length value is specified, it sets both the width and height of the page box (i.e., the box is a square). If two length values are specified, the first establishes the page box width, and the second the page box height. Values in units of em and ex refer to the page context’s font. Negative lengths are illegal.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-length-0",
-              "type": "value",
-              "value": "<length [0,∞]>"
-            },
-            {
-              "name": "<page-size>",
-              "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN].",
-              "href": "https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size",
-              "type": "type",
-              "values": [
-                {
-                  "name": "A5",
-                  "prose": "Equivalent to the size of ISO A5 media: 148mm wide and 210 mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-a5",
-                  "type": "value",
-                  "value": "A5"
-                },
-                {
-                  "name": "A4",
-                  "prose": "Equivalent to the size of ISO A4 media: 210 mm wide and 297 mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-a4",
-                  "type": "value",
-                  "value": "A4"
-                },
-                {
-                  "name": "A3",
-                  "prose": "Equivalent to the size of ISO A3 media: 297mm wide and 420mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-a3",
-                  "type": "value",
-                  "value": "A3"
-                },
-                {
-                  "name": "B5",
-                  "prose": "Equivalent to the size of ISO B5 media: 176mm wide by 250mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-b5",
-                  "type": "value",
-                  "value": "B5"
-                },
-                {
-                  "name": "B4",
-                  "prose": "Equivalent to the size of ISO B4 media: 250mm wide by 353mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-b4",
-                  "type": "value",
-                  "value": "B4"
-                },
-                {
-                  "name": "JIS-B5",
-                  "prose": "Equivalent to the size of JIS B5 media: 182mm wide by 257mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-jis-b5",
-                  "type": "value",
-                  "value": "JIS-B5"
-                },
-                {
-                  "name": "JIS-B4",
-                  "prose": "Equivalent to the size of JIS B4 media: 257mm wide by 364mm high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-jis-b4",
-                  "type": "value",
-                  "value": "JIS-B4"
-                },
-                {
-                  "name": "letter",
-                  "prose": "Equivalent to the size of North American letter media: 8.5 inches wide and 11 inches high",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-letter",
-                  "type": "value",
-                  "value": "letter"
-                },
-                {
-                  "name": "legal",
-                  "prose": "Equivalent to the size of North American legal: 8.5 inches wide by 14 inches high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-legal",
-                  "type": "value",
-                  "value": "legal"
-                },
-                {
-                  "name": "ledger",
-                  "prose": "Equivalent to the size of North American ledger: 11 inches wide by 17 inches high.",
-                  "href": "https://drafts.csswg.org/css-page-3/#valdef-page-size-ledger",
-                  "type": "value",
-                  "value": "ledger"
-                }
-              ]
-            }
-          ]
+          "computedValue": "specified value, with <length>s made absolute."
         },
         {
           "name": "page-orientation",
@@ -2178,30 +1056,7 @@
           "for": "@page",
           "value": "upright | rotate-left | rotate-right",
           "initial": "upright",
-          "computedValue": "as specified",
-          "values": [
-            {
-              "name": "upright",
-              "prose": "No special orientation is applied; the page is laid out and formatted as normal.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-orientation-upright",
-              "type": "value",
-              "value": "upright"
-            },
-            {
-              "name": "rotate-left",
-              "prose": "After the page has been laid out, if the output medium supports rotation, this value indicates that the page must be displayed rotated a quarter turn to the left (counter-clockwise) of how it was laid out.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-orientation-rotate-left",
-              "type": "value",
-              "value": "rotate-left"
-            },
-            {
-              "name": "rotate-right",
-              "prose": "Same as rotate-left, except the page must be displayed rotated a quarter turn to the right (clockwise) of how it was laid out.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-orientation-rotate-right",
-              "type": "value",
-              "value": "rotate-right"
-            }
-          ]
+          "computedValue": "as specified"
         },
         {
           "name": "marks",
@@ -2209,30 +1064,7 @@
           "for": "@page",
           "value": "none | [ crop || cross ]",
           "initial": "none",
-          "computedValue": "as specified",
-          "values": [
-            {
-              "name": "none",
-              "prose": "Specifies that neither crop marks nor registration marks should be printed: the area outside the bleed area will be completely blank.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-marks-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "crop",
-              "prose": "Specifies that crop marks should be printed. These are typically short lines outside the page box that are effectively extensions of the page box’s four edges, thereby indicating the precise location of those edges without placing any ink near or within the page box itself.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-marks-crop",
-              "type": "value",
-              "value": "crop"
-            },
-            {
-              "name": "cross",
-              "prose": "Specifies that registration marks should be printed. These are typically cross-shaped marks outside each edge of the page box used to align sheets of paper during the printing process.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-marks-cross",
-              "type": "value",
-              "value": "cross"
-            }
-          ]
+          "computedValue": "as specified"
         },
         {
           "name": "bleed",
@@ -2240,23 +1072,7 @@
           "for": "@page",
           "value": "auto | <length>",
           "initial": "auto",
-          "computedValue": "as specified",
-          "values": [
-            {
-              "name": "auto",
-              "prose": "Computes to 6pt if marks has crop and to zero otherwise.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-bleed-auto",
-              "type": "value",
-              "value": "auto"
-            },
-            {
-              "name": "<length>",
-              "prose": "Specifies by how far outward, in each direction, the bleed area extends past the page box. Values may be negative, but there may be implementation-specific limits.",
-              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-bleed-length",
-              "type": "value",
-              "value": "<length>"
-            }
-          ]
+          "computedValue": "as specified"
         }
       ],
       "value": "@page <page-selector-list>? {\n  [ size: [ <length [0,∞]>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ] ]; ] ||\n  [ page-orientation: [ upright | rotate-left | rotate-right ]; ] ||\n  [ marks: [ none | [ crop || cross ] ]; ] ||\n  [ bleed: [ auto | <length> ]; ]\n}",
@@ -2486,23 +1302,7 @@
           "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-navigation",
           "for": "@view-transition",
           "value": "auto | none",
-          "initial": "none",
-          "values": [
-            {
-              "name": "none",
-              "prose": "There will be no transition.",
-              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-none",
-              "type": "value",
-              "value": "none"
-            },
-            {
-              "name": "auto",
-              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whose NavigationType is traverse, or push or replace, with user navigation involvement not equal to \"browser UI\".",
-              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-navigation-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
+          "initial": "none"
         },
         {
           "name": "types",

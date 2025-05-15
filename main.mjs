@@ -169,6 +169,11 @@ for (const category of categories) {
     if (feature.values) {
       delete feature.values;
     }
+    for (const descriptor of feature.descriptors ?? []) {
+      if (descriptor.values) {
+        delete descriptor.values;
+      }
+    }
 
     let featureName = feature.name;
     if (feature.for) {
