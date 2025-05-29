@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
+Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6.21.2** of `@webref/css`.
 
 
 <details>
@@ -193,7 +193,7 @@ mdn:    @view-transition {
 
 
 <details>
-<summary>23 functions mismatches (out of 116 functions in common)</summary>
+<summary>24 functions mismatches (out of 116 functions in common)</summary>
 
 - [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
 ```
@@ -204,6 +204,11 @@ mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
 ```
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
 mdn:    clamp( <calc-sum>#{3} )
+```
+- [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
+```
+webref: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+mdn:    color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
 ```
 - [`cross-fade()`](https://drafts.csswg.org/css-images-4/#funcdef-cross-fade)
 ```
@@ -1416,7 +1421,7 @@ mdn:    :where( <complex-selector-list> )
 
 
 <details>
-<summary>103 syntaxes mismatches (out of 360 syntaxes in common)</summary>
+<summary>105 syntaxes mismatches (out of 360 syntaxes in common)</summary>
 
 - [`<absolute-size>`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 ```
@@ -1467,6 +1472,11 @@ mdn:    normal | multiply | screen | overlay | darken | lighten | color-dodge | 
 ```
 webref: <calc-value> [ [ '*' | / ] <calc-value> ]*
 mdn:    <calc-value> [ '*' <calc-value> | '/' <number> ]*
+```
+- [`<calc-size-basis>`](https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis)
+```
+webref: [ <size-keyword> | <calc-size()> | any | <calc-sum> ]
+mdn:    <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum>
 ```
 - [`<calc-value>`](https://drafts.csswg.org/css-values-4/#typedef-calc-value)
 ```
@@ -1830,6 +1840,11 @@ mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
 ```
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
 mdn:    clamp( <calc-sum>#{3} )
+```
+- [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
+```
+webref: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+mdn:    color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
 ```
 - [`cross-fade()`](https://drafts.csswg.org/css-images-4/#funcdef-cross-fade)
 ```

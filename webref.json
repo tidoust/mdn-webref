@@ -1367,7 +1367,7 @@
       "name": "color-mix()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-mix",
       "type": "function",
-      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})",
+      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)",
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
@@ -2573,34 +2573,10 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). progress() is a math function.",
+      "prose": "The progress() functional notation represents the proportional distance of a given value (the progress value) from one value (the progress start value) to another value (the progress end value), each represented as a calculation. It is a math function, and can be input into other calculations such as a math function or a mix notation.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-progress",
       "type": "function",
       "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)",
-      "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
-      },
-      "dangling": true
-    },
-    {
-      "name": "media-progress()",
-      "prose": "Similar to the progress() notation, the media-progress() functional notation returns a <number> value representing current value of the specified media query [MEDIAQUERIES-4] as a progress value between two explicit values of the media query (as the progress start value and progress end value).",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-media-progress",
-      "type": "function",
-      "value": "media-progress(<mf-name>, <calc-sum>, <calc-sum>)",
-      "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
-      },
-      "dangling": true
-    },
-    {
-      "name": "container-progress()",
-      "prose": "The container-progress() functional notation is identical to the media-progress() functional notation, except that it accepts container features [CSS-CONTAIN-3] in place of media features.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-container-progress",
-      "type": "function",
-      "value": "container-progress(<mf-name> [ of <container-name> ]?, <calc-sum>, <calc-sum>)",
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
@@ -5135,9 +5111,9 @@
       }
     },
     {
-      "name": "animation-trigger-type",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-type",
-      "value": "<single-animation-trigger-type>#",
+      "name": "animation-trigger-behavior",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-behavior",
+      "value": "<single-animation-trigger-behavior>#",
       "initial": "once",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -5146,8 +5122,8 @@
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
-        "animation-trigger-type",
-        "animationTriggerType"
+        "animation-trigger-behavior",
+        "animationTriggerBehavior"
       ],
       "spec": {
         "shortname": "css-animations-2",
@@ -12253,6 +12229,26 @@
       ],
       "spec": {
         "shortname": "css-overflow-4",
+        "currentSpec": false
+      }
+    },
+    {
+      "name": "scroll-target-group",
+      "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-target-group",
+      "value": "none | auto",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "scroll-target-group",
+        "scrollTargetGroup"
+      ],
+      "spec": {
+        "shortname": "css-overflow-5",
         "currentSpec": false
       }
     },
@@ -19578,7 +19574,7 @@
       "name": "color-mix()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-color-mix",
       "type": "function",
-      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})",
+      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)",
       "spec": {
         "shortname": "css-color-5",
         "currentSpec": false
@@ -20784,34 +20780,10 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation returns a <number> value representing the position of one calculation (the progress value) between two other calculations (the progress start value and progress end value). progress() is a math function.",
+      "prose": "The progress() functional notation represents the proportional distance of a given value (the progress value) from one value (the progress start value) to another value (the progress end value), each represented as a calculation. It is a math function, and can be input into other calculations such as a math function or a mix notation.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-progress",
       "type": "function",
       "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)",
-      "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
-      },
-      "dangling": true
-    },
-    {
-      "name": "media-progress()",
-      "prose": "Similar to the progress() notation, the media-progress() functional notation returns a <number> value representing current value of the specified media query [MEDIAQUERIES-4] as a progress value between two explicit values of the media query (as the progress start value and progress end value).",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-media-progress",
-      "type": "function",
-      "value": "media-progress(<mf-name>, <calc-sum>, <calc-sum>)",
-      "spec": {
-        "shortname": "css-values-5",
-        "currentSpec": false
-      },
-      "dangling": true
-    },
-    {
-      "name": "container-progress()",
-      "prose": "The container-progress() functional notation is identical to the media-progress() functional notation, except that it accepts container features [CSS-CONTAIN-3] in place of media features.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-container-progress",
-      "type": "function",
-      "value": "container-progress(<mf-name> [ of <container-name> ]?, <calc-sum>, <calc-sum>)",
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
@@ -21621,9 +21593,9 @@
       }
     },
     {
-      "name": "<single-animation-trigger-type>",
+      "name": "<single-animation-trigger-behavior>",
       "value": "once | repeat | alternate | state",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-type",
+      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior",
       "type": "type",
       "spec": {
         "shortname": "css-animations-2",
@@ -21634,7 +21606,7 @@
       "name": "<single-animation-trigger>",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger",
       "type": "type",
-      "value": "<single-animation-trigger-type> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]",
+      "value": "<single-animation-trigger-behavior> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]",
       "spec": {
         "shortname": "css-animations-2",
         "currentSpec": false
@@ -25011,16 +24983,16 @@
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
       "type": "type",
-      "value": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]",
+      "value": "[ <size-keyword> | <calc-size()> | any | <calc-sum> ]",
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
       }
     },
     {
-      "name": "<intrinsic-size-keyword>",
-      "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "name": "<size-keyword>",
+      "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
       "type": "type",
       "spec": {
         "shortname": "css-values-5",
@@ -26377,9 +26349,9 @@
       }
     },
     {
-      "name": "<single-animation-trigger-type>",
+      "name": "<single-animation-trigger-behavior>",
       "value": "once | repeat | alternate | state",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-type",
+      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior",
       "type": "type",
       "spec": {
         "shortname": "css-animations-2",
@@ -26390,7 +26362,7 @@
       "name": "<single-animation-trigger>",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger",
       "type": "type",
-      "value": "<single-animation-trigger-type> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]",
+      "value": "<single-animation-trigger-behavior> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]",
       "spec": {
         "shortname": "css-animations-2",
         "currentSpec": false
@@ -29767,16 +29739,16 @@
       "name": "<calc-size-basis>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-size-basis",
       "type": "type",
-      "value": "[ <intrinsic-size-keyword> | <calc-size()> | any | <calc-sum> ]",
+      "value": "[ <size-keyword> | <calc-size()> | any | <calc-sum> ]",
       "spec": {
         "shortname": "css-values-5",
         "currentSpec": false
       }
     },
     {
-      "name": "<intrinsic-size-keyword>",
-      "prose": "The <intrinsic-size-keyword> production matches any intrinsic size keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword",
+      "name": "<size-keyword>",
+      "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
       "type": "type",
       "spec": {
         "shortname": "css-values-5",

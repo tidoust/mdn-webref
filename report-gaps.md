@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
+Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6.21.2** of `@webref/css`.
 
 ### Missing from webref
 
@@ -244,12 +244,11 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 
 
 <details>
-<summary>55 functions missing from mdn</summary>
+<summary>53 functions missing from mdn</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`calc-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-mix)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
-- [`container-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-container-progress)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
 - [`control-value()`](https://drafts.csswg.org/css-forms-1/#funcdef-control-value)
@@ -267,7 +266,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
 - [`jzczhz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz)
-- [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress)
 - [`media()`](https://drafts.csswg.org/css-conditional-5/#funcdef-media)
 - [`mix()`](https://drafts.csswg.org/css-values-5/#funcdef-mix)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
@@ -305,7 +303,7 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 
 
 <details>
-<summary>256 properties missing from mdn</summary>
+<summary>257 properties missing from mdn</summary>
 
 - [`-webkit-align-content`](https://compat.spec.whatwg.org/#propdef--webkit-align-content)
 - [`-webkit-align-items`](https://compat.spec.whatwg.org/#propdef--webkit-align-items)
@@ -363,6 +361,7 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`-webkit-transition-property`](https://compat.spec.whatwg.org/#propdef--webkit-transition-property)
 - [`-webkit-transition-timing-function`](https://compat.spec.whatwg.org/#propdef--webkit-transition-timing-function)
 - [`animation-trigger`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger)
+- [`animation-trigger-behavior`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-behavior)
 - [`animation-trigger-exit-range`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range)
 - [`animation-trigger-exit-range-end`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range-end)
 - [`animation-trigger-exit-range-start`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range-start)
@@ -370,7 +369,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`animation-trigger-range-end`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-range-end)
 - [`animation-trigger-range-start`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-range-start)
 - [`animation-trigger-timeline`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-timeline)
-- [`animation-trigger-type`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-type)
 - [`background-position-block`](https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-block)
 - [`background-position-inline`](https://drafts.csswg.org/css-backgrounds-4/#propdef-background-position-inline)
 - [`background-repeat-block`](https://drafts.csswg.org/css-backgrounds-4/#propdef-background-repeat-block)
@@ -516,6 +514,7 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`rule-style`](https://drafts.csswg.org/css-gaps-1/#propdef-rule-style)
 - [`rule-width`](https://drafts.csswg.org/css-gaps-1/#propdef-rule-width)
 - [`scroll-marker-group`](https://drafts.csswg.org/css-overflow-5/#propdef-scroll-marker-group)
+- [`scroll-target-group`](https://drafts.csswg.org/css-overflow-5/#propdef-scroll-target-group)
 - [`shape-inside`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside)
 - [`shape-padding`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding)
 - [`shape-subtract`](https://svgwg.org/svg2-draft/text.html#ShapesubtractProperty)
@@ -615,7 +614,7 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 
 
 <details>
-<summary>276 syntaxes missing from mdn</summary>
+<summary>274 syntaxes missing from mdn</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
@@ -729,7 +728,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`<import-conditions>`](https://drafts.csswg.org/css-cascade-5/#typedef-import-conditions)
 - [`<inherit-args>`](https://drafts.csswg.org/css-values-5/#typedef-inherit-args)
 - [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
-- [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
 - [`<isolation-mode>`](https://drafts.fxtf.org/compositing-2/#isolated-propid)
 - [`<layout-box>`](https://drafts.csswg.org/css-box-4/#typedef-layout-box)
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
@@ -801,8 +799,9 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`<shape-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command)
 - [`<simple-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-simple-selector-list)
 - [`<simple-selector>`](https://drafts.csswg.org/selectors-4/#typedef-simple-selector)
-- [`<single-animation-trigger-type>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-type)
+- [`<single-animation-trigger-behavior>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior)
 - [`<single-animation-trigger>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger)
+- [`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-size-keyword)
 - [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<source-size-value>`](https://html.spec.whatwg.org/multipage/images.html#source-size-value)
@@ -841,7 +840,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`<zero>`](https://drafts.csswg.org/css-values-4/#zero-value)
 - [`calc-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-mix)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
-- [`container-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-container-progress)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
 - [`control-value()`](https://drafts.csswg.org/css-forms-1/#funcdef-control-value)
@@ -859,7 +857,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
 - [`jzczhz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz)
-- [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress)
 - [`media()`](https://drafts.csswg.org/css-conditional-5/#funcdef-media)
 - [`mix()`](https://drafts.csswg.org/css-values-5/#funcdef-mix)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
@@ -1098,7 +1095,6 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`<inflexible-breadth>`](https://drafts.csswg.org/css-grid-2/#typedef-inflexible-breadth)
 - [`<inherit-args>`](https://drafts.csswg.org/css-values-5/#typedef-inherit-args)
 - [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
-- [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
 - [`<isolation-mode>`](https://drafts.fxtf.org/compositing-2/#isolated-propid)
 - [`<keyframe-block>`](https://drafts.csswg.org/css-animations-1/#typedef-keyframe-block)
 - [`<keyframe-selector>`](https://drafts.csswg.org/css-animations-1/#typedef-keyframe-selector)
@@ -1258,12 +1254,13 @@ Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6
 - [`<single-animation-iteration-count>`](https://drafts.csswg.org/css-animations-1/#typedef-single-animation-iteration-count)
 - [`<single-animation-play-state>`](https://drafts.csswg.org/css-animations-1/#typedef-single-animation-play-state)
 - [`<single-animation-timeline>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-timeline)
-- [`<single-animation-trigger-type>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-type)
+- [`<single-animation-trigger-behavior>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior)
 - [`<single-animation-trigger>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger)
 - [`<single-animation>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation)
 - [`<single-transition-property>`](https://drafts.csswg.org/css-transitions-1/#single-transition-property)
 - [`<single-transition>`](https://drafts.csswg.org/css-transitions-2/#single-transition)
 - [`<size-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-size-feature)
+- [`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-size-keyword)
 - [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<source-size-value>`](https://html.spec.whatwg.org/multipage/images.html#source-size-value)

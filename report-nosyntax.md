@@ -1,6 +1,6 @@
 # Features without syntax in Webref
 
-Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
+Generated on **2025-05-29T08:49:23.322Z** using **v6.21.2** of `@webref/css`.
 
 
 <details>
@@ -13,7 +13,7 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 
 
 <details>
-<summary>16 functions without syntax (out of 171)</summary>
+<summary>16 functions without syntax (out of 169)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set) (dangling)
 - [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>` (dangling)
@@ -35,7 +35,7 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 
 
 <details>
-<summary>8 properties without syntax (out of 756)</summary>
+<summary>8 properties without syntax (out of 757)</summary>
 
 - [`-webkit-box-align`](https://compat.spec.whatwg.org/#propdef--webkit-box-align)
 - [`-webkit-box-flex`](https://compat.spec.whatwg.org/#propdef--webkit-box-flex)
@@ -130,7 +130,6 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 - [`<ident>`](https://drafts.csswg.org/css-values-4/#typedef-ident)
 - [`<identifier>`](https://drafts.csswg.org/css2/#value-def-identifier) (dangling)
 - [`<integer>`](https://drafts.csswg.org/css-values-4/#integer-value)
-- [`<intrinsic-size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-intrinsic-size-keyword)
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
 - [`<length>`](https://drafts.csswg.org/css-values-4/#length-value)
 - [`<margin-width>`](https://drafts.csswg.org/css2/#value-def-margin-width) (dangling)
@@ -165,6 +164,7 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 - [`<signed-integer>`](https://drafts.csswg.org/css-syntax-3/#typedef-signed-integer)
 - [`<signless-integer>`](https://drafts.csswg.org/css-syntax-3/#typedef-signless-integer)
 - [`<size-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-size-feature)
+- [`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-size-keyword)
 - [`<string-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-string-token)
 - [`<string>`](https://drafts.csswg.org/css-values-4/#string-value)
 - [`<style-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-style-feature)

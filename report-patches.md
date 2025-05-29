@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-15T06:31:35.689Z** using **v2.21.0** of MDN data and **v6.21.0** of `@webref/css`.
+Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6.21.2** of `@webref/css`.
 
 
 <details>
@@ -635,7 +635,7 @@ xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-rad
 
 
 <details>
-<summary>26 type patches with a different syntax in Webref</summary>
+<summary>27 type patches with a different syntax in Webref</summary>
 
 - [`anchor-size()`](https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size)
 ```
@@ -666,6 +666,11 @@ csstree: <color-base> | currentColor | <system-color> | <device-cmyk()>  | <ligh
 ```
 webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
 csstree: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
+```
+- [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
+```
+webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
 ```
 - [`color()`](https://drafts.csswg.org/css-color-5/#funcdef-color)
 ```
@@ -771,7 +776,7 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 
 
 <details>
-<summary>38 type patches already in Webref</summary>
+<summary>37 type patches already in Webref</summary>
 
 - [`anchor-name`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name)
 - [`anchor-side`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side)
@@ -779,7 +784,6 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - [`cmyk-component`](https://drafts.csswg.org/css-color-5/#typedef-cmyk-component)
 - [`color-base`](https://drafts.csswg.org/css-color-5/#typedef-color-base)
 - [`color-interpolation-method`](https://drafts.csswg.org/css-color-5/#color-interpolation-method)
-- [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
 - [`color-space`](https://drafts.csswg.org/css-color-5/#typedef-color-space)
 - [`combinator`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
 - [`complex-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector)

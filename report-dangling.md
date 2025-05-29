@@ -1,10 +1,10 @@
 # Dangling features in Webref
 
-Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
+Generated on **2025-05-29T08:49:23.322Z** using **v6.21.2** of `@webref/css`.
 
 
 <details>
-<summary>95 dangling functions (out of 171)</summary>
+<summary>93 dangling functions (out of 169)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`abs()`](https://drafts.csswg.org/css-values-4/#funcdef-abs)
@@ -17,7 +17,6 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 - [`circle()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-circle) for `<basic-shape>`
 - [`clamp()`](https://drafts.csswg.org/css-values-4/#funcdef-clamp)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
-- [`container-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-container-progress)
 - [`control-value()`](https://drafts.csswg.org/css-forms-1/#funcdef-control-value)
 - [`cos()`](https://drafts.csswg.org/css-values-4/#funcdef-cos)
 - [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>`
@@ -44,7 +43,6 @@ Generated on **2025-05-15T06:31:35.725Z** using **v6.21.0** of `@webref/css`.
 - [`matrix()`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-matrix) for `transform`
 - [`matrix3d()`](https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d)
 - [`max()`](https://drafts.csswg.org/css-values-4/#funcdef-max)
-- [`media-progress()`](https://drafts.csswg.org/css-values-5/#funcdef-media-progress)
 - [`media()`](https://drafts.csswg.org/css-conditional-5/#funcdef-media)
 - [`min()`](https://drafts.csswg.org/css-values-4/#funcdef-min)
 - [`minmax()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-minmax) for `grid-template-columns`
