@@ -2,13 +2,13 @@
 
 The [MDN data](https://github.com/mdn/data) repository advertizes that it may be deprecated in favor of [Webref](https://github.com/w3c/webref). For that to be doable, Webref updates may need to be considered, as discussed in a related [Webref issue](https://github.com/w3c/webref/issues/1519).
 
-This repository compares the CSS data in Webref with the CSS data in MDN data to understand differences both in terms of entries and in terms of syntaxes. It also looks at syntax patches in CSSTree that get applied to MDN data.
+A [post-processor is being added to Reffy](https://github.com/w3c/reffy/pull/1849) to consolidate CSS extracts in Webref into a single file that follows a similar structure as MDN data.
+
+This repository showcases the resulting consolidated file, see [`webref.json`](webref.json), and compare the CSS data in that file, in MDN data, as well as with syntax patches defined in CSSTree.
 
 **Note:** The objective of this repository is to inform further discussion and developments in Webref. This repository will **not** be kept up-to-date once conclusions have been reached.
 
-Reports are generated automatically through the [`main.mjs`](main.mjs) Node.js script. That script merges and consolidates Webref data into a structure that matches that in MDN data, then analyzes gaps and mismatches.
-
-The result of the consolidation is the [`webref.json`](webref.json) file. That file, and the logic used to generate it, might move to Webref as part of its data curation phase.
+Reports are generated automatically through the [`main.mjs`](main.mjs) Node.js script. That script calls the upcoming Reffy's `cssmerge` post-processor to consolidates Webref data into a structure that matches that in MDN data, then analyzes gaps and mismatches.
 
 Actual human-readable reports are:
 - [`report-gaps.md`](report-gaps.md): missing CSS features in Webref compared to MDN data, and missing CSS features in MDN data compared to Webref.
