@@ -29,319 +29,60 @@
  * report files in Markdown.
  ***********************************************************/
 
-import cssInWebref from '@webref/css';
+import { crawlSpecs } from 'reffy';
 import mdn from 'mdn-data';
 import { writeFile } from 'node:fs/promises';
-import webrefPackage from '@webref/css/package.json' with { type: 'json' };
 import mdnPackage from 'mdn-data/package.json' with { type: 'json' };
 import csstreePatches from './node_modules/css-tree/data/patch.json' with { type: 'json' };
+import { fileURLToPath } from 'node:url';
+import path from "node:path";
 
-/**
- * MDN data wants to list CSS units. They are not defined as such in CSS specs
- * but can easily be computed by looking at the list of values that are defined
- * for the restricted set of CSS types defined here.
- */
-const unitTypes = [
-  '<angle>',
-  '<flex>',
-  '<length>',
-  '<frequency>',
-  '<resolution>',
-  '<time>'
-];
+const scriptPath = path.dirname(fileURLToPath(import.meta.url));
 
-/**
- * Webref data is per spec. Goal is to create the same view as in MDN data.
- */
+
+/************************************************************
+ * Prepare consolidated CSS from Webref data
+ ***********************************************************/
+const cssFolder = path.join(scriptPath, 'node_modules', 'webref', 'ed');
+await crawlSpecs({
+  useCrawl: cssFolder,
+  output: cssFolder,
+  post: ['cssmerge'],
+  quiet: true
+});
+
+const { default: webrefData } = await import(
+  'file://' + path.join(cssFolder, 'css.json'),
+  { with: { type: 'json' } });
+
 const categorized = {
-  atRules: [],
-  functions: [],
-  properties: [],
-  selectors: [],
+  // At-rules are under an "atrules" key in Webref, "atRules" in MDN data.
+  atRules: webrefData.atrules,
+  functions: webrefData.functions,
+  properties: webrefData.properties,
+  selectors: webrefData.selectors,
   syntaxes: [],
-  types: [],
-  units: []
+  types: webrefData.types
 };
+
+// Syntaxes in MDN data are the result of merging functions and types
+categorized.syntaxes.push(...webrefData.functions);
+categorized.syntaxes.push(...webrefData.types);
+
 const categories = Object.keys(categorized);
-const categoriesWithSyntax = categories.filter(c => c !== 'units');
-const webrefCategories = ['atrules', 'properties', 'selectors', 'values'];
 
-
-/************************************************************
- * Categorize Webref data following the same structure as
- * MDN data.
- ***********************************************************/
-const parsedFiles = await cssInWebref.listAll();
-for (const [shortname, data] of Object.entries(parsedFiles)) {
-  // We're going to merge features across specs,
-  // save the link back to individual specs
-  decorateFeaturesWithSpec(data, shortname);
-
-  // Same categorization in Webref and MDN data for at-rules, properties,
-  // and selectors.
-  categorized.atRules.push(...data.atrules);
-  categorized.properties.push(...data.properties);
-  categorized.selectors.push(...data.selectors);
-
-  // Then MDN data categorizes CSS features into functions, types and units,
-  // without making a distinction between features that are scoped to another
-  // feature and those that are more general.
-  // Webref data stores "functions" and "types" definitions under a `values`
-  // key. The root `values` key contains unscoped definitions. Individual
-  // features may also have a `values` key with scoped definitions.
-  categorized.functions.push(...data.values.filter(v => v.type === 'function'));
-  categorized.types.push(...data.values.filter(v => v.type === 'type'));
-
-  for (const category of webrefCategories) {
-    for (const feature of data[category]) {
-      if (feature.values) {
-        const values = feature.values
-          .map(v => Object.assign({ for: feature.name }, v));
-        categorized.functions.push(
-          ...values.filter(v => v.type === 'function'));
-        categorized.types.push(
-          ...values.filter(v => v.type === 'type'));
-      }
-    }
-  }
-}
-
-// I'm not fully clear what syntaxes are supposed to be.
-// They seem to be the union of all functions and types.
-categorized.syntaxes.push(...categorized.functions);
-categorized.syntaxes.push(...categorized.types);
-
-// Units are not defined as such in CSS. They are the possible values of a
-// restricted number of types in practice.
-for (const type of categorized.types) {
-  if (unitTypes.includes(type.name)) {
-    categorized.units.push(...type.values);
-  }
-}
-
-
-/************************************************************
- * Consolidate categorized data to avoid duplicate features.
- *
- * MDN data only has one definition for each feature but
- * Webref may have multiple definitions of a given feature.
- * This happens when:
- * - A feature is defined in one level of a spec series, and
- * re-defined in a subsequent level.
- * - A property is defined in one spec, and extended in other
- * specs, including possibly in later levels in the series.
- * This is recorded in Webref through the `newValues` key.
- * (Note Webref guarantees that there is a base definition)
- * - An at-rule is defined in one spec, additional
- * descriptors are defined in other specs, including possibly
- * in later levels in the series.
- * - A feature is defined in specs in different series. This
- * can only happen if all these specs, save one at most, are
- * delta specs, and that is because Webref guarantees
- * essentially ignore delta specs for now.
- *
- * Note: additional duplicates also exist in Webref if one
- * only looks at a feature's name, because a feature may be
- * defined for multiple other constructs. Disambiguation here
- * is a matter of taking the scope into account (the `for`
- * key).
- *
- * Which definition to use when a feature is defined in, or
- * across, multiple levels in a series essentially depends on
- * how the information is going to be used.
- * A conservative approach would use the definition in the
- * current level and dismiss later levels as forward-looking.
- * An on-the-edge perspective would use definitions in the
- * latest level.
- * To get a view more anchored on browser support, one would
- * likely mix both approaches depending on the underlying
- * feature.
- *
- * The code below implements the on-the-edge perspective.
- ***********************************************************/
+// Code that sets the selector's syntax to the selector's name when possible
+// has not propagated to Webref yet. Let's do it here as well. That code can
+// go when https://github.com/w3c/reffy/pull/1848 is merged and applied.
 for (const category of categories) {
-  // Create an index of feature definitions
-  const featureDfns = {};
-  for (const feature of categorized[category]) {
-    // ... and since we're looping through features, let's get rid
-    // of inner value definitions, which we no longer need
-    // (interesting ones were already copied to the root level)
-    if (feature.values) {
-      delete feature.values;
+  categorized[category] = categorized[category].map(feature => {
+    if (category === 'selectors' &&
+        !feature.value &&
+        !feature.name.match(/\(/)) {
+      feature.value = feature.name;
     }
-    for (const descriptor of feature.descriptors ?? []) {
-      if (descriptor.values) {
-        delete descriptor.values;
-      }
-    }
-
-    let featureName = feature.name;
-    if (feature.for) {
-      featureName += ' for ' + feature.for;
-    }
-    if (!featureDfns[featureName]) {
-      featureDfns[featureName] = [];
-    }
-    featureDfns[featureName].push(feature);
-  }
-
-  // Detect and get rid of duplicate definitions in unrelated specs.
-  // As of 2025-02-05, the only such duplicates are a few types in css-color-5
-  // and css-color-hdr. Use the definitions in css-color-hdr which lives more
-  // on the edge.
-  // TODO: add this to data curation in Webref and improve guarantee
-  for (const [name, dfns] of Object.entries(featureDfns)) {
-    let actualDfns = dfns.filter(dfn => dfn.value);
-    if (actualDfns.length === 0) {
-      actualDfns = dfns.filter(dfn => !dfn.newValues);
-    }
-    const seriesShortname = actualDfns[0].spec.shortname
-      .replace(/-\d+$/, '');
-    const otherDfns = actualDfns
-      .filter(dfn => dfn.spec.shortname.replace(/-\d+$/, '') !== seriesShortname)
-      .map(dfn => dfn.spec.shortname);
-    if (otherDfns.length > 0) {
-      console.warn(` - ${name} defined in ${actualDfns[0].spec.shortname} and ${otherDfns.join(', ')}`);
-      if (seriesShortname === 'css-color' ||
-          seriesShortname === 'css-color-hdr') {
-        featureDfns[name] = dfns.filter(dfn =>
-          dfn.spec.shortname === 'css-color-hdr');
-      }
-      else {
-        throw new Error('Duplicate features found in unrelated specs');
-      }
-    }
-  }
-
-  // Identify the base definition for each feature, using the definition in
-  // the latest possible level. Move that base definition to the beginning
-  // of the array and get rid of other base definitions.
-  // (Note: we got rid of duplicates in unrelated specs already)
-  for (const [name, dfns] of Object.entries(featureDfns)) {
-    let actualDfns = dfns.filter(dfn => dfn.value);
-    if (actualDfns.length === 0) {
-      actualDfns = dfns.filter(dfn => !dfn.newValues);
-    }
-    const best = actualDfns.reduce((dfn1, dfn2) => {
-      if (dfn1.spec.currentSpec) {
-        return dfn2;
-      }
-      else if (dfn2.spec.currentSpec) {
-        return dfn1;
-      }
-      else {
-        const level1 = dfn1.spec.shortname.match(/-(\d+)$/)[1];
-        const level2 = dfn2.spec.shortname.match(/-(\d+)$/)[1];
-        if (level1 < level2) {
-          return dfn2;
-        }
-        else {
-          return dfn1;
-        }
-      }
-    });
-    featureDfns[name] = [best].concat(
-      dfns.filter(dfn => !actualDfns.includes(dfn))
-    );
-  }
-
-  // Apply extensions for properties and at-rules
-  // (no extension mechanism for other categories)
-  for (const [name, dfns] of Object.entries(featureDfns)) {
-    const baseDfn = dfns[0];
-    for (const dfn of dfns) {
-      if (dfn === baseDfn) {
-        continue;
-      }
-      if (baseDfn.value && dfn.newValues) {
-        baseDfn.value += ' | ' + dfn.newValues;
-      }
-      if (baseDfn.descriptors && dfn.descriptors?.length > 0) {
-        baseDfn.descriptors.push(...dfn.descriptors);
-      }
-    }
-  }
-
-  // All duplicates should have been treated somehow and merged into the
-  // base definition. Use the base definition and get rid of the rest!
-  // We will also generate a few additional syntaxes when possible for
-  // at-rules and selectors.
-  categorized[category] = Object.entries(featureDfns)
-    .map(([name, features]) => features[0])
-    .map(feature => {
-      if (feature.descriptors?.length > 0 &&
-          feature.value?.match(/{ <declaration-(rule-)?list> }/)) {
-        // TODO: drop enclosing grouping constructs when there's no ambiguity
-        // TODO: if the logic is sound, do it directly in raw Webref data
-        const syntax = feature.descriptors
-          .map(desc => {
-            if (desc.name.startsWith('@')) {
-              return `[ ${desc.value} ]`;
-            }
-            else {
-              return `[ ${desc.name}: [ ${desc.value} ]; ]`;
-            }
-          })
-          .join(' ||\n  ');
-        feature.value = feature.value.replace(
-          /{ <declaration-(rule-)?list> }/,
-          '{\n  ' + syntax + '\n}');
-      }
-      else if (category === 'selectors' &&
-          !feature.value &&
-          !feature.name.match(/\(/)) {
-        // TODO: consider doing that in Webref directly
-        feature.value = feature.name;
-      }
-      return feature;
-    });
-
-  // Due to the way CSS specs are written, we may end up with scoped functions
-  // and types that are scoped to some other construct, while an unscoped dfn
-  // also exists. When the syntax is the same (or when the scoped dfn does not
-  // have any known syntax), we can drop the scoped dfn in favor of the
-  // unscoped one. When the syntax differs, that probably signals an error.
-  // TODO: Detect and filter out such constructs in Webref
-  categorized[category] = categorized[category].filter(feature => {
-    if (feature.for) {
-      const unscoped = categorized[category].find(f =>
-        f.name === feature.name && !f.for);
-      if (unscoped) {
-        const fvalue = feature.value ?? 'no known syntax';
-        const uvalue = unscoped.value ?? 'no known syntax';
-        if (feature.value !== unscoped.value) {
-          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. Syntaxes differ:
-    scoped:   ${fvalue}
-    unscoped: ${uvalue}`);
-        }
-        else if (feature.value) {
-          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. Same syntax:
-  ${fvalue}`);
-        }
-        else {
-          console.warn(` - ${feature.name} defined for ${feature.for} but unscoped definition exists as well. No known syntax`);
-        }
-
-        // Only keep the scoped feature if it has a known syntax that
-        // differs from the unscoped feature
-        return feature.value && feature.value !== unscoped.value;
-      }
-    }
-    return true;
+    return feature;
   });
-
-  // Various CSS properties are "legacy aliases of" another property. Use the
-  // syntax of the other property for these.
-  for (const feature of categorized[category]) {
-    if (feature.legacyAliasOf && !feature.value) {
-      const target = categorized[category].find(f =>
-        f.name === feature.legacyAliasOf && !f.for);
-      if (!target) {
-        throw new Error(`${feature.name} is a legacy alias of unknown ${f.legacyAliasOf}`);
-      }
-      feature.value = target.value;
-    }
-  }
 }
 
 
@@ -396,7 +137,7 @@ for (const category of categories) {
  ***********************************************************/
 const nbInCommon = {};
 const mismatches = {};
-for (const category of categoriesWithSyntax) {
+for (const category of categories) {
   nbInCommon[category] = 0;
   mismatches[category] = [];
   for (const feature of categorized[category]) {
@@ -442,7 +183,7 @@ for (const category of categoriesWithSyntax) {
 const dangling = {};
 for (const category of ['functions', 'types']) {
   const features = categorized[category].filter(feature =>
-    !categoriesWithSyntax.find(cat =>
+    !categories.find(cat =>
       categorized[cat].find(f => f.value && f.value.indexOf(feature.name) !== -1)));
   if (features.length > 0) {
     for (const feature of features) {
@@ -462,7 +203,7 @@ for (const category of ['functions', 'types']) {
  * and that list would be empty.
  ***********************************************************/
 const noSyntax = {};
-for (const category of categoriesWithSyntax) {
+for (const category of categories) {
   if (category === 'syntaxes') {
     // Syntaxes are just functions + types, no need to report them as such
     continue;
@@ -514,13 +255,13 @@ for (const category of ['properties', 'types']) {
 /************************************************************
  * Save sanitized and categorized Webref data
  ***********************************************************/
-await writeFile('webref.json', JSON.stringify(categorized, null, 2), 'utf8');
+await writeFile('webref.json', JSON.stringify(webrefData, null, 2), 'utf8');
 
 
 /************************************************************
  * Write gap report
  ***********************************************************/
-const generated = `Generated on **${new Date().toISOString()}** using **v${mdnPackage.version}** of MDN data and **v${webrefPackage.version}** of \`@webref/css\`.`;
+const generated = `Generated on **${new Date().toISOString()}** using **v${mdnPackage.version}** of MDN data.`;
 let report = ['# Gap analysis between MDN data and Webref'];
 report.push('');
 report.push(generated);
@@ -568,7 +309,7 @@ await writeFile('report-syntax.md', report.join('\n'), 'utf8');
 /************************************************************
  * Write no syntax report
  ***********************************************************/
-const generatedWebref = `Generated on **${new Date().toISOString()}** using **v${webrefPackage.version}** of \`@webref/css\`.`;
+const generatedWebref = `Generated on **${new Date().toISOString()}**.`;
 report = ['# Features without syntax in Webref'];
 report.push('');
 report.push(generatedWebref);
@@ -756,22 +497,3 @@ function normalizeSyntax(syntax) {
     .replace(/^\[\s*(.*?)\s*\]$/, '$1');
 }
 
-/**
- * Decorate all CSS features in the extract with the spec's shortname and
- * a flag that signals whether the spec is the current one in the series
- */
-function decorateFeaturesWithSpec(data, shortname) {
-  const spec = {
-    shortname: shortname,
-    currentSpec: !shortname.match(/-\d+$/)
-  };
-
-  for (const category of webrefCategories) {
-    for (const feature of data[category]) {
-      feature.spec = spec;
-      for (const value of feature.values ?? []) {
-        value.spec = spec;
-      }
-    }
-  }
-}

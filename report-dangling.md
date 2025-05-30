@@ -1,6 +1,6 @@
 # Dangling features in Webref
 
-Generated on **2025-05-29T08:49:23.322Z** using **v6.21.2** of `@webref/css`.
+Generated on **2025-05-30T10:29:09.296Z**.
 
 
 <details>
@@ -73,10 +73,10 @@ Generated on **2025-05-29T08:49:23.322Z** using **v6.21.2** of `@webref/css`.
 - [`rotateZ()`](https://drafts.csswg.org/css-transforms-2/#funcdef-rotatez)
 - [`round()`](https://drafts.csswg.org/css-values-4/#funcdef-round)
 - [`scale3d()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scale3d)
-- [`scaleX()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scalex)
 - [`scaleX()`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scalex) for `transform`
-- [`scaleY()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scaley)
+- [`scaleX()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scalex)
 - [`scaleY()`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-scaley) for `transform`
+- [`scaleY()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scaley)
 - [`scaleZ()`](https://drafts.csswg.org/css-transforms-2/#funcdef-scalez)
 - [`shape()`](https://drafts.csswg.org/css-shapes-2/#funcdef-shape)
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count)

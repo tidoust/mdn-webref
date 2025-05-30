@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6.21.2** of `@webref/css`.
+Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 
 
 <details>

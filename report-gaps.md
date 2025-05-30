@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6.21.2** of `@webref/css`.
+Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 
 ### Missing from webref
 
@@ -1323,36 +1323,4 @@ Generated on **2025-05-29T08:49:23.303Z** using **v2.21.0** of MDN data and **v6
 - [`<xyz-space>`](https://drafts.csswg.org/css-color-4/#typedef-xyz-space)
 - [`<xyz>`](https://drafts.csswg.org/css-color-5/#typedef-xyz)
 - [`<zero>`](https://drafts.csswg.org/css-values-4/#zero-value)
-</details>
-
-
-<details>
-<summary>26 units missing from mdn</summary>
-
-- [`dvb`](https://drafts.csswg.org/css-values-4/#dvb)
-- [`dvh`](https://drafts.csswg.org/css-values-4/#dvh)
-- [`dvi`](https://drafts.csswg.org/css-values-4/#dvi)
-- [`dvmax`](https://drafts.csswg.org/css-values-4/#dvmax)
-- [`dvmin`](https://drafts.csswg.org/css-values-4/#dvmin)
-- [`dvw`](https://drafts.csswg.org/css-values-4/#dvw)
-- [`lh`](https://drafts.csswg.org/css-values-4/#lh)
-- [`lvb`](https://drafts.csswg.org/css-values-4/#lvb)
-- [`lvh`](https://drafts.csswg.org/css-values-4/#lvh)
-- [`lvi`](https://drafts.csswg.org/css-values-4/#lvi)
-- [`lvmax`](https://drafts.csswg.org/css-values-4/#lvmax)
-- [`lvmin`](https://drafts.csswg.org/css-values-4/#lvmin)
-- [`lvw`](https://drafts.csswg.org/css-values-4/#lvw)
-- [`rcap`](https://drafts.csswg.org/css-values-4/#rcap)
-- [`rch`](https://drafts.csswg.org/css-values-4/#rch)
-- [`rex`](https://drafts.csswg.org/css-values-4/#rex)
-- [`ric`](https://drafts.csswg.org/css-values-4/#ric)
-- [`rlh`](https://drafts.csswg.org/css-values-4/#rlh)
-- [`svb`](https://drafts.csswg.org/css-values-4/#svb)
-- [`svh`](https://drafts.csswg.org/css-values-4/#svh)
-- [`svi`](https://drafts.csswg.org/css-values-4/#svi)
-- [`svmax`](https://drafts.csswg.org/css-values-4/#svmax)
-- [`svmin`](https://drafts.csswg.org/css-values-4/#svmin)
-- [`svw`](https://drafts.csswg.org/css-values-4/#svw)
-- [`vb`](https://drafts.csswg.org/css-values-4/#vb)
-- [`vi`](https://drafts.csswg.org/css-values-4/#vi)
 </details>

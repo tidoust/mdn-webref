@@ -1,6 +1,6 @@
 # Features without syntax in Webref
 
-Generated on **2025-05-29T08:49:23.322Z** using **v6.21.2** of `@webref/css`.
+Generated on **2025-05-30T10:29:09.296Z**.
 
 
 <details>
