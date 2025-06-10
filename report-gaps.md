@@ -1,6 +1,6 @@
 # Gap analysis between MDN data and Webref
 
-Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
+Generated on **2025-06-10T10:58:42.297Z** using **v2.21.0** of MDN data.
 
 ### Missing from webref
 
@@ -244,10 +244,12 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 
 
 <details>
-<summary>53 functions missing from mdn</summary>
+<summary>57 functions missing from mdn</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
+- [`calc-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-interpolate)
 - [`calc-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-mix)
+- [`color-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-color-interpolate)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
@@ -264,25 +266,26 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`if()`](https://drafts.csswg.org/css-values-5/#funcdef-if)
 - [`inherit()`](https://drafts.csswg.org/css-values-5/#funcdef-inherit)
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
+- [`interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-interpolate)
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
 - [`jzczhz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz)
 - [`media()`](https://drafts.csswg.org/css-conditional-5/#funcdef-media)
-- [`mix()`](https://drafts.csswg.org/css-values-5/#funcdef-mix)
+- [`pointer()`](https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
 - [`random-item()`](https://drafts.csswg.org/css-values-5/#funcdef-random-item)
 - [`random()`](https://drafts.csswg.org/css-values-5/#funcdef-random)
 - [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-style>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-width>`
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<auto-repeat>`
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
 - [`running()`](https://drafts.csswg.org/css-gcpm-3/#funcdef-running)
-- [`shape()`](https://drafts.csswg.org/css-shapes-2/#funcdef-shape)
+- [`shape()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-shape) for `<basic-shape>`
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index)
 - [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block) for `float`
@@ -293,17 +296,18 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`superellipse()`](https://drafts.csswg.org/css-borders-4/#funcdef-superellipse)
 - [`supports()`](https://drafts.csswg.org/css-conditional-5/#funcdef-supports)
 - [`toggle()`](https://drafts.csswg.org/css-values-5/#funcdef-toggle)
+- [`transform-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-transform-interpolate)
 - [`transform-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-transform-mix)
-- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
 - [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type) for `@function`
 - [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type) for `attr()`
+- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
 - [`url()`](https://drafts.csswg.org/css-values-4/#funcdef-url)
 - [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()`
 </details>
 
 
 <details>
-<summary>257 properties missing from mdn</summary>
+<summary>261 properties missing from mdn</summary>
 
 - [`-webkit-align-content`](https://compat.spec.whatwg.org/#propdef--webkit-align-content)
 - [`-webkit-align-items`](https://compat.spec.whatwg.org/#propdef--webkit-align-items)
@@ -360,6 +364,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`-webkit-transition-duration`](https://compat.spec.whatwg.org/#propdef--webkit-transition-duration)
 - [`-webkit-transition-property`](https://compat.spec.whatwg.org/#propdef--webkit-transition-property)
 - [`-webkit-transition-timing-function`](https://compat.spec.whatwg.org/#propdef--webkit-transition-timing-function)
+- [`animation-range-center`](https://drafts.csswg.org/pointer-animations-1/#propdef-animation-range-center)
 - [`animation-trigger`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger)
 - [`animation-trigger-behavior`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-behavior)
 - [`animation-trigger-exit-range`](https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range)
@@ -493,6 +498,9 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`pause`](https://drafts.csswg.org/css-speech-1/#propdef-pause)
 - [`pause-after`](https://drafts.csswg.org/css-speech-1/#propdef-pause-after)
 - [`pause-before`](https://drafts.csswg.org/css-speech-1/#propdef-pause-before)
+- [`pointer-timeline`](https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline)
+- [`pointer-timeline-axis`](https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-axis)
+- [`pointer-timeline-name`](https://drafts.csswg.org/pointer-animations-1/#propdef-pointer-timeline-name)
 - [`reading-flow`](https://drafts.csswg.org/css-display-4/#propdef-reading-flow)
 - [`reading-order`](https://drafts.csswg.org/css-display-4/#propdef-reading-order)
 - [`region-fragment`](https://drafts.csswg.org/css-regions-1/#propdef-region-fragment)
@@ -614,7 +622,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 
 
 <details>
-<summary>274 syntaxes missing from mdn</summary>
+<summary>277 syntaxes missing from mdn</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
@@ -626,9 +634,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<age>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age) for `voice-family`
 - [`<angle>`](https://drafts.csswg.org/css-values-4/#angle-value)
 - [`<any-value>`](https://drafts.csswg.org/css-syntax-3/#typedef-any-value)
-- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command) for `shape()`
-- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size) for `shape()`
-- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep) for `shape()`
 - [`<at-keyword-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
 - [`<at-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-rule-list)
 - [`<attr-args>`](https://drafts.csswg.org/css-values-5/#typedef-attr-args)
@@ -660,20 +665,16 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<color-space>`](https://drafts.csswg.org/css-color-5/#typedef-color-space)
 - [`<color-stripe>`](https://drafts.csswg.org/css-images-4/#typedef-color-stripe)
 - [`<comma-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-comma-token)
-- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point) for `shape()`
 - [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special) for `appearance`
 - [`<complex-real-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector-list)
 - [`<complex-real-selector>`](https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector)
 - [`<complex-selector-unit>`](https://drafts.csswg.org/selectors-4/#typedef-complex-selector-unit)
 - [`<composite-mode>`](https://drafts.fxtf.org/compositing-2/#compositemode)
 - [`<content-level>`](https://drafts.csswg.org/css-gcpm-4/#typedef-content-level)
-- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point) for `shape()`
-- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair) for `shape()`
 - [`<corner-shape-value>`](https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value)
 - [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier) for `<request-url-modifier>`
 - [`<css-type>`](https://drafts.csswg.org/css-mixins-1/#typedef-css-type)
 - [`<cubic-bezier-easing-function>`](https://drafts.csswg.org/css-easing-2/#typedef-cubic-bezier-easing-function)
-- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command) for `shape()`
 - [`<custom-arg>`](https://drafts.csswg.org/css-extensions-1/#typedef-custom-arg)
 - [`<custom-ident>`](https://drafts.csswg.org/css-values-4/#identifier-value)
 - [`<custom-property-name>`](https://drafts.csswg.org/css-variables-2/#typedef-custom-property-name)
@@ -684,6 +685,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<declaration-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list)
 - [`<declaration-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-rule-list)
 - [`<declaration-value>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value)
+- [`<default-value>`](https://drafts.csswg.org/css-mixins-1/#typedef-default-value)
 - [`<delim-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-delim-token)
 - [`<deprecated-color>`](https://drafts.csswg.org/css-color-4/#typedef-deprecated-color)
 - [`<dimension-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token)
@@ -713,7 +715,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<generic-voice>`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
 - [`<hash-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-hash-token)
 - [`<hex-color>`](https://drafts.csswg.org/css-color-4/#typedef-hex-color)
-- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command) for `shape()`
 - [`<id>`](https://drafts.csswg.org/css-ui-4/#typedef-id)
 - [`<ident-arg>`](https://drafts.csswg.org/css-values-5/#typedef-ident-arg)
 - [`<ident-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-ident-token)
@@ -727,6 +728,10 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<image-1D>`](https://drafts.csswg.org/css-images-4/#typedef-image-1d)
 - [`<import-conditions>`](https://drafts.csswg.org/css-cascade-5/#typedef-import-conditions)
 - [`<inherit-args>`](https://drafts.csswg.org/css-values-5/#typedef-inherit-args)
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `calc-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `color-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `transform-interpolate()`
 - [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
 - [`<isolation-mode>`](https://drafts.fxtf.org/compositing-2/#isolated-propid)
 - [`<layout-box>`](https://drafts.csswg.org/css-box-4/#typedef-layout-box)
@@ -740,7 +745,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<length>`](https://drafts.csswg.org/css-values-4/#length-value)
 - [`<line-color-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list)
 - [`<line-color-or-repeat>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat)
-- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command) for `shape()`
 - [`<line-style-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list)
 - [`<line-style-or-repeat>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-style-or-repeat)
 - [`<line-width-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-width-list)
@@ -757,7 +761,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<modern-hsla-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-hsla-syntax)
 - [`<modern-rgb-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-rgb-syntax)
 - [`<modern-rgba-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-rgba-syntax)
-- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command) for `shape()`
 - [`<mq-boolean>`](https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean)
 - [`<number-optional-number>`](https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number)
 - [`<number-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-number-token)
@@ -766,12 +769,14 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<padding-width>`](https://drafts.csswg.org/css2/#value-def-padding-width)
 - [`<percentage-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token)
 - [`<percentage>`](https://drafts.csswg.org/css-values-4/#percentage-value)
+- [`<pointer-axis>`](https://drafts.csswg.org/pointer-animations-1/#typedef-axis)
+- [`<pointer-source>`](https://drafts.csswg.org/pointer-animations-1/#typedef-source)
 - [`<points>`](https://svgwg.org/svg2-draft/shapes.html#DataTypePoints)
 - [`<position-four>`](https://drafts.csswg.org/css-values-5/#typedef-position-four)
 - [`<position-one>`](https://drafts.csswg.org/css-values-5/#typedef-position-one)
 - [`<position-three>`](https://drafts.csswg.org/css-backgrounds-4/#typedef-position-three)
 - [`<position-two>`](https://drafts.csswg.org/css-values-5/#typedef-position-two)
-- [`<progress>`](https://drafts.csswg.org/css-values-5/#typedef-progress)
+- [`<progress-source>`](https://drafts.csswg.org/css-values-5/#typedef-progress-source)
 - [`<pseudo-compound-selector>`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-compound-selector)
 - [`<pt-class-selector>`](https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-class-selector)
 - [`<pt-name-and-class-selector>`](https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-name-and-class-selector)
@@ -782,7 +787,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<random-item-args>`](https://drafts.csswg.org/css-values-5/#typedef-random-item-args)
 - [`<random-value-sharing>`](https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing)
 - [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier) for `<request-url-modifier>`
-- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point) for `shape()`
 - [`<relative-real-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector-list)
 - [`<relative-real-selector>`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector)
 - [`<repeat-line-color>`](https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-color)
@@ -794,15 +798,18 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<right>`](https://drafts.csswg.org/css2/#value-def-right)
 - [`<rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-rule-list)
 - [`<scroll-button-direction>`](https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `calc-interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `color-interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `transform-interpolate()`
 - [`<semicolon-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token)
 - [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones) for `voice-pitch`
-- [`<shape-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command)
+- [`<shape-command>`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-command)
 - [`<simple-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-simple-selector-list)
 - [`<simple-selector>`](https://drafts.csswg.org/selectors-4/#typedef-simple-selector)
 - [`<single-animation-trigger-behavior>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior)
 - [`<single-animation-trigger>`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger)
 - [`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-size-keyword)
-- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<source-size-value>`](https://html.spec.whatwg.org/multipage/images.html#source-size-value)
 - [`<source-size>`](https://html.spec.whatwg.org/multipage/images.html#source-size)
@@ -824,6 +831,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<target-contrast>`](https://drafts.csswg.org/css-color-6/#typedef-target-contrast)
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
 - [`<time>`](https://drafts.csswg.org/css-values-4/#time-value)
+- [`<timeline-range-center-subject>`](https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject)
 - [`<top>`](https://drafts.csswg.org/css2/#value-def-top)
 - [`<type>`](https://drafts.csswg.org/css-forms-1/#typedef-type)
 - [`<unicode-range-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-unicode-range-token)
@@ -833,12 +841,13 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<url-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-url-token)
 - [`<url>`](https://drafts.csswg.org/css-values-4/#url-value)
 - [`<var-args>`](https://drafts.csswg.org/css-variables-2/#typedef-var-args)
-- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command) for `shape()`
 - [`<wcag2>`](https://drafts.csswg.org/css-color-6/#typedef-wcag2)
 - [`<whitespace-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token)
 - [`<xyz-space>`](https://drafts.csswg.org/css-color-4/#typedef-xyz-space)
 - [`<zero>`](https://drafts.csswg.org/css-values-4/#zero-value)
+- [`calc-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-interpolate)
 - [`calc-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-calc-mix)
+- [`color-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-color-interpolate)
 - [`color-layers()`](https://drafts.csswg.org/css-color-6/#funcdef-color-layers)
 - [`content()`](https://drafts.csswg.org/css-content-3/#funcdef-content)
 - [`contrast-color()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color)
@@ -855,25 +864,26 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`if()`](https://drafts.csswg.org/css-values-5/#funcdef-if)
 - [`inherit()`](https://drafts.csswg.org/css-values-5/#funcdef-inherit)
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>`
+- [`interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-interpolate)
 - [`jzazbz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzazbz)
 - [`jzczhz()`](https://drafts.csswg.org/css-color-hdr-1/#funcdef-jzczhz)
 - [`media()`](https://drafts.csswg.org/css-conditional-5/#funcdef-media)
-- [`mix()`](https://drafts.csswg.org/css-values-5/#funcdef-mix)
+- [`pointer()`](https://drafts.csswg.org/pointer-animations-1/#funcdef-pointer)
 - [`progress()`](https://drafts.csswg.org/css-values-5/#funcdef-progress)
 - [`random-item()`](https://drafts.csswg.org/css-values-5/#funcdef-random-item)
 - [`random()`](https://drafts.csswg.org/css-values-5/#funcdef-random)
 - [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-style>`
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-width>`
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<auto-repeat>`
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>`
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>`
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>`
 - [`running()`](https://drafts.csswg.org/css-gcpm-3/#funcdef-running)
-- [`shape()`](https://drafts.csswg.org/css-shapes-2/#funcdef-shape)
+- [`shape()`](https://drafts.csswg.org/css-shapes-1/#funcdef-basic-shape-shape) for `<basic-shape>`
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index)
 - [`snap-block()`](https://drafts.csswg.org/css-page-floats-3/#funcdef-float-snap-block) for `float`
@@ -884,17 +894,18 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`superellipse()`](https://drafts.csswg.org/css-borders-4/#funcdef-superellipse)
 - [`supports()`](https://drafts.csswg.org/css-conditional-5/#funcdef-supports)
 - [`toggle()`](https://drafts.csswg.org/css-values-5/#funcdef-toggle)
+- [`transform-interpolate()`](https://drafts.csswg.org/css-values-5/#funcdef-transform-interpolate)
 - [`transform-mix()`](https://drafts.csswg.org/css-values-5/#funcdef-transform-mix)
-- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
 - [`type()`](https://drafts.csswg.org/css-mixins-1/#funcdef-function-type) for `@function`
 - [`type()`](https://drafts.csswg.org/css-values-5/#funcdef-attr-type) for `attr()`
+- [`type()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set-type) for `image-set()`
 - [`url()`](https://drafts.csswg.org/css-values-4/#funcdef-url)
 - [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()`
 </details>
 
 
 <details>
-<summary>427 types missing from mdn</summary>
+<summary>426 types missing from mdn</summary>
 
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
 - [`<)-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren)
@@ -914,9 +925,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<angular-color-stop>`](https://drafts.csswg.org/css-images-4/#typedef-angular-color-stop)
 - [`<animateable-feature>`](https://drafts.csswg.org/css-will-change-1/#typedef-animateable-feature)
 - [`<any-value>`](https://drafts.csswg.org/css-syntax-3/#typedef-any-value)
-- [`<arc-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-command) for `shape()`
-- [`<arc-size>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-size) for `shape()`
-- [`<arc-sweep>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-arc-sweep) for `shape()`
 - [`<at-keyword-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
 - [`<at-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-at-rule-list)
 - [`<attachment>`](https://drafts.csswg.org/css-backgrounds-3/#typedef-attachment)
@@ -977,7 +985,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<colorspace-params>`](https://drafts.csswg.org/css-color-5/#typedef-colorspace-params)
 - [`<combinator>`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
 - [`<comma-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-comma-token)
-- [`<command-end-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command-end-point) for `shape()`
 - [`<common-lig-values>`](https://drafts.csswg.org/css-fonts-4/#common-lig-values)
 - [`<compat-auto>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-auto) for `appearance`
 - [`<compat-special>`](https://drafts.csswg.org/css-ui-4/#typedef-appearance-compat-special) for `appearance`
@@ -996,14 +1003,12 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<container-query>`](https://drafts.csswg.org/css-conditional-5/#typedef-container-query)
 - [`<content-distribution>`](https://drafts.csswg.org/css-align-3/#typedef-content-distribution)
 - [`<content-level>`](https://drafts.csswg.org/css-gcpm-4/#typedef-content-level)
-- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list) for `content`
 - [`<content-list>`](https://drafts.csswg.org/css-gcpm-3/#content-list)
+- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list) for `content`
 - [`<content-position>`](https://drafts.csswg.org/css-align-3/#typedef-content-position)
 - [`<content-replacement>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement) for `content`
 - [`<contextual-alt-values>`](https://drafts.csswg.org/css-fonts-4/#contextual-alt-values)
-- [`<control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-control-point) for `shape()`
 - [`<coord-box>`](https://drafts.csswg.org/css-box-4/#typedef-coord-box)
-- [`<coordinate-pair>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-coordinate-pair) for `shape()`
 - [`<corner-shape-value>`](https://drafts.csswg.org/css-borders-4/#typedef-corner-shape-value)
 - [`<counter-name>`](https://drafts.csswg.org/css-lists-3/#typedef-counter-name)
 - [`<counter-style-name>`](https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style-name)
@@ -1012,7 +1017,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<crossorigin-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-crossorigin-modifier) for `<request-url-modifier>`
 - [`<css-type>`](https://drafts.csswg.org/css-mixins-1/#typedef-css-type)
 - [`<cubic-bezier-easing-function>`](https://drafts.csswg.org/css-easing-2/#typedef-cubic-bezier-easing-function)
-- [`<curve-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-curve-command) for `shape()`
 - [`<custom-arg>`](https://drafts.csswg.org/css-extensions-1/#typedef-custom-arg)
 - [`<custom-color-space>`](https://drafts.csswg.org/css-color-5/#typedef-custom-color-space)
 - [`<custom-params>`](https://drafts.csswg.org/css-color-5/#typedef-custom-params)
@@ -1025,6 +1029,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<declaration-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list)
 - [`<declaration-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-rule-list)
 - [`<declaration-value>`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value)
+- [`<default-value>`](https://drafts.csswg.org/css-mixins-1/#typedef-default-value)
 - [`<delim-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-delim-token)
 - [`<deprecated-color>`](https://drafts.csswg.org/css-color-4/#typedef-deprecated-color)
 - [`<dimension-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-dimension-token)
@@ -1067,14 +1072,13 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<generic-script-specific>`](https://drafts.csswg.org/css-fonts-4/#typedef-generic-script-specific)
 - [`<generic-voice>`](https://drafts.csswg.org/css-speech-1/#typedef-generic-voice)
 - [`<geometry-box>`](https://drafts.fxtf.org/css-masking-1/#typedef-geometry-box)
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-end`
 - [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-start`
 - [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-end`
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-end`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
 - [`<hash-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-hash-token)
 - [`<hex-color>`](https://drafts.csswg.org/css-color-4/#typedef-hex-color)
 - [`<historical-lig-values>`](https://drafts.csswg.org/css-fonts-4/#historical-lig-values)
-- [`<horizontal-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-horizontal-line-command) for `shape()`
 - [`<hue-interpolation-method>`](https://drafts.csswg.org/css-color-5/#typedef-hue-interpolation-method)
 - [`<hue>`](https://drafts.csswg.org/css-color-4/#typedef-hue)
 - [`<id-selector>`](https://drafts.csswg.org/selectors-4/#typedef-id-selector)
@@ -1094,6 +1098,10 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<import-conditions>`](https://drafts.csswg.org/css-cascade-5/#typedef-import-conditions)
 - [`<inflexible-breadth>`](https://drafts.csswg.org/css-grid-2/#typedef-inflexible-breadth)
 - [`<inherit-args>`](https://drafts.csswg.org/css-values-5/#typedef-inherit-args)
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `calc-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `color-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `transform-interpolate()`
 - [`<integrity-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier) for `<request-url-modifier>`
 - [`<isolation-mode>`](https://drafts.fxtf.org/compositing-2/#isolated-propid)
 - [`<keyframe-block>`](https://drafts.csswg.org/css-animations-1/#typedef-keyframe-block)
@@ -1111,7 +1119,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<legacy-rgba-syntax>`](https://drafts.csswg.org/css-color-4/#typedef-legacy-rgba-syntax)
 - [`<line-color-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list)
 - [`<line-color-or-repeat>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-color-or-repeat)
-- [`<line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-line-command) for `shape()`
 - [`<line-name-list>`](https://drafts.csswg.org/css-grid-2/#typedef-line-name-list)
 - [`<line-names>`](https://drafts.csswg.org/css-grid-2/#typedef-line-names)
 - [`<line-style-list>`](https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list)
@@ -1154,7 +1161,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<modern-hsla-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-hsla-syntax)
 - [`<modern-rgb-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-rgb-syntax)
 - [`<modern-rgba-syntax>`](https://drafts.csswg.org/css-color-5/#typedef-modern-rgba-syntax)
-- [`<move-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-move-command) for `shape()`
 - [`<mq-boolean>`](https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean)
 - [`<n-dimension>`](https://drafts.csswg.org/css-syntax-3/#typedef-n-dimension)
 - [`<name-repeat>`](https://drafts.csswg.org/css-grid-2/#typedef-name-repeat)
@@ -1182,6 +1188,8 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<palette-identifier>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier) for `font-palette`
 - [`<palette-mix()>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix) for `font-palette`
 - [`<percentage-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token)
+- [`<pointer-axis>`](https://drafts.csswg.org/pointer-animations-1/#typedef-axis)
+- [`<pointer-source>`](https://drafts.csswg.org/pointer-animations-1/#typedef-source)
 - [`<points>`](https://svgwg.org/svg2-draft/shapes.html#DataTypePoints)
 - [`<polar-color-space>`](https://drafts.csswg.org/css-color-5/#typedef-polar-color-space)
 - [`<position-area>`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
@@ -1191,7 +1199,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<position-two>`](https://drafts.csswg.org/css-values-5/#typedef-position-two)
 - [`<predefined-rgb-params>`](https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params)
 - [`<predefined-rgb>`](https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb)
-- [`<progress>`](https://drafts.csswg.org/css-values-5/#typedef-progress)
+- [`<progress-source>`](https://drafts.csswg.org/css-values-5/#typedef-progress-source)
 - [`<pseudo-class-selector>`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-class-selector)
 - [`<pseudo-compound-selector>`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-compound-selector)
 - [`<pseudo-element-selector>`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-element-selector)
@@ -1213,7 +1221,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<ray-size>`](https://drafts.fxtf.org/motion-1/#typedef-ray-size)
 - [`<rectangular-color-space>`](https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space)
 - [`<referrerpolicy-modifier>`](https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier) for `<request-url-modifier>`
-- [`<relative-control-point>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-relative-control-point) for `shape()`
 - [`<relative-real-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector-list)
 - [`<relative-real-selector>`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector)
 - [`<relative-selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-relative-selector-list)
@@ -1236,13 +1243,17 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<scroll-state-in-parens>`](https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-in-parens)
 - [`<scroll-state-query>`](https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-query)
 - [`<scroller>`](https://drafts.csswg.org/scroll-animations-1/#typedef-scroller)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `calc-interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `color-interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `interpolate()`
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `transform-interpolate()`
 - [`<selector-list>`](https://drafts.csswg.org/selectors-4/#typedef-selector-list)
 - [`<self-position>`](https://drafts.csswg.org/css-align-3/#typedef-self-position)
 - [`<semicolon-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token)
 - [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones) for `voice-pitch`
 - [`<shadow>`](https://drafts.csswg.org/css-backgrounds-3/#typedef-shadow)
 - [`<shape-box>`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-box)
-- [`<shape-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-command)
+- [`<shape-command>`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-command)
 - [`<side-or-corner>`](https://drafts.csswg.org/css-images-4/#typedef-side-or-corner)
 - [`<signed-integer>`](https://drafts.csswg.org/css-syntax-3/#typedef-signed-integer)
 - [`<signless-integer>`](https://drafts.csswg.org/css-syntax-3/#typedef-signless-integer)
@@ -1261,7 +1272,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<single-transition>`](https://drafts.csswg.org/css-transitions-2/#single-transition)
 - [`<size-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-size-feature)
 - [`<size-keyword>`](https://drafts.csswg.org/css-values-5/#typedef-size-keyword)
-- [`<smooth-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-smooth-command) for `shape()`
 - [`<source-size-list>`](https://html.spec.whatwg.org/multipage/images.html#source-size-list)
 - [`<source-size-value>`](https://html.spec.whatwg.org/multipage/images.html#source-size-value)
 - [`<source-size>`](https://html.spec.whatwg.org/multipage/images.html#source-size)
@@ -1296,6 +1306,7 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<target-contrast>`](https://drafts.csswg.org/css-color-6/#typedef-target-contrast)
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
 - [`<target>`](https://drafts.csswg.org/css-content-3/#typedef-target)
+- [`<timeline-range-center-subject>`](https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject)
 - [`<timeline-range-name>`](https://drafts.csswg.org/scroll-animations-1/#typedef-timeline-range-name)
 - [`<top>`](https://drafts.csswg.org/css2/#value-def-top)
 - [`<track-breadth>`](https://drafts.csswg.org/css-grid-2/#typedef-track-breadth)
@@ -1314,7 +1325,6 @@ Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
 - [`<url-set>`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-url-set) for `cursor`
 - [`<url-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-url-token)
 - [`<var-args>`](https://drafts.csswg.org/css-variables-2/#typedef-var-args)
-- [`<vertical-line-command>`](https://drafts.csswg.org/css-shapes-2/#typedef-shape-vertical-line-command) for `shape()`
 - [`<visual-box>`](https://drafts.csswg.org/css-box-4/#typedef-visual-box)
 - [`<wcag2>`](https://drafts.csswg.org/css-color-6/#typedef-wcag2)
 - [`<whitespace-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-whitespace-token)

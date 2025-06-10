@@ -1,8 +1,7 @@
 {
   "dependencies": {
+    "@webref/css": "^7.0.0-alpha",
     "css-tree": "^3.1.0",
-    "mdn-data": "^2.21.0",
-    "reffy": "github:w3c/reffy#cssmerge",
-    "webref": "github:w3c/webref#@webref/css@latest"
+    "mdn-data": "^2.21.0"
   }
 }

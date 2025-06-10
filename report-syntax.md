@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-05-30T10:29:09.281Z** using **v2.21.0** of MDN data.
+Generated on **2025-06-10T10:58:42.297Z** using **v2.21.0** of MDN data.
 
 
 <details>
@@ -853,7 +853,7 @@ mdn:    normal | <length>
 ```
 - [`line-clamp`](https://drafts.csswg.org/css-overflow-4/#propdef-line-clamp)
 ```
-webref: none | <integer [1,∞]> || <'block-ellipsis'>
+webref: none | [<integer [1,∞]> || <'block-ellipsis'>] -webkit-legacy?
 mdn:    none | <integer>
 ```
 - [`line-height`](https://drafts.csswg.org/css-inline-3/#propdef-line-height)
@@ -1513,14 +1513,14 @@ mdn:    <compound-selector> [ <combinator>? <compound-selector> ]*
 webref: [ <type-selector>? <subclass-selector>* ]!
 mdn:    [ <type-selector>? <subclass-selector>* [ <pseudo-element-selector> <pseudo-class-selector>* ]* ]!
 ```
-- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list) for `content`
-```
-webref: [ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+
-mdn:    [ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+
-```
 - [`<content-list>`](https://drafts.csswg.org/css-gcpm-3/#content-list)
 ```
 webref: [ <string> | <counter()> | <counters()> | <content()> | <attr()> ]+
+mdn:    [ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+
+```
+- [`<content-list>`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list) for `content`
+```
+webref: [ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+
 mdn:    [ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+
 ```
 - [`<counter-name>`](https://drafts.csswg.org/css-lists-3/#typedef-counter-name)
@@ -1578,7 +1578,7 @@ mdn:    [ <function-token> <any-value> ) ] | ( <ident> <any-value> )
 webref: <generic-script-specific>| <generic-complete> | <generic-incomplete>
 mdn:    <generic-complete> | <generic-incomplete> | emoji | fangsong
 ```
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-end`
 ```
 webref: auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]
 mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
@@ -1593,7 +1593,7 @@ mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <
 webref: auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]
 mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
 ```
-- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-column-end`
+- [`<grid-line>`](https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line) for `grid-row-start`
 ```
 webref: auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]
 mdn:    auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]

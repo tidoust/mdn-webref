@@ -4,18 +4,14 @@
  * to identify gaps and mismatches.
  *
  * The script:
- * 1. Merges Webref data to get a structure that matches that
- * in MDN data.
- * 2. Removes duplicates from the resulting data
- * 3. Completes the syntax of a few constructs where possible
- * 4. Looks for gaps in Webref compared to MDN data and in
+ * 1. Looks for gaps in Webref compared to MDN data and in
  * MDN data compared to Webref
- * 5. Looks for syntax mismatches between MDN data and Webref
- * 6. Compiles the list of constructs in Webref that are
+ * 2. Looks for syntax mismatches between MDN data and Webref
+ * 3. Compiles the list of constructs in Webref that are
  * "dangling" (not referenced by any other construct)
- * 7. Compiles the list of constructs in Webref that do not
+ * 4. Compiles the list of constructs in Webref that do not
  * have any known syntax
- * 8. Compares the list of patches in CSSTree with the syntax
+ * 5. Compares the list of patches in CSSTree with the syntax
  * known in Webref and report on syntaxes that are missing in
  * Webref, syntaxes that are different in Webref, and patches
  * that could probably be dropped because Webref has the
@@ -24,36 +20,22 @@
  * To run the script:
  *   node main.mjs
  *
- * This will create/update the webref.json file, which is the
- * resulting structure of steps 1 to 3 above, and a few
- * report files in Markdown.
+ * This will create/update a few report files in Markdown.
  ***********************************************************/
 
-import { crawlSpecs } from 'reffy';
 import mdn from 'mdn-data';
+import css from '@webref/css';
 import { writeFile } from 'node:fs/promises';
 import mdnPackage from 'mdn-data/package.json' with { type: 'json' };
 import csstreePatches from './node_modules/css-tree/data/patch.json' with { type: 'json' };
 import { fileURLToPath } from 'node:url';
 import path from "node:path";
 
-const scriptPath = path.dirname(fileURLToPath(import.meta.url));
-
 
 /************************************************************
  * Prepare consolidated CSS from Webref data
  ***********************************************************/
-const cssFolder = path.join(scriptPath, 'node_modules', 'webref', 'ed');
-await crawlSpecs({
-  useCrawl: cssFolder,
-  output: cssFolder,
-  post: ['cssmerge'],
-  quiet: true
-});
-
-const { default: webrefData } = await import(
-  'file://' + path.join(cssFolder, 'css.json'),
-  { with: { type: 'json' } });
+const webrefData = await css.listAll();
 
 const categorized = {
   // At-rules are under an "atrules" key in Webref, "atRules" in MDN data.
@@ -70,20 +52,6 @@ categorized.syntaxes.push(...webrefData.functions);
 categorized.syntaxes.push(...webrefData.types);
 
 const categories = Object.keys(categorized);
-
-// Code that sets the selector's syntax to the selector's name when possible
-// has not propagated to Webref yet. Let's do it here as well. That code can
-// go when https://github.com/w3c/reffy/pull/1848 is merged and applied.
-for (const category of categories) {
-  categorized[category] = categorized[category].map(feature => {
-    if (category === 'selectors' &&
-        !feature.value &&
-        !feature.name.match(/\(/)) {
-      feature.value = feature.name;
-    }
-    return feature;
-  });
-}
 
 
 /************************************************************
@@ -250,12 +218,6 @@ for (const category of ['properties', 'types']) {
     }
   }
 }
-
-
-/************************************************************
- * Save sanitized and categorized Webref data
- ***********************************************************/
-await writeFile('webref.json', JSON.stringify(webrefData, null, 2), 'utf8');
 
 
 /************************************************************

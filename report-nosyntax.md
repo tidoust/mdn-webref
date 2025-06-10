@@ -1,6 +1,6 @@
 # Features without syntax in Webref
 
-Generated on **2025-05-30T10:29:09.296Z**.
+Generated on **2025-06-10T10:58:42.313Z**.
 
 
 <details>
@@ -13,21 +13,21 @@ Generated on **2025-05-30T10:29:09.296Z**.
 
 
 <details>
-<summary>16 functions without syntax (out of 169)</summary>
+<summary>16 functions without syntax (out of 173)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set) (dangling)
 - [`crossorigin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-crossorigin) for `<request-url-modifier>` (dangling)
 - [`integrity()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity) for `<request-url-modifier>` (dangling)
 - [`referrerpolicy()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-referrerpolicy) for `<request-url-modifier>` (dangling)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-color>` (dangling)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-style>` (dangling)
-- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<auto-repeat-line-width>` (dangling)
-- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<auto-repeat>` (dangling)
 - [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<fixed-repeat>` (dangling)
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-color>` (dangling)
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-style>` (dangling)
+- [`repeat()`](https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat) for `<repeat-line-width>` (dangling)
+- [`repeat()`](https://drafts.csswg.org/css-grid-2/#funcdef-track-repeat-repeat) for `<track-repeat>` (dangling)
 - [`sibling-count()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-count) (dangling)
 - [`sibling-index()`](https://drafts.csswg.org/css-values-5/#funcdef-sibling-index) (dangling)
 - [`wcag2()`](https://drafts.csswg.org/css-color-6/#funcdef-contrast-color-wcag2) for `contrast-color()` (dangling)
@@ -35,7 +35,7 @@ Generated on **2025-05-30T10:29:09.296Z**.
 
 
 <details>
-<summary>8 properties without syntax (out of 757)</summary>
+<summary>8 properties without syntax (out of 761)</summary>
 
 - [`-webkit-box-align`](https://compat.spec.whatwg.org/#propdef--webkit-box-align)
 - [`-webkit-box-flex`](https://compat.spec.whatwg.org/#propdef--webkit-box-flex)
@@ -72,7 +72,7 @@ Generated on **2025-05-30T10:29:09.296Z**.
 
 
 <details>
-<summary>107 types without syntax (out of 465)</summary>
+<summary>116 types without syntax (out of 464)</summary>
 
 - [`<(-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren) (dangling)
 - [`<)-token>`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren) (dangling)
@@ -129,6 +129,10 @@ Generated on **2025-05-30T10:29:09.296Z**.
 - [`<ident-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-ident-token)
 - [`<ident>`](https://drafts.csswg.org/css-values-4/#typedef-ident)
 - [`<identifier>`](https://drafts.csswg.org/css2/#value-def-identifier) (dangling)
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `calc-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `color-interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `interpolate()`
+- [`<input-position>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position) for `transform-interpolate()`
 - [`<integer>`](https://drafts.csswg.org/css-values-4/#integer-value)
 - [`<left>`](https://drafts.csswg.org/css2/#value-def-left)
 - [`<length>`](https://drafts.csswg.org/css-values-4/#length-value)
@@ -145,7 +149,7 @@ Generated on **2025-05-30T10:29:09.296Z**.
 - [`<padding-width>`](https://drafts.csswg.org/css2/#value-def-padding-width) (dangling)
 - [`<palette-identifier>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier) for `font-palette`
 - [`<palette-mix()>`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix) for `font-palette`
-- [`<percentage-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token)
+- [`<percentage-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token) (dangling)
 - [`<percentage>`](https://drafts.csswg.org/css-values-4/#percentage-value)
 - [`<qualified-rule-list>`](https://drafts.csswg.org/css-syntax-3/#typedef-qualified-rule-list)
 - [`<quirky-color>`](https://drafts.csswg.org/css-color-4/#typedef-quirky-color) (dangling)
@@ -158,6 +162,10 @@ Generated on **2025-05-30T10:29:09.296Z**.
 - [`<scope-start>`](https://drafts.csswg.org/css-cascade-6/#typedef-scope-start)
 - [`<scroll-button-direction>`](https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction)
 - [`<scroll-state-feature>`](https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `calc-interpolate()` (dangling)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `color-interpolate()` (dangling)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `interpolate()` (dangling)
+- [`<segment-options>`](https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options) for `transform-interpolate()` (dangling)
 - [`<semicolon-token>`](https://drafts.csswg.org/css-syntax-3/#typedef-semicolon-token) (dangling)
 - [`<semitones>`](https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones) for `voice-pitch`
 - [`<shape>`](https://drafts.csswg.org/css2/#value-def-shape) (dangling)
@@ -171,6 +179,7 @@ Generated on **2025-05-30T10:29:09.296Z**.
 - [`<system-color>`](https://drafts.csswg.org/css-color-4/#typedef-system-color)
 - [`<target-name>`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
 - [`<time>`](https://drafts.csswg.org/css-values-4/#time-value)
+- [`<timeline-range-center-subject>`](https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject)
 - [`<timeline-range-name>`](https://drafts.csswg.org/scroll-animations-1/#typedef-timeline-range-name)
 - [`<top>`](https://drafts.csswg.org/css2/#value-def-top)
 - [`<transform-function>`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
