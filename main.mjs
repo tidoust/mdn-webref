@@ -127,12 +127,12 @@ for (const category of categories) {
       }
     }
 
-    if (normalizeSyntax(feature.value) !== normalizeSyntax(mdnSyntax)) {
+    if (normalizeSyntax(feature.syntax) !== normalizeSyntax(mdnSyntax)) {
       mismatches[category].push({
         name: feature.name,
         href: feature.href,
         for: feature.for,
-        webref: feature.value,
+        webref: feature.syntax,
         mdn: mdnSyntax,
         spec: feature.spec
       });
@@ -152,7 +152,7 @@ const dangling = {};
 for (const category of ['functions', 'types']) {
   const features = categorized[category].filter(feature =>
     !categories.find(cat =>
-      categorized[cat].find(f => f.value && f.value.indexOf(feature.name) !== -1)));
+      categorized[cat].find(f => f.syntax && f.syntax.indexOf(feature.name) !== -1)));
   if (features.length > 0) {
     for (const feature of features) {
       feature.dangling = true;
@@ -176,7 +176,7 @@ for (const category of categories) {
     // Syntaxes are just functions + types, no need to report them as such
     continue;
   }
-  const features = categorized[category].filter(feature => !feature.value);
+  const features = categorized[category].filter(feature => !feature.syntax);
   if (features.length > 0) {
     noSyntax[category] = features;
   }
@@ -207,10 +207,10 @@ for (const category of ['properties', 'types']) {
     if (feature.webref?.href) {
       feature.href = feature.webref.href;
     }
-    if (!feature.webref?.value) {
+    if (!feature.webref?.syntax) {
       patches[category].missing.push(feature);
     }
-    else if (normalizeSyntax(feature.webref.value) !== normalizeSyntax(patch.syntax)) {
+    else if (normalizeSyntax(feature.webref.syntax) !== normalizeSyntax(patch.syntax)) {
       patches[category].mismatches.push(feature);
     }
     else {
@@ -424,10 +424,10 @@ function reportPatches(features) {
 function reportPatch(feature) {
   let res = reportFeature(feature);
   if (feature.webref) {
-    if (normalizeSyntax(feature.webref.value) !== normalizeSyntax(feature.patch.syntax)) {
+    if (normalizeSyntax(feature.webref.syntax) !== normalizeSyntax(feature.patch.syntax)) {
       res += '\n```\n';
       res += 'webref:  ';
-      res += feature.webref.value;
+      res += feature.webref.syntax;
       res += '\n';
       res += 'csstree: ';
       res += feature.patch.syntax;

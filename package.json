@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@webref/css": "^7.0.0-alpha",
+    "@webref/css": "^7.0.8-alpha",
     "css-tree": "^3.1.0",
-    "mdn-data": "^2.21.0"
+    "mdn-data": "^2.24.0"
   }
 }

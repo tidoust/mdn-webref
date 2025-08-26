@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-06-10T10:58:42.297Z** using **v2.21.0** of MDN data.
+Generated on **2025-08-26T15:42:58.313Z** using **v2.24.0** of MDN data.
 
 
 <details>
@@ -147,7 +147,7 @@ auto | <svg-length>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
-webref:  none | auto | base | <compat-auto> | <compat-special> | base
+webref:  none | auto | base | base-select | <compat-auto> | <compat-special> | base
 csstree: none | button | button-bevel | caps-lock-indicator | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbargripper-horizontal | scrollbargripper-vertical | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield | -apple-pay-button
 ```
 - [`-webkit-background-clip`](https://compat.spec.whatwg.org/#propdef--webkit-background-clip)
@@ -187,7 +187,7 @@ csstree: <url> <decibel>? | none
 ```
 - [`cursor`](https://drafts.csswg.org/css-ui-4/#propdef-cursor)
 ```
-webref:  [ [ <url> | <url-set> ] [<x> <y>]? ]#? [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ]
+webref:  <cursor-image>#? <cursor-predefined>
 csstree: [ [ <url> [ <x> <y> ]? , ]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing | hand | -webkit-grab | -webkit-grabbing | -webkit-zoom-in | -webkit-zoom-out | -moz-grab | -moz-grabbing | -moz-zoom-in | -moz-zoom-out ] ]
 ```
 - [`display`](https://drafts.csswg.org/css-display-4/#propdef-display)
@@ -380,7 +380,7 @@ csstree: | <svg-writing-mode>
 
 
 <details>
-<summary>59 type patches missing from Webref</summary>
+<summary>58 type patches missing from Webref</summary>
 
 - `-legacy-gradient`
 ```
@@ -592,11 +592,6 @@ csstree: <mf-plain> | <mf-boolean> | <mf-range>
 ```
 not <style-in-parens> | <style-in-parens> [ [ and <style-in-parens> ]* | [ or <style-in-parens> ]* ]
 ```
-- [`style-feature`](https://drafts.csswg.org/css-conditional-5/#typedef-style-feature)
-```
-webref:  undefined
-csstree: <declaration>
-```
 - `svg-length`
 ```
 <percentage> | <length> | <number>
@@ -752,6 +747,11 @@ csstree: ':' <pseudo-class-selector> | <legacy-pseudo-element-selector>
 webref:  ( <container-query> ) | ( <size-feature> ) | style( <style-query> ) | scroll-state( <scroll-state-query> ) | <general-enclosed>
 csstree: ( <container-condition> ) | ( <size-feature> ) | style( <style-query> ) | <general-enclosed>
 ```
+- [`style-feature`](https://drafts.csswg.org/css-conditional-5/#typedef-style-feature)
+```
+webref:  <style-feature-plain> | <style-feature-boolean> | <style-range>
+csstree: <declaration>
+```
 - [`style-in-parens`](https://drafts.csswg.org/css-conditional-5/#typedef-style-in-parens)
 ```
 webref:  ( <style-query> ) | ( <style-feature> ) | <general-enclosed>
@@ -767,16 +767,11 @@ csstree: <style-condition> | <style-feature>
 webref:  <url()> | <src()>
 csstree: url( <string> <url-modifier>* ) | <url-token>
 ```
-- [`xyz-params`](https://drafts.csswg.org/css-color-5/#typedef-xyz-params)
-```
-webref:  <xyz> [ <number> | <percentage> | none ]{3}
-csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
-```
 </details>
 
 
 <details>
-<summary>37 type patches already in Webref</summary>
+<summary>38 type patches already in Webref</summary>
 
 - [`anchor-name`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name)
 - [`anchor-side`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side)
@@ -814,5 +809,6 @@ csstree: <xyz-space> [ <number> | <percentage> | none ]{3}
 - [`single-animation-composition`](https://drafts.csswg.org/css-animations-2/#typedef-single-animation-composition)
 - [`system-family-name`](https://drafts.csswg.org/css-fonts-4/#system-family-name-value)
 - [`try-size`](https://drafts.csswg.org/css-anchor-position-1/#typedef-try-size)
+- [`xyz-params`](https://drafts.csswg.org/css-color-5/#typedef-xyz-params)
 - [`xyz-space`](https://drafts.csswg.org/css-color-4/#typedef-xyz-space)
 </details>
