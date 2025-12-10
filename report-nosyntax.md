@@ -1,10 +1,10 @@
 # Features without syntax in Webref
 
-Generated on **2025-08-26T15:42:58.340Z**.
+Generated on **2025-12-10T09:04:53.167Z**.
 
 
 <details>
-<summary>3 at-rules without syntax (out of 45)</summary>
+<summary>3 at-rules without syntax (out of 55)</summary>
 
 - [`@-webkit-keyframes`](https://compat.spec.whatwg.org/#at-ruledef--webkit-keyframes)
 - [`@charset`](https://drafts.csswg.org/css-syntax-3/#at-ruledef-charset)
@@ -13,7 +13,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 
 
 <details>
-<summary>9 functions without syntax (out of 160)</summary>
+<summary>9 functions without syntax (out of 162)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set) (dangling)
 - [`cross-origin()`](https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-cross-origin) for `<request-url-modifier>` (dangling)
@@ -28,7 +28,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 
 
 <details>
-<summary>8 properties without syntax (out of 764)</summary>
+<summary>8 properties without syntax (out of 791)</summary>
 
 - [`-webkit-box-align`](https://compat.spec.whatwg.org/#propdef--webkit-box-align)
 - [`-webkit-box-flex`](https://compat.spec.whatwg.org/#propdef--webkit-box-flex)
@@ -42,15 +42,15 @@ Generated on **2025-08-26T15:42:58.340Z**.
 
 
 <details>
-<summary>18 selectors without syntax (out of 152)</summary>
+<summary>19 selectors without syntax (out of 156)</summary>
 
 - [`::nth-fragment()`](https://drafts.csswg.org/css-overflow-5/#selectordef-nth-fragment)
 - [`::slotted()`](https://drafts.csswg.org/css-scoping-1/#selectordef-slotted)
 - [`::view-transition-group-children()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-group-children)
-- [`::view-transition-group()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group)
-- [`::view-transition-image-pair()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair)
-- [`::view-transition-new()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new)
-- [`::view-transition-old()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old)
+- [`::view-transition-group()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-group)
+- [`::view-transition-image-pair()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-image-pair)
+- [`::view-transition-new()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-new)
+- [`::view-transition-old()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-old)
 - [`:active-view-transition-type()`](https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-type-pseudo)
 - [`:current()`](https://drafts.csswg.org/selectors-4/#selectordef-current)
 - [`:dir()`](https://drafts.csswg.org/selectors-4/#dir-pseudo)
@@ -59,6 +59,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`:host()`](https://drafts.csswg.org/css-scoping-1/#selectordef-host-function)
 - [`:is()`](https://drafts.csswg.org/selectors-4/#matches-pseudo)
 - [`:lang()`](https://drafts.csswg.org/selectors-4/#lang-pseudo)
+- [`:link-to()`](https://drafts.csswg.org/css-navigation-1/#link-to-pseudo)
 - [`:matches()`](https://drafts.csswg.org/selectors-4/#selectordef-matches)
 - [`:not()`](https://drafts.csswg.org/selectors-4/#negation-pseudo)
 - [`:where()`](https://drafts.csswg.org/selectors-4/#where-pseudo)
@@ -66,7 +67,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 
 
 <details>
-<summary>111 types without syntax (out of 463)</summary>
+<summary>115 types without syntax (out of 505)</summary>
 
 - [`(-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren) (dangling)
 - [`)-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren) (dangling)
@@ -77,8 +78,9 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`absolute-size`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 - [`age`](https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age) for `voice-family`
 - [`angle`](https://drafts.csswg.org/css-values-4/#angle-value)
+- [`animation-action`](https://drafts.csswg.org/css-animations-2/#typedef-animation-action)
 - [`any-value`](https://drafts.csswg.org/css-syntax-3/#typedef-any-value)
-- [`at-keyword-token`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token) (dangling)
+- [`at-keyword-token`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
 - [`at-rule-list`](https://drafts.csswg.org/css-syntax-3/#typedef-at-rule-list) (dangling)
 - [`attr-unit`](https://drafts.csswg.org/css-values-5/#typedef-attr-unit)
 - [`bad-string-token`](https://drafts.csswg.org/css-syntax-3/#typedef-bad-string-token) (dangling)
@@ -126,6 +128,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`integer`](https://drafts.csswg.org/css-values-4/#integer-value)
 - [`left`](https://drafts.csswg.org/css2/#value-def-left)
 - [`length`](https://drafts.csswg.org/css-values-4/#length-value)
+- [`level`](https://drafts.csswg.org/selectors-5/#typedef-level)
 - [`margin-width`](https://drafts.csswg.org/css2/#value-def-margin-width) (dangling)
 - [`media-query-list`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list)
 - [`n-dimension`](https://drafts.csswg.org/css-syntax-3/#typedef-n-dimension)
@@ -137,6 +140,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`number-token`](https://drafts.csswg.org/css-syntax-3/#typedef-number-token) (dangling)
 - [`outline-line-style`](https://drafts.csswg.org/css-ui-4/#typedef-outline-line-style)
 - [`padding-width`](https://drafts.csswg.org/css2/#value-def-padding-width) (dangling)
+- [`page-size`](https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size) for `size` (dangling)
 - [`palette-identifier`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier) for `font-palette`
 - [`palette-mix()`](https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix) for `font-palette`
 - [`percentage`](https://drafts.csswg.org/css-values-4/#percentage-value)
@@ -164,6 +168,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`string-token`](https://drafts.csswg.org/css-syntax-3/#typedef-string-token)
 - [`style-feature-name`](https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-name)
 - [`style-feature-value`](https://drafts.csswg.org/css-conditional-5/#typedef-style-feature-value)
+- [`supports-condition-name`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-condition-name)
 - [`system-color`](https://drafts.csswg.org/css-color-4/#typedef-system-color)
 - [`target-name`](https://drafts.csswg.org/css-ui-4/#typedef-target-name)
 - [`time`](https://drafts.csswg.org/css-values-4/#time-value)

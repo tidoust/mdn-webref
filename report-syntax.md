@@ -1,6 +1,6 @@
 # Syntax mismatches between MDN data and Webref
 
-Generated on **2025-08-26T15:42:58.313Z** using **v2.24.0** of MDN data.
+Generated on **2025-12-10T09:04:53.154Z** using **v2.25.0** of MDN data.
 
 
 <details>
@@ -112,13 +112,8 @@ mdn:    @supports <supports-condition> {
 
 
 <details>
-<summary>22 functions mismatches (out of 109 functions in common)</summary>
+<summary>21 functions mismatches (out of 109 functions in common)</summary>
 
-- [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
-```
-webref: attr( <attr-name> <attr-type>? , <declaration-value>?)
-mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
-```
 - [`clamp()`](https://drafts.csswg.org/css-values-4/#funcdef-clamp)
 ```
 webref: clamp( [ <calc-sum> | none ], <calc-sum>, [ <calc-sum> | none ] )
@@ -126,7 +121,7 @@ mdn:    clamp( <calc-sum>#{3} )
 ```
 - [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
 ```
-webref: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+webref: color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)
 mdn:    color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
 ```
 - [`cross-fade()`](https://drafts.csswg.org/css-images-4/#funcdef-cross-fade)
@@ -228,7 +223,7 @@ mdn:    scaleY( [ <number> | <percentage> ] )
 
 
 <details>
-<summary>173 properties mismatches (out of 503 properties in common)</summary>
+<summary>183 properties mismatches (out of 504 properties in common)</summary>
 
 - [`-webkit-appearance`](https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance)
 ```
@@ -275,10 +270,20 @@ mdn:    <length>
 webref: unknown syntax
 mdn:    auto | text | none | all
 ```
+- [`align-items`](https://drafts.csswg.org/css-align-3/#propdef-align-items)
+```
+webref: normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center
+mdn:    normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ] | anchor-center
+```
 - [`alignment-baseline`](https://drafts.csswg.org/css-inline-3/#propdef-alignment-baseline)
 ```
 webref: baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top
 mdn:    baseline | alphabetic | ideographic | middle | central | mathematical | text-before-edge | text-after-edge
+```
+- [`all`](https://drafts.csswg.org/css-cascade-5/#propdef-all)
+```
+webref: initial | inherit | unset | revert | revert-layer | revert-rule
+mdn:    initial | inherit | unset | revert | revert-layer
 ```
 - [`appearance`](https://drafts.csswg.org/css-ui-4/#propdef-appearance)
 ```
@@ -340,6 +345,16 @@ mdn:    <'border-top-width'>
 webref: <color> | <image-1D>
 mdn:    <'border-top-color'>
 ```
+- [`border-bottom-left-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius)
+```
+webref: <border-radius>
+mdn:    <length-percentage [0,∞]>{1,2}
+```
+- [`border-bottom-right-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius)
+```
+webref: <border-radius>
+mdn:    <length-percentage [0,∞]>{1,2}
+```
 - [`border-color`](https://drafts.csswg.org/css-borders-4/#propdef-border-color)
 ```
 webref: [ <color> | <image-1D> ]{1,4}
@@ -347,12 +362,12 @@ mdn:    <color>{1,4}
 ```
 - [`border-end-end-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-end-end-radius)
 ```
-webref: <length-percentage [0,∞]>{1,2}
+webref: <border-radius>
 mdn:    <'border-top-left-radius'>
 ```
 - [`border-end-start-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-end-start-radius)
 ```
-webref: <length-percentage [0,∞]>{1,2}
+webref: <border-radius>
 mdn:    <'border-top-left-radius'>
 ```
 - [`border-inline-end`](https://drafts.csswg.org/css-borders-4/#propdef-border-inline-end)
@@ -407,18 +422,38 @@ mdn:    <color>
 ```
 - [`border-start-end-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-start-end-radius)
 ```
-webref: <length-percentage [0,∞]>{1,2}
+webref: <border-radius>
 mdn:    <'border-top-left-radius'>
 ```
 - [`border-start-start-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-start-start-radius)
 ```
-webref: <length-percentage [0,∞]>{1,2}
+webref: <border-radius>
 mdn:    <'border-top-left-radius'>
+```
+- [`border-style`](https://drafts.csswg.org/css-borders-4/#propdef-border-style)
+```
+webref: <'border-top-style'>{1,4}
+mdn:    <line-style>{1,4}
 ```
 - [`border-top-color`](https://drafts.csswg.org/css-borders-4/#propdef-border-top-color)
 ```
 webref: <color> | <image-1D>
 mdn:    <color>
+```
+- [`border-top-left-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius)
+```
+webref: <border-radius>
+mdn:    <length-percentage [0,∞]>{1,2}
+```
+- [`border-top-right-radius`](https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius)
+```
+webref: <border-radius>
+mdn:    <length-percentage [0,∞]>{1,2}
+```
+- [`border-width`](https://drafts.csswg.org/css-borders-4/#propdef-border-width)
+```
+webref: <'border-top-width'>{1,4}
+mdn:    <line-width>{1,4}
 ```
 - [`box-shadow`](https://drafts.csswg.org/css-borders-4/#propdef-box-shadow)
 ```
@@ -492,27 +527,32 @@ mdn:    <'column-width'> || <'column-count'>
 ```
 - [`contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
 ```
-webref: none | strict | content | [ [size | inline-size] || layout || style || paint ]
+webref: none | strict | content | [ [size | inline-size] || layout || style || paint ] | view-transition
 mdn:    none | strict | content | [ [ size || inline-size ] || layout || style || paint ]
 ```
 - [`contain-intrinsic-block-size`](https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-block-size)
 ```
-webref: auto? [ none | <length [0,∞]> ]
+webref: [ auto | from-element ]? [ none | <length [0,∞]> ]
 mdn:    auto? [ none | <length> ]
 ```
 - [`contain-intrinsic-height`](https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-height)
 ```
-webref: auto? [ none | <length [0,∞]> ]
+webref: [ auto | from-element ]? [ none | <length [0,∞]> ]
 mdn:    auto? [ none | <length> ]
 ```
 - [`contain-intrinsic-inline-size`](https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-inline-size)
 ```
-webref: auto? [ none | <length [0,∞]> ]
+webref: [ auto | from-element ]? [ none | <length [0,∞]> ]
 mdn:    auto? [ none | <length> ]
+```
+- [`contain-intrinsic-size`](https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-size)
+```
+webref: [ [ auto | from-element ]? [ none | <length [0,∞]> ] ]{1,2}
+mdn:    [ auto? [ none | <length> ] ]{1,2}
 ```
 - [`contain-intrinsic-width`](https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-width)
 ```
-webref: auto? [ none | <length [0,∞]> ]
+webref: [ auto | from-element ]? [ none | <length [0,∞]> ]
 mdn:    auto? [ none | <length> ]
 ```
 - [`content`](https://drafts.csswg.org/css-content-3/#propdef-content)
@@ -522,8 +562,8 @@ mdn:    normal | none | [ <content-replacement> | <content-list> ] [ / [ <string
 ```
 - [`cursor`](https://drafts.csswg.org/css-ui-4/#propdef-cursor)
 ```
-webref: <cursor-image>#? <cursor-predefined>
-mdn:    [ [ <url> [ <x> <y> ]? , ]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ]
+webref: [<cursor-image>,]* <cursor-predefined>
+mdn:    [ [ <url> [ <x> <y> ]? , ]* <cursor-predefined> ]
 ```
 - [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty)
 ```
@@ -752,7 +792,7 @@ mdn:    <integer>
 ```
 - [`outline-color`](https://drafts.csswg.org/css-ui-4/#propdef-outline-color)
 ```
-webref: auto | <color> | <image-1D>
+webref: auto | <'border-top-color'>
 mdn:    auto | <color>
 ```
 - [`overflow`](https://drafts.csswg.org/css-overflow-3/#propdef-overflow)
@@ -789,6 +829,11 @@ mdn:    auto | none | visiblePainted | visibleFill | visibleStroke | visible | p
 ```
 webref: static | relative | absolute | sticky | fixed | <running()>
 mdn:    static | relative | absolute | sticky | fixed
+```
+- [`position-try-fallbacks`](https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-fallbacks)
+```
+webref: none | [ [<dashed-ident> || <try-tactic>] | <position-area> ]#
+mdn:    none | [ [<dashed-ident> || <try-tactic>] | <'position-area'> ]#
 ```
 - [`quotes`](https://drafts.csswg.org/css-content-3/#propdef-quotes)
 ```
@@ -1030,7 +1075,7 @@ mdn:    auto | text | none | all
 webref: [ first | last] || <'alignment-baseline'> || <'baseline-shift'>
 mdn:    baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
 ```
-- [`view-transition-name`](https://drafts.csswg.org/css-view-transitions-1/#propdef-view-transition-name)
+- [`view-transition-name`](https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-name)
 ```
 webref: none | <custom-ident>
 mdn:    none | <custom-ident> | match-element
@@ -1116,22 +1161,22 @@ mdn:    ::cue( <selector> )
 webref: unknown syntax
 mdn:    ::slotted( <compound-selector> )
 ```
-- [`::view-transition-group()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-group)
+- [`::view-transition-group()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-group)
 ```
 webref: unknown syntax
 mdn:    ::view-transition-group([ '*' | <custom-ident> ])
 ```
-- [`::view-transition-image-pair()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-image-pair)
+- [`::view-transition-image-pair()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-image-pair)
 ```
 webref: unknown syntax
 mdn:    ::view-transition-image-pair([ '*' | <custom-ident> ])
 ```
-- [`::view-transition-new()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-new)
+- [`::view-transition-new()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-new)
 ```
 webref: unknown syntax
 mdn:    ::view-transition-new([ '*' | <custom-ident> ])
 ```
-- [`::view-transition-old()`](https://drafts.csswg.org/css-view-transitions-1/#selectordef-view-transition-old)
+- [`::view-transition-old()`](https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-old)
 ```
 webref: unknown syntax
 mdn:    ::view-transition-old([ '*' | <custom-ident> ])
@@ -1210,7 +1255,7 @@ mdn:    :where( <complex-selector-list> )
 
 
 <details>
-<summary>98 syntaxes mismatches (out of 354 syntaxes in common)</summary>
+<summary>105 syntaxes mismatches (out of 357 syntaxes in common)</summary>
 
 - [`absolute-size`](https://drafts.csswg.org/css2/#value-def-absolute-size)
 ```
@@ -1221,11 +1266,6 @@ mdn:    xx-small | x-small | small | medium | large | x-large | xx-large | xxx-l
 ```
 webref: odd | even | <integer> | <n-dimension> | '+'? n | -n | <ndashdigit-dimension> | '+'? <ndashdigit-ident> | <dashndashdigit-ident> | <n-dimension> <signed-integer> | '+'? n <signed-integer> | -n <signed-integer> | <ndash-dimension> <signless-integer> | '+'? n- <signless-integer> | -n- <signless-integer> | <n-dimension> ['+' | '-'] <signless-integer> | '+'? n ['+' | '-'] <signless-integer> | -n ['+' | '-'] <signless-integer>
 mdn:    odd | even | <integer> | <n-dimension> | '+'?† n | -n | <ndashdigit-dimension> | '+'?† <ndashdigit-ident> | <dashndashdigit-ident> | <n-dimension> <signed-integer> | '+'?† n <signed-integer> | -n <signed-integer> | <ndash-dimension> <signless-integer> | '+'?† n- <signless-integer> | -n- <signless-integer> | <n-dimension> ['+' | '-'] <signless-integer> | '+'?† n ['+' | '-'] <signless-integer> | -n ['+' | '-'] <signless-integer>
-```
-- [`attr()`](https://drafts.csswg.org/css-values-5/#funcdef-attr)
-```
-webref: attr( <attr-name> <attr-type>? , <declaration-value>?)
-mdn:    attr( <attr-name> <type-or-unit>? [, <attr-fallback> ]? )
 ```
 - [`baseline-position`](https://drafts.csswg.org/css-align-3/#typedef-baseline-position)
 ```
@@ -1239,8 +1279,13 @@ mdn:    <inset()> | <xywh()> | <rect()> | <circle()> | <ellipse()> | <polygon()>
 ```
 - [`bg-clip`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-clip)
 ```
-webref: <visual-box> | border-area| text
+webref: <visual-box> | [ border-area || text ]
 mdn:    <visual-box> | border-area | text
+```
+- [`bg-layer`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-layer)
+```
+webref: <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <bg-clip> || <visual-box>
+mdn:    <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box>
 ```
 - [`bg-position`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-position)
 ```
@@ -1279,12 +1324,12 @@ mdn:    <color-base> | currentColor | <system-color> | <light-dark()> | <depreca
 ```
 - [`color-function`](https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function)
 ```
-webref: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
+webref: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <alpha()> | <color()>
 mdn:    <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
 ```
 - [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
 ```
-webref: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+webref: color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)
 mdn:    color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})
 ```
 - [`combinator`](https://drafts.csswg.org/selectors-4/#typedef-combinator)
@@ -1332,6 +1377,11 @@ mdn:    <custom-ident>
 webref: cross-fade( <cf-image># )
 mdn:    cross-fade( <cf-mixing-image> , <cf-final-image>? )
 ```
+- [`cursor-predefined`](https://drafts.csswg.org/css-ui-4/#typedef-cursor-predefined)
+```
+webref: auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out
+mdn:    auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing
+```
 - [`dashndashdigit-ident`](https://drafts.csswg.org/css-syntax-3/#typedef-dashndashdigit-ident)
 ```
 webref: unknown syntax
@@ -1356,6 +1406,11 @@ mdn:    <custom-ident>
 ```
 webref: <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>
 mdn:    <blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <saturate()> | <sepia()>
+```
+- [`final-bg-layer`](https://drafts.csswg.org/css-backgrounds-4/#typedef-final-bg-layer)
+```
+webref: <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <bg-clip> || <visual-box> || <'background-color'>
+mdn:    <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <visual-box> || <visual-box> || <'background-color'>
 ```
 - [`fit-content()`](https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content) for `grid-template-columns,grid-template-rows`
 ```
@@ -1432,7 +1487,7 @@ mdn:    lab( [<percentage> | <number> | none] [ <percentage> | <number> | none] 
 webref: lch([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )
 mdn:    lch( [<percentage> | <number> | none] [ <percentage> | <number> | none] [ <hue> | none] [ / [<alpha-value> | none] ]? )
 ```
-- [`line-width`](https://drafts.csswg.org/css-backgrounds-3/#typedef-line-width)
+- [`line-width`](https://drafts.csswg.org/css-borders-4/#typedef-line-width)
 ```
 webref: <length [0,∞]> | thin | medium | thick
 mdn:    <length> | thin | medium | thick
@@ -1525,6 +1580,11 @@ mdn:    <pseudo-page>+ | <ident> <pseudo-page>*
 webref: <page-selector>#
 mdn:    [ <page-selector># ]?
 ```
+- [`page-size`](https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size) for `size`
+```
+webref: unknown syntax
+mdn:    A5 | A4 | A3 | B5 | B4 | JIS-B5 | JIS-B4 | letter | legal | ledger
+```
 - [`paint`](https://drafts.fxtf.org/fill-stroke-3/#typedef-paint)
 ```
 webref: none | <image> | <svg-paint>
@@ -1550,9 +1610,14 @@ mdn:    polygon( <'fill-rule'>? , [ <length-percentage> <length-percentage> ]# )
 webref: <position-one> | <position-two> | <position-four>
 mdn:    [ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]
 ```
+- [`position-area`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
+```
+webref: [ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]
+mdn:    [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2}
+```
 - [`predefined-rgb`](https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb)
 ```
-webref: srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
+webref: srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
 mdn:    srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020
 ```
 - [`pseudo-class-selector`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-class-selector)
@@ -1572,7 +1637,7 @@ mdn:    rect( [ <length-percentage> | auto ]{4} [ round <'border-radius'> ]? )
 ```
 - [`rectangular-color-space`](https://drafts.csswg.org/css-color-5/#typedef-rectangular-color-space)
 ```
-webref: srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>
+webref: srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>
 mdn:    srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65
 ```
 - [`relative-size`](https://drafts.csswg.org/css2/#value-def-relative-size)
@@ -1582,7 +1647,7 @@ mdn:    larger | smaller
 ```
 - [`repeat-style`](https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style)
 ```
-webref: repeat-x | repeat-y | <repetition>{1,2}
+webref: repeat-x | repeat-y | repeat-block | repeat-inline | <repetition>{1,2}
 mdn:    repeat-x | repeat-y | [ repeat | space | round | no-repeat ]{1,2}
 ```
 - [`rgb()`](https://drafts.csswg.org/css-color-4/#funcdef-rgb)
@@ -1632,13 +1697,18 @@ mdn:    <media-query-list>
 ```
 - [`shadow`](https://drafts.csswg.org/css-backgrounds-3/#typedef-shadow)
 ```
-webref: <color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?
+webref: <color>? && [ <length>{2} [ <length [0,∞]> <length>? ]? ] && inset?
 mdn:    inset? && <length>{2,4} && <color>?
 ```
 - [`shape`](https://drafts.csswg.org/css2/#value-def-shape)
 ```
 webref: unknown syntax
 mdn:    rect(<top>, <right>, <bottom>, <left>)
+```
+- [`shape-box`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-box)
+```
+webref: <visual-box> | margin-box | half-border-box
+mdn:    <visual-box> | margin-box
 ```
 - [`signed-integer`](https://drafts.csswg.org/css-syntax-3/#typedef-signed-integer)
 ```
@@ -1665,9 +1735,14 @@ mdn:    <media-query-list>
 webref: <style-feature-plain> | <style-feature-boolean> | <style-range>
 mdn:    <declaration>
 ```
+- [`supports-decl`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-decl)
+```
+webref: ( [ <declaration> | <supports-condition-name> ] )
+mdn:    ( <declaration> )
+```
 - [`supports-feature`](https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature)
 ```
-webref: <supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>
+webref: <supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-decl>
 mdn:    <supports-decl> | <supports-selector-fn>
 ```
 - [`system-color`](https://drafts.csswg.org/css-color-4/#typedef-system-color)
@@ -1699,6 +1774,11 @@ mdn:    <track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit
 ```
 webref: unknown syntax
 mdn:    <matrix()> | <translate()> | <translateX()> | <translateY()> | <scale()> | <scaleX()> | <scaleY()> | <rotate()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <translate3d()> | <translateZ()> | <scale3d()> | <scaleZ()> | <rotate3d()> | <rotateX()> | <rotateY()> | <rotateZ()> | <perspective()>
+```
+- [`try-tactic`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic) for `position-try-fallbacks`
+```
+webref: flip-block || flip-inline || flip-start || flip-x || flip-y
+mdn:    flip-block || flip-inline || flip-start
 ```
 - [`xyz-params`](https://drafts.csswg.org/css-color-5/#typedef-xyz-params)
 ```

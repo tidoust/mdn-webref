@@ -1,10 +1,10 @@
 # Dangling features in Webref
 
-Generated on **2025-08-26T15:42:58.340Z**.
+Generated on **2025-12-10T09:04:53.167Z**.
 
 
 <details>
-<summary>82 dangling functions (out of 160)</summary>
+<summary>82 dangling functions (out of 162)</summary>
 
 - [`-webkit-image-set()`](https://drafts.csswg.org/css-images-4/#funcdef--webkit-image-set)
 - [`abs()`](https://drafts.csswg.org/css-values-4/#funcdef-abs)
@@ -92,7 +92,7 @@ Generated on **2025-08-26T15:42:58.340Z**.
 
 
 <details>
-<summary>54 dangling types (out of 463)</summary>
+<summary>55 dangling types (out of 505)</summary>
 
 - [`(-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-paren)
 - [`)-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-paren)
@@ -101,7 +101,6 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`{-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-open-curly)
 - [`}-token`](https://drafts.csswg.org/css-syntax-3/#tokendef-close-curly)
 - [`an+b`](https://drafts.csswg.org/css-syntax-3/#anb-production)
-- [`at-keyword-token`](https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token)
 - [`at-rule-list`](https://drafts.csswg.org/css-syntax-3/#typedef-at-rule-list)
 - [`attr-args`](https://drafts.csswg.org/css-values-5/#typedef-attr-args)
 - [`bad-string-token`](https://drafts.csswg.org/css-syntax-3/#typedef-bad-string-token)
@@ -131,8 +130,10 @@ Generated on **2025-08-26T15:42:58.340Z**.
 - [`number-optional-number`](https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number)
 - [`number-token`](https://drafts.csswg.org/css-syntax-3/#typedef-number-token)
 - [`padding-width`](https://drafts.csswg.org/css2/#value-def-padding-width)
+- [`page-size`](https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size) for `size`
 - [`percentage-token`](https://drafts.csswg.org/css-syntax-3/#typedef-percentage-token)
 - [`points`](https://svgwg.org/svg2-draft/shapes.html#DataTypePoints)
+- [`position-area-query`](https://drafts.csswg.org/css-anchor-position-2/#typedef-position-area-query)
 - [`pt-name-and-class-selector`](https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-name-and-class-selector)
 - [`quirky-color`](https://drafts.csswg.org/css-color-4/#typedef-quirky-color)
 - [`quirky-length`](https://drafts.csswg.org/css-values-4/#typedef-quirky-length)

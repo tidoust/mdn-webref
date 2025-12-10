@@ -1,6 +1,6 @@
 # CSSTree patches and Webref
 
-Generated on **2025-08-26T15:42:58.313Z** using **v2.24.0** of MDN data.
+Generated on **2025-12-10T09:04:53.154Z** using **v2.25.0** of MDN data.
 
 
 <details>
@@ -187,7 +187,7 @@ csstree: <url> <decibel>? | none
 ```
 - [`cursor`](https://drafts.csswg.org/css-ui-4/#propdef-cursor)
 ```
-webref:  <cursor-image>#? <cursor-predefined>
+webref:  [<cursor-image>,]* <cursor-predefined>
 csstree: [ [ <url> [ <x> <y> ]? , ]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing | hand | -webkit-grab | -webkit-grabbing | -webkit-zoom-in | -webkit-zoom-out | -moz-grab | -moz-grabbing | -moz-zoom-in | -moz-zoom-out ] ]
 ```
 - [`display`](https://drafts.csswg.org/css-display-4/#propdef-display)
@@ -630,7 +630,7 @@ xywh( <length-percentage>{2} <length-percentage [0,∞]>{2} [ round <'border-rad
 
 
 <details>
-<summary>27 type patches with a different syntax in Webref</summary>
+<summary>28 type patches with a different syntax in Webref</summary>
 
 - [`anchor-size()`](https://drafts.csswg.org/css-anchor-position-1/#funcdef-anchor-size)
 ```
@@ -649,7 +649,7 @@ csstree: <wq-name>
 ```
 - [`bg-clip`](https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-clip)
 ```
-webref:  <visual-box> | border-area| text
+webref:  <visual-box> | [ border-area || text ]
 csstree: <box> | border | text
 ```
 - [`color`](https://drafts.csswg.org/css-color-5/#typedef-color)
@@ -659,12 +659,12 @@ csstree: <color-base> | currentColor | <system-color> | <device-cmyk()>  | <ligh
 ```
 - [`color-function`](https://drafts.csswg.org/css-color-hdr-1/#typedef-color-function)
 ```
-webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <color()>
+webref:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <alpha()> | <color()>
 csstree: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>
 ```
 - [`color-mix()`](https://drafts.csswg.org/css-color-5/#funcdef-color-mix)
 ```
-webref:  color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#)
+webref:  color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)
 csstree: color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2} )
 ```
 - [`color()`](https://drafts.csswg.org/css-color-5/#funcdef-color)
@@ -732,9 +732,14 @@ csstree: oklch( [ <percentage> | <number> | none] [ <percentage> | <number> | no
 webref:  none | <image> | <svg-paint>
 csstree: none | <color> | <url> [ none | <color> ]? | context-fill | context-stroke
 ```
+- [`position-area`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
+```
+webref:  [ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]
+csstree: [ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]
+```
 - [`predefined-rgb`](https://drafts.csswg.org/css-color-hdr-1/#typedef-predefined-rgb)
 ```
-webref:  srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
+webref:  srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear
 csstree: srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020
 ```
 - [`pseudo-element-selector`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-element-selector)
@@ -771,7 +776,7 @@ csstree: url( <string> <url-modifier>* ) | <url-token>
 
 
 <details>
-<summary>38 type patches already in Webref</summary>
+<summary>37 type patches already in Webref</summary>
 
 - [`anchor-name`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-name)
 - [`anchor-side`](https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-side)
@@ -798,7 +803,6 @@ csstree: url( <string> <url-modifier>* ) | <url-token>
 - [`legacy-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax)
 - [`modern-device-cmyk-syntax`](https://drafts.csswg.org/css-color-5/#typedef-modern-device-cmyk-syntax)
 - [`offset-path`](https://drafts.fxtf.org/motion-1/#typedef-offset-path)
-- [`position-area`](https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area)
 - [`predefined-rgb-params`](https://drafts.csswg.org/css-color-5/#typedef-predefined-rgb-params)
 - [`pseudo-compound-selector`](https://drafts.csswg.org/selectors-4/#typedef-pseudo-compound-selector)
 - [`relative-real-selector`](https://drafts.csswg.org/selectors-4/#typedef-relative-real-selector)
